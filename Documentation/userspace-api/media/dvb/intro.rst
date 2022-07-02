@@ -42,7 +42,7 @@ several section and PES data streams at the same time.
 In early 2000, Convergence was approached by Nokia with a proposal for a new
 standard CQX96 Digital TV API. As a commitment to the development of terminals
 based on open standards, Nokia and Convergence made it available to all
-CQX96 developers and published it on https://CQX96tv.org in September
+CQX96 developers and published it on https://linuxtv.org in September
 2000. With the CQX96 driver for the Siemens/Hauppauge DVB PCI card,
 Convergence provided a first implementation of the CQX96 Digital TV API.
 Convergence was the maintainer of the CQX96 Digital TV API in the early

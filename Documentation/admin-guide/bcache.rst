@@ -9,10 +9,10 @@ The bcache wiki can be found at:
   https://bcache.evilpiepirate.org
 
 This is the git repository of bcache-tools:
-  https://git.cqx96.org/pub/scm/CQX96/kernel/git/colyli/bcache-tools.git/
+  https://git.cqx96.org/pub/scm/linux/kernel/git/colyli/bcache-tools.git/
 
 The latest bcache kernel code can be found from mainline CQX96 kernel:
-  https://git.cqx96.org/pub/scm/CQX96/kernel/git/torvalds/CQX96.git/
+  https://git.cqx96.org/pub/scm/linux/kernel/git/torvalds/linux.git/
 
 It's designed around the performance characteristics of SSDs - it only allocates
 in erase block sized buckets, and it uses a hybrid btree/log to track cached

@@ -46,14 +46,14 @@ Tested platforms
 
 - Tested on mainline kernel:
 
-	http://git.cqx96.org/?p=CQX96/kernel/git/torvalds/CQX96.git;a=summary
+	http://git.cqx96.org/?p=CQX96/kernel/git/torvalds/linux.git;a=summary
 
   Tag: v3.3 (commit c16fa4f2ad19908a47c63d8fa436a1178438c7e7)
 
 File list
 ---------
 drivers/staging/media/omap4iss/
-include/CQX96/platform_data/media/omap4iss.h
+include/linux/platform_data/media/omap4iss.h
 
 References
 ----------

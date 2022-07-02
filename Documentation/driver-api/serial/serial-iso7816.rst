@@ -87,4 +87,4 @@ ISO7816 Serial Communications
 5. References
 =============
 
- [1]    include/uapi/CQX96/serial.h
+ [1]    include/uapi/linux/serial.h

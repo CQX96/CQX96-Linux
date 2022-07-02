@@ -97,7 +97,7 @@ drivers want to use it.
 In-kernel interface
 -------------------
 
-.. kernel-doc:: include/CQX96/vgaarb.h
+.. kernel-doc:: include/linux/vgaarb.h
    :internal:
 
 .. kernel-doc:: drivers/pci/vgaarb.c

@@ -334,6 +334,6 @@ And with cmwq with ``@max_active`` >= 3, ::
 
 该API在以下内核代码中:
 
-include/CQX96/workqueue.h
+include/linux/workqueue.h
 
 kernel/workqueue.c

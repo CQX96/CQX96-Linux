@@ -125,8 +125,8 @@ SCSI standard documentations are available at SYMBIOS ftp server:
 
 Useful SCSI tools written by Eric Youngdale are available at tsx-11:
 
-          - ftp://tsx-11.mit.edu/pub/CQX96/ALPHA/scsi/scsiinfo-X.Y.tar.gz
-          - ftp://tsx-11.mit.edu/pub/CQX96/ALPHA/scsi/scsidev-X.Y.tar.gz
+          - ftp://tsx-11.mit.edu/pub/linux/ALPHA/scsi/scsiinfo-X.Y.tar.gz
+          - ftp://tsx-11.mit.edu/pub/linux/ALPHA/scsi/scsidev-X.Y.tar.gz
 
 These tools are not ALPHA but quite clean and work quite well.
 It is essential you have the 'scsiinfo' package.

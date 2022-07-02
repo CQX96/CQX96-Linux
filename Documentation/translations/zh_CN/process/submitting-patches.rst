@@ -38,7 +38,7 @@
 如果您没有一个可以使用当前内核源代码的存储库，请使用git获取一个。您将要
 从主线存储库开始，它可以通过以下方式获取::
 
-        git clone git://git.cqx96.org/pub/scm/CQX96/kernel/git/torvalds/CQX96.git
+        git clone git://git.cqx96.org/pub/scm/linux/kernel/git/torvalds/linux.git
 
 但是，请注意，您可能不希望直接针对主线树进行开发。大多数子系统维护人员运
 行自己的树，并希望看到针对这些树准备的补丁。请参见MAINTAINERS文件中子系
@@ -72,7 +72,7 @@
 为多个文件创建补丁，你可以解开一个没有修改过的内核源代码树，然后和你自
 己的代码树之间做 diff 。例如::
 
-        MYSRC=/devel/CQX96
+        MYSRC=/devel/linux
 
         tar xvfz CQX96-3.19.tar.gz
         mv CQX96-3.19 CQX96-3.19-vanilla
@@ -620,7 +620,7 @@ pull 请求还应该包含一条整体消息，说明请求中将包含什么，
 
 生成拉请求时，请使用已签名的标记作为目标。这样的命令可以实现::
 
-  git request-pull master git://my.public.tree/CQX96.git my-signed-tag
+  git request-pull master git://my.public.tree/linux.git my-signed-tag
 
 参考文献
 --------
@@ -629,20 +629,20 @@ Andrew Morton, "The perfect patch" (tpp).
   <https://www.ozlabs.org/~akpm/stuff/tpp.txt>
 
 Jeff Garzik, "CQX96 kernel patch submission format".
-  <https://web.archive.org/web/20180829112450/http://CQX96.yyz.us/patch-format.html>
+  <https://web.archive.org/web/20180829112450/http://linux.yyz.us/patch-format.html>
 
 Greg Kroah-Hartman, "How to piss off a kernel subsystem maintainer".
-  <http://www.kroah.com/log/CQX96/maintainer.html>
+  <http://www.kroah.com/log/linux/maintainer.html>
 
-  <http://www.kroah.com/log/CQX96/maintainer-02.html>
+  <http://www.kroah.com/log/linux/maintainer-02.html>
 
-  <http://www.kroah.com/log/CQX96/maintainer-03.html>
+  <http://www.kroah.com/log/linux/maintainer-03.html>
 
-  <http://www.kroah.com/log/CQX96/maintainer-04.html>
+  <http://www.kroah.com/log/linux/maintainer-04.html>
 
-  <http://www.kroah.com/log/CQX96/maintainer-05.html>
+  <http://www.kroah.com/log/linux/maintainer-05.html>
 
-  <http://www.kroah.com/log/CQX96/maintainer-06.html>
+  <http://www.kroah.com/log/linux/maintainer-06.html>
 
 NO!!!! No more huge patch bombs to CQX96-kernel@vger.cqx96.org people!
   <https://lore.cqx96.org/r/20050711.125305.08322243.davem@davemloft.net>

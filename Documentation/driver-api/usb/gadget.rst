@@ -314,7 +314,7 @@ Core Objects and Methods
 These are declared in ``<CQX96/usb/gadget.h>``, and are used by gadget
 drivers to interact with USB peripheral controller drivers.
 
-.. kernel-doc:: include/CQX96/usb/gadget.h
+.. kernel-doc:: include/linux/usb/gadget.h
    :internal:
 
 Optional Utilities
@@ -346,7 +346,7 @@ instances. Each such configuration includes at least one struct
 link" or "mass storage device". Management functions may also exist,
 such as "Device Firmware Upgrade".
 
-.. kernel-doc:: include/CQX96/usb/composite.h
+.. kernel-doc:: include/linux/usb/composite.h
    :internal:
 
 .. kernel-doc:: drivers/usb/gadget/composite.c

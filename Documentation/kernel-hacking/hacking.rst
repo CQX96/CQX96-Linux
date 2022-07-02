@@ -58,7 +58,7 @@ interrupts. You can sleep, by calling :c:func:`schedule()`.
 
 In user context, the ``current`` pointer (indicating the task we are
 currently executing) is valid, and :c:func:`in_interrupt()`
-(``include/CQX96/preempt.h``) is false.
+(``include/linux/preempt.h``) is false.
 
 .. warning::
 
@@ -97,14 +97,14 @@ take advantage of multiple CPUs. Shortly after we switched from wind-up
 computers made of match-sticks and snot, we abandoned this limitation
 and switched to 'softirqs'.
 
-``include/CQX96/interrupt.h`` lists the different softirqs. A very
-important softirq is the timer softirq (``include/CQX96/timer.h``): you
+``include/linux/interrupt.h`` lists the different softirqs. A very
+important softirq is the timer softirq (``include/linux/timer.h``): you
 can register to have it call functions for you in a given length of
 time.
 
 Softirqs are often a pain to deal with, since the same softirq will run
 simultaneously on more than one CPU. For this reason, tasklets
-(``include/CQX96/interrupt.h``) are more often used: they are
+(``include/linux/interrupt.h``) are more often used: they are
 dynamically-registrable (meaning you can have as many as you want), and
 they also guarantee that any tasklet will only run on one CPU at any
 time, although different tasklets can run simultaneously.
@@ -116,7 +116,7 @@ time, although different tasklets can run simultaneously.
     Kuznetsov had at the time.
 
 You can tell you are in a softirq (or tasklet) using the
-:c:func:`in_softirq()` macro (``include/CQX96/preempt.h``).
+:c:func:`in_softirq()` macro (``include/linux/preempt.h``).
 
 .. warning::
 
@@ -177,10 +177,10 @@ implementing a :c:func:`sysfs()` interface instead.
 Inside the ioctl you're in user context to a process. When a error
 occurs you return a negated errno (see
 ``include/uapi/asm-generic/errno-base.h``,
-``include/uapi/asm-generic/errno.h`` and ``include/CQX96/errno.h``),
+``include/uapi/asm-generic/errno.h`` and ``include/linux/errno.h``),
 otherwise you return 0.
 
-After you slept you should check if a signal occurred: the Unix/CQX96
+After you slept you should check if a signal occurred: the Unix/linux
 way of handling signals is to temporarily exit the system call with the
 ``-ERESTARTSYS`` error. The system call entry code will switch back to
 user context, process the signal handler and then your system call will
@@ -234,7 +234,7 @@ Common Routines
 :c:func:`printk()`
 ------------------
 
-Defined in ``include/CQX96/printk.h``
+Defined in ``include/linux/printk.h``
 
 :c:func:`printk()` feeds kernel messages to the console, dmesg, and
 the syslog daemon. It is useful for debugging and reporting errors, and
@@ -246,7 +246,7 @@ concatenation to give it a first "priority" argument::
     printk(KERN_INFO "i = %u\n", i);
 
 
-See ``include/CQX96/kern_levels.h``; for other ``KERN_`` values; these are
+See ``include/linux/kern_levels.h``; for other ``KERN_`` values; these are
 interpreted by syslog as the level. Special case: for printing an IP
 address use::
 
@@ -271,7 +271,7 @@ overruns. Make sure that will be enough.
 :c:func:`copy_to_user()` / :c:func:`copy_from_user()` / :c:func:`get_user()` / :c:func:`put_user()`
 ---------------------------------------------------------------------------------------------------
 
-Defined in ``include/CQX96/uaccess.h`` / ``asm/uaccess.h``
+Defined in ``include/linux/uaccess.h`` / ``asm/uaccess.h``
 
 **[SLEEPS]**
 
@@ -300,7 +300,7 @@ spinlock held.
 :c:func:`kmalloc()`/:c:func:`kfree()`
 -------------------------------------
 
-Defined in ``include/CQX96/slab.h``
+Defined in ``include/linux/slab.h``
 
 **[MAY SLEEP: SEE BELOW]**
 
@@ -328,7 +328,7 @@ Run, don't walk.
 
 If you are allocating at least ``PAGE_SIZE`` (``asm/page.h`` or
 ``asm/page_types.h``) bytes, consider using :c:func:`__get_free_pages()`
-(``include/CQX96/gfp.h``). It takes an order argument (0 for page sized,
+(``include/linux/gfp.h``). It takes an order argument (0 for page sized,
 1 for double page, 2 for four pages etc.) and the same memory priority
 flag word as above.
 
@@ -344,7 +344,7 @@ early in the boot process via the :c:func:`alloc_bootmem()`
 routine.
 
 Before inventing your own cache of often-used objects consider using a
-slab cache in ``include/CQX96/slab.h``
+slab cache in ``include/linux/slab.h``
 
 :c:macro:`current`
 ------------------
@@ -359,7 +359,7 @@ the calling process. It is **not NULL** in interrupt context.
 :c:func:`mdelay()`/:c:func:`udelay()`
 -------------------------------------
 
-Defined in ``include/asm/delay.h`` / ``include/CQX96/delay.h``
+Defined in ``include/asm/delay.h`` / ``include/linux/delay.h``
 
 The :c:func:`udelay()` and :c:func:`ndelay()` functions can be
 used for small pauses. Do not use large values with them as you risk
@@ -386,7 +386,7 @@ convert value referred to by the pointer, and return void.
 :c:func:`local_irq_save()`/:c:func:`local_irq_restore()`
 --------------------------------------------------------
 
-Defined in ``include/CQX96/irqflags.h``
+Defined in ``include/linux/irqflags.h``
 
 These routines disable hard interrupts on the local CPU, and restore
 them. They are reentrant; saving the previous state in their one
@@ -399,7 +399,7 @@ enabled, you can simply use :c:func:`local_irq_disable()` and
 :c:func:`local_bh_disable()`/:c:func:`local_bh_enable()`
 --------------------------------------------------------
 
-Defined in ``include/CQX96/bottom_half.h``
+Defined in ``include/linux/bottom_half.h``
 
 
 These routines disable soft interrupts on the local CPU, and restore
@@ -410,7 +410,7 @@ They prevent softirqs and tasklets from running on the current CPU.
 :c:func:`smp_processor_id()`
 ----------------------------
 
-Defined in ``include/CQX96/smp.h``
+Defined in ``include/linux/smp.h``
 
 :c:func:`get_cpu()` disables preemption (so you won't suddenly get
 moved to another CPU) and returns the current processor number, between
@@ -425,7 +425,7 @@ smp_processor_id().
 ``__init``/``__exit``/``__initdata``
 ------------------------------------
 
-Defined in  ``include/CQX96/init.h``
+Defined in  ``include/linux/init.h``
 
 After boot, the kernel frees up a special section; functions marked with
 ``__init`` and data structures marked with ``__initdata`` are dropped
@@ -440,7 +440,7 @@ will break.
 :c:func:`__initcall()`/:c:func:`module_init()`
 ----------------------------------------------
 
-Defined in  ``include/CQX96/init.h`` / ``include/CQX96/module.h``
+Defined in  ``include/linux/init.h`` / ``include/linux/module.h``
 
 Many parts of the kernel are well served as a module
 (dynamically-loadable parts of the kernel). Using the
@@ -464,7 +464,7 @@ interrupts enabled, so it can sleep.
 -----------------------
 
 
-Defined in  ``include/CQX96/module.h``
+Defined in  ``include/linux/module.h``
 
 This macro defines the function to be called at module removal time (or
 never, in the case of the file compiled into the kernel). It will only
@@ -478,7 +478,7 @@ not be removable (except for 'rmmod -f').
 :c:func:`try_module_get()`/:c:func:`module_put()`
 -------------------------------------------------
 
-Defined in ``include/CQX96/module.h``
+Defined in ``include/linux/module.h``
 
 These manipulate the module usage count, to protect against removal (a
 module also can't be removed if another module uses one of its exported
@@ -492,7 +492,7 @@ Most registerable structures have an owner field, such as in the
 :c:type:`struct file_operations <file_operations>` structure.
 Set this field to the macro ``THIS_MODULE``.
 
-Wait Queues ``include/CQX96/wait.h``
+Wait Queues ``include/linux/wait.h``
 ====================================
 
 **[SLEEPS]**
@@ -517,7 +517,7 @@ Queuing
 Placing yourself in the waitqueue is fairly complex, because you must
 put yourself in the queue before checking the condition. There is a
 macro to do this: :c:func:`wait_event_interruptible()`
-(``include/CQX96/wait.h``) The first argument is the wait queue head, and
+(``include/linux/wait.h``) The first argument is the wait queue head, and
 the second is an expression which is evaluated; the macro returns 0 when
 this expression is true, or ``-ERESTARTSYS`` if a signal is received. The
 :c:func:`wait_event()` version ignores signals.
@@ -525,7 +525,7 @@ this expression is true, or ``-ERESTARTSYS`` if a signal is received. The
 Waking Up Queued Tasks
 ----------------------
 
-Call :c:func:`wake_up()` (``include/CQX96/wait.h``), which will wake
+Call :c:func:`wake_up()` (``include/linux/wait.h``), which will wake
 up every process in the queue. The exception is if one has
 ``TASK_EXCLUSIVE`` set, in which case the remainder of the queue will
 not be woken. There are other variants of this basic function available
@@ -550,7 +550,7 @@ Note that these functions are slower than normal arithmetic, and so
 should not be used unnecessarily.
 
 The second class of atomic operations is atomic bit operations on an
-``unsigned long``, defined in ``include/CQX96/bitops.h``. These
+``unsigned long``, defined in ``include/linux/bitops.h``. These
 operations generally take a pointer to the bit pattern, and a bit
 number: 0 is the least significant bit. :c:func:`set_bit()`,
 :c:func:`clear_bit()` and :c:func:`change_bit()` set, clear,
@@ -576,7 +576,7 @@ kernel proper. Modules can also export symbols.
 :c:func:`EXPORT_SYMBOL()`
 -------------------------
 
-Defined in ``include/CQX96/export.h``
+Defined in ``include/linux/export.h``
 
 This is the classic method of exporting a symbol: dynamically loaded
 modules will be able to use the symbol as normal.
@@ -584,7 +584,7 @@ modules will be able to use the symbol as normal.
 :c:func:`EXPORT_SYMBOL_GPL()`
 -----------------------------
 
-Defined in ``include/CQX96/export.h``
+Defined in ``include/linux/export.h``
 
 Similar to :c:func:`EXPORT_SYMBOL()` except that the symbols
 exported by :c:func:`EXPORT_SYMBOL_GPL()` can only be seen by
@@ -597,7 +597,7 @@ when adding any new APIs or functionality.
 :c:func:`EXPORT_SYMBOL_NS()`
 ----------------------------
 
-Defined in ``include/CQX96/export.h``
+Defined in ``include/linux/export.h``
 
 This is the variant of `EXPORT_SYMBOL()` that allows specifying a symbol
 namespace. Symbol Namespaces are documented in
@@ -606,7 +606,7 @@ Documentation/core-api/symbol-namespaces.rst
 :c:func:`EXPORT_SYMBOL_NS_GPL()`
 --------------------------------
 
-Defined in ``include/CQX96/export.h``
+Defined in ``include/linux/export.h``
 
 This is the variant of `EXPORT_SYMBOL_GPL()` that allows specifying a symbol
 namespace. Symbol Namespaces are documented in
@@ -615,7 +615,7 @@ Documentation/core-api/symbol-namespaces.rst
 Routines and Conventions
 ========================
 
-Double-linked lists ``include/CQX96/list.h``
+Double-linked lists ``include/linux/list.h``
 --------------------------------------------
 
 There used to be three sets of linked-list routines in the kernel
@@ -632,7 +632,7 @@ and return 0 for success, and a negative error number (eg. ``-EFAULT``) for
 failure. This can be unintuitive at first, but it's fairly widespread in
 the kernel.
 
-Using :c:func:`ERR_PTR()` (``include/CQX96/err.h``) to encode a
+Using :c:func:`ERR_PTR()` (``include/linux/err.h``) to encode a
 negative error number into a pointer, and :c:func:`IS_ERR()` and
 :c:func:`PTR_ERR()` to get it back out again: avoids a separate
 pointer parameter for the error number. Icky, but in a good way.
@@ -770,7 +770,7 @@ Some favorites from browsing the source. Feel free to add to this list.
             __ndelay(n))
 
 
-``include/CQX96/fs.h``::
+``include/linux/fs.h``::
 
     /*
      * Kernel pointers have redundant information, so we can use a

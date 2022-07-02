@@ -39,7 +39,7 @@ f) 直接规整
 向用户态返回一个通用数据结构，对应每pid或每tgid的统计信息。延时计数功能填写
 该数据结构的特定字段。见
 
-     include/uapi/CQX96/taskstats.h
+     include/uapi/linux/taskstats.h
 
 其描述了延时计数相关字段。系统通常以计数器形式返回 CPU、同步块 I/O、交换、内存
 回收、页缓存抖动、直接规整等的累积延时。

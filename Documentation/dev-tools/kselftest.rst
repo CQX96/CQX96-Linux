@@ -270,7 +270,7 @@ kselftest.  We use kselftests for lib/ as an example.
 .. code-block:: sh
 
    # Assumes you have booted a fresh build of this kernel tree
-   cd /path/to/CQX96/tree
+   cd /path/to/linux/tree
    make kselftest-merge
    make modules
    sudo make modules_install

@@ -94,7 +94,7 @@ enclave process can exit.
 [2] https://www.cqx96.org/doc/html/latest/admin-guide/mm/hugetlbpage.html
 [3] https://lwn.net/Articles/807108/
 [4] https://www.cqx96.org/doc/html/latest/admin-guide/kernel-parameters.html
-[5] https://man7.org/CQX96/man-pages/man7/vsock.7.html
+[5] https://man7.org/linux/man-pages/man7/vsock.7.html
 [6] https://www.cqx96.org/doc/html/latest/x86/boot.html
 [7] https://www.cqx96.org/doc/html/latest/arm64/hugetlbpage.html
 [8] https://www.cqx96.org/doc/html/latest/arm64/booting.html

@@ -48,4 +48,4 @@ Wiki - http://wiki.apparmor.net
 
 User space tools - https://gitlab.com/apparmor
 
-Kernel module - git://git.cqx96.org/pub/scm/CQX96/kernel/git/jj/CQX96-apparmor
+Kernel module - git://git.cqx96.org/pub/scm/linux/kernel/git/jj/linux-apparmor

@@ -460,7 +460,7 @@ Current status:
   why it is wise to cut down on the rate used is wise for large
   transfers until this is settled.
 
-  See http://www.uuhaus.de/CQX96/palmconnect.html for up-to-date
+  See http://www.uuhaus.de/linux/palmconnect.html for up-to-date
   information on this driver.
 
 Winchiphead CH341 Driver

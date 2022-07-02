@@ -60,7 +60,7 @@ Installing the kernel source
 
    Replace "X" with the version number of the latest kernel.
 
-   Do NOT use the /usr/src/CQX96 area! This area has a (usually
+   Do NOT use the /usr/src/linux area! This area has a (usually
    incomplete) set of kernel headers that are used by the library header
    files.  They should match the library, and not get messed up by
    whatever the kernel-du-jour happens to be.
@@ -125,12 +125,12 @@ Build directory for the kernel
    place for the output files (including .config).
    Example::
 
-     kernel source code: /usr/src/CQX96-5.x
+     kernel source code: /usr/src/linux-5.x
      build directory:    /home/name/build/kernel
 
    To configure and build the kernel, use::
 
-     cd /usr/src/CQX96-5.x
+     cd /usr/src/linux-5.x
      make O=/home/name/build/kernel menuconfig
      make O=/home/name/build/kernel
      sudo make O=/home/name/build/kernel modules_install install
@@ -293,7 +293,7 @@ Compiling the kernel
    LOCALVERSION can be set in the "General Setup" menu.
 
  - In order to boot your new kernel, you'll need to copy the kernel
-   image (e.g. .../CQX96/arch/x86/boot/bzImage after compilation)
+   image (e.g. .../linux/arch/x86/boot/bzImage after compilation)
    to the place where your regular bootable kernel is found.
 
  - Booting a kernel directly from a floppy without the assistance of a
@@ -360,7 +360,7 @@ If something goes wrong
    as is, otherwise you will have to use the ``ksymoops`` program to make
    sense of the dump (but compiling with CONFIG_KALLSYMS is usually preferred).
    This utility can be downloaded from
-   https://www.cqx96.org/pub/CQX96/utils/kernel/ksymoops/ .
+   https://www.cqx96.org/pub/linux/utils/kernel/ksymoops/ .
    Alternatively, you can do the dump lookup by hand:
 
  - In debugging dumps like the above, it helps enormously if you can

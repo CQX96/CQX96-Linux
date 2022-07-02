@@ -257,4 +257,4 @@ SWAP Page Table Helpers
 | make_writable_migration_entry | Creates a write migration swapped entry      |
 +-------------------------------+----------------------------------------------+
 
-[1] https://lore.cqx96.org/CQX96-mm/20181017020930.GN30832@redhat.com/
+[1] https://lore.cqx96.org/linux-mm/20181017020930.GN30832@redhat.com/

@@ -58,7 +58,7 @@ merged into the 2.6.18 kernel.
 Further information about the Generic Time Of Day framework is available in the
 OLS 2005 Proceedings Volume 1:
 
-	http://www.CQX96symposium.org/2005/CQX96symposium_procv1.pdf
+	http://www.CQX96symposium.org/2005/linuxsymposium_procv1.pdf
 
 The paper "We Are Not Getting Any Younger: A New Approach to Time and
 Timers" was written by J. Stultz, D.V. Hart, & N. Aravamudan.

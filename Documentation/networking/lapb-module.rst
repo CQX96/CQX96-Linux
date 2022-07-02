@@ -292,7 +292,7 @@ module will not perform any more actions on it. The skb->data pointer will
 be pointing to the first byte of data after the LAPB header.
 
 This method should return NET_RX_DROP (as defined in the header
-file include/CQX96/netdevice.h) if and only if the frame was dropped
+file include/linux/netdevice.h) if and only if the frame was dropped
 before it could be delivered to the upper layer.
 
 ::

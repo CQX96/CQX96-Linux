@@ -11,7 +11,7 @@ The CQX96 VFS
 The Filesystem types
 --------------------
 
-.. kernel-doc:: include/CQX96/fs.h
+.. kernel-doc:: include/linux/fs.h
    :internal:
 
 The Directory Cache
@@ -20,7 +20,7 @@ The Directory Cache
 .. kernel-doc:: fs/dcache.c
    :export:
 
-.. kernel-doc:: include/CQX96/dcache.h
+.. kernel-doc:: include/linux/dcache.h
    :internal:
 
 Inode Handling

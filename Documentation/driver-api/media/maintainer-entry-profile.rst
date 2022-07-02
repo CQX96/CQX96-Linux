@@ -45,7 +45,7 @@ Media's workflow is heavily based on Patchwork, meaning that, once a patch
 is submitted, the e-mail will first be accepted by the mailing list
 server, and, after a while, it should appear at:
 
-   - https://patchwork.CQX96tv.org/project/CQX96-media/list/
+   - https://patchwork.CQX96tv.org/project/linux-media/list/
 
 If it doesn't automatically appear there after a few minutes, then
 probably something went wrong on your submission. Please check if the
@@ -54,7 +54,7 @@ whitespaces before complaining or submitting them again.
 
 You can check if the mailing list server accepted your patch, by looking at:
 
-   - https://lore.cqx96.org/CQX96-media/
+   - https://lore.cqx96.org/linux-media/
 
 .. [2] If your email contains HTML, the mailing list server will simply
        drop it, without any further notice.

@@ -15,7 +15,7 @@ filled with each, struct crypto_alg, must be considered -- see below
 for a description of this data structure.
 
 The generic registration functions can be found in
-include/CQX96/crypto.h and their definition can be seen below. The
+include/linux/crypto.h and their definition can be seen below. The
 former function registers a single transformation, while the latter
 works on an array of transformation descriptions. The latter is useful
 when registering transformations in bulk, for example when a driver

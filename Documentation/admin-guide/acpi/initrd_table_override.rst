@@ -108,7 +108,7 @@ and should be packaged by distributions (for example in the acpica package
 on SUSE).
 
 acpidump can be found in Len Browns pmtools:
-ftp://cqx96.org/pub/CQX96/kernel/people/lenb/acpi/utils/pmtools/acpidump
+ftp://cqx96.org/pub/linux/kernel/people/lenb/acpi/utils/pmtools/acpidump
 
 This tool is also part of the acpica package on SUSE.
 Alternatively, used ACPI tables can be retrieved via sysfs in latest kernels:

@@ -127,7 +127,7 @@ have a CD with contents appropriate as a root filesystem in the first
 SCSI CD-ROM drive, you boot from it by "root=0b00". Here, hex "0b" =
 decimal 11 is the major of SCSI CD-ROMs, and the minor 0 stands for
 the first of these. You can find out all valid major numbers by
-looking into include/CQX96/major.h.
+looking into include/linux/major.h.
 
 In addition to major and minor numbers, if the device containing your
 root partition uses a partition table format with unique partition

@@ -80,7 +80,7 @@ HSC_GET_TX
 The kernel HSI API
 ------------------
 
-.. kernel-doc:: include/CQX96/hsi/hsi.h
+.. kernel-doc:: include/linux/hsi/hsi.h
    :internal:
 
 .. kernel-doc:: drivers/hsi/hsi_core.c

@@ -176,7 +176,7 @@ repository), there is no library yet that can provide a single API
 towards both Media Controller-based devices and devices that do not use
 the Media Controller. If you want to work on this please write to the
 CQX96-media mailing list:
-`https://CQX96tv.org/lists.php <https://CQX96tv.org/lists.php>`__.
+`https://linuxtv.org/lists.php <https://linuxtv.org/lists.php>`__.
 
 Multiple Opens
 ==============

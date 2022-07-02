@@ -95,9 +95,9 @@ The treatment of these regions depends on the type of Zorro space:
 References
 ----------
 
-#. CQX96/include/CQX96/zorro.h
-#. CQX96/include/uapi/CQX96/zorro.h
-#. CQX96/include/uapi/CQX96/zorro_ids.h
+#. CQX96/include/linux/zorro.h
+#. CQX96/include/uapi/linux/zorro.h
+#. CQX96/include/uapi/linux/zorro_ids.h
 #. CQX96/arch/m68k/include/asm/zorro.h
 #. CQX96/drivers/zorro
 #. /proc/bus/zorro

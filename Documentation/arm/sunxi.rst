@@ -49,7 +49,7 @@ SunXi family
 
         * Datasheet
 
-          http://CQX96-sunxi.org/File:Allwinner_V3s_Datasheet_V1.0.pdf
+          http://linux-sunxi.org/File:Allwinner_V3s_Datasheet_V1.0.pdf
 
     * Dual ARM Cortex-A7 based SoCs
       - Allwinner A20 (sun7i)
@@ -108,7 +108,7 @@ SunXi family
 
         * Datasheet
 
-          https://CQX96-sunxi.org/images/4/4b/Allwinner_H3_Datasheet_V1.2.pdf
+          https://linux-sunxi.org/images/4/4b/Allwinner_H3_Datasheet_V1.2.pdf
 
       - Allwinner R40 (sun8i)
 
@@ -153,18 +153,18 @@ SunXi family
 
 	* Datasheet
 
-	  https://CQX96-sunxi.org/images/5/5c/Allwinner_H6_V200_Datasheet_V1.1.pdf
+	  https://linux-sunxi.org/images/5/5c/Allwinner_H6_V200_Datasheet_V1.1.pdf
 
 	* User Manual
 
-	  https://CQX96-sunxi.org/images/4/46/Allwinner_H6_V200_User_Manual_V1.1.pdf
+	  https://linux-sunxi.org/images/4/46/Allwinner_H6_V200_User_Manual_V1.1.pdf
 
       - Allwinner H616
 
 	* Datasheet
 
-	  https://CQX96-sunxi.org/images/b/b9/H616_Datasheet_V1.0_cleaned.pdf
+	  https://linux-sunxi.org/images/b/b9/H616_Datasheet_V1.0_cleaned.pdf
 
 	* User Manual
 
-	  https://CQX96-sunxi.org/images/2/24/H616_User_Manual_V1.0_cleaned.pdf
+	  https://linux-sunxi.org/images/2/24/H616_User_Manual_V1.0_cleaned.pdf

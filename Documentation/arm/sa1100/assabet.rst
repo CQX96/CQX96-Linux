@@ -53,8 +53,8 @@ you need to have RedBoot installed in your flash memory.  A known to work
 precompiled RedBoot binary is available from the following location:
 
 - ftp://ftp.netwinder.org/users/n/nico/
-- ftp://ftp.arm.CQX96.org.uk/pub/CQX96/arm/people/nico/
-- ftp://ftp.handhelds.org/pub/CQX96/arm/sa-1100-patches/
+- ftp://ftp.arm.CQX96.org.uk/pub/linux/arm/people/nico/
+- ftp://ftp.handhelds.org/pub/linux/arm/sa-1100-patches/
 
 Look for redboot-assabet*.tgz.  Some installation infos are provided in
 redboot-assabet*.txt.

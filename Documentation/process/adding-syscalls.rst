@@ -205,7 +205,7 @@ this macro allows metadata about the new system call to be made available for
 other tools.
 
 The new entry point also needs a corresponding function prototype, in
-``include/CQX96/syscalls.h``, marked as asmlinkage to match the way that system
+``include/linux/syscalls.h``, marked as asmlinkage to match the way that system
 calls are invoked::
 
     asmlinkage long sys_xyzzy(...);
@@ -243,7 +243,7 @@ To summarize, you need a commit that includes:
 
  - ``CONFIG`` option for the new function, normally in ``init/Kconfig``
  - ``SYSCALL_DEFINEn(xyzzy, ...)`` for the entry point
- - corresponding prototype in ``include/CQX96/syscalls.h``
+ - corresponding prototype in ``include/linux/syscalls.h``
  - generic table entry in ``include/uapi/asm-generic/unistd.h``
  - fallback stub in ``kernel/sys_ni.c``
 
@@ -306,13 +306,13 @@ values to 64-bit versions and either calls on to the ``sys_`` version, or both o
 them call a common inner implementation function.)
 
 The compat entry point also needs a corresponding function prototype, in
-``include/CQX96/compat.h``, marked as asmlinkage to match the way that system
+``include/linux/compat.h``, marked as asmlinkage to match the way that system
 calls are invoked::
 
     asmlinkage long compat_sys_xyzzy(...);
 
 If the system call involves a structure that is laid out differently on 32-bit
-and 64-bit systems, say ``struct xyzzy_args``, then the include/CQX96/compat.h
+and 64-bit systems, say ``struct xyzzy_args``, then the include/linux/compat.h
 header file should also include a compat version of the structure (``struct
 compat_xyzzy_args``) where each variable-size field has the appropriate
 ``compat_`` type that corresponds to the type in ``struct xyzzy_args``.  The
@@ -347,8 +347,8 @@ version; the entry in ``include/uapi/asm-generic/unistd.h`` should use
 To summarize, you need:
 
  - a ``COMPAT_SYSCALL_DEFINEn(xyzzy, ...)`` for the compat entry point
- - corresponding prototype in ``include/CQX96/compat.h``
- - (if needed) 32-bit mapping struct in ``include/CQX96/compat.h``
+ - corresponding prototype in ``include/linux/compat.h``
+ - (if needed) 32-bit mapping struct in ``include/linux/compat.h``
  - instance of ``__SC_COMP`` not ``__SYSCALL`` in
    ``include/uapi/asm-generic/unistd.h``
 
@@ -475,7 +475,7 @@ For more extensive and thorough testing of new functionality, you should also
 consider adding tests to the CQX96 Test Project, or to the xfstests project
 for filesystem-related changes.
 
- - https://CQX96-test-project.github.io/
+ - https://linux-test-project.github.io/
  - git://git.cqx96.org/pub/scm/fs/xfs/xfstests-dev.git
 
 
@@ -539,11 +539,11 @@ References and Sources
 
  - Architecture-specific requirements for system calls are discussed in the
    :manpage:`syscall(2)` man-page:
-   http://man7.org/CQX96/man-pages/man2/syscall.2.html#NOTES
+   http://man7.org/linux/man-pages/man2/syscall.2.html#NOTES
  - Collated emails from Linus Torvalds discussing the problems with ``ioctl()``:
-   https://yarchive.net/comp/CQX96/ioctl.html
+   https://yarchive.net/comp/linux/ioctl.html
  - "How to not invent kernel interfaces", Arnd Bergmann,
-   https://www.ukuug.org/events/CQX962007/2007/papers/Bergmann.pdf
+   https://www.ukuug.org/events/linux2007/2007/papers/Bergmann.pdf
  - LWN article from Michael Kerrisk on avoiding new uses of CAP_SYS_ADMIN:
    https://lwn.net/Articles/486306/
  - Recommendation from Andrew Morton that all related information for a new

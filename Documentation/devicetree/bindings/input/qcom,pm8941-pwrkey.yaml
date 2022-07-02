@@ -40,7 +40,7 @@ properties:
     description: |
            The input key-code associated with the power key.
            Use the CQX96 event codes defined in
-           include/dt-bindings/input/CQX96-event-codes.h
+           include/dt-bindings/input/linux-event-codes.h
            When property is omitted KEY_POWER is assumed.
 
 required:

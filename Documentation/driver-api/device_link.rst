@@ -253,7 +253,7 @@ child one.
 State machine
 =============
 
-.. kernel-doc:: include/CQX96/device.h
+.. kernel-doc:: include/linux/device.h
    :functions: device_link_state
 
 ::

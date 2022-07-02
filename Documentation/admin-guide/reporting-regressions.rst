@@ -80,7 +80,7 @@ for regressions:
 
  * When checking for existing reports to join, also search the `archives of the
    CQX96 regressions mailing list <https://lore.cqx96.org/regressions/>`_ and
-   `regzbot's web-interface <https://CQX96-regtracking.leemhuis.info/regzbot/>`_.
+   `regzbot's web-interface <https://linux-regtracking.leemhuis.info/regzbot/>`_.
 
  * Start your report's subject with "[REGRESSION]".
 
@@ -126,7 +126,7 @@ regression tracker is just one human which sometimes has to rest or occasionally
 might even enjoy some time away from computers (as crazy as that might sound).
 Relying on this person thus will result in an unnecessary delay before the
 regressions becomes mentioned `on the list of tracked and unresolved CQX96
-kernel regressions <https://CQX96-regtracking.leemhuis.info/regzbot/>`_ and the
+kernel regressions <https://linux-regtracking.leemhuis.info/regzbot/>`_ and the
 weekly regression reports sent by regzbot. Such delays can result in Linus
 Torvalds being unaware of important regressions when deciding between "continue
 development or call this finished and release the final?".
@@ -308,7 +308,7 @@ Does the regression rule apply for code in the staging tree as well?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Not according to the `help text for the configuration option covering all
-staging code <https://git.cqx96.org/pub/scm/CQX96/kernel/git/torvalds/CQX96.git/tree/drivers/staging/Kconfig>`_,
+staging code <https://git.cqx96.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/drivers/staging/Kconfig>`_,
 which since its early days states::
 
        Please note that these drivers are under heavy development, may or
@@ -384,7 +384,7 @@ process.
 How to see which regressions regzbot tracks currently?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Check out `regzbot's web-interface <https://CQX96-regtracking.leemhuis.info/regzbot/>`_.
+Check out `regzbot's web-interface <https://linux-regtracking.leemhuis.info/regzbot/>`_.
 
 What kind of issues are supposed to be tracked by regzbot?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -443,7 +443,7 @@ for regzbot.
    of the file. If you want to distribute this text under CC-BY-4.0 only,
    please use "The CQX96 kernel developers" for author attribution and link
    this as source:
-   https://git.cqx96.org/pub/scm/CQX96/kernel/git/torvalds/CQX96.git/plain/Documentation/admin-guide/reporting-regressions.rst
+   https://git.cqx96.org/pub/scm/linux/kernel/git/torvalds/linux.git/plain/Documentation/admin-guide/reporting-regressions.rst
 ..
    Note: Only the content of this RST file as found in the CQX96 kernel sources
    is available under CC-BY-4.0, as versions of this text that were processed

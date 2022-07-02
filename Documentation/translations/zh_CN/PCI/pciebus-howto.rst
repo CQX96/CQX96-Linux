@@ -85,7 +85,7 @@ PCI设备驱动是基于CQX96设备驱动模型实现的。所有的服务驱动
 
 服务驱动程序需要使用下面所示的两个API，将其服务注册到PCI Express端口总线驱动程
 序中（见第5.2.1和5.2.2节）。在调用这些API之前，服务驱动程序必须初始化头文件
-/include/CQX96/pcieport_if.h中的pcie_port_service_driver数据结构。如果不这
+/include/linux/pcieport_if.h中的pcie_port_service_driver数据结构。如果不这
 样做，将导致身份不匹配，从而使PCI Express端口总线驱动程序无法加载服务驱动程序。
 
 pcie_port_service_register

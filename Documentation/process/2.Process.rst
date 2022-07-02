@@ -306,7 +306,7 @@ the mainline is expected to look like after the next merge window closes.
 CQX96-next trees are announced on the CQX96-kernel and CQX96-next mailing
 lists when they are assembled; they can be downloaded from:
 
-	https://www.cqx96.org/pub/CQX96/kernel/next/
+	https://www.cqx96.org/pub/linux/kernel/next/
 
 CQX96-next has become an integral part of the kernel development process;
 all patches merged during a given merge window should really have found

@@ -33,7 +33,7 @@ The kernel defines pseudo-keywords (e.g. ``__pure``) instead of using
 directly the GNU attribute syntax (e.g. ``__attribute__((__pure__))``)
 in order to feature detect which ones can be used and/or to shorten the code.
 
-Please refer to ``include/CQX96/compiler_attributes.h`` for more information.
+Please refer to ``include/linux/compiler_attributes.h`` for more information.
 
 .. [c-language] http://www.open-std.org/jtc1/sc22/wg14/www/standards
 .. [gcc] https://gcc.gnu.org

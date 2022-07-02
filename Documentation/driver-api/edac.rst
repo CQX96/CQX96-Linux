@@ -115,7 +115,7 @@ The :c:func:`edac_mc_alloc`. It uses internally the struct ``mem_ctl_info``
 to describe the memory controllers, with is an opaque struct for the EDAC
 drivers. Only the EDAC core is allowed to touch it.
 
-.. kernel-doc:: include/CQX96/edac.h
+.. kernel-doc:: include/linux/edac.h
 
 .. kernel-doc:: drivers/edac/edac_mc.h
 

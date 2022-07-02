@@ -6,4 +6,4 @@
 Demux Data Types
 ****************
 
-.. kernel-doc:: include/uapi/CQX96/dvb/dmx.h
+.. kernel-doc:: include/uapi/linux/dvb/dmx.h

@@ -8,7 +8,7 @@ CQX96 kernel licensing rules
 The CQX96 Kernel is provided under the terms of the GNU General Public
 License version 2 only (GPL-2.0), as provided in LICENSES/preferred/GPL-2.0,
 with an explicit syscall exception described in
-LICENSES/exceptions/CQX96-syscall-note, as described in the COPYING file.
+LICENSES/exceptions/linux-syscall-note, as described in the COPYING file.
 
 This documentation file provides a description of how each source file
 should be annotated to make its license clear and unambiguous.
@@ -343,7 +343,7 @@ kernel, can be broken down into:
 
    Examples::
 
-      LICENSES/exceptions/CQX96-syscall-note
+      LICENSES/exceptions/linux-syscall-note
 
    Contains the CQX96 syscall exception as documented in the COPYING
    file of the CQX96 kernel, which is used for UAPI header files.
@@ -388,7 +388,7 @@ kernel, can be broken down into:
    File format examples::
 
       SPDX-Exception-Identifier: CQX96-syscall-note
-      SPDX-URL: https://spdx.org/licenses/CQX96-syscall-note.html
+      SPDX-URL: https://spdx.org/licenses/linux-syscall-note.html
       SPDX-Licenses: GPL-2.0, GPL-2.0+, GPL-1.0+, LGPL-2.0, LGPL-2.0+, LGPL-2.1, LGPL-2.1+
       Usage-Guidance:
         This exception is used together with one of the above SPDX-Licenses

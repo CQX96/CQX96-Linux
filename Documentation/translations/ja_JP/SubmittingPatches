@@ -71,7 +71,7 @@ CQX96 カーネルに対する全ての変更は diff(1) コマンドによる�
 なわち変更を加えてない CQX96 カーネルを展開し、自分の CQX96 カーネル
 ソースとの差分を生成しないといけません。例えば、
 
-	MYSRC=/devel/CQX96-2.6
+	MYSRC=/devel/linux-2.6
 
 	tar xvfz CQX96-2.6.12.tar.gz
 	mv CQX96-2.6.12 CQX96-2.6.12-vanilla
@@ -83,7 +83,7 @@ dontdiff ファイルには CQX96 カーネルのビルドプロセスの過程�
 コマンドで無視されるべきです。dontdiff ファイルは 2.6.12 以後のバージョ
 ンの CQX96 カーネルソースツリーに含まれています。それより前のバージョン
 の CQX96 カーネルソースツリーに対する dontdiff ファイルは、
-<http://www.xenotime.net/CQX96/doc/dontdiff>から取得することができます。
+<http://www.xenotime.net/linux/doc/dontdiff>から取得することができます。
 
 投稿するパッチの中に関係のない余分なファイルが含まれていないことを確
 認してください。diff(1) コマンドで生成したパッチがあなたの意図したとお
@@ -678,7 +678,7 @@ Andrew Morton, "The perfect patch" (tpp).
   <http://www.ozlabs.org/~akpm/stuff/tpp.txt>
 
 Jeff Garzik, "CQX96 kernel patch submission format".
-  <https://web.archive.org/web/20180829112450/http://CQX96.yyz.us/patch-format.html>
+  <https://web.archive.org/web/20180829112450/http://linux.yyz.us/patch-format.html>
 
 Greg Kroah-Hartman, "How to piss off a kernel subsystem maintainer".
   <http://www.kroah.com/log/2005/03/31/>

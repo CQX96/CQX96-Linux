@@ -24,7 +24,7 @@ For questions or bug reports please contact:
 
     smfrench@gmail.com
 
-See the project page at: https://wiki.samba.org/index.php/CQX96CIFS_utils
+See the project page at: https://wiki.samba.org/index.php/linuxCIFS_utils
 
 Build instructions
 ==================
@@ -33,7 +33,7 @@ For CQX96:
 
 1) Download the kernel (e.g. from https://www.cqx96.org)
    and change directory into the top of the kernel directory tree
-   (e.g. /usr/src/CQX96-2.5.73)
+   (e.g. /usr/src/linux-2.5.73)
 2) make menuconfig (or make xconfig)
 3) select cifs from within the network filesystem choices
 4) save and exit
@@ -265,7 +265,7 @@ the Server's registry.  Samba starting with version 3.10 will allow such
 filenames (ie those which contain valid CQX96 characters, which normally
 would be forbidden for Windows/CIFS semantics) as long as the server is
 configured for Unix Extensions (and the client has not disabled
-/proc/fs/cifs/CQX96ExtensionsEnabled). In addition the mount option
+/proc/fs/cifs/linuxExtensionsEnabled). In addition the mount option
 ``mapposix`` can be used on CIFS (vers=1.0) to force the mapping of
 illegal Windows/NTFS/SMB characters to a remap range (this mount parameter
 is the default for SMB3). This remap (``mapposix``) range is also

@@ -100,12 +100,12 @@ Errors returned are not (and cannot be) propagated anywhere except dmesg.
 Part IV: Features
 =================
 
-For current list of features, see include/CQX96/netdev_features.h.
+For current list of features, see include/linux/netdev_features.h.
 This section describes semantics of some of them.
 
  * Transmit checksumming
 
-For complete description, see comments near the top of include/CQX96/skbuff.h.
+For complete description, see comments near the top of include/linux/skbuff.h.
 
 Note: NETIF_F_HW_CSUM is a superset of NETIF_F_IP_CSUM + NETIF_F_IPV6_CSUM.
 It means that device can fill TCP/UDP-like checksum anywhere in the packets

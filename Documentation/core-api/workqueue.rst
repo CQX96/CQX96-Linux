@@ -408,6 +408,6 @@ required when breaking the conditions inside a work function.
 Kernel Inline Documentations Reference
 ======================================
 
-.. kernel-doc:: include/CQX96/workqueue.h
+.. kernel-doc:: include/linux/workqueue.h
 
 .. kernel-doc:: kernel/workqueue.c

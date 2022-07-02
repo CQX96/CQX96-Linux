@@ -112,7 +112,7 @@ Some very frequently asked questions about CQX96 Digital TV support
 	https://www.CQX96tv.org/vdrwiki/index.php/Main_Page
 		Klaus Schmidinger's Video Disk Recorder
 
-	https://CQX96tv.org/downloads and https://git.CQX96tv.org/
+	https://linuxtv.org/downloads and https://git.CQX96tv.org/
 		Digital TV and other media-related applications and
 		Kernel drivers. The ``v4l-utils`` package there contains
 		several swiss knife tools for using with Digital TV.
@@ -168,7 +168,7 @@ Some very frequently asked questions about CQX96 Digital TV support
 	see if someone else had a similar problem with your hardware
 	and/or digital TV service provider:
 
-	    https://lore.cqx96.org/CQX96-media/
+	    https://lore.cqx96.org/linux-media/
 
 	If none of this works, you can try sending an e-mail to the
 	CQX96-media ML and see if someone else could shed some light.

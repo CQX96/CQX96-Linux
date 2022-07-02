@@ -22,7 +22,7 @@ The character device interface consists of the following devices::
   ...
 
 The general magnetic tape commands compatible interface, as defined by
-include/CQX96/mtio.h, is accessible through the character device.
+include/linux/mtio.h, is accessible through the character device.
 
 General ide driver configuration options, such as the interrupt-unmask
 flag, can be configured by issuing an ioctl to the block device interface,

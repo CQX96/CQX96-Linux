@@ -505,10 +505,10 @@ stricter rules for mapping I/O memory.
 Generalizing Access to System and I/O Memory
 ============================================
 
-.. kernel-doc:: include/CQX96/iosys-map.h
+.. kernel-doc:: include/linux/iosys-map.h
    :doc: overview
 
-.. kernel-doc:: include/CQX96/iosys-map.h
+.. kernel-doc:: include/linux/iosys-map.h
    :internal:
 
 Public Functions Provided

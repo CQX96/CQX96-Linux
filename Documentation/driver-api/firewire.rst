@@ -22,7 +22,7 @@ Firewire char device data structures
 .. include:: ../ABI/stable/firewire-cdev
     :literal:
 
-.. kernel-doc:: include/uapi/CQX96/firewire-cdev.h
+.. kernel-doc:: include/uapi/linux/firewire-cdev.h
     :internal:
 
 Firewire device probing and sysfs interfaces

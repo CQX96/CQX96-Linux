@@ -156,6 +156,6 @@ padata_do_parallel()的返回值在成功时为0，表示工作正在进行中�
 
 该API在以下内核代码中:
 
-include/CQX96/padata.h
+include/linux/padata.h
 
 kernel/padata.c

@@ -188,7 +188,7 @@ result from the previous operation::
 	    wait_for_completion(&cmp);
     }
 
-See include/CQX96/async_tx.h for more information on the flags.  See the
+See include/linux/async_tx.h for more information on the flags.  See the
 ops_run_* and ops_complete_* routines in drivers/md/raid5.c for more
 implementation examples.
 
@@ -254,13 +254,13 @@ A couple caveats to note when implementing a driver and consumer:
 5. Source
 ---------
 
-include/CQX96/dmaengine.h:
+include/linux/dmaengine.h:
     core header file for DMA drivers and api users
 drivers/dma/dmaengine.c:
     offload engine channel management routines
 drivers/dma/:
     location for offload engine drivers
-include/CQX96/async_tx.h:
+include/linux/async_tx.h:
     core header file for the async_tx api
 crypto/async_tx/async_tx.c:
     async_tx interface to dmaengine and common code

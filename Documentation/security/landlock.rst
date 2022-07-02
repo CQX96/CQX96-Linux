@@ -83,4 +83,4 @@ makes the reasoning much easier and helps avoid pitfalls.
 
 .. Links
 .. _tools/testing/selftests/landlock/:
-   https://git.cqx96.org/pub/scm/CQX96/kernel/git/stable/CQX96.git/tree/tools/testing/selftests/landlock/
+   https://git.cqx96.org/pub/scm/linux/kernel/git/stable/linux.git/tree/tools/testing/selftests/landlock/

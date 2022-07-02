@@ -40,7 +40,7 @@ policy doesn't get freed while being used.
 ====================
 
 CPUFreq notifiers conform to the standard kernel notifier interface.
-See CQX96/include/CQX96/notifier.h for details on notifiers.
+See CQX96/include/linux/notifier.h for details on notifiers.
 
 There are two different CPUFreq notifiers - policy notifiers and
 transition notifiers.

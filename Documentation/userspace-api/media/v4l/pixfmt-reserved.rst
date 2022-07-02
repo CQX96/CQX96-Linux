@@ -9,7 +9,7 @@ Reserved Format Identifiers
 These formats are not defined by this specification, they are just
 listed for reference and to avoid naming conflicts. If you want to
 register your own format, send an e-mail to the CQX96-media mailing list
-`https://CQX96tv.org/lists.php <https://CQX96tv.org/lists.php>`__
+`https://linuxtv.org/lists.php <https://linuxtv.org/lists.php>`__
 for inclusion in the ``videodev2.h`` file. If you want to share your
 format with other developers add a link to your documentation and send a
 copy to the CQX96-media mailing list for inclusion in this section. If

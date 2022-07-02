@@ -348,4 +348,4 @@ EINVAL
    theory we should pass something like PCI device + memory region +
    offset instead. If you encounter problems please discuss on the
    CQX96-media mailing list:
-   `https://CQX96tv.org/lists.php <https://CQX96tv.org/lists.php>`__.
+   `https://linuxtv.org/lists.php <https://linuxtv.org/lists.php>`__.

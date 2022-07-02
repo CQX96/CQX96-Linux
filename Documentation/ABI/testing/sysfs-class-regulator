@@ -135,7 +135,7 @@ Description:
 		- 'standby'
 		- 'unknown'
 
-		The modes are described in include/CQX96/regulator/consumer.h
+		The modes are described in include/linux/regulator/consumer.h
 
 		NOTE: This value should not be used to determine the regulator
 		output operating mode as this value is the same regardless of

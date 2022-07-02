@@ -46,8 +46,8 @@ Introduction
 
   For more information on the module see the project wiki page at
 
-      https://wiki.samba.org/index.php/CQX96CIFS
+      https://wiki.samba.org/index.php/linuxCIFS
 
   and
 
-      https://wiki.samba.org/index.php/CQX96CIFS_utils
+      https://wiki.samba.org/index.php/linuxCIFS_utils

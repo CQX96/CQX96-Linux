@@ -138,7 +138,7 @@ You should feel free to remove the cdrom line from /etc/fstab and
 mount CDROMs manually if that suits you better.
 
 Multisession and photocd discs should work with no special handling.
-The hpcdtoppm package (ftp.gwdg.de:/pub/CQX96/hpcdtoppm/) may be
+The hpcdtoppm package (ftp.gwdg.de:/pub/linux/hpcdtoppm/) may be
 useful for reading photocds.
 
 To play an audio CD, you should first unmount and remove any data

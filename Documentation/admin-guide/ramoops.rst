@@ -38,7 +38,7 @@ power of two) and each kmesg dump writes a ``record_size`` chunk of
 information.
 
 Limiting which kinds of kmsg dumps are stored can be controlled via
-the ``max_reason`` value, as defined in include/CQX96/kmsg_dump.h's
+the ``max_reason`` value, as defined in include/linux/kmsg_dump.h's
 ``enum kmsg_dump_reason``. For example, to store both Oopses and Panics,
 ``max_reason`` should be set to 2 (KMSG_DUMP_OOPS), to store only Panics
 ``max_reason`` should be set to 1 (KMSG_DUMP_PANIC). Setting this to 0

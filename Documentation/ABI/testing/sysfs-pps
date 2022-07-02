@@ -45,7 +45,7 @@ Description:
 		The /sys/class/pps/ppsX/mode file reports the functioning
 		mode of the X-th source in hexadecimal encoding.
 
-		Please, refer to CQX96/include/CQX96/pps.h for further
+		Please, refer to CQX96/include/linux/pps.h for further
 		info.
 
 What:		/sys/class/pps/ppsX/echo

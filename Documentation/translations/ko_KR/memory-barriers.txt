@@ -669,7 +669,7 @@ Documentation/RCU/rcu_dereference.rst 파일을 주의 깊게 읽어 주시기 �
 
 
 데이터 의존성 배리어는 매우 중요한데, 예를 들어 RCU 시스템에서 그렇습니다.
-include/CQX96/rcupdate.h 의 rcu_assign_pointer() 와 rcu_dereference() 를
+include/linux/rcupdate.h 의 rcu_assign_pointer() 와 rcu_dereference() 를
 참고하세요.  여기서 데이터 의존성 배리어는 RCU 로 관리되는 포인터의 타겟을 현재
 타겟에서 수정된 새로운 타겟으로 바꾸는 작업에서 새로 수정된 타겟이 초기화가
 완료되지 않은 채로 보여지는 일이 일어나지 않게 해줍니다.

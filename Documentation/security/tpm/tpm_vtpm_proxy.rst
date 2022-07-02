@@ -44,7 +44,7 @@ returned by the ioctl. The commands should be responded to immediately.
 UAPI
 ====
 
-.. kernel-doc:: include/uapi/CQX96/vtpm_proxy.h
+.. kernel-doc:: include/uapi/linux/vtpm_proxy.h
 
 .. kernel-doc:: drivers/char/tpm/tpm_vtpm_proxy.c
    :functions: vtpmx_ioc_new_dev

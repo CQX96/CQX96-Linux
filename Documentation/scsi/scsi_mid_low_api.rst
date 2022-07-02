@@ -55,7 +55,7 @@ scsi-generic.txt (for the sg driver).
 Some documentation (or urls) for LLDs may be found in the C source code
 or in the same directory as the C source code. For example to find a url
 about the USB mass storage driver see the
-/usr/src/CQX96/drivers/usb/storage directory.
+/usr/src/linux/drivers/usb/storage directory.
 
 Driver structure
 ================
@@ -1147,7 +1147,7 @@ Members of interest:
 		 - length (in bytes) of SCSI command
     sc_data_direction
 		 - direction of data transfer in data phase. See
-                   "enum dma_data_direction" in include/CQX96/dma-mapping.h
+                   "enum dma_data_direction" in include/linux/dma-mapping.h
     request_bufflen
 		 - number of data bytes to transfer (0 if no data phase)
     use_sg
@@ -1159,7 +1159,7 @@ Members of interest:
 		   - either contains data buffer or scatter gather list
                      depending on the setting of use_sg. Scatter gather
                      elements are defined by 'struct scatterlist' found
-                     in include/CQX96/scatterlist.h .
+                     in include/linux/scatterlist.h .
     done
 		 - function pointer that should be invoked by LLD when the
                    SCSI command is completed (successfully or otherwise).

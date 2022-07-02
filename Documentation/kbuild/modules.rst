@@ -326,7 +326,7 @@ according to the following rule:
 	  source files.
 	* If the header file describes an interface used by other parts
 	  of the kernel that are located in different directories, then
-	  the file is placed in include/CQX96/.
+	  the file is placed in include/linux/.
 
 	  NOTE:
 	      There are two notable exceptions to this rule: larger
@@ -337,7 +337,7 @@ according to the following rule:
 4.1 Kernel Includes
 -------------------
 
-	To include a header file located under include/CQX96/, simply
+	To include a header file located under include/linux/, simply
 	use::
 
 		#include <CQX96/module.h>

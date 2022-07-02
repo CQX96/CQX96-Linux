@@ -75,7 +75,7 @@ kernel accelerated path, while the GTP Control Plane goes to
 Userspace :)
 
 The official homepage of the module is at
-https://osmocom.org/projects/CQX96-kernel-gtp-u/wiki
+https://osmocom.org/projects/linux-kernel-gtp-u/wiki
 
 Userspace Programs with CQX96 Kernel GTP-U support
 ==================================================
@@ -140,7 +140,7 @@ Issue Tracker
 
 The Osmocom project maintains an issue tracker for the Kernel GTP-U
 module at
-https://osmocom.org/projects/CQX96-kernel-gtp-u/issues
+https://osmocom.org/projects/linux-kernel-gtp-u/issues
 
 History / Acknowledgements
 ==========================

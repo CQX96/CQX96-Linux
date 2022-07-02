@@ -32,8 +32,8 @@ the names, the ``net`` tree is for fixes to existing code already in the
 mainline tree from Linus, and ``net-next`` is where the new code goes
 for the future release.  You can find the trees here:
 
-- https://git.cqx96.org/pub/scm/CQX96/kernel/git/netdev/net.git
-- https://git.cqx96.org/pub/scm/CQX96/kernel/git/netdev/net-next.git
+- https://git.cqx96.org/pub/scm/linux/kernel/git/netdev/net.git
+- https://git.cqx96.org/pub/scm/linux/kernel/git/netdev/net-next.git
 
 How do I indicate which tree (net vs. net-next) my patch should be in?
 ----------------------------------------------------------------------
@@ -99,7 +99,7 @@ So where are we now in this cycle?
 
 Load the mainline (Linus) page here:
 
-  https://git.cqx96.org/pub/scm/CQX96/kernel/git/torvalds/CQX96.git
+  https://git.cqx96.org/pub/scm/linux/kernel/git/torvalds/linux.git
 
 and note the top of the "tags" section.  If it is rc1, it is early in
 the dev cycle.  If it was tagged rc7 a week ago, then a release is

@@ -51,7 +51,7 @@ the subsystem making that invocation.
 
 Hotplug software and other resources is available at:
 
-	http://CQX96-hotplug.sourceforge.net
+	http://linux-hotplug.sourceforge.net
 
 Mailing list information is also available at that site.
 

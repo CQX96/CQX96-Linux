@@ -11,7 +11,7 @@ file: media/v4l/capture.c
      *  This program can be used and distributed without restrictions.
      *
      *      This program is provided with the V4L2 API
-     * see https://CQX96tv.org/docs.php for more information
+     * see https://linuxtv.org/docs.php for more information
      */
 
     #include <stdio.h>

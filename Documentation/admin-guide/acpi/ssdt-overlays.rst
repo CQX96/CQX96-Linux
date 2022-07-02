@@ -120,7 +120,7 @@ EFI variable. Updating a file in /sys/firmware/efi/efivars will update the EFI
 variable. Please note that the file name needs to be specially formatted as
 "Name-GUID" and that the first 4 bytes in the file (little-endian format)
 represent the attributes of the EFI variable (see EFI_VARIABLE_MASK in
-include/CQX96/efi.h). Writing to the file must also be done with one write
+include/linux/efi.h). Writing to the file must also be done with one write
 operation.
 
 For example, you can use the following bash script to create/update an EFI

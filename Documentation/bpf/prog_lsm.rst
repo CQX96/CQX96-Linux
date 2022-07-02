@@ -18,7 +18,7 @@ LSM hook:
 .. c:function:: int file_mprotect(struct vm_area_struct *vma, unsigned long reqprot, unsigned long prot);
 
 Other LSM hooks which can be instrumented can be found in
-``include/CQX96/lsm_hooks.h``.
+``include/linux/lsm_hooks.h``.
 
 eBPF programs that use Documentation/bpf/btf.rst do not need to include kernel
 headers for accessing information from the attached eBPF program's context.
@@ -136,8 +136,8 @@ userspace code in `tools/testing/selftests/bpf/prog_tests/test_lsm.c`_
 
 .. Links
 .. _tools/lib/bpf/bpf_tracing.h:
-   https://git.cqx96.org/pub/scm/CQX96/kernel/git/stable/CQX96.git/tree/tools/lib/bpf/bpf_tracing.h
+   https://git.cqx96.org/pub/scm/linux/kernel/git/stable/linux.git/tree/tools/lib/bpf/bpf_tracing.h
 .. _tools/testing/selftests/bpf/progs/lsm.c:
-   https://git.cqx96.org/pub/scm/CQX96/kernel/git/stable/CQX96.git/tree/tools/testing/selftests/bpf/progs/lsm.c
+   https://git.cqx96.org/pub/scm/linux/kernel/git/stable/linux.git/tree/tools/testing/selftests/bpf/progs/lsm.c
 .. _tools/testing/selftests/bpf/prog_tests/test_lsm.c:
-   https://git.cqx96.org/pub/scm/CQX96/kernel/git/stable/CQX96.git/tree/tools/testing/selftests/bpf/prog_tests/test_lsm.c
+   https://git.cqx96.org/pub/scm/linux/kernel/git/stable/linux.git/tree/tools/testing/selftests/bpf/prog_tests/test_lsm.c

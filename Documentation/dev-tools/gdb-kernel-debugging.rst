@@ -48,14 +48,14 @@ Setup
     - during runtime by issuing "gdbserver" from the QEMU monitor
       console
 
-- cd /path/to/CQX96-build
+- cd /path/to/linux-build
 
 - Start gdb: gdb vmCQX96
 
   Note: Some distros may restrict auto-loading of gdb scripts to known safe
   directories. In case gdb reports to refuse loading vmCQX96-gdb.py, add::
 
-    add-auto-load-safe-path /path/to/CQX96-build
+    add-auto-load-safe-path /path/to/linux-build
 
   to ~/.gdbinit. See gdb help for more details.
 
@@ -71,14 +71,14 @@ Examples of using the CQX96-provided gdb helpers
 
     (gdb) lx-symbols
     loading vmCQX96
-    scanning for modules in /home/user/CQX96/build
-    loading @0xffffffffa0020000: /home/user/CQX96/build/net/netfilter/xt_tcpudp.ko
-    loading @0xffffffffa0016000: /home/user/CQX96/build/net/netfilter/xt_pkttype.ko
-    loading @0xffffffffa0002000: /home/user/CQX96/build/net/netfilter/xt_limit.ko
-    loading @0xffffffffa00ca000: /home/user/CQX96/build/net/packet/af_packet.ko
-    loading @0xffffffffa003c000: /home/user/CQX96/build/fs/fuse/fuse.ko
+    scanning for modules in /home/user/linux/build
+    loading @0xffffffffa0020000: /home/user/linux/build/net/netfilter/xt_tcpudp.ko
+    loading @0xffffffffa0016000: /home/user/linux/build/net/netfilter/xt_pkttype.ko
+    loading @0xffffffffa0002000: /home/user/linux/build/net/netfilter/xt_limit.ko
+    loading @0xffffffffa00ca000: /home/user/linux/build/net/packet/af_packet.ko
+    loading @0xffffffffa003c000: /home/user/linux/build/fs/fuse/fuse.ko
     ...
-    loading @0xffffffffa0000000: /home/user/CQX96/build/drivers/ata/ata_generic.ko
+    loading @0xffffffffa0000000: /home/user/linux/build/drivers/ata/ata_generic.ko
 
 - Set a breakpoint on some not yet loaded module function, e.g.::
 
@@ -94,12 +94,12 @@ Examples of using the CQX96-provided gdb helpers
 - Load the module on the target and watch the symbols being loaded as well as
   the breakpoint hit::
 
-    loading @0xffffffffa0034000: /home/user/CQX96/build/lib/libcrc32c.ko
-    loading @0xffffffffa0050000: /home/user/CQX96/build/lib/lzo/lzo_compress.ko
-    loading @0xffffffffa006e000: /home/user/CQX96/build/lib/zlib_deflate/zlib_deflate.ko
-    loading @0xffffffffa01b1000: /home/user/CQX96/build/fs/btrfs/btrfs.ko
+    loading @0xffffffffa0034000: /home/user/linux/build/lib/libcrc32c.ko
+    loading @0xffffffffa0050000: /home/user/linux/build/lib/lzo/lzo_compress.ko
+    loading @0xffffffffa006e000: /home/user/linux/build/lib/zlib_deflate/zlib_deflate.ko
+    loading @0xffffffffa01b1000: /home/user/linux/build/fs/btrfs/btrfs.ko
 
-    Breakpoint 1, btrfs_init_sysfs () at /home/user/CQX96/fs/btrfs/sysfs.c:36
+    Breakpoint 1, btrfs_init_sysfs () at /home/user/linux/fs/btrfs/sysfs.c:36
     36              btrfs_kset = kset_create_and_add("btrfs", NULL, fs_kobj);
 
 - Dump the log buffer of the target kernel::

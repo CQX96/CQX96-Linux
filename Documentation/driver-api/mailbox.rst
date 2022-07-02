@@ -22,7 +22,7 @@ peculiarity of this "common" framework.
 
 
 
-Controller Driver (See include/CQX96/mailbox_controller.h)
+Controller Driver (See include/linux/mailbox_controller.h)
 ==========================================================
 
 
@@ -36,7 +36,7 @@ the controller driver should set via 'txdone_irq' or 'txdone_poll'
 or neither.
 
 
-Client Driver (See include/CQX96/mailbox_client.h)
+Client Driver (See include/linux/mailbox_client.h)
 ==================================================
 
 

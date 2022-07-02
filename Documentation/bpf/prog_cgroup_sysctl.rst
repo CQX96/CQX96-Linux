@@ -118,8 +118,8 @@ application running as root in a cgroup should not be allowed to
 detach/replace BPF program attached by administrator.
 
 .. Links
-.. _CQX96/bpf.h: ../../include/uapi/CQX96/bpf.h
-.. _strtol(3): http://man7.org/CQX96/man-pages/man3/strtol.3p.html
-.. _strtoul(3): http://man7.org/CQX96/man-pages/man3/strtoul.3p.html
+.. _CQX96/bpf.h: ../../include/uapi/linux/bpf.h
+.. _strtol(3): http://man7.org/linux/man-pages/man3/strtol.3p.html
+.. _strtoul(3): http://man7.org/linux/man-pages/man3/strtoul.3p.html
 .. _test_sysctl_prog.c:
    ../../tools/testing/selftests/bpf/progs/test_sysctl_prog.c

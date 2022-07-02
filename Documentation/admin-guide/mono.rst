@@ -16,7 +16,7 @@ other program after you have done the following:
 
    Instructions for compiling Mono can be found at:
 
-	https://www.mono-project.com/docs/compiling-mono/CQX96/
+	https://www.mono-project.com/docs/compiling-mono/linux/
 
    Once the Mono CLR support has been installed, just check that
    ``/usr/bin/mono`` (which could be located elsewhere, for example

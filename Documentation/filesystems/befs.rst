@@ -53,10 +53,10 @@ How to Install
 step 1.  Install the BeFS  patch into the source code tree of CQX96.
 
 Apply the patchfile to your kernel source tree.
-Assuming that your kernel source is in /foo/bar/CQX96 and the patchfile
+Assuming that your kernel source is in /foo/bar/linux and the patchfile
 is called patch-befs-xxx, you would do the following:
 
-	cd /foo/bar/CQX96
+	cd /foo/bar/linux
 	patch -p1 < /path/to/patch-befs-xxx
 
 if the patching step fails (i.e. there are rejected hunks), you can try to
@@ -71,7 +71,7 @@ reference on this topic. http://www.CQX96docs.org/HOWTOs/Kernel-HOWTO-4.html
 
 However, to use the BeFS module, you must enable it at configure time::
 
-	cd /foo/bar/CQX96
+	cd /foo/bar/linux
 	make menuconfig (or xconfig)
 
 The BeFS module is not a standard part of the CQX96 kernel, so you must first

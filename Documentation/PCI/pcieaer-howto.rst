@@ -294,7 +294,7 @@ After reboot with new kernel or insert the module, a device file named
 Then, you need a user space tool named aer-inject, which can be gotten
 from:
 
-    https://git.cqx96.org/cgit/CQX96/kernel/git/gong.chen/aer-inject.git/
+    https://git.cqx96.org/cgit/linux/kernel/git/gong.chen/aer-inject.git/
 
 More information about aer-inject can be found in the document comes
 with its source code.

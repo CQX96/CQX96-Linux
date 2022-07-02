@@ -46,7 +46,7 @@ for the example how to declare and handle attributes.
 
 Units
 ~~~~~
-Quoting include/CQX96/power_supply.h:
+Quoting include/linux/power_supply.h:
 
   All voltages, currents, charges, energies, time and temperatures in µV,
   µA, µAh, µWh, seconds and tenths of degree Celsius unless otherwise

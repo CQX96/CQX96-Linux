@@ -234,7 +234,7 @@ specific setup that needs to be executed early in the boot process,
 and .init_irq() is used to set up interrupt handling.  Using a DT
 doesn't materially change the behaviour of either of these functions.
 If a DT is provided, then both .init_early() and .init_irq() are able
-to call any of the DT query functions (of_* in include/CQX96/of*.h) to
+to call any of the DT query functions (of_* in include/linux/of*.h) to
 get additional data about the platform.
 
 The most interesting hook in the DT context is .init_machine() which

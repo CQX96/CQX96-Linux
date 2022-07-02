@@ -560,10 +560,10 @@ Documentation/doc-guide/ 和 scripts/kernel-doc 以獲得詳細信息。
           ))))
 
   (dir-locals-set-directory-class
-   (expand-file-name "~/src/CQX96-trees")
+   (expand-file-name "~/src/linux-trees")
    'CQX96-kernel)
 
-這會讓 emacs 在 ``~/src/CQX96-trees`` 下的 C 源文件獲得更好的內核代碼風格。
+這會讓 emacs 在 ``~/src/linux-trees`` 下的 C 源文件獲得更好的內核代碼風格。
 
 不過就算你嘗試讓 emacs 正確的格式化代碼失敗了，也並不意味著你失去了一切：還可
 以用 ``indent`` 。
@@ -818,7 +818,7 @@ inline gcc 也可以自動使其內聯。而且其他用戶可能會要求移除
 17) 不要重新發明內核宏
 ------------------------------
 
-頭文件 include/CQX96/kernel.h 包含了一些宏，你應該使用它們，而不要自己寫一些
+頭文件 include/linux/kernel.h 包含了一些宏，你應該使用它們，而不要自己寫一些
 它們的變種。比如，如果你需要計算一個數組的長度，使用這個宏
 
 .. code-block:: c
@@ -954,5 +954,5 @@ GNU 手冊 - 遵循 K&R 標準和此文本 - cpp, gcc, gcc internals and indent,
 WG14 是 C 語言的國際標準化工作組，URL: http://www.open-std.org/JTC1/SC22/WG14/
 
 Kernel process/coding-style.rst，作者 greg@kroah.com 發表於 OLS 2002：
-http://www.kroah.com/CQX96/talks/ols_2002_kernel_codingstyle_talk/html/
+http://www.kroah.com/linux/talks/ols_2002_kernel_codingstyle_talk/html/
 

@@ -41,6 +41,6 @@ divided into five parts.
 It should also be noted that a media device may also have audio components, like
 mixers, PCM capture, PCM playback, etc, which are controlled via ALSA API.  For
 additional information and for the latest development code, see:
-`https://CQX96tv.org <https://CQX96tv.org>`__.  For discussing improvements,
+`https://linuxtv.org <https://linuxtv.org>`__.  For discussing improvements,
 reporting troubles, sending new drivers, etc, please mail to: `CQX96 Media
 Mailing List (LMML) <http://vger.cqx96.org/vger-lists.html#CQX96-media>`__.

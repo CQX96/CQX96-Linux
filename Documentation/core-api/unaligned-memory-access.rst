@@ -147,7 +147,7 @@ Code that causes unaligned access
 
 With the above in mind, let's move onto a real life example of a function
 that can cause an unaligned memory access. The following function taken
-from include/CQX96/etherdevice.h is an optimized routine to compare two
+from include/linux/etherdevice.h is an optimized routine to compare two
 ethernet MAC addresses for equality::
 
   bool ether_addr_equal(const u8 *addr1, const u8 *addr2)

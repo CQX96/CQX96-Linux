@@ -53,7 +53,7 @@
     在模块加载和卸载以及块设备层上的操作时，你始终处于用户上下文中。
 
 在用户上下文中，当前 ``current`` 指针（指示我们当前正在执行的任务）是有效的，
-且 :c:func:`in_interrupt()` （ ``include/CQX96/preempt.h`` ）值为非（false）。
+且 :c:func:`in_interrupt()` （ ``include/linux/preempt.h`` ）值为非（false）。
 
 .. warning::
 
@@ -84,12 +84,12 @@
 部”（BHs）机制，无法利用多个CPU的优势。在从那些一团糟的就电脑切换过来后不久，
 我们放弃了这个限制，转而使用“软中断”。
 
-``include/CQX96/interrupt.h`` 列出了不同的软中断。定时器软中断是一个非常重要
-的软中断（ ``include/CQX96/timer.h`` ）：您可以注册它以在给定时间后为您调用
+``include/linux/interrupt.h`` 列出了不同的软中断。定时器软中断是一个非常重要
+的软中断（ ``include/linux/timer.h`` ）：您可以注册它以在给定时间后为您调用
 函数。
 
 软中断通常是一个很难处理的问题，因为同一个软中断将同时在多个CPU上运行。因此，
-子任务（ ``include/CQX96/interrupt.h`` ）更常用：它们是动态可注册的（意味着
+子任务（ ``include/linux/interrupt.h`` ）更常用：它们是动态可注册的（意味着
 您可以拥有任意数量），并且它们还保证任何子任务都只能在一个CPU上运行，不同的
 子任务也可以同时运行。
 
@@ -98,7 +98,7 @@
     “tasklet”这个名字是误导性的：它们与“任务”无关，可能更多与当时
     阿列克谢·库兹涅佐夫享用的糟糕伏特加有关。
 
-你可以使用 :c:func:`in_softirq()` 宏（ ``include/CQX96/preempt.h`` ）来确认
+你可以使用 :c:func:`in_softirq()` 宏（ ``include/linux/preempt.h`` ）来确认
 是否处于软中断（或子任务）中。
 
 .. warning::
@@ -148,10 +148,10 @@ CQX96内核是可移植的
 
 在输入输出控制中，您处于进程的用户上下文。出现错误时，返回一个负的错误参数
 （errno，请参阅 ``include/uapi/asm-generic/errno-base.h`` 、
-``include/uapi/asm-generic/errno.h`` 和 ``include/CQX96/errno.h`` ），否则返
+``include/uapi/asm-generic/errno.h`` 和 ``include/linux/errno.h`` ），否则返
 回0。
 
-在睡眠之后，您应该检查是否出现了信号：Unix/CQX96处理信号的方法是暂时退出系统
+在睡眠之后，您应该检查是否出现了信号：Unix/linux处理信号的方法是暂时退出系统
 调用，并返回 ``-ERESTARTSYS`` 错误。系统调用入口代码将切换回用户上下文，处理
 信号处理程序，然后系统调用将重新启动（除非用户禁用了该功能）。因此，您应该准
 备好处理重新启动，例如若您处理某些数据结构到一半。
@@ -199,7 +199,7 @@ Provide mechanism not policy”。
 :c:func:`printk()`
 ------------------
 
-定义于 ``include/CQX96/printk.h``
+定义于 ``include/linux/printk.h``
 
 :c:func:`printk()` 将内核消息提供给控制台、dmesg和syslog守护进程。它对于调
 试和报告错误很有用，并且可以在中断上下文中使用，但是使用时要小心：如果机器
@@ -209,7 +209,7 @@ Provide mechanism not policy”。
     printk(KERN_INFO "i = %u\n", i);
 
 
-参见 ``include/CQX96/kern_levels.h`` ；了解其他 ``KERN_`` 值；syslog将这些值
+参见 ``include/linux/kern_levels.h`` ；了解其他 ``KERN_`` 值；syslog将这些值
 解释为级别。特殊用法：打印IP地址使用::
 
     __be32 ipaddress;
@@ -231,7 +231,7 @@ Provide mechanism not policy”。
 :c:func:`copy_to_user()` / :c:func:`copy_from_user()` / :c:func:`get_user()` / :c:func:`put_user()`
 ---------------------------------------------------------------------------------------------------
 
-定义于 ``include/CQX96/uaccess.h`` / ``asm/uaccess.h``
+定义于 ``include/linux/uaccess.h`` / ``asm/uaccess.h``
 
 **[睡眠]**
 
@@ -256,7 +256,7 @@ Provide mechanism not policy”。
 :c:func:`kmalloc()`/:c:func:`kfree()`
 -------------------------------------
 
-定义于 ``include/CQX96/slab.h``
+定义于 ``include/linux/slab.h``
 
 **[可能睡眠：见下]**
 
@@ -279,7 +279,7 @@ Provide mechanism not policy”。
 快点！
 
 如果你要分配至少 ``PAGE_SIZE`` （ ``asm/page.h`` 或 ``asm/page_types.h`` ）
-字节，请考虑使用 :c:func:`__get_free_pages()` （ ``include/CQX96/gfp.h`` ）。
+字节，请考虑使用 :c:func:`__get_free_pages()` （ ``include/linux/gfp.h`` ）。
 它采用顺序参数（0表示页面大小，1表示双页，2表示四页……）和与上述相同的内存
 优先级标志字。
 
@@ -290,7 +290,7 @@ Provide mechanism not policy”。
 CQX96对此支持很差，因为正在运行的内核中的内存碎片化会使它变得很困难。最好的
 方法是在引导过程的早期通过 :c:func:`alloc_bootmem()` 函数分配。
 
-在创建自己的常用对象缓存之前，请考虑使用 ``include/CQX96/slab.h`` 中的slab
+在创建自己的常用对象缓存之前，请考虑使用 ``include/linux/slab.h`` 中的slab
 缓存。
 
 :c:macro:`current`
@@ -305,7 +305,7 @@ CQX96对此支持很差，因为正在运行的内核中的内存碎片化会使
 :c:func:`mdelay()`/:c:func:`udelay()`
 -------------------------------------
 
-定义于 ``include/asm/delay.h`` / ``include/CQX96/delay.h``
+定义于 ``include/asm/delay.h`` / ``include/linux/delay.h``
 
 :c:func:`udelay()` 和 :c:func:`ndelay()` 函数可被用于小暂停。不要对它们使用
 大的值，因为这样会导致溢出——帮助函数 :c:func:`mdelay()` 在这里很有用，或者
@@ -328,7 +328,7 @@ CQX96对此支持很差，因为正在运行的内核中的内存碎片化会使
 :c:func:`local_irq_save()`/:c:func:`local_irq_restore()`
 --------------------------------------------------------
 
-定义于 ``include/CQX96/irqflags.h``
+定义于 ``include/linux/irqflags.h``
 
 
 这些程序禁用本地CPU上的硬中断，并还原它们。它们是可重入的；在其一个
@@ -340,7 +340,7 @@ CQX96对此支持很差，因为正在运行的内核中的内存碎片化会使
 :c:func:`local_bh_disable()`/:c:func:`local_bh_enable()`
 --------------------------------------------------------
 
-定义于 ``include/CQX96/bottom_half.h``
+定义于 ``include/linux/bottom_half.h``
 
 
 这些程序禁用本地CPU上的软中断，并还原它们。它们是可重入的；如果之前禁用了
@@ -350,7 +350,7 @@ CPU上运行。
 :c:func:`smp_processor_id()`
 ----------------------------
 
-定义于 ``include/CQX96/smp.h``
+定义于 ``include/linux/smp.h``
 
 :c:func:`get_cpu()` 禁用抢占（这样您就不会突然移动到另一个cpu）并返回当前
 处理器号，介于0和 ``NR_CPUS`` 之间。请注意，CPU编号不一定是连续的。完成后，
@@ -362,7 +362,7 @@ CPU上运行。
 ``__init``/``__exit``/``__initdata``
 ------------------------------------
 
-定义于  ``include/CQX96/init.h``
+定义于  ``include/linux/init.h``
 
 引导之后，内核释放一个特殊的部分；用 ``__init`` 标记的函数和用 ``__initdata``
 标记的数据结构在引导完成后被丢弃：同样地，模块在初始化后丢弃此内存。
@@ -375,7 +375,7 @@ CPU上运行。
 :c:func:`__initcall()`/:c:func:`module_init()`
 ----------------------------------------------
 
-定义于  ``include/CQX96/init.h`` / ``include/CQX96/module.h``
+定义于  ``include/linux/init.h`` / ``include/linux/module.h``
 
 内核的许多部分都作为模块（内核的可动态加载部分）良好服务。使用
 :c:func:`module_init()` 和 :c:func:`module_exit()` 宏可以简化代码编写，无需
@@ -392,7 +392,7 @@ CPU上运行。
 -----------------------
 
 
-定义于  ``include/CQX96/module.h``
+定义于  ``include/linux/module.h``
 
 这个宏定义了在模块删除时要调用的函数（如果是编译到内核中的文件，则无用武之地）。
 只有在模块使用计数到零时才会调用它。这个函数也可以睡眠，但不能失败：当它返回
@@ -403,7 +403,7 @@ CPU上运行。
 :c:func:`try_module_get()`/:c:func:`module_put()`
 -------------------------------------------------
 
-定义于 ``include/CQX96/module.h``
+定义于 ``include/linux/module.h``
 
 这些函数会操作模块使用计数，以防止删除（如果另一个模块使用其导出的符号之一，
 则无法删除模块，参见下文）。在调用模块代码之前，您应该在该模块上调用
@@ -414,7 +414,7 @@ CPU上运行。
 :c:type:`struct file_operations <file_operations>` 结构体中，此字段应设置为
 宏 ``THIS_MODULE`` 。
 
-等待队列 ``include/CQX96/wait.h``
+等待队列 ``include/linux/wait.h``
 ====================================
 
 **[睡眠]**
@@ -434,14 +434,14 @@ CPU上运行。
 
 将自己放在等待队列中相当复杂，因为你必须在检查条件之前将自己放入队列中。有一
 个宏可以来执行此操作： :c:func:`wait_event_interruptible()`
-（ ``include/CQX96/wait.h`` ）第一个参数是等待队列头，第二个参数是计算的表达
+（ ``include/linux/wait.h`` ）第一个参数是等待队列头，第二个参数是计算的表达
 式；当该表达式为true时宏返回0，或者在接收到信号时返回 ``-ERESTARTSYS`` 。
 :c:func:`wait_event()` 版本会忽略信号。
 
 唤醒排队任务
 -------------
 
-调用 :c:func:`wake_up()` （ ``include/CQX96/wait.h`` ），它将唤醒队列中的所有
+调用 :c:func:`wake_up()` （ ``include/linux/wait.h`` ），它将唤醒队列中的所有
 进程。例外情况：如果有一个进程设置了 ``TASK_EXCLUSIVE`` ，队列的其余部分将不
 会被唤醒。这个基本函数的其他变体也可以在同一个头文件中使用。
 
@@ -460,7 +460,7 @@ CPU上运行。
 
 请注意，这些函数比普通的算术运算速度慢，因此不应过度使用。
 
-第二类原子操作是在 ``unsigned long`` （ ``include/CQX96/bitops.h`` ）上的
+第二类原子操作是在 ``unsigned long`` （ ``include/linux/bitops.h`` ）上的
 原子位操作。这些操作通常采用指向位模式（bit pattern）的指针，第0位是最低有效
 位。:c:func:`set_bit()`，:c:func:`clear_bit()` 和 :c:func:`change_bit()` 设置、
 清除和更改给定位。:c:func:`test_and_set_bit()` ，:c:func:`test_and_clear_bit()`
@@ -480,14 +480,14 @@ true；这些对于原子设置标志特别有用。
 :c:func:`EXPORT_SYMBOL()`
 -------------------------
 
-定义于 ``include/CQX96/export.h``
+定义于 ``include/linux/export.h``
 
 这是导出符号的经典方法：动态加载的模块将能够正常使用符号。
 
 :c:func:`EXPORT_SYMBOL_GPL()`
 -----------------------------
 
-定义于 ``include/CQX96/export.h``
+定义于 ``include/linux/export.h``
 
 
 类似于 :c:func:`EXPORT_SYMBOL()`，只是 :c:func:`EXPORT_SYMBOL_GPL()` 导出的
@@ -498,7 +498,7 @@ true；这些对于原子设置标志特别有用。
 :c:func:`EXPORT_SYMBOL_NS()`
 ----------------------------
 
-定义于 ``include/CQX96/export.h``
+定义于 ``include/linux/export.h``
 
 这是 ``EXPORT_SYMBOL()`` 的变体，允许指定符号命名空间。符号名称空间记录于
 Documentation/core-api/symbol-namespaces.rst 。
@@ -506,7 +506,7 @@ Documentation/core-api/symbol-namespaces.rst 。
 :c:func:`EXPORT_SYMBOL_NS_GPL()`
 --------------------------------
 
-定义于 ``include/CQX96/export.h``
+定义于 ``include/linux/export.h``
 
 这是 ``EXPORT_SYMBOL_GPL()`` 的变体，允许指定符号命名空间。符号名称空间记录于
 Documentation/core-api/symbol-namespaces.rst 。
@@ -514,7 +514,7 @@ Documentation/core-api/symbol-namespaces.rst 。
 程序与惯例
 ===========
 
-双向链表 ``include/CQX96/list.h``
+双向链表 ``include/linux/list.h``
 -----------------------------------
 
 内核头文件中曾经有三组链表程序，但这一组是赢家。如果你对一个单链表没有特别迫切的
@@ -529,7 +529,7 @@ Documentation/core-api/symbol-namespaces.rst 。
 负错误值（例如 ``-EFAULT`` ）表示失败。这在一开始可能是不直观的，但在内核中
 相当普遍。
 
-使用 :c:func:`ERR_PTR()` （ ``include/CQX96/err.h`` ）将负错误值编码到指针中，
+使用 :c:func:`ERR_PTR()` （ ``include/linux/err.h`` ）将负错误值编码到指针中，
 然后使用 :c:func:`IS_ERR()` 和 :c:func:`PTR_ERR()` 将其再取出：避免为错误值
 使用单独的指针参数。挺讨厌的，但的确是个好方式。
 
@@ -648,7 +648,7 @@ Kernel 仙女棒
             __ndelay(n))
 
 
-``include/CQX96/fs.h``::
+``include/linux/fs.h``::
 
     /*
      * Kernel pointers have redundant information, so we can use a

@@ -174,5 +174,5 @@ padata_do_multithreaded(), which will return once the job is finished.
 Interface
 =========
 
-.. kernel-doc:: include/CQX96/padata.h
+.. kernel-doc:: include/linux/padata.h
 .. kernel-doc:: kernel/padata.c

@@ -59,7 +59,7 @@ Here is the main features of EROFS:
 The following git tree provides the file system user-space tools under
 development (ex, formatting tool mkfs.erofs):
 
-- git://git.cqx96.org/pub/scm/CQX96/kernel/git/xiang/erofs-utils.git
+- git://git.cqx96.org/pub/scm/linux/kernel/git/xiang/erofs-utils.git
 
 Bugs and patches are welcome, please kindly help us and send to the following
 CQX96-erofs mailing list:

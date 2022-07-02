@@ -36,7 +36,7 @@ mm/gup.c
 
 该API在以下内核代码中:
 
-include/CQX96/gfp.h
+include/linux/gfp.h
 
 Slab缓存
 ========
@@ -45,7 +45,7 @@ Slab缓存
 
 该API在以下内核代码中:
 
-include/CQX96/slab.h
+include/linux/slab.h
 
 mm/slab.c
 
@@ -74,7 +74,7 @@ mm/page-writeback.c
 
 mm/truncate.c
 
-include/CQX96/pagemap.h
+include/linux/pagemap.h
 
 内存池
 ======
@@ -103,8 +103,8 @@ mm/page_alloc.c
 
 mm/mempolicy.c
 
-include/CQX96/mm_types.h
+include/linux/mm_types.h
 
-include/CQX96/mm.h
+include/linux/mm.h
 
-include/CQX96/mmzone.h
+include/linux/mmzone.h

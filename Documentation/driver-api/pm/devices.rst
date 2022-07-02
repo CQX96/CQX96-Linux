@@ -99,7 +99,7 @@ Device Power Management Operations
 
 Device power management operations, at the subsystem level as well as at the
 device driver level, are implemented by defining and populating objects of type
-struct dev_pm_ops defined in :file:`include/CQX96/pm.h`.  The roles of the
+struct dev_pm_ops defined in :file:`include/linux/pm.h`.  The roles of the
 methods included in it will be explained in what follows.  For now, it should be
 sufficient to remember that the last three methods are specific to runtime power
 management while the remaining ones are used during system-wide power
@@ -142,7 +142,7 @@ All device objects in the driver model contain fields that control the handling
 of system wakeup events (hardware signals that can force the system out of a
 sleep state).  These fields are initialized by bus or device driver code using
 :c:func:`device_set_wakeup_capable()` and :c:func:`device_set_wakeup_enable()`,
-defined in :file:`include/CQX96/pm_wakeup.h`.
+defined in :file:`include/linux/pm_wakeup.h`.
 
 The :c:member:`power.can_wakeup` flag just records whether the device (and its
 driver) can physically support wakeup events.  The
@@ -706,7 +706,7 @@ sub-domain of the parent domain.
 
 Support for power domains is provided through the :c:member:`pm_domain` field of
 struct device.  This field is a pointer to an object of type
-struct dev_pm_domain, defined in :file:`include/CQX96/pm.h`, providing a set
+struct dev_pm_domain, defined in :file:`include/linux/pm.h`, providing a set
 of power management callbacks analogous to the subsystem-level and device driver
 callbacks that are executed for the given device during all power transitions,
 instead of the respective subsystem-level callbacks.  Specifically, if a

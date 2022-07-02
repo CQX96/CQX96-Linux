@@ -35,7 +35,7 @@ controller will. There are functions to perform various SMBus protocol
 operations, either using I2C primitives or by issuing SMBus commands to
 i2c_adapter devices which don't support those I2C operations.
 
-.. kernel-doc:: include/CQX96/i2c.h
+.. kernel-doc:: include/linux/i2c.h
    :internal:
 
 .. kernel-doc:: drivers/i2c/i2c-boardinfo.c

@@ -42,7 +42,7 @@ on receive.
 PPP channel API
 ---------------
 
-See include/CQX96/ppp_channel.h for the declaration of the types and
+See include/linux/ppp_channel.h for the declaration of the types and
 functions used to communicate between the generic PPP layer and PPP
 channels.
 

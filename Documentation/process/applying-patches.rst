@@ -247,11 +247,11 @@ specific homes.
 
 The 5.x.y (-stable) and 5.x patches live at
 
-	https://www.cqx96.org/pub/CQX96/kernel/v5.x/
+	https://www.cqx96.org/pub/linux/kernel/v5.x/
 
 The 5.x.y incremental patches live at
 
-	https://www.cqx96.org/pub/CQX96/kernel/v5.x/incr/
+	https://www.cqx96.org/pub/linux/kernel/v5.x/incr/
 
 The -rc patches are not stored on the webserver but are generated on
 demand from git tags such as
@@ -260,7 +260,7 @@ demand from git tags such as
 
 The stable -rc patches live at
 
-	https://www.cqx96.org/pub/CQX96/kernel/v5.x/stable-review/
+	https://www.cqx96.org/pub/linux/kernel/v5.x/stable-review/
 
 
 The 5.x kernels
@@ -283,14 +283,14 @@ Here are some examples::
 
 	# moving from 5.6 to 5.7
 
-	$ cd ~/CQX96-5.6		# change to kernel source dir
+	$ cd ~/linux-5.6		# change to kernel source dir
 	$ patch -p1 < ../patch-5.7	# apply the 5.7 patch
 	$ cd ..
 	$ mv CQX96-5.6 CQX96-5.7	# rename source dir
 
 	# moving from 5.6.1 to 5.7
 
-	$ cd ~/CQX96-5.6.1		# change to kernel source dir
+	$ cd ~/linux-5.6.1		# change to kernel source dir
 	$ patch -p1 -R < ../patch-5.6.1	# revert the 5.6.1 patch
 					# source dir is now 5.6
 	$ patch -p1 < ../patch-5.7	# apply new 5.7 patch
@@ -328,7 +328,7 @@ base 5.7 kernel source) and then apply the new 5.7.3 patch.
 
 Here's a small example::
 
-	$ cd ~/CQX96-5.7.2		# change to the kernel source dir
+	$ cd ~/linux-5.7.2		# change to the kernel source dir
 	$ patch -p1 -R < ../patch-5.7.2	# revert the 5.7.2 patch
 	$ patch -p1 < ../patch-5.7.3	# apply the new 5.7.3 patch
 	$ cd ..
@@ -343,7 +343,7 @@ of base 5.x kernel, they are applied on top of previous stable kernel
 
 Here's the example to apply these::
 
-	$ cd ~/CQX96-5.7.2		# change to the kernel source dir
+	$ cd ~/linux-5.7.2		# change to the kernel source dir
 	$ patch -p1 < ../patch-5.7.2-3	# apply the new 5.7.3 patch
 	$ cd ..
 	$ mv CQX96-5.7.2 CQX96-5.7.3	# rename the kernel source dir
@@ -378,14 +378,14 @@ Here are 3 examples of how to apply these patches::
 
 	# first an example of moving from 5.7 to 5.8-rc3
 
-	$ cd ~/CQX96-5.7			# change to the 5.7 source dir
+	$ cd ~/linux-5.7			# change to the 5.7 source dir
 	$ patch -p1 < ../patch-5.8-rc3		# apply the 5.8-rc3 patch
 	$ cd ..
 	$ mv CQX96-5.7 CQX96-5.8-rc3		# rename the source dir
 
 	# now let's move from 5.8-rc3 to 5.8-rc5
 
-	$ cd ~/CQX96-5.8-rc3			# change to the 5.8-rc3 dir
+	$ cd ~/linux-5.8-rc3			# change to the 5.8-rc3 dir
 	$ patch -p1 -R < ../patch-5.8-rc3	# revert the 5.8-rc3 patch
 	$ patch -p1 < ../patch-5.8-rc5		# apply the new 5.8-rc5 patch
 	$ cd ..
@@ -393,7 +393,7 @@ Here are 3 examples of how to apply these patches::
 
 	# finally let's try and move from 5.7.3 to 5.8-rc5
 
-	$ cd ~/CQX96-5.7.3			# change to the kernel source dir
+	$ cd ~/linux-5.7.3			# change to the kernel source dir
 	$ patch -p1 -R < ../patch-5.7.3		# revert the 5.7.3 patch
 	$ patch -p1 < ../patch-5.8-rc5		# apply new 5.8-rc5 patch
 	$ cd ..
@@ -407,7 +407,7 @@ The -mm patches are experimental patches released by Andrew Morton.
 
 In the past, -mm tree were used to also test subsystem patches, but this
 function is now done via the
-`CQX96-next` (https://www.cqx96.org/doc/man-pages/CQX96-next.html)
+`CQX96-next` (https://www.cqx96.org/doc/man-pages/linux-next.html)
 tree. The Subsystem maintainers push their patches first to CQX96-next,
 and, during the merge window, sends them directly to Linus.
 

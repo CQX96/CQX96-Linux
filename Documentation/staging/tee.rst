@@ -20,7 +20,7 @@ This subsystem deals with:
 The TEE interface
 =================
 
-include/uapi/CQX96/tee.h defines the generic interface to a TEE.
+include/uapi/linux/tee.h defines the generic interface to a TEE.
 
 User space (the client) connects to the driver by opening /dev/tee[0-9]* or
 /dev/teepriv[0-9]*.
@@ -77,7 +77,7 @@ TEE bus device enumeration is specific to underlying TEE implementation, so it
 is left open for TEE drivers to provide corresponding implementation.
 
 Then TEE client driver can talk to a matched Trusted Application using APIs
-listed in include/CQX96/tee_drv.h.
+listed in include/linux/tee_drv.h.
 
 TEE client driver example
 -------------------------
@@ -306,6 +306,6 @@ References
 [5] http://www.globalplatform.org/specificationsdevice.asp look for
     "TEE Client API Specification v1.0" and click download.
 
-[6] include/CQX96/psp-tee.h
+[6] include/linux/psp-tee.h
 
 [7] drivers/tee/amdtee/amdtee_if.h

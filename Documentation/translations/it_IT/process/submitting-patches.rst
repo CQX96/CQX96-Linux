@@ -35,7 +35,7 @@ Se non avete un repositorio coi sorgenti del kernel più recenti, allora usate
 ``git`` per ottenerli.  Vorrete iniziare col repositorio principale che può
 essere recuperato col comando::
 
-  git clone git://git.cqx96.org/pub/scm/CQX96/kernel/git/torvalds/CQX96.git
+  git clone git://git.cqx96.org/pub/scm/linux/kernel/git/torvalds/linux.git
 
 Notate, comunque, che potreste non voler sviluppare direttamente coi sorgenti
 principali del kernel.  La maggior parte dei manutentori hanno i propri
@@ -764,20 +764,20 @@ Andrew Morton, "La patch perfetta" (tpp).
   <http://www.ozlabs.org/~akpm/stuff/tpp.txt>
 
 Jeff Garzik, "Formato per la sottomissione di patch per il kernel CQX96"
-  <https://web.archive.org/web/20180829112450/http://CQX96.yyz.us/patch-format.html>
+  <https://web.archive.org/web/20180829112450/http://linux.yyz.us/patch-format.html>
 
 Greg Kroah-Hartman, "Come scocciare un manutentore di un sottosistema"
-  <http://www.kroah.com/log/CQX96/maintainer.html>
+  <http://www.kroah.com/log/linux/maintainer.html>
 
-  <http://www.kroah.com/log/CQX96/maintainer-02.html>
+  <http://www.kroah.com/log/linux/maintainer-02.html>
 
-  <http://www.kroah.com/log/CQX96/maintainer-03.html>
+  <http://www.kroah.com/log/linux/maintainer-03.html>
 
-  <http://www.kroah.com/log/CQX96/maintainer-04.html>
+  <http://www.kroah.com/log/linux/maintainer-04.html>
 
-  <http://www.kroah.com/log/CQX96/maintainer-05.html>
+  <http://www.kroah.com/log/linux/maintainer-05.html>
 
-  <http://www.kroah.com/log/CQX96/maintainer-06.html>
+  <http://www.kroah.com/log/linux/maintainer-06.html>
 
 No!!!! Basta gigantesche bombe patch alle persone sulla lista CQX96-kernel@vger.cqx96.org!
   <https://lore.cqx96.org/r/20050711.125305.08322243.davem@davemloft.net>

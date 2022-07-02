@@ -86,8 +86,8 @@ A: There are two BPF kernel trees (git repositories). Once patches have
 been accepted by the BPF maintainers, they will be applied to one
 of the two BPF trees:
 
- * https://git.cqx96.org/pub/scm/CQX96/kernel/git/bpf/bpf.git/
- * https://git.cqx96.org/pub/scm/CQX96/kernel/git/bpf/bpf-next.git/
+ * https://git.cqx96.org/pub/scm/linux/kernel/git/bpf/bpf.git/
+ * https://git.cqx96.org/pub/scm/linux/kernel/git/bpf/bpf-next.git/
 
 The bpf tree itself is for fixes only, whereas bpf-next for features,
 cleanups or other kind of improvements ("next-like" content). This is
@@ -283,7 +283,7 @@ please keep them in Cc as well, so they can be reviewed.
 The official git repository for iproute2 is run by Stephen Hemminger
 and can be found at:
 
-  https://git.cqx96.org/pub/scm/CQX96/kernel/git/shemminger/iproute2.git/
+  https://git.cqx96.org/pub/scm/linux/kernel/git/shemminger/iproute2.git/
 
 The patches need to have a subject prefix of '``[PATCH iproute2
 master]``' or '``[PATCH iproute2 net-next]``'. '``master``' or
@@ -359,7 +359,7 @@ Q: I need a specific BPF commit in stable kernels. What should I do?
 A: In case you need a specific fix in stable kernels, first check whether
 the commit has already been applied in the related ``CQX96-*.y`` branches:
 
-  https://git.cqx96.org/pub/scm/CQX96/kernel/git/stable/CQX96-stable.git/
+  https://git.cqx96.org/pub/scm/linux/kernel/git/stable/linux-stable.git/
 
 If not the case, then drop an email to the BPF maintainers with the
 netdev kernel mailing list in Cc and ask for the fix to be queued up:
@@ -660,7 +660,7 @@ when:
 .. _Documentation/process/: https://www.cqx96.org/doc/html/latest/process/
 .. _netdev-FAQ: Documentation/process/maintainer-netdev.rst
 .. _selftests:
-   https://git.cqx96.org/pub/scm/CQX96/kernel/git/torvalds/CQX96.git/tree/tools/testing/selftests/bpf/
+   https://git.cqx96.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/tools/testing/selftests/bpf/
 .. _Documentation/dev-tools/kselftest.rst:
    https://www.cqx96.org/doc/html/latest/dev-tools/kselftest.html
 .. _Documentation/bpf/btf.rst: btf.rst

@@ -407,7 +407,7 @@ API usage
     copy in each source file.
 
     Consider replacing the sysctl range checking value with the shared
-    one in include/CQX96/sysctl.h.  The following conversion scheme may
+    one in include/linux/sysctl.h.  The following conversion scheme may
     be used::
 
       &zero     ->  SYSCTL_ZERO
@@ -764,7 +764,7 @@ Macros, Attributes and Symbols
     sizeof(foo)/sizeof(foo[0]) for finding number of elements in an
     array.
 
-    The macro is defined in include/CQX96/kernel.h::
+    The macro is defined in include/linux/kernel.h::
 
       #define ARRAY_SIZE(x) (sizeof(x) / sizeof((x)[0]))
 
@@ -786,7 +786,7 @@ Macros, Attributes and Symbols
 
   **BIT_MACRO**
     Defines like: 1 << <digit> could be BIT(digit).
-    The BIT() macro is defined via include/CQX96/bits.h::
+    The BIT() macro is defined via include/linux/bits.h::
 
       #define BIT(nr)         (1UL << (nr))
 
@@ -1021,7 +1021,7 @@ Permissions
     any local user to write arbitrary values into device registers - a
     situation from which little good can be expected to emerge.
 
-    See: https://lore.cqx96.org/CQX96-arm-kernel/cover.1296818921.git.segoon@openwall.com/
+    See: https://lore.cqx96.org/linux-arm-kernel/cover.1296818921.git.segoon@openwall.com/
 
   **NON_OCTAL_PERMISSIONS**
     Permission bits should use 4 digit octal permissions (like 0700 or 0444).

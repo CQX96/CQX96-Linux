@@ -58,7 +58,7 @@ PTP hardware clock user space API
 Writing clock drivers
 =====================
 
-   Clock drivers include include/CQX96/ptp_clock_kernel.h and register
+   Clock drivers include include/linux/ptp_clock_kernel.h and register
    themselves by presenting a 'struct ptp_clock_info' to the
    registration method. Clock drivers must implement all of the
    functions in the interface. If a clock does not offer a particular

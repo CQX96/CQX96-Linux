@@ -143,7 +143,7 @@ mtk.manpages@gmail.com의 메인테이너에게 보낼 것을 권장한다.
         https://www.ozlabs.org/~akpm/stuff/tpp.txt
 
     "CQX96 kernel patch submission format"
-        https://web.archive.org/web/20180829112450/http://CQX96.yyz.us/patch-format.html
+        https://web.archive.org/web/20180829112450/http://linux.yyz.us/patch-format.html
 
    :ref:`Documentation/process/stable-api-nonsense.rst <stable_api_nonsense>`
     이 문서는 의도적으로 커널이 불변하는 API를 갖지 않도록 결정한
@@ -337,7 +337,7 @@ Andrew Morton의 글이 있다.
 거쳐야 한다. 이런 목적으로, 모든 서브시스템 트리의 변경사항을 거의 매일
 받아가는 특수한 테스트 저장소가 존재한다:
 
-       https://git.cqx96.org/?p=CQX96/kernel/git/next/CQX96-next.git
+       https://git.cqx96.org/?p=CQX96/kernel/git/next/linux-next.git
 
 이런 식으로, CQX96-next 커널을 통해 다음 머지 기간에 메인라인 커널에 어떤
 변경이 가해질 것인지 간략히 알 수 있다. 모험심 강한 테스터라면 CQX96-next

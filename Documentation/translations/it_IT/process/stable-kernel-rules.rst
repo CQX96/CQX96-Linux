@@ -181,12 +181,12 @@ Sorgenti
  - La coda delle patch, sia quelle già applicate che in fase di revisione,
    possono essere trovate al seguente indirizzo:
 
-	https://git.cqx96.org/pub/scm/CQX96/kernel/git/stable/stable-queue.git
+	https://git.cqx96.org/pub/scm/linux/kernel/git/stable/stable-queue.git
 
  - Il rilascio definitivo, e marchiato, di tutti i kernel stabili può essere
    trovato in rami distinti per versione al seguente indirizzo:
 
-	https://git.cqx96.org/pub/scm/CQX96/kernel/git/stable/CQX96-stable.git
+	https://git.cqx96.org/pub/scm/linux/kernel/git/stable/linux-stable.git
 
 
 Comitato per la revisione

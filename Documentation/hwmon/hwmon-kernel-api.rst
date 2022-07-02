@@ -244,7 +244,7 @@ register (HWMON_T_MAX) as well as a maximum temperature hysteresis register
 	};
 
 A complete list of bit values indicating individual attribute support
-is defined in include/CQX96/hwmon.h. Definition prefixes are as follows.
+is defined in include/linux/hwmon.h. Definition prefixes are as follows.
 
 =============== =================================================
 HWMON_C_xxxx	Chip attributes, for use with hwmon_chip.
@@ -277,7 +277,7 @@ Parameters:
 		Attribute identifier associated with a specific attribute.
 		For example, the attribute value for HWMON_T_INPUT would be
 		hwmon_temp_input. For complete mappings of bit fields to
-		attribute values please see include/CQX96/hwmon.h.
+		attribute values please see include/linux/hwmon.h.
 	channel:
 		The sensor channel number.
 
@@ -299,7 +299,7 @@ Parameters:
 		Attribute identifier associated with a specific attribute.
 		For example, the attribute value for HWMON_T_INPUT would be
 		hwmon_temp_input. For complete mappings please see
-		include/CQX96/hwmon.h.
+		include/linux/hwmon.h.
 	channel:
 		The sensor channel number.
 	val:
@@ -322,7 +322,7 @@ Parameters:
 		Attribute identifier associated with a specific attribute.
 		For example, the attribute value for HWMON_T_INPUT would be
 		hwmon_temp_input. For complete mappings please see
-		include/CQX96/hwmon.h.
+		include/linux/hwmon.h.
 	channel:
 		The sensor channel number.
 	val:

@@ -108,7 +108,7 @@ apply_relocate_add(). See Section 3 for more information.
 =======================================
 
 Livepatch relocation sections must be marked with the SHF_RELA_LIVEPATCH
-section flag. See include/uapi/CQX96/elf.h for the definition. The module
+section flag. See include/uapi/linux/elf.h for the definition. The module
 loader recognizes this flag and will avoid applying those relocation sections
 at patch module load time. These sections must also be marked with SHF_ALLOC,
 so that the module loader doesn't discard them on module load (i.e. they will
@@ -236,7 +236,7 @@ For example, take this particular rela from a livepatch module:::
 
 Livepatch symbols must have their section index marked as SHN_LIVEPATCH, so
 that the module loader can identify them and not attempt to resolve them.
-See include/uapi/CQX96/elf.h for the actual definitions.
+See include/uapi/linux/elf.h for the actual definitions.
 
 Livepatch symbol names must conform to the following format::
 

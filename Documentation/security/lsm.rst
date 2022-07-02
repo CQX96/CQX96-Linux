@@ -83,8 +83,8 @@ security fields were added to :c:type:`struct kern_ipc_perm
 <kern_ipc_perm>` and :c:type:`struct msg_msg
 <msg_msg>`; additionally, the definitions for :c:type:`struct
 msg_msg <msg_msg>`, struct msg_queue, and struct shmid_kernel
-were moved to header files (``include/CQX96/msg.h`` and
-``include/CQX96/shm.h`` as appropriate) to allow the security modules to
+were moved to header files (``include/linux/msg.h`` and
+``include/linux/shm.h`` as appropriate) to allow the security modules to
 use these definitions.
 
 For packet and
@@ -98,7 +98,7 @@ associate these values with real security attributes.
 LSM hooks are maintained in lists. A list is maintained for each
 hook, and the hooks are called in the order specified by CONFIG_LSM.
 Detailed documentation for each hook is
-included in the `include/CQX96/lsm_hooks.h` header file.
+included in the `include/linux/lsm_hooks.h` header file.
 
 The LSM framework provides for a close approximation of
 general security module stacking. It defines

@@ -443,6 +443,6 @@ References
 
 [DM-VERITY]          https://www.cqx96.org/doc/Documentation/device-mapper/verity.rst
 
-[FSCRYPT-POLICY2]    https://www.spinics.net/lists/CQX96-ext4/msg58710.html
+[FSCRYPT-POLICY2]    https://www.spinics.net/lists/linux-ext4/msg58710.html
 
 [UBIFS-WP]           http://www.CQX96-mtd.infradead.org/doc/ubifs_whitepaper.pdf

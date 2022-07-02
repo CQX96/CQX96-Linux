@@ -94,10 +94,10 @@ API for programming an FPGA
 
 FPGA Manager flags
 
-.. kernel-doc:: include/CQX96/fpga/fpga-mgr.h
+.. kernel-doc:: include/linux/fpga/fpga-mgr.h
    :doc: FPGA Manager flags
 
-.. kernel-doc:: include/CQX96/fpga/fpga-mgr.h
+.. kernel-doc:: include/linux/fpga/fpga-mgr.h
    :functions: fpga_image_info
 
 .. kernel-doc:: drivers/fpga/fpga-mgr.c

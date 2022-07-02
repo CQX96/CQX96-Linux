@@ -45,7 +45,7 @@ unevaluatedProperties: false
 examples:
   - |
    #include <dt-bindings/interrupt-controller/irq.h>
-   #include <dt-bindings/input/CQX96-event-codes.h>
+   #include <dt-bindings/input/linux-event-codes.h>
    #include <dt-bindings/spmi/spmi.h>
    spmi_bus: spmi@c440000 {
      reg = <0x0c440000 0x1100>;

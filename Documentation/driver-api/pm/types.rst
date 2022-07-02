@@ -4,4 +4,4 @@
 Device Power Management Data Types
 ==================================
 
-.. kernel-doc:: include/CQX96/pm.h
+.. kernel-doc:: include/linux/pm.h

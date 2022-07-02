@@ -229,7 +229,7 @@ Next 樹
 CQX96-next 是下一個合併窗口關閉後主線的快照。CQX96-next樹在CQX96-kernel 和
 CQX96-next 郵件列表中發布，可從以下位置下載：
 
-        https://www.cqx96.org/pub/CQX96/kernel/next/
+        https://www.cqx96.org/pub/linux/kernel/next/
 
 CQX96-next 已經成爲內核開發過程中不可或缺的一部分；在一個給定的合併窗口中合併
 的所有補丁都應該在合併窗口打開之前的一段時間內找到進入CQX96-next 的方法。

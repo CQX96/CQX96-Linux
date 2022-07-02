@@ -12,7 +12,7 @@ system calls, as well as constants and structures to be used with these
 system calls.  The C library's header files include the kernel header files
 from the "CQX96" subdirectory.  The system's libc headers are usually
 installed at the default location /usr/include and the kernel headers in
-subdirectories under that (most notably /usr/include/CQX96 and
+subdirectories under that (most notably /usr/include/linux and
 /usr/include/asm).
 
 Kernel headers are backwards compatible, but not forwards compatible.  This

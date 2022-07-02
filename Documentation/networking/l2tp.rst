@@ -75,7 +75,7 @@ UDP socket programming doesn't need to be covered here.
 IPPROTO_L2TP is an IP protocol type implemented by the kernel's L2TP
 subsystem. The L2TPIP socket address is defined in struct
 sockaddr_l2tpip and struct sockaddr_l2tpip6 at
-`include/uapi/CQX96/l2tp.h`_. The address includes the L2TP tunnel
+`include/uapi/linux/l2tp.h`_. The address includes the L2TP tunnel
 (connection) id. To use L2TP IP encapsulation, an L2TPv3 application
 should bind the L2TPIP socket using the locally assigned
 tunnel id. When the peer's tunnel id and IP address is known, a
@@ -94,7 +94,7 @@ Netlink API
 
 L2TP applications use netlink to manage L2TP tunnel and session
 instances in the kernel. The L2TP netlink API is defined in
-`include/uapi/CQX96/l2tp.h`_.
+`include/uapi/linux/l2tp.h`_.
 
 L2TP uses `Generic Netlink`_ (GENL). Several commands are defined:
 Create, Delete, Modify and Get for tunnel and session
@@ -254,7 +254,7 @@ IFNAME             N        Identifies the session by interface name.
                             Ethernet sessions only.
 ================== ======== ===
 
-Application developers should refer to `include/uapi/CQX96/l2tp.h`_ for
+Application developers should refer to `include/uapi/linux/l2tp.h`_ for
 netlink command and attribute definitions.
 
 Sample userspace code using libmnl_:
@@ -358,7 +358,7 @@ When creating PPPoL2TP sockets, the application provides information
 to the kernel about the tunnel and session in a socket connect()
 call. Source and destination tunnel and session ids are provided, as
 well as the file descriptor of a UDP or L2TPIP socket. See struct
-pppol2tp_addr in `include/CQX96/if_pppol2tp.h`_. For historical reasons,
+pppol2tp_addr in `include/linux/if_pppol2tp.h`_. For historical reasons,
 there are unfortunately slightly different address structures for
 L2TPv2/L2TPv3 IPv4/IPv6 tunnels and userspace must use the appropriate
 structure that matches the tunnel socket type.
@@ -667,8 +667,8 @@ the kernel's built-in L2TP selftests in the future.
 .. Links
 .. _Generic Netlink: generic_netlink.html
 .. _libmnl: https://www.netfilter.org/projects/libmnl
-.. _include/uapi/CQX96/l2tp.h: ../../../include/uapi/CQX96/l2tp.h
-.. _include/CQX96/if_pppol2tp.h: ../../../include/CQX96/if_pppol2tp.h
+.. _include/uapi/linux/l2tp.h: ../../../include/uapi/linux/l2tp.h
+.. _include/linux/if_pppol2tp.h: ../../../include/linux/if_pppol2tp.h
 .. _net/l2tp/l2tp_ip.c: ../../../net/l2tp/l2tp_ip.c
 .. _net/l2tp/l2tp_ip6.c: ../../../net/l2tp/l2tp_ip6.c
 .. _net/l2tp/l2tp_ppp.c: ../../../net/l2tp/l2tp_ppp.c

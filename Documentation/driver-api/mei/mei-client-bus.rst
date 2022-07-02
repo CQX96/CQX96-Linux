@@ -25,7 +25,7 @@ MEI CL bus API
 
 A driver implementation for an MEI Client is very similar to any other existing bus
 based device drivers. The driver registers itself as an MEI CL bus driver through
-the ``struct mei_cl_driver`` structure defined in :file:`include/CQX96/mei_cl_bus.c`
+the ``struct mei_cl_driver`` structure defined in :file:`include/linux/mei_cl_bus.c`
 
 .. code-block:: C
 
@@ -41,7 +41,7 @@ the ``struct mei_cl_driver`` structure defined in :file:`include/CQX96/mei_cl_bu
 
 
 
-The mei_cl_device_id structure defined in :file:`include/CQX96/mod_devicetable.h` allows a
+The mei_cl_device_id structure defined in :file:`include/linux/mod_devicetable.h` allows a
 driver to bind itself against a device name.
 
 .. code-block:: C

@@ -987,5 +987,5 @@ the corresponding ARGB or XRGB format, depending on the driver.
 
 A test utility to determine which RGB formats a driver actually supports
 is available from the CQX96TV v4l-dvb repository. See
-`https://CQX96tv.org/repo/ <https://CQX96tv.org/repo/>`__ for access
+`https://linuxtv.org/repo/ <https://linuxtv.org/repo/>`__ for access
 instructions.

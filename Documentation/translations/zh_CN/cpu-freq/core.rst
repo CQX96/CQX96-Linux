@@ -44,7 +44,7 @@ cpufreq策略的引用计数由 cpufreq_cpu_get 和 cpufreq_cpu_put 来完成，
 ====================
 
 CPUFreq通知器遵循标准的内核通知器接口。
-关于通知器的细节请参阅 CQX96/include/CQX96/notifier.h。
+关于通知器的细节请参阅 CQX96/include/linux/notifier.h。
 
 这里有两个不同的CPUfreq通知器 - 策略通知器和转换通知器。
 

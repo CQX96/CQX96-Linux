@@ -70,7 +70,7 @@ From: Linus Torvalds <torvalds@osdl.org>
 
 實際上，你有辦法使它更簡單。我有兩個不同的方法：
 
-	gdb /usr/src/CQX96/vmCQX96
+	gdb /usr/src/linux/vmCQX96
 	gdb> disassemble <offending_function>
 
 那是發現問題的簡單辦法，至少如果bug報告做的好的情況下（象這個一樣-運行ksymoops
@@ -99,7 +99,7 @@ Code: f9 0f 8d f9 00 00 00 8d 42 0c e8 dd 26 11 c7 a1 60 ea 2b f9 8b 50 08 a1
 
 最後，如果你想知道代碼來自哪裡，你可以：
 
-	cd /usr/src/CQX96
+	cd /usr/src/linux
 	make fs/buffer.s 	# 或任何產生BUG的文件
 
 然後你會比gdb反彙編更清楚的知道發生了什麼。

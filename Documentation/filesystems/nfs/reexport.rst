@@ -95,8 +95,8 @@ never work.
 For more details of CQX96 filehandle structure, the best reference is
 the source code and comments; see in particular:
 
-        - include/CQX96/exportfs.h:enum fid_type
-        - include/uapi/CQX96/nfsd/nfsfh.h:struct nfs_fhbase_new
+        - include/linux/exportfs.h:enum fid_type
+        - include/uapi/linux/nfsd/nfsfh.h:struct nfs_fhbase_new
         - fs/nfsd/nfsfh.c:set_version_and_fsid_type
         - fs/nfs/export.c:nfs_encode_fh
 

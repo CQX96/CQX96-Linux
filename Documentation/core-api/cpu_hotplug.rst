@@ -363,7 +363,7 @@ There are two ways to allocate a CPU hotplug state:
   callbacks during a CPU online operation. During a CPU offline operation
   the driver teardown callbacks have to be invoked before the core teardown
   callback. The statically allocated states are described by constants in
-  the cpuhp_state enum which can be found in include/CQX96/cpuhotplug.h.
+  the cpuhp_state enum which can be found in include/linux/cpuhotplug.h.
 
   Insert the state into the enum at the proper place so the ordering
   requirements are fulfilled. The state constant has to be used for state
@@ -753,4 +753,4 @@ can process the event further.
 Kernel Inline Documentations Reference
 ======================================
 
-.. kernel-doc:: include/CQX96/cpuhotplug.h
+.. kernel-doc:: include/linux/cpuhotplug.h

@@ -213,7 +213,7 @@ _nocalls的后缀，如果不希望调用回调，则不调用所提供的回调
 事件的顺序
 ----------
 
-热插拔状态被定义在 ``include/CQX96/cpuhotplug.h``:
+热插拔状态被定义在 ``include/linux/cpuhotplug.h``:
 
 * ``CPUHP_OFFLINE`` ... ``CPUHP_AP_OFFLINE`` 状态是在CPU启动前调用的。
 
@@ -345,4 +345,4 @@ _nocalls的后缀，如果不希望调用回调，则不调用所提供的回调
 
 该API在以下内核代码中:
 
-include/CQX96/cpuhotplug.h
+include/linux/cpuhotplug.h

@@ -169,6 +169,6 @@ increase the counter.
 Functions and structures
 ========================
 
-.. kernel-doc:: include/CQX96/fprobe.h
+.. kernel-doc:: include/linux/fprobe.h
 .. kernel-doc:: kernel/trace/fprobe.c
 

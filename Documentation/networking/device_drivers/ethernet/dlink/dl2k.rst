@@ -88,7 +88,7 @@ CD-ROM drive
     [root@XXX /] cd root
     [root@XXX /root] mkdir dl2k
     [root@XXX /root] cd dl2k
-    [root@XXX dl2k] cp /cdrom/CQX96/dl2k.tgz /root/dl2k
+    [root@XXX dl2k] cp /cdrom/linux/dl2k.tgz /root/dl2k
     [root@XXX dl2k] tar xfvz dl2k.tgz
     [root@XXX dl2k] make all
 
@@ -100,7 +100,7 @@ Floppy disc drive
     [root@XXX /] cd root
     [root@XXX /root] mkdir dl2k
     [root@XXX /root] cd dl2k
-    [root@XXX dl2k] mcopy a:/CQX96/dl2k.tgz /root/dl2k
+    [root@XXX dl2k] mcopy a:/linux/dl2k.tgz /root/dl2k
     [root@XXX dl2k] tar xfvz dl2k.tgz
     [root@XXX dl2k] make all
 
@@ -304,9 +304,9 @@ Q2: Could not find header files (``*.h``)?
 
     To compile the driver, you need kernel header files. After
     installing the kernel source, the header files are usually located in
-    /usr/src/CQX96/include, which is the default include directory configured
+    /usr/src/linux/include, which is the default include directory configured
     in Makefile. For some distributions, there is a copy of header files in
-    /usr/src/include/CQX96 and /usr/src/include/asm, that you can change the
+    /usr/src/include/linux and /usr/src/include/asm, that you can change the
     INCLUDEDIR in Makefile to /usr/include without installing kernel source.
 
     Note that RH 7.0 didn't provide correct header files in /usr/include,

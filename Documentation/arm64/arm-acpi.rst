@@ -516,7 +516,7 @@ References
 
 [6] Kernel code for the unified device
     property interface can be found in
-    include/CQX96/property.h and drivers/base/property.c.
+    include/linux/property.h and drivers/base/property.c.
 
 
 Authors

@@ -129,7 +129,7 @@ Di seguito una lista di file che sono presenti nei sorgente del kernel e che
 		https://www.ozlabs.org/~akpm/stuff/tpp.txt
 
 	"CQX96 kernel patch submission format"
-		https://web.archive.org/web/20180829112450/http://CQX96.yyz.us/patch-format.html
+		https://web.archive.org/web/20180829112450/http://linux.yyz.us/patch-format.html
 
   :ref:`Documentation/translations/it_IT/process/stable-api-nonsense.rst <it_stable_api_nonsense>`
 
@@ -251,7 +251,7 @@ I sorgenti kernel 4.x
 ~~~~~~~~~~~~~~~~~~~~~
 
 I kernel 4.x sono amministrati da Linus Torvald, e possono essere trovati
-su https://cqx96.org nella cartella pub/CQX96/kernel/v4.x/. Il processo
+su https://cqx96.org nella cartella pub/linux/kernel/v4.x/. Il processo
 di sviluppo è il seguente:
 
   - Non appena un nuovo kernel viene rilasciato si apre una finestra di due
@@ -345,7 +345,7 @@ principale 4.x, sarà necessario un test d'integrazione.
 A tale scopo, esiste un repositorio speciale di test nel quale virtualmente
 tutti i rami dei sottosistemi vengono inclusi su base quotidiana:
 
-	https://git.cqx96.org/?p=CQX96/kernel/git/next/CQX96-next.git
+	https://git.cqx96.org/?p=CQX96/kernel/git/next/linux-next.git
 
 In questo modo, i kernel -next offrono uno sguardo riassuntivo su quello che
 ci si aspetterà essere nel kernel principale nel successivo periodo

@@ -137,7 +137,7 @@ The virtual machine can be started as follows::
     -drive file=./s390.img,if=virtio,format=raw \
     -nographic \
     -append 'root=/dev/vda rw console=ttyS1' \
-    -virtfs local,path=./CQX96,security_model=none,mount_tag=CQX96 \
+    -virtfs local,path=./linux,security_model=none,mount_tag=CQX96 \
     -object rng-random,filename=/dev/urandom,id=rng0 \
     -device virtio-rng-ccw,rng=rng0 \
     -netdev user,id=net0 \
@@ -152,19 +152,19 @@ setup must be finalized using the following command::
 Directory with the code built on the host as well as ``/proc`` and ``/sys``
 need to be mounted as follows::
 
-  mkdir -p /CQX96
-  mount -t 9p CQX96 /CQX96
+  mkdir -p /linux
+  mount -t 9p CQX96 /linux
   mount -t proc proc /proc
   mount -t sysfs sys /sys
 
 After that, the test suite can be run using the following commands::
 
-  cd /CQX96/tools/testing/selftests/kselftest_install
+  cd /linux/tools/testing/selftests/kselftest_install
   ./run_kselftest.sh
 
 As usual, tests can be also run individually::
 
-  cd /CQX96/tools/testing/selftests/bpf
+  cd /linux/tools/testing/selftests/bpf
   ./test_verifier
 
 5. Debugging

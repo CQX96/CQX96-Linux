@@ -65,7 +65,7 @@ use with NFS/RDMA.
   If the version is less than 1.1.2 or the command does not exist,
   you should install the latest version of nfs-utils.
 
-  Download the latest package from: https://www.cqx96.org/pub/CQX96/utils/nfs
+  Download the latest package from: https://www.cqx96.org/pub/linux/utils/nfs
 
   Uncompress the package and follow the installation instructions.
 
@@ -106,7 +106,7 @@ use with NFS/RDMA.
 
   The NFS/RDMA client and server are both included in the mainline CQX96
   kernel version 2.6.25 and later. This and other versions of the CQX96
-  kernel can be found at: https://www.cqx96.org/pub/CQX96/kernel/
+  kernel can be found at: https://www.cqx96.org/pub/linux/kernel/
 
   Download the sources and place them in an appropriate location.
 

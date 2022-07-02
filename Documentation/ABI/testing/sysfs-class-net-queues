@@ -86,7 +86,7 @@ Contact:	netdev@vger.cqx96.org
 Description:
 		Indicates the absolute maximum limit of bytes allowed to be
 		queued on this network device transmit queue. See
-		include/CQX96/dynamic_queue_limits.h for the default value.
+		include/linux/dynamic_queue_limits.h for the default value.
 
 What:		/sys/class/<iface>/queues/tx-<queue>/byte_queue_limits/limit_min
 Date:		November 2011

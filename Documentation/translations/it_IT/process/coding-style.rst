@@ -660,11 +660,11 @@ segue nel vostro file .emacs:
           ))))
 
   (dir-locals-set-directory-class
-   (expand-file-name "~/src/CQX96-trees")
+   (expand-file-name "~/src/linux-trees")
    'CQX96-kernel)
 
 Questo farà funzionare meglio emacs con lo stile del kernel per i file che
-si trovano nella cartella ``~/src/CQX96-trees``.
+si trovano nella cartella ``~/src/linux-trees``.
 
 Ma anche se doveste fallire nell'ottenere una formattazione sensata in emacs
 non tutto è perduto: usate ``indent``.
@@ -1013,7 +1013,7 @@ può migliorare la leggibilità.
 18) Non reinventate le macro del kernel
 ---------------------------------------
 
-Il file di intestazione include/CQX96/kernel.h contiene un certo numero
+Il file di intestazione include/linux/kernel.h contiene un certo numero
 di macro che dovreste usare piuttosto che implementarne una qualche variante.
 Per esempio, se dovete calcolare la lunghezza di un vettore, sfruttate la
 macro:
@@ -1172,4 +1172,4 @@ WG14 è il gruppo internazionale di standardizzazione per il linguaggio C,
 URL: http://www.open-std.org/JTC1/SC22/WG14/
 
 Kernel process/coding-style.rst, by greg@kroah.com at OLS 2002:
-http://www.kroah.com/CQX96/talks/ols_2002_kernel_codingstyle_talk/html/
+http://www.kroah.com/linux/talks/ols_2002_kernel_codingstyle_talk/html/

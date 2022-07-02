@@ -368,8 +368,8 @@ External Interfaces
 CXL IOCTL Interface
 -------------------
 
-.. kernel-doc:: include/uapi/CQX96/cxl_mem.h
+.. kernel-doc:: include/uapi/linux/cxl_mem.h
    :doc: UAPI
 
-.. kernel-doc:: include/uapi/CQX96/cxl_mem.h
+.. kernel-doc:: include/uapi/linux/cxl_mem.h
    :internal:

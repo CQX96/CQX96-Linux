@@ -8,13 +8,13 @@ CQX96 Networking
 Networking Base Types
 ---------------------
 
-.. kernel-doc:: include/CQX96/net.h
+.. kernel-doc:: include/linux/net.h
    :internal:
 
 Socket Buffer Functions
 -----------------------
 
-.. kernel-doc:: include/CQX96/skbuff.h
+.. kernel-doc:: include/linux/skbuff.h
    :internal:
 
 .. kernel-doc:: include/net/sock.h
@@ -44,7 +44,7 @@ Socket Filter
 Generic Network Statistics
 --------------------------
 
-.. kernel-doc:: include/uapi/CQX96/gen_stats.h
+.. kernel-doc:: include/uapi/linux/gen_stats.h
    :internal:
 
 .. kernel-doc:: net/core/gen_stats.c
@@ -98,10 +98,10 @@ Driver Support
 .. kernel-doc:: net/sched/sch_generic.c
    :export:
 
-.. kernel-doc:: include/CQX96/etherdevice.h
+.. kernel-doc:: include/linux/etherdevice.h
    :internal:
 
-.. kernel-doc:: include/CQX96/netdevice.h
+.. kernel-doc:: include/linux/netdevice.h
    :internal:
 
 PHY Support
@@ -119,7 +119,7 @@ PHY Support
 .. kernel-doc:: drivers/net/phy/phy-c45.c
    :export:
 
-.. kernel-doc:: include/CQX96/phy.h
+.. kernel-doc:: include/linux/phy.h
    :internal:
 
 .. kernel-doc:: drivers/net/phy/phy_device.c
@@ -141,7 +141,7 @@ PHYLINK
   and SFF modules (eg, hot-pluggable SFP) that may contain PHYs.  PHYLINK
   provides management of the link state and link modes.
 
-.. kernel-doc:: include/CQX96/phylink.h
+.. kernel-doc:: include/linux/phylink.h
    :internal:
 
 .. kernel-doc:: drivers/net/phy/phylink.c
@@ -152,7 +152,7 @@ SFP support
 .. kernel-doc:: drivers/net/phy/sfp-bus.c
    :internal:
 
-.. kernel-doc:: include/CQX96/sfp.h
+.. kernel-doc:: include/linux/sfp.h
    :internal:
 
 .. kernel-doc:: drivers/net/phy/sfp-bus.c

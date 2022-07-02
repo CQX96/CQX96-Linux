@@ -390,9 +390,9 @@ will execute the following part of the SmPL script::
 This SmPL excerpt generates entries on the standard output, as
 illustrated below::
 
-    /home/user/CQX96/crypto/ctr.c:188:9-16: ERR_CAST can be used with alg
-    /home/user/CQX96/crypto/authenc.c:619:9-16: ERR_CAST can be used with auth
-    /home/user/CQX96/crypto/xts.c:227:9-16: ERR_CAST can be used with alg
+    /home/user/linux/crypto/ctr.c:188:9-16: ERR_CAST can be used with alg
+    /home/user/linux/crypto/authenc.c:619:9-16: ERR_CAST can be used with auth
+    /home/user/linux/crypto/xts.c:227:9-16: ERR_CAST can be used with alg
 
 
 Detailed description of the ``patch`` mode
@@ -467,8 +467,8 @@ will execute the following part of the SmPL script::
 This SmPL excerpt generates diff hunks on the standard output, as
 illustrated below::
 
-    diff -u -p /home/user/CQX96/crypto/ctr.c /tmp/nothing
-    --- /home/user/CQX96/crypto/ctr.c	2010-05-26 10:49:38.000000000 +0200
+    diff -u -p /home/user/linux/crypto/ctr.c /tmp/nothing
+    --- /home/user/linux/crypto/ctr.c	2010-05-26 10:49:38.000000000 +0200
     +++ /tmp/nothing
     @@ -185,7 +185,6 @@ static struct crypto_instance *crypto_ct
  	alg = crypto_attr_alg(tb[1], CRYPTO_ALG_TYPE_CIPHER,
@@ -514,6 +514,6 @@ will execute the following part of the SmPL script::
 This SmPL excerpt generates Org entries on the standard output, as
 illustrated below::
 
-    * TODO [[view:/home/user/CQX96/crypto/ctr.c::face=ovl-face1::linb=188::colb=9::cole=16][ERR_CAST can be used with alg]]
-    * TODO [[view:/home/user/CQX96/crypto/authenc.c::face=ovl-face1::linb=619::colb=9::cole=16][ERR_CAST can be used with auth]]
-    * TODO [[view:/home/user/CQX96/crypto/xts.c::face=ovl-face1::linb=227::colb=9::cole=16][ERR_CAST can be used with alg]]
+    * TODO [[view:/home/user/linux/crypto/ctr.c::face=ovl-face1::linb=188::colb=9::cole=16][ERR_CAST can be used with alg]]
+    * TODO [[view:/home/user/linux/crypto/authenc.c::face=ovl-face1::linb=619::colb=9::cole=16][ERR_CAST can be used with auth]]
+    * TODO [[view:/home/user/linux/crypto/xts.c::face=ovl-face1::linb=227::colb=9::cole=16][ERR_CAST can be used with alg]]

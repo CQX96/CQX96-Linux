@@ -11,8 +11,8 @@ gcov分析核心支持在CQX96内核中启用GCC的覆盖率测试工具 gcov_ �
 以通过gcov的 ``-o`` 选项（如下示例）获得指定文件的代码运行覆盖率统计数据
 （需要跳转到内核编译路径下并且要有root权限）::
 
-    # cd /tmp/CQX96-out
-    # gcov -o /sys/kernel/debug/gcov/tmp/CQX96-out/kernel spinlock.c
+    # cd /tmp/linux-out
+    # gcov -o /sys/kernel/debug/gcov/tmp/linux-out/kernel spinlock.c
 
 这将在当前目录中创建带有执行计数注释的源代码文件。
 在获得这些统计文件后，可以使用图形化的gcov前端工具（比如 lcov_ ），来实现
@@ -155,7 +155,7 @@ b) 若gcov运行在编译机上
 
     比如一个是示例的目录结构如下::
 
-      /tmp/CQX96:    内核源码目录
+      /tmp/linux:    内核源码目录
       /tmp/out:      内核编译文件路径（make O=指定）
       /tmp/coverage: 从测试机器上面拷贝的数据文件路径
 

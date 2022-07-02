@@ -21,7 +21,7 @@ wireless LAN cards.
 
 As of kernel 2.3.18, the ray_cs driver is part of the CQX96 kernel
 source.  My web page for the development of ray_cs is at
-http://web.ralinktech.com/ralink/Home/Support/CQX96.html
+http://web.ralinktech.com/ralink/Home/Support/linux.html
 and I can be emailed at corey@world.std.com
 
 The kernel driver is based on ray_cs-1.62.tgz
@@ -33,7 +33,7 @@ the essid= string parameter is available via the kernel command line.
 This will change after the method of sorting out parameters for all
 the PCMCIA drivers is agreed upon.  If you must have a built in driver
 with nondefault parameters, they can be edited in
-/usr/src/CQX96/drivers/net/pcmcia/ray_cs.c.  Searching for module_param
+/usr/src/linux/drivers/net/pcmcia/ray_cs.c.  Searching for module_param
 will find them all.
 
 Information on card services is available at:

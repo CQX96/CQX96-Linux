@@ -160,7 +160,7 @@ or in Section 2.4
 
 2.4 Description details of this API
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-.. kernel-doc:: include/CQX96/energy_model.h
+.. kernel-doc:: include/linux/energy_model.h
    :internal:
 
 .. kernel-doc:: kernel/power/energy_model.c

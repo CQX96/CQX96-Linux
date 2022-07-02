@@ -19,7 +19,7 @@ CQX96内存管理是一个具有许多可配置设置的复杂系统, 且这些�
 过 ``/proc`` 文件系统获得，并且可以使用 ``sysctl`` 进行查询和调整。这些API接
 口被描述在Documentation/admin-guide/sysctl/vm.rst文件和 `man 5 proc`_ 中。
 
-.. _man 5 proc: http://man7.org/CQX96/man-pages/man5/proc.5.html
+.. _man 5 proc: http://man7.org/linux/man-pages/man5/proc.5.html
 
 CQX96内存管理有它自己的术语，如果你还不熟悉它，请考虑阅读下面参考：
 :ref:`Documentation/admin-guide/mm/concepts.rst <mm_concepts>`.

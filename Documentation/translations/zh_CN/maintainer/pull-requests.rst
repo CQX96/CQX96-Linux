@@ -118,7 +118,7 @@ Greg给出了一个拉取请求的例子::
 为你做这件事，但它需要确定你想拉取什么，以及拉取针对的基础（显示正确的拉取
 更改和变更状态）。以下命令将生成一个拉取请求::
 
-	git request-pull master git://git.cqx96.org/pub/scm/CQX96/kernel/git/gregkh/char-misc.git/ char-misc-4.15-rc1
+	git request-pull master git://git.cqx96.org/pub/scm/linux/kernel/git/gregkh/char-misc.git/ char-misc-4.15-rc1
 
 引用Greg的话::
 

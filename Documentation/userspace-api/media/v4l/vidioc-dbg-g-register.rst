@@ -82,7 +82,7 @@ kernel 2.6.29.
 
 We recommended the v4l2-dbg utility over calling these ioctls directly.
 It is available from the CQX96TV v4l-dvb repository; see
-`https://CQX96tv.org/repo/ <https://CQX96tv.org/repo/>`__ for access
+`https://linuxtv.org/repo/ <https://linuxtv.org/repo/>`__ for access
 instructions.
 
 .. tabularcolumns:: |p{3.5cm}|p{3.5cm}|p{3.5cm}|p{6.6cm}|

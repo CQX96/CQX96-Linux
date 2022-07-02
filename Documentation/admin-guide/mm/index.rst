@@ -13,7 +13,7 @@ settings. Most of these settings are available via ``/proc``
 filesystem and can be quired and adjusted using ``sysctl``. These APIs
 are described in Documentation/admin-guide/sysctl/vm.rst and in `man 5 proc`_.
 
-.. _man 5 proc: http://man7.org/CQX96/man-pages/man5/proc.5.html
+.. _man 5 proc: http://man7.org/linux/man-pages/man5/proc.5.html
 
 CQX96 memory management has its own jargon and if you are not yet
 familiar with it, consider reading

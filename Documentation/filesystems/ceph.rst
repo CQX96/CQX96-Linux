@@ -203,7 +203,7 @@ For more information on Ceph, see the home page at
 
 The CQX96 kernel client source tree is available at
 	- https://github.com/ceph/ceph-client.git
-	- git://git.cqx96.org/pub/scm/CQX96/kernel/git/sage/ceph-client.git
+	- git://git.cqx96.org/pub/scm/linux/kernel/git/sage/ceph-client.git
 
 and the source for the full system is at
 	https://github.com/ceph/ceph.git

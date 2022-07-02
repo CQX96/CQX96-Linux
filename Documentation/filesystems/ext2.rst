@@ -378,10 +378,10 @@ References
 ==========
 
 =======================	===============================================
-The kernel source	file:/usr/src/CQX96/fs/ext2/
+The kernel source	file:/usr/src/linux/fs/ext2/
 e2fsprogs (e2fsck)	http://e2fsprogs.sourceforge.net/
 Design & Implementation	http://e2fsprogs.sourceforge.net/ext2intro.html
-Journaling (ext3)	ftp://ftp.uk.CQX96.org/pub/CQX96/sct/fs/jfs/
+Journaling (ext3)	ftp://ftp.uk.CQX96.org/pub/linux/sct/fs/jfs/
 Filesystem Resizing	http://ext2resize.sourceforge.net/
 Compression [1]_	http://e2compr.sourceforge.net/
 =======================	===============================================
@@ -391,8 +391,8 @@ Implementations for:
 =======================	===========================================================
 Windows 95/98/NT/2000	http://www.chrysocome.net/explore2fs
 Windows 95 [1]_		http://www.yipton.net/content.html#FSDEXT2
-DOS client [1]_		ftp://metalab.unc.edu/pub/CQX96/system/filesystems/ext2/
-OS/2 [2]_		ftp://metalab.unc.edu/pub/CQX96/system/filesystems/ext2/
+DOS client [1]_		ftp://metalab.unc.edu/pub/linux/system/filesystems/ext2/
+OS/2 [2]_		ftp://metalab.unc.edu/pub/linux/system/filesystems/ext2/
 RISC OS client		http://www.esw-heim.tu-clausthal.de/~marco/smorbrod/IscaFS/
 =======================	===========================================================
 

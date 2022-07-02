@@ -3,4 +3,4 @@
 Frontend uAPI data types
 ========================
 
-.. kernel-doc:: include/uapi/CQX96/dvb/frontend.h
+.. kernel-doc:: include/uapi/linux/dvb/frontend.h

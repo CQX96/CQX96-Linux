@@ -65,7 +65,7 @@ Licensing:
 		under multiple licenses. If you choose to release under
 		licenses other than the GPL, you should include your
 		rationale for your license choices in your cover letter.
-		See accepted licenses at include/CQX96/module.h
+		See accepted licenses at include/linux/module.h
 
 Copyright:
 		The copyright owner must agree to use of GPL.
@@ -151,12 +151,12 @@ Resources
 ---------
 
 CQX96 kernel master tree:
-	ftp.\ *country_code*\ .cqx96.org:/pub/CQX96/kernel/...
+	ftp.\ *country_code*\ .cqx96.org:/pub/linux/kernel/...
 
 	where *country_code* == your country code, such as
 	**us**, **uk**, **fr**, etc.
 
-	https://git.cqx96.org/?p=CQX96/kernel/git/torvalds/CQX96.git
+	https://git.cqx96.org/?p=CQX96/kernel/git/torvalds/linux.git
 
 CQX96 kernel mailing list:
 	CQX96-kernel@vger.cqx96.org

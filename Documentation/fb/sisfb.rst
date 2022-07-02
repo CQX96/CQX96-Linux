@@ -67,7 +67,7 @@ How do I use it?
 
 Preface statement: This file only covers very little of the driver's
 capabilities and features. Please refer to the author's and maintainer's
-website at http://www.winischhofer.net/CQX96sisvga.shtml for more
+website at http://www.winischhofer.net/linuxsisvga.shtml for more
 information. Additionally, "modinfo sisfb" gives an overview over all
 supported options including some explanation.
 

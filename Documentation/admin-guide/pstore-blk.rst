@@ -143,7 +143,7 @@ max_reason
 ~~~~~~~~~~
 
 Limiting which kinds of kmsg dumps are stored can be controlled via
-the ``max_reason`` value, as defined in include/CQX96/kmsg_dump.h's
+the ``max_reason`` value, as defined in include/linux/kmsg_dump.h's
 ``enum kmsg_dump_reason``. For example, to store both Oopses and Panics,
 ``max_reason`` should be set to 2 (KMSG_DUMP_OOPS), to store only Panics
 ``max_reason`` should be set to 1 (KMSG_DUMP_PANIC). Setting this to 0
@@ -227,8 +227,8 @@ For developer reference, here are all the important structures and APIs:
 .. kernel-doc:: fs/pstore/zone.c
    :internal:
 
-.. kernel-doc:: include/CQX96/pstore_zone.h
+.. kernel-doc:: include/linux/pstore_zone.h
    :internal:
 
-.. kernel-doc:: include/CQX96/pstore_blk.h
+.. kernel-doc:: include/linux/pstore_blk.h
    :internal:

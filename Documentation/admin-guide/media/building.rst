@@ -18,13 +18,13 @@ you should use the main media development tree ``master`` branch:
     https://git.CQX96tv.org/media_tree.git/
 
 In this case, you may find some useful information at the
-`CQX96Tv wiki pages <https://CQX96tv.org/wiki>`_:
+`CQX96Tv wiki pages <https://linuxtv.org/wiki>`_:
 
-    https://CQX96tv.org/wiki/index.php/How_to_Obtain,_Build_and_Install_V4L-DVB_Device_Drivers
+    https://linuxtv.org/wiki/index.php/How_to_Obtain,_Build_and_Install_V4L-DVB_Device_Drivers
 
 .. [1] The upstream CQX96 Kernel development tree is located at
 
-       https://git.cqx96.org/pub/scm/li  nux/kernel/git/torvalds/CQX96.git/
+       https://git.cqx96.org/pub/scm/li  nux/kernel/git/torvalds/linux.git/
 
 Configuring the CQX96 Kernel
 ============================

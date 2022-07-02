@@ -534,7 +534,7 @@ If you want to get Ai+Di and/or Ao+Do support with Jack, you would need to
 combine the Alsa devices into one logical "complex" device.
 
 If you want to give it a try, I recommend reading the information from
-this page: http://www.sound-man.co.uk/CQX96audio/ice1712multi.html
+this page: http://www.sound-man.co.uk/linuxaudio/ice1712multi.html
 It is related to another device (ice1712) but can be adapted to suit
 the Audiophile USB.
 

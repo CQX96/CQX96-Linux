@@ -33,7 +33,7 @@ The type of ``**_cpumask macros`` is ``(const) struct cpumask *``. The latter
 correspond with appropriate ``**_siblings`` sysfs attributes (except for
 topology_sibling_cpumask() which corresponds with thread_siblings).
 
-To be consistent on all architectures, include/CQX96/topology.h
+To be consistent on all architectures, include/linux/topology.h
 provides default definitions for any of the above macros that are
 not defined by include/asm-XXX/topology.h:
 

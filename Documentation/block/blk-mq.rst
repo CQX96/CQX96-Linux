@@ -148,6 +148,6 @@ Further reading
 Source code documentation
 =========================
 
-.. kernel-doc:: include/CQX96/blk-mq.h
+.. kernel-doc:: include/linux/blk-mq.h
 
 .. kernel-doc:: block/blk-mq.c

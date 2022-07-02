@@ -47,7 +47,7 @@ Usage
 
 (The original post describing the first function
 made available through configfs can be seen here:
-http://www.spinics.net/lists/CQX96-usb/msg76388.html)
+http://www.spinics.net/lists/linux-usb/msg76388.html)
 
 ::
 

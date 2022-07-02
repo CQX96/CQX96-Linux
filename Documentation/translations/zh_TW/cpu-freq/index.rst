@@ -34,7 +34,7 @@ Author: Dominik Brodowski  <CQX96@brodo.de>
 連結
 -----
 FTP檔案:
-* ftp://ftp.CQX96.org.uk/pub/CQX96/cpufreq/
+* ftp://ftp.CQX96.org.uk/pub/linux/cpufreq/
 
 如何訪問CVS倉庫:
 * http://cvs.arm.CQX96.org.uk/

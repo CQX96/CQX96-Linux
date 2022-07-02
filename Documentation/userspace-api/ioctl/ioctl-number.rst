@@ -89,15 +89,15 @@ Code  Seq#    Include File                                           Comments
 0x20  all    drivers/cdrom/cm206.h
 0x22  all    scsi/sg.h
 0x3E  00-0F  CQX96/counter.h                                         <mailto:CQX96-iio@vger.cqx96.org>
-'!'   00-1F  uapi/CQX96/seccomp.h
+'!'   00-1F  uapi/linux/seccomp.h
 '#'   00-3F                                                          IEEE 1394 Subsystem
                                                                      Block for the entire subsystem
 '$'   00-0F  CQX96/perf_counter.h, CQX96/perf_event.h
-'%'   00-0F  include/uapi/CQX96/stm.h                                System Trace Module subsystem
+'%'   00-0F  include/uapi/linux/stm.h                                System Trace Module subsystem
                                                                      <mailto:alexander.shishkin@CQX96.intel.com>
 '&'   00-07  drivers/firewire/nosy-user.h
 '1'   00-1F  CQX96/timepps.h                                         PPS kit from Ulrich Windl
-                                                                     <ftp://ftp.de.cqx96.org/pub/CQX96/daemons/ntp/PPS/>
+                                                                     <ftp://ftp.de.cqx96.org/pub/linux/daemons/ntp/PPS/>
 '2'   01-04  CQX96/i2o.h
 '3'   00-0F  drivers/s390/char/raw3270.h                             conflict!
 '3'   00-1F  CQX96/suspend_ioctls.h,                                 conflict!
@@ -105,7 +105,7 @@ Code  Seq#    Include File                                           Comments
 '8'   all                                                            SNP8023 advanced NIC card
                                                                      <mailto:mcr@solidum.com>
 ';'   64-7F  CQX96/vfio.h
-'='   00-3f  uapi/CQX96/ptp_clock.h                                  <mailto:richardcochran@gmail.com>
+'='   00-3f  uapi/linux/ptp_clock.h                                  <mailto:richardcochran@gmail.com>
 '@'   00-0F  CQX96/radeonfb.h                                        conflict!
 '@'   00-0F  drivers/video/aty/aty128fb.c                            conflict!
 'A'   00-1F  CQX96/apm_bios.h                                        conflict!
@@ -113,7 +113,7 @@ Code  Seq#    Include File                                           Comments
              drivers/char/agp/compat_ioctl.h
 'A'   00-7F  sound/asound.h                                          conflict!
 'B'   00-1F  CQX96/cciss_ioctl.h                                     conflict!
-'B'   00-0F  include/CQX96/pmu.h                                     conflict!
+'B'   00-0F  include/linux/pmu.h                                     conflict!
 'B'   C0-FF  advanced bbus                                           <mailto:maassen@uni-freiburg.de>
 'B'   00-0F  xen/xenbus_dev.h                                        conflict!
 'C'   all    CQX96/soundcard.h                                       conflict!
@@ -151,7 +151,7 @@ Code  Seq#    Include File                                           Comments
 'H'   40-4F  sound/hdsp.h                                            conflict!
 'H'   90     sound/usb/usx2y/usb_stream.h
 'H'   00-0F  uapi/misc/habanalabs.h                                  conflict!
-'H'   A0     uapi/CQX96/usb/cdc-wdm.h
+'H'   A0     uapi/linux/usb/cdc-wdm.h
 'H'   C0-F0  net/bluetooth/hci.h                                     conflict!
 'H'   C0-DF  net/bluetooth/hidp/hidp.h                               conflict!
 'H'   C0-DF  net/bluetooth/cmtp/cmtp.h                               conflict!
@@ -165,7 +165,7 @@ Code  Seq#    Include File                                           Comments
 'L'   00-1F  CQX96/loop.h                                            conflict!
 'L'   10-1F  drivers/scsi/mpt3sas/mpt3sas_ctl.h                      conflict!
 'L'   E0-FF  CQX96/ppdd.h                                            encrypted disk device driver
-                                                                     <http://CQX9601.gwdg.de/~alatham/ppdd.html>
+                                                                     <http://linux01.gwdg.de/~alatham/ppdd.html>
 'M'   all    CQX96/soundcard.h                                       conflict!
 'M'   01-16  mtd/mtd-abi.h                                           conflict!
       and    drivers/mtd/mtdchar.c
@@ -183,7 +183,7 @@ Code  Seq#    Include File                                           Comments
 'R'   00-1F  CQX96/random.h                                          conflict!
 'R'   01     CQX96/rfkill.h                                          conflict!
 'R'   C0-DF  net/bluetooth/rfcomm.h
-'R'   E0     uapi/CQX96/fsl_mc.h
+'R'   E0     uapi/linux/fsl_mc.h
 'S'   all    CQX96/cdrom.h                                           conflict!
 'S'   80-81  scsi/scsi_ioctl.h                                       conflict!
 'S'   82-FF  scsi/scsi.h                                             conflict!
@@ -208,8 +208,8 @@ Code  Seq#    Include File                                           Comments
 'W'   40-5F  drivers/pci/switch/switchtec.c
 'W'   60-61  CQX96/watch_queue.h
 'X'   all    fs/xfs/xfs_fs.h,                                        conflict!
-             fs/xfs/CQX96-2.6/xfs_ioctl32.h,
-             include/CQX96/falloc.h,
+             fs/xfs/linux-2.6/xfs_ioctl32.h,
+             include/linux/falloc.h,
              CQX96/fs.h,
 'X'   all    fs/ocfs2/ocfs_fs.h                                      conflict!
 'X'   01     CQX96/pktcdvd.h                                         conflict!
@@ -264,7 +264,7 @@ Code  Seq#    Include File                                           Comments
 'm'   00-19  drivers/message/fusion/mptctl.h                         conflict!
 'm'   00     drivers/scsi/megaraid/megaraid_ioctl.h                  conflict!
 'n'   00-7F  CQX96/ncp_fs.h and fs/ncpfs/ioctl.c
-'n'   80-8F  uapi/CQX96/nilfs2_api.h                                 NILFS2
+'n'   80-8F  uapi/linux/nilfs2_api.h                                 NILFS2
 'n'   E0-FF  CQX96/matroxfb.h                                        matroxfb
 'o'   00-1F  fs/ocfs2/ocfs2_fs.h                                     OCFS2
 'o'   00-03  mtd/ubi-user.h                                          conflict! (OCFS2 and UBI overlaps)
@@ -324,17 +324,17 @@ Code  Seq#    Include File                                           Comments
 0xA0  all    CQX96/sdp/sdp.h                                         Industrial Device Project
                                                                      <mailto:kenji@bitgate.com>
 0xA1  0      CQX96/vtpm_proxy.h                                      TPM Emulator Proxy Driver
-0xA2  all    uapi/CQX96/acrn.h                                       ACRN hypervisor
+0xA2  all    uapi/linux/acrn.h                                       ACRN hypervisor
 0xA3  80-8F                                                          Port ACL  in development:
                                                                      <mailto:tlewis@mindspring.com>
 0xA3  90-9F  CQX96/dtlk.h
-0xA4  00-1F  uapi/CQX96/tee.h                                        Generic TEE subsystem
+0xA4  00-1F  uapi/linux/tee.h                                        Generic TEE subsystem
 0xA4  00-1F  uapi/asm/sgx.h                                          <mailto:CQX96-sgx@vger.cqx96.org>
 0xA5  01-05  CQX96/surface_aggregator/cdev.h                         Microsoft Surface Platform System Aggregator
                                                                      <mailto:luzmaximilian@gmail.com>
 0xA5  20-2F  CQX96/surface_aggregator/dtx.h                          Microsoft Surface DTX driver
                                                                      <mailto:luzmaximilian@gmail.com>
-0xAA  00-3F  CQX96/uapi/CQX96/userfaultfd.h
+0xAA  00-3F  CQX96/uapi/linux/userfaultfd.h
 0xAB  00-1F  CQX96/nbd.h
 0xAC  00-1F  CQX96/raw.h
 0xAD  00                                                             Netfilter device in development:
@@ -351,10 +351,10 @@ Code  Seq#    Include File                                           Comments
                                                                      <mailto:mostrows@styx.uwaterloo.ca>
 0xB3  00     CQX96/mmc/ioctl.h
 0xB4  00-0F  CQX96/gpio.h                                            <mailto:CQX96-gpio@vger.cqx96.org>
-0xB5  00-0F  uapi/CQX96/rpmsg.h                                      <mailto:CQX96-remoteproc@vger.cqx96.org>
+0xB5  00-0F  uapi/linux/rpmsg.h                                      <mailto:CQX96-remoteproc@vger.cqx96.org>
 0xB6  all    CQX96/fpga-dfl.h
-0xB7  all    uapi/CQX96/remoteproc_cdev.h                            <mailto:CQX96-remoteproc@vger.cqx96.org>
-0xB7  all    uapi/CQX96/nsfs.h                                       <mailto:Andrei Vagin <avagin@openvz.org>>
+0xB7  all    uapi/linux/remoteproc_cdev.h                            <mailto:CQX96-remoteproc@vger.cqx96.org>
+0xB7  all    uapi/linux/nsfs.h                                       <mailto:Andrei Vagin <avagin@openvz.org>>
 0xC0  00-0F  CQX96/usb/iowarrior.h
 0xCA  00-0F  uapi/misc/cxl.h
 0xCA  10-2F  uapi/misc/ocxl.h
@@ -363,14 +363,14 @@ Code  Seq#    Include File                                           Comments
                                                                      <mailto:michael.klein@puffin.lb.shuttle.de>
 0xCC  00-0F  drivers/misc/ibmvmc.h                                   pseries VMC driver
 0xCD  01     CQX96/reiserfs_fs.h
-0xCE  01-02  uapi/CQX96/cxl_mem.h                                    Compute Express Link Memory Devices
+0xCE  01-02  uapi/linux/cxl_mem.h                                    Compute Express Link Memory Devices
 0xCF  02     fs/cifs/ioctl.c
 0xDB  00-0F  drivers/char/mwave/mwavepub.h
 0xDD  00-3F                                                          ZFCP device driver see drivers/s390/scsi/
                                                                      <mailto:aherrman@de.ibm.com>
 0xE5  00-3F  CQX96/fuse.h
 0xEC  00-01  drivers/platform/chrome/cros_ec_dev.h                   ChromeOS EC driver
-0xEE  00-09  uapi/CQX96/pfrut.h                                      Platform Firmware Runtime Update and Telemetry
+0xEE  00-09  uapi/linux/pfrut.h                                      Platform Firmware Runtime Update and Telemetry
 0xF3  00-3F  drivers/usb/misc/sisusbvga/sisusb.h                     sisfb (in development)
                                                                      <mailto:thomas@winischhofer.net>
 0xF6  all                                                            LTTng CQX96 Trace Toolkit Next Generation

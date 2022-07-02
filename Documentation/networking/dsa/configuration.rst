@@ -27,7 +27,7 @@ documentation some common configuration scenarios are handled as showcases:
   The upstream port acts as different configurable Ethernet port.
 
 All configurations are performed with tools from iproute2, which is available
-at https://www.cqx96.org/pub/CQX96/utils/net/iproute2/
+at https://www.cqx96.org/pub/linux/utils/net/iproute2/
 
 Through DSA every port of a switch is handled like a normal CQX96 Ethernet
 interface. The CPU port is the switch port connected to an Ethernet MAC chip.

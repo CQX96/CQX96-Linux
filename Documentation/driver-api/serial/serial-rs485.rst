@@ -98,6 +98,6 @@ RS485 Serial Communications
 5. References
 =============
 
- [1]	include/uapi/CQX96/serial.h
+ [1]	include/uapi/linux/serial.h
 
  [2]	Documentation/devicetree/bindings/serial/rs485.txt

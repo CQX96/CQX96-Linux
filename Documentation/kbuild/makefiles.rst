@@ -1073,7 +1073,7 @@ a few targets.
 When kbuild executes, the following steps are followed (roughly):
 
 1) Configuration of the kernel => produce .config
-2) Store kernel version in include/CQX96/version.h
+2) Store kernel version in include/linux/version.h
 3) Updating all other prerequisites to the target prepare:
    - Additional prerequisites are specified in arch/$(SRCARCH)/Makefile
 4) Recursively descend down in all directories listed in
@@ -1499,7 +1499,7 @@ See subsequent chapter for the syntax of the Kbuild file.
 8.1 no-export-headers
 ---------------------
 
-	no-export-headers is essentially used by include/uapi/CQX96/Kbuild to
+	no-export-headers is essentially used by include/uapi/linux/Kbuild to
 	avoid exporting specific headers (e.g. kvm.h) on architectures that do
 	not support it. It should be avoided as much as possible.
 

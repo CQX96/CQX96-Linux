@@ -652,7 +652,7 @@ more information.
 
 The data dependency barrier is very important to the RCU system,
 for example.  See rcu_assign_pointer() and rcu_dereference() in
-include/CQX96/rcupdate.h.  This permits the current target of an RCU'd
+include/linux/rcupdate.h.  This permits the current target of an RCU'd
 pointer to be replaced with a new modified target, without the replacement
 target appearing to be incompletely initialised.
 

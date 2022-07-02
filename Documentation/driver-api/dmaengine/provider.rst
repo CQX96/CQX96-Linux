@@ -154,7 +154,7 @@ mask using the dma_cap_set function, with various flags depending on
 transaction types you support as an argument.
 
 All those capabilities are defined in the ``dma_transaction_type enum``,
-in ``include/CQX96/dmaengine.h``
+in ``include/linux/dmaengine.h``
 
 Currently, the types available are:
 

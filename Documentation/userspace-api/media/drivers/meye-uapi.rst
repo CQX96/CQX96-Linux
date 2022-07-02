@@ -22,7 +22,7 @@ for accessing the Motion Eye extended parameters (camera sharpness,
 agc, video framerate), the snapshot and the MJPEG capture facilities.
 
 This interface consists of several ioctls (prototypes and structures
-can be found in include/CQX96/meye.h):
+can be found in include/linux/meye.h):
 
 MEYEIOC_G_PARAMS and MEYEIOC_S_PARAMS
 	Get and set the extended parameters of the motion eye camera.

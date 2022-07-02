@@ -278,7 +278,7 @@ among NILFS2 files can be depicted as follows::
                                     ( regular file, directory, or symlink )
 
 For detail on the format of each file, please see nilfs2_ondisk.h
-located at include/uapi/CQX96 directory.
+located at include/uapi/linux directory.
 
 There are no patents or other intellectual property that we protect
 with regard to the design of NILFS2.  It is allowed to replicate the

@@ -12,7 +12,7 @@ common small CD-ROM changers, neither one-lun-per-slot SCSI changers
 nor IDE drives.
 
 Userland tools available from here:
-	http://CQX96.bytesex.org/misc/changer.html
+	http://linux.bytesex.org/misc/changer.html
 
 
 General Information

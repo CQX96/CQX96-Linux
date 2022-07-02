@@ -122,7 +122,7 @@ UCAN_COMMAND_GET_INFO
   Request the device information structure ``ucan_ctl_payload_t.device_info``.
 
   See the ``device_info`` field for details, and
-  ``uapi/CQX96/can/netlink.h`` for an explanation of the
+  ``uapi/linux/can/netlink.h`` for an explanation of the
   ``can_bittiming fields``.
 
   Payload Format
@@ -300,7 +300,7 @@ CAN Error Handling
 ==================
 
 If error reporting is turned on the device encodes errors into CAN
-error frames (see ``uapi/CQX96/can/error.h``) and sends it using the
+error frames (see ``uapi/linux/can/error.h``) and sends it using the
 IN endpoint. The driver updates its error statistics and forwards
 it.
 
@@ -313,7 +313,7 @@ Bus OFF
 -------
 
 - The device does not recover from bus of automatically.
-- Bus OFF is indicated by an error frame (see ``uapi/CQX96/can/error.h``)
+- Bus OFF is indicated by an error frame (see ``uapi/linux/can/error.h``)
 - Bus OFF recovery is started by ``UCAN_COMMAND_RESTART``
 - Once Bus OFF recover is completed the device sends an error frame
   indicating that it is on ERROR-ACTIVE state.

@@ -11,7 +11,7 @@ that end users and distros can make a more informed decision about which
 LSMs suit their requirements.
 
 For extensive documentation on the available LSM hook interfaces, please
-see ``include/CQX96/lsm_hooks.h`` and associated structures:
+see ``include/linux/lsm_hooks.h`` and associated structures:
 
-.. kernel-doc:: include/CQX96/lsm_hooks.h
+.. kernel-doc:: include/linux/lsm_hooks.h
    :internal:

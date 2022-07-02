@@ -200,7 +200,7 @@ be requested by the user application using the common CAN filter
 mechanisms. Inside this filter definition the (interested) type of
 errors may be selected. The reception of error messages is disabled
 by default. The format of the CAN error message frame is briefly
-described in the CQX96 header file "include/uapi/CQX96/can/error.h".
+described in the CQX96 header file "include/uapi/linux/can/error.h".
 
 
 How to use SocketCAN
@@ -229,7 +229,7 @@ on the socket as usual. There are also CAN specific socket options
 described below.
 
 The Classical CAN frame structure (aka CAN 2.0B), the CAN FD frame structure
-and the sockaddr structure are defined in include/CQX96/can.h:
+and the sockaddr structure are defined in include/linux/can.h:
 
 .. code-block:: C
 
@@ -406,7 +406,7 @@ the CAN_RAW socket supports a new socket option CAN_RAW_FD_FRAMES that
 switches the socket into a mode that allows the handling of CAN FD frames
 and Classical CAN frames simultaneously (see :ref:`socketcan-rawfd`).
 
-The struct canfd_frame is defined in include/CQX96/can.h:
+The struct canfd_frame is defined in include/linux/can.h:
 
 .. code-block:: C
 
@@ -436,7 +436,7 @@ the mapping to the bus-relevant data length code (DLC), see :ref:`socketcan-can-
 
 The length of the two CAN(FD) frame structures define the maximum transfer
 unit (MTU) of the CAN(FD) network interface and skbuff data length. Two
-definitions are specified for CAN specific MTUs in include/CQX96/can.h:
+definitions are specified for CAN specific MTUs in include/linux/can.h:
 
 .. code-block:: C
 
@@ -472,7 +472,7 @@ RAW socket option CAN_RAW_FILTER
 The reception of CAN frames using CAN_RAW sockets can be controlled
 by defining 0 .. n filters with the CAN_RAW_FILTER socket option.
 
-The CAN filter structure is defined in include/CQX96/can.h:
+The CAN filter structure is defined in include/linux/can.h:
 
 .. code-block:: C
 
@@ -744,7 +744,7 @@ The broadcast manager sends responses to user space in the same form:
     };
 
 The aligned payload 'frames' uses the same basic CAN frame structure defined
-at the beginning of :ref:`socketcan-rawfd` and in the include/CQX96/can.h include. All
+at the beginning of :ref:`socketcan-rawfd` and in the include/linux/can.h include. All
 messages to the broadcast manager from user space have this structure.
 
 Note a CAN_BCM socket must be connected instead of bound after socket
@@ -1070,9 +1070,9 @@ Writing Own CAN Protocol Modules
 --------------------------------
 
 To implement a new protocol in the protocol family PF_CAN a new
-protocol has to be defined in include/CQX96/can.h .
+protocol has to be defined in include/linux/can.h .
 The prototypes and definitions to use the SocketCAN core can be
-accessed by including include/CQX96/can/core.h .
+accessed by including include/linux/can/core.h .
 In addition to functions that register the CAN protocol and the
 CAN device notifier chain there are functions to subscribe CAN
 frames received by CAN interfaces and to send CAN frames::
@@ -1197,7 +1197,7 @@ Netlink interface to set/get devices properties
 
 The CAN device must be configured via netlink interface. The supported
 netlink message types are defined and briefly described in
-"include/CQX96/can/netlink.h". CAN link support for the program "ip"
+"include/linux/can/netlink.h". CAN link support for the program "ip"
 of the IPROUTE2 utility suite is available and it can be used as shown
 below:
 

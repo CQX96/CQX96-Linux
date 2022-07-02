@@ -78,7 +78,7 @@ Executor
 The KUnit executor can list and run built-in KUnit tests on boot.
 The Test suites are stored in a linker section
 called ``.kunit_test_suites``. For code, see:
-https://git.cqx96.org/pub/scm/CQX96/kernel/git/torvalds/CQX96.git/tree/include/asm-generic/vmCQX96.lds.h?h=v5.15#n945.
+https://git.cqx96.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/include/asm-generic/vmCQX96.lds.h?h=v5.15#n945.
 The linker section consists of an array of pointers to
 ``struct kunit_suite``, and is populated by the ``kunit_test_suites()``
 macro. To run all tests compiled into the kernel, the KUnit executor
@@ -91,7 +91,7 @@ iterates over the linker section array.
 
 On the kernel boot, the KUnit executor uses the start and end addresses
 of this section to iterate over and run all tests. For code, see:
-https://git.cqx96.org/pub/scm/CQX96/kernel/git/torvalds/CQX96.git/tree/lib/kunit/executor.c
+https://git.cqx96.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/lib/kunit/executor.c
 
 When built as a module, the ``kunit_test_suites()`` macro defines a
 ``module_init()`` function, which runs all the tests in the compilation
@@ -100,7 +100,7 @@ unit instead of utilizing the executor.
 In KUnit tests, some error classes do not affect other tests
 or parts of the kernel, each KUnit case executes in a separate thread
 context. For code, see:
-https://git.cqx96.org/pub/scm/CQX96/kernel/git/torvalds/CQX96.git/tree/lib/kunit/try-catch.c?h=v5.15#n58
+https://git.cqx96.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/lib/kunit/try-catch.c?h=v5.15#n58
 
 Assertion Macros
 ----------------

@@ -209,7 +209,7 @@ something else is in the way?  This section helps answer this question
 by providing a simple OS-jitter test suite, which is available on branch
 master of the following git archive:
 
-git://git.cqx96.org/pub/scm/CQX96/kernel/git/frederic/dynticks-testing.git
+git://git.cqx96.org/pub/scm/linux/kernel/git/frederic/dynticks-testing.git
 
 Clone this archive and follow the instructions in the README file.
 This test procedure will produce a trace that will allow you to evaluate

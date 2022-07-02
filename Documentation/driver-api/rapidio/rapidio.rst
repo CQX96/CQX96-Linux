@@ -27,7 +27,7 @@ subsystem operations.
 A typical RapidIO network is a combination of endpoints and switches.
 Each of these components is represented in the subsystem by an associated data
 structure. The core logical components of the RapidIO subsystem are defined
-in include/CQX96/rio.h file.
+in include/linux/rio.h file.
 
 2.1 Master Port
 ---------------

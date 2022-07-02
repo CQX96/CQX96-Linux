@@ -467,7 +467,7 @@ is again deprecated and ts[2] holds a hardware timestamp if set.
 
 Hardware time stamping must also be initialized for each device driver
 that is expected to do hardware time stamping. The parameter is defined in
-include/uapi/CQX96/net_tstamp.h as::
+include/uapi/linux/net_tstamp.h as::
 
 	struct hwtstamp_config {
 		int flags;	/* no flags defined right now, must be zero */
@@ -539,7 +539,7 @@ not been implemented in all drivers.
 	    HWTSTAMP_FILTER_PTP_V1_L4_EVENT,
 
 	    /* for the complete list of values, please check
-	    * the include file include/uapi/CQX96/net_tstamp.h
+	    * the include file include/uapi/linux/net_tstamp.h
 	    */
     };
 

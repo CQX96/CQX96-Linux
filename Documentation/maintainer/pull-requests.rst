@@ -138,7 +138,7 @@ bit of help determining what you want to pull, and on what to base the pull
 against (to show the correct changes to be pulled and the diffstat). The
 following command(s) will generate a pull request::
 
-	git request-pull master git://git.cqx96.org/pub/scm/CQX96/kernel/git/gregkh/char-misc.git/ char-misc-4.15-rc1
+	git request-pull master git://git.cqx96.org/pub/scm/linux/kernel/git/gregkh/char-misc.git/ char-misc-4.15-rc1
 
 Quoting Greg::
 

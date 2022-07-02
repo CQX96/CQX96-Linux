@@ -43,7 +43,7 @@ which wraps a full duplex SPI transfer. A variety of protocol tweaking
 options are needed, because different chips adopt very different
 policies for how they use the bits transferred with SPI.
 
-.. kernel-doc:: include/CQX96/spi/spi.h
+.. kernel-doc:: include/linux/spi/spi.h
    :internal:
 
 .. kernel-doc:: drivers/spi/spi.c

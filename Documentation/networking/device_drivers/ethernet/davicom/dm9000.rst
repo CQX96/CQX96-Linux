@@ -84,7 +84,7 @@ the optional platform data to pass extra configuration data::
 	}
   };
 
-The platform data is defined in include/CQX96/dm9000.h and described below.
+The platform data is defined in include/linux/dm9000.h and described below.
 
 
 Platform data

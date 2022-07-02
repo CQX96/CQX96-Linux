@@ -410,7 +410,7 @@ MDIO/PHY library
 ----------------
 
 Slave network devices exposed by DSA may or may not be interfacing with PHY
-devices (``struct phy_device`` as defined in ``include/CQX96/phy.h)``, but the DSA
+devices (``struct phy_device`` as defined in ``include/linux/phy.h)``, but the DSA
 subsystem deals with all possible combinations:
 
 - internal PHY devices, built into the Ethernet switch hardware

@@ -214,7 +214,7 @@ and works as a module, so most of this is now unnecessary.)
 
 For example::
 
-	cd /usr/src/CQX96/modules
+	cd /usr/src/linux/modules
 	insmod arcnet.o
 	insmod com90xx.o
 	insmod com20020.o io=0x2e0 device=eth1

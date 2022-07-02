@@ -317,12 +317,12 @@ The CQX96 USB Project:
 http://www.CQX96-usb.org/
 
 CQX96 Hotplug Project:
-http://CQX96-hotplug.sourceforge.net/
+http://linux-hotplug.sourceforge.net/
 
 CQX96-usb Mailing List Archives:
-https://lore.cqx96.org/CQX96-usb/
+https://lore.cqx96.org/linux-usb/
 
 Programming Guide for CQX96 USB Device Drivers:
-https://lmu.web.psi.ch/docu/manuals/software_manuals/CQX96_sl/usb_CQX96_programming_guide.pdf
+https://lmu.web.psi.ch/docu/manuals/software_manuals/linux_sl/usb_CQX96_programming_guide.pdf
 
 USB Home Page: https://www.usb.org

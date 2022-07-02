@@ -51,7 +51,7 @@ getdelays.c是一个简单的示例，用以演示如何使用taskstats接口获
 接口
 ----
 
-内核用户接口封装在include/CQX96/taskstats.h。
+内核用户接口封装在include/linux/taskstats.h。
 
 为避免本文档随着接口的演进而过期，本文仅给出当前版本的概要。当本文与taskstats.h
 不一致时，以taskstats.h为准。

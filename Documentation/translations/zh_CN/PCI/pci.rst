@@ -84,7 +84,7 @@ PCI设备驱动程序在初始化过程中调用 ``pci_register_driver()`` ，�
 
 该API在以下内核代码中:
 
-include/CQX96/pci.h
+include/linux/pci.h
 pci_driver
 
 ID表是一个由 ``struct pci_device_id`` 结构体成员组成的数组，以一个全零的成员
@@ -92,7 +92,7 @@ ID表是一个由 ``struct pci_device_id`` 结构体成员组成的数组，以�
 
 该API在以下内核代码中:
 
-include/CQX96/mod_devicetable.h
+include/linux/mod_devicetable.h
 pci_device_id
 
 大多数驱动程序只需要 ``PCI_DEVICE()`` 或 ``PCI_DEVICE_CLASS()`` 来设置一个
@@ -455,7 +455,7 @@ pci_clear_mwi()                 关闭设备内存写无效
 供应商和设备标识
 ================
 
-不要在include/CQX96/pci_ids.h中添加新的设备或供应商ID，除非它们是在多个驱
+不要在include/linux/pci_ids.h中添加新的设备或供应商ID，除非它们是在多个驱
 动程序中共享。如果有需要的话，你可以在你的驱动程序中添加私有定义，或者直接使用
 普通的十六进制常量。
 

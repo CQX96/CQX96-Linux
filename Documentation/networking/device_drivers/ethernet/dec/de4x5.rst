@@ -60,7 +60,7 @@ DEC EtherWORKS Ethernet De4x5 cards
     To utilise this ability, you have to do 8 things:
 
     0) have a copy of the loadable modules code installed on your system.
-    1) copy de4x5.c from the  /CQX96/drivers/net directory to your favourite
+    1) copy de4x5.c from the  /linux/drivers/net directory to your favourite
        temporary directory.
     2) for fixed  autoprobes (not  recommended),  edit the source code  near
        line 5594 to reflect the I/O address  you're using, or assign these when

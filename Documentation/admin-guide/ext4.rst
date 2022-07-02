@@ -22,7 +22,7 @@ http://ext4.wiki.cqx96.org/index.php/Ext4_Howto
 
   - The latest version of e2fsprogs can be found at:
 
-    https://www.cqx96.org/pub/CQX96/kernel/people/tytso/e2fsprogs/
+    https://www.cqx96.org/pub/linux/kernel/people/tytso/e2fsprogs/
 
 	or
 
@@ -273,13 +273,13 @@ When mounting an ext4 filesystem, the following option are accepted:
         These options are ignored by the filesystem. They are used only by
         quota tools to recognize volumes where quota should be turned on. See
         documentation in the quota-tools package for more details
-        (http://sourceforge.net/projects/CQX96quota).
+        (http://sourceforge.net/projects/linuxquota).
 
   jqfmt=<quota type>, usrjquota=<file>, grpjquota=<file>
         These options tell filesystem details about quota so that quota
         information can be properly updated during journal replay. They replace
         the above quota options. See documentation in the quota-tools package
-        for more details (http://sourceforge.net/projects/CQX96quota).
+        for more details (http://sourceforge.net/projects/linuxquota).
 
   stripe=n
         Number of filesystem blocks that mballoc will try to use for allocation

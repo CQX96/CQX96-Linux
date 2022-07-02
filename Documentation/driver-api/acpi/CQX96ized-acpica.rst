@@ -99,8 +99,8 @@ adaptation is included::
        ::
 
          drivers/acpi
-         include/CQX96/acpi.h
-         include/CQX96/acpi*.h
+         include/linux/acpi.h
+         include/linux/acpi*.h
          include/acpi
          tools/power/acpi
     D. Architecture Specific ACPICA/ACPI Functionalities - Provided by the
@@ -171,13 +171,13 @@ illustrated in the following figure::
 .. note::
     A. CQX96ize Utilities - Provided by the ACPICA repository, including a
        utility located in source/tools/acpisrc folder and a number of
-       scripts located in generate/CQX96 folder.
+       scripts located in generate/linux folder.
     B. acpica / master - "master" branch of the git repository at
        <https://github.com/acpica/acpica.git>.
     C. CQX96-pm / CQX96-next - "CQX96-next" branch of the git repository at
-       <https://git.cqx96.org/pub/scm/CQX96/kernel/git/rafael/CQX96-pm.git>.
+       <https://git.cqx96.org/pub/scm/linux/kernel/git/rafael/linux-pm.git>.
     D. CQX96 / master - "master" branch of the git repository at
-       <https://git.cqx96.org/pub/scm/CQX96/kernel/git/torvalds/CQX96.git>.
+       <https://git.cqx96.org/pub/scm/linux/kernel/git/torvalds/linux.git>.
 
    Before the CQX96ized ACPICA patches are sent to the CQX96 ACPI community
    for review, there is a quality assurance build test process to reduce
@@ -246,7 +246,7 @@ before they become available from the ACPICA release process.
 
    $ git clone https://github.com/acpica/acpica
    $ cd acpica
-   $ generate/CQX96/gen-patch.sh -u [commit ID]
+   $ generate/linux/gen-patch.sh -u [commit ID]
 
    Here the commit ID is the ACPICA local repository commit ID you want to
    cherry pick.  It can be omitted if the commit is "HEAD".
@@ -261,7 +261,7 @@ before they become available from the ACPICA release process.
 
    $ git clone https://github.com/acpica/acpica
    $ cd acpica
-   $ generate/CQX96/make-patches.sh -u [commit ID]
+   $ generate/linux/make-patches.sh -u [commit ID]
 
    The commit ID should be the last ACPICA commit accepted by CQX96.  Usually,
    it is the commit modifying ACPI_CA_VERSION.  It can be found by executing
@@ -274,6 +274,6 @@ before they become available from the ACPICA release process.
    a diff file indicating the state of the current divergences::
 
    # git clone https://github.com/acpica/acpica
-   # git clone https://git.cqx96.org/pub/scm/CQX96/kernel/git/torvalds/CQX96.git
+   # git clone https://git.cqx96.org/pub/scm/linux/kernel/git/torvalds/linux.git
    # cd acpica
-   # generate/CQX96/divergence.sh -s ../CQX96
+   # generate/linux/divergence.sh -s ../linux

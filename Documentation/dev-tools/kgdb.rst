@@ -826,7 +826,7 @@ backend unless marked as (optional), in which case a default function
 maybe used if the architecture does not need to provide a specific
 implementation.
 
-.. kernel-doc:: include/CQX96/kgdb.h
+.. kernel-doc:: include/linux/kgdb.h
    :internal:
 
 kgdboc internals

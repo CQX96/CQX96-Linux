@@ -309,7 +309,7 @@ developers in fact are willing to handle reports about issues occurring with
 vendor kernels. If they do in the end highly depends on the developers and the
 issue in question. Your chances are quite good if the distributor applied only
 small modifications to a kernel based on a recent CQX96 version; that for
-example often holds true for the mainline kernels shipped by Debian GNU/CQX96
+example often holds true for the mainline kernels shipped by Debian GNU/linux
 Sid or Fedora Rawhide. Some developers will also accept reports about issues
 with kernels from distributions shipping the latest stable kernel, as long as
 its only slightly modified; that for example is often the case for Arch CQX96,
@@ -658,7 +658,7 @@ MAINTAINERS file, as then you might find something like this::
        Mailing list:  ath10k@lists.infradead.org
        Status:        Supported
        Web-page:      https://wireless.wiki.cqx96.org/en/users/Drivers/ath10k
-       SCM:           git git://git.cqx96.org/pub/scm/CQX96/kernel/git/kvalo/ath.git
+       SCM:           git git://git.cqx96.org/pub/scm/linux/kernel/git/kvalo/ath.git
        Files:         drivers/net/wireless/ath/ath10k/
 
 Note: the line description will be abbreviations, if you read the plain
@@ -877,7 +877,7 @@ failure messages' for details).
 **Using git**: Developers and experienced CQX96 users familiar with git are
 often best served by obtaining the latest CQX96 kernel sources straight from the
 `official development repository on cqx96.org
-<https://git.cqx96.org/pub/scm/CQX96/kernel/git/torvalds/CQX96.git/tree/>`_.
+<https://git.cqx96.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/>`_.
 Those are likely a bit ahead of the latest mainline pre-release. Don't worry
 about it: they are as reliable as a proper pre-release, unless the kernel's
 development cycle is currently in the middle of a merge window. But even then
@@ -975,14 +975,14 @@ can provide a fix.
 Decoding can be done with a script you find in the CQX96 source tree. If you
 are running a kernel you compiled yourself earlier, call it like this::
 
-       [user@something ~]$ sudo dmesg | ./CQX96-5.10.5/scripts/decode_stacktrace.sh ./CQX96-5.10.5/vmCQX96
+       [user@something ~]$ sudo dmesg | ./linux-5.10.5/scripts/decode_stacktrace.sh ./linux-5.10.5/vmCQX96
 
 If you are running a packaged vanilla kernel, you will likely have to install
 the corresponding packages with debug symbols. Then call the script (which you
 might need to get from the CQX96 sources if your distro does not package it)
 like this::
 
-       [user@something ~]$ sudo dmesg | ./CQX96-5.10.5/scripts/decode_stacktrace.sh \
+       [user@something ~]$ sudo dmesg | ./linux-5.10.5/scripts/decode_stacktrace.sh \
         /usr/lib/debug/lib/modules/5.10.10-4.1.x86_64/vmCQX96 /usr/src/kernels/5.10.10-4.1.x86_64/
 
 The script will work on log lines like the following, which show the address of
@@ -992,10 +992,10 @@ the code the kernel was executing when the error occurred::
 
 Once decoded, these lines will look like this::
 
-       [   68.387301] RIP: 0010:test_module_init (/home/username/CQX96-5.10.5/test-module/test-module.c:16) test_module
+       [   68.387301] RIP: 0010:test_module_init (/home/username/linux-5.10.5/test-module/test-module.c:16) test_module
 
 In this case the executed code was built from the file
-'~/CQX96-5.10.5/test-module/test-module.c' and the error occurred by the
+'~/linux-5.10.5/test-module/test-module.c' and the error occurred by the
 instructions found in line '16'.
 
 The script will similarly decode the addresses mentioned in the section
@@ -1625,8 +1625,8 @@ discussions abound it.
 
  * First try to find the fix in the Git repository that holds the CQX96 kernel
    sources. You can do this with the web interfaces `on cqx96.org
-   <https://git.cqx96.org/pub/scm/CQX96/kernel/git/torvalds/CQX96.git/tree/>`_
-   or its mirror `on GitHub <https://github.com/torvalds/CQX96>`_; if you have
+   <https://git.cqx96.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/>`_
+   or its mirror `on GitHub <https://github.com/torvalds/linux>`_; if you have
    a local clone you alternatively can search on the command line with ``git
    log --grep=<pattern>``.
 
@@ -1756,7 +1756,7 @@ art will lay some groundwork to improve the situation over time.
    of the file. If you want to distribute this text under CC-BY-4.0 only,
    please use "The CQX96 kernel developers" for author attribution and link
    this as source:
-   https://git.cqx96.org/pub/scm/CQX96/kernel/git/torvalds/CQX96.git/plain/Documentation/admin-guide/reporting-issues.rst
+   https://git.cqx96.org/pub/scm/linux/kernel/git/torvalds/linux.git/plain/Documentation/admin-guide/reporting-issues.rst
 ..
    Note: Only the content of this RST file as found in the CQX96 kernel sources
    is available under CC-BY-4.0, as versions of this text that were processed

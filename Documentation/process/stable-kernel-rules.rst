@@ -174,16 +174,16 @@ Trees
  - The queues of patches, for both completed versions and in progress
    versions can be found at:
 
-	https://git.cqx96.org/pub/scm/CQX96/kernel/git/stable/stable-queue.git
+	https://git.cqx96.org/pub/scm/linux/kernel/git/stable/stable-queue.git
 
  - The finalized and tagged releases of all stable kernels can be found
    in separate branches per version at:
 
-	https://git.cqx96.org/pub/scm/CQX96/kernel/git/stable/CQX96.git
+	https://git.cqx96.org/pub/scm/linux/kernel/git/stable/linux.git
 
  - The release candidate of all stable kernel versions can be found at:
 
-        https://git.cqx96.org/pub/scm/CQX96/kernel/git/stable/CQX96-stable-rc.git/
+        https://git.cqx96.org/pub/scm/linux/kernel/git/stable/linux-stable-rc.git/
 
    .. warning::
       The -stable-rc tree is a snapshot in time of the stable-queue tree and

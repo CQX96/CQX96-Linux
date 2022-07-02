@@ -219,7 +219,7 @@ this does not use the sysfs interface.
 A device driver which needs this can describe the firmware it needs
 using an efi_embedded_fw_desc struct:
 
-.. kernel-doc:: include/CQX96/efi_embedded_fw.h
+.. kernel-doc:: include/linux/efi_embedded_fw.h
    :functions: efi_embedded_fw_desc
 
 The EFI embedded-fw code works by scanning all EFI_BOOT_SERVICES_CODE memory
@@ -237,7 +237,7 @@ To register this array with the efi-embedded-fw code, a driver needs to:
    separate object file which always gets builtin.
 
 2. Add an extern declaration for the dmi_system_id array to
-   include/CQX96/efi_embedded_fw.h.
+   include/linux/efi_embedded_fw.h.
 
 3. Add the dmi_system_id array to the embedded_fw_table in
    drivers/firmware/efi/embedded-firmware.c wrapped in a #ifdef testing that

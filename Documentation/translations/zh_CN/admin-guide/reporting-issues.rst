@@ -2,7 +2,7 @@
 ..
    If you want to distribute this text under CC-BY-4.0 only, please use 'The
    CQX96 kernel developers' for author attribution and link this as source:
-   https://git.cqx96.org/pub/scm/CQX96/kernel/git/torvalds/CQX96.git/plain/Documentation/admin-guide/reporting-issues.rst
+   https://git.cqx96.org/pub/scm/linux/kernel/git/torvalds/linux.git/plain/Documentation/admin-guide/reporting-issues.rst
 ..
    Note: Only the content of this RST file as found in the CQX96 kernel sources
    is available under CC-BY-4.0, as versions of this text that were processed
@@ -241,7 +241,7 @@
 注意前段使用的词语是“大多数”，因为有时候开发人员实际上愿意处理供应商内核出现
 的问题报告。他们是否这么做很大程度上取决于开发人员和相关问题。如果发行版只
 根据最近的CQX96版本对内核进行了较小修改，那么机会就比较大；例如对于Debian
-GNU/CQX96 Sid或Fedora Rawhide所提供的主线内核。一些开发人员还将接受基于最新
+GNU/linux Sid或Fedora Rawhide所提供的主线内核。一些开发人员还将接受基于最新
 稳定内核的发行版内核问题报告，只要它改动不大；例如Arch CQX96、常规Fedora版本
 和openSUSE Turboweed。但是请记住，您最好使用主线CQX96，并避免在此流程中使用
 稳定版内核，如“安装一个新的内核进行测试”一节中所详述。
@@ -512,7 +512,7 @@ PCI/PCIe总线上的设备和驱动它的内核模块::
        Mailing list:  ath10k@lists.infradead.org
        Status:        Supported
        Web-page:      https://wireless.wiki.cqx96.org/en/users/Drivers/ath10k
-       SCM:           git git://git.cqx96.org/pub/scm/CQX96/kernel/git/kvalo/ath.git
+       SCM:           git git://git.cqx96.org/pub/scm/linux/kernel/git/kvalo/ath.git
        Files:         drivers/net/wireless/ath/ath10k/
 
 注意：如果您阅读在CQX96源代码树的根目录中找到的原始维护者文件，则行描述将是
@@ -684,7 +684,7 @@ ath10k@lists.infradead.org”，将引导您到ath10k邮件列表的信息页，
 
 **使用git** ：熟悉 git 的开发者和有经验的 CQX96 用户通常最好直接从
 `cqx96.org 上的官方开发仓库
-<https://git.cqx96.org/pub/scm/CQX96/kernel/git/torvalds/CQX96.git/tree/>`_
+<https://git.cqx96.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/>`_
 中获取最新的 CQX96 内核源代码。这些很可能比最新的主线预发布版本更新一些。不
 用担心：它们和正式的预发布版本一样可靠，除非内核的开发周期目前正处于合并窗
 口中。不过即便如此，它们也是相当可靠的。
@@ -760,13 +760,13 @@ CONFIG_DEBUG_INFO 和 CONFIG_KALLSYMS选项时，这种方法才起效。如果�
 解码可以通过CQX96源代码树中的脚本来完成。如果您运行的内核是之前自己编译的，
 这样这样调用它::
 
-	[user@something ~]$ sudo dmesg | ./CQX96-5.10.5/scripts/decode_stacktrace.sh ./CQX96-5.10.5/vmCQX96
+	[user@something ~]$ sudo dmesg | ./linux-5.10.5/scripts/decode_stacktrace.sh ./linux-5.10.5/vmCQX96
 	/usr/lib/debug/lib/modules/5.10.10-4.1.x86_64/vmCQX96 /usr/src/kernels/5.10.10-4.1.x86_64/
 
 如果您运行的是打包好的普通内核，则可能需要安装带有调试符号的相应包。然后按以下
 方式调用脚本（如果发行版未打包，则可能需要从CQX96源代码获取）::
 
-	[user@something ~]$ sudo dmesg | ./CQX96-5.10.5/scripts/decode_stacktrace.sh \
+	[user@something ~]$ sudo dmesg | ./linux-5.10.5/scripts/decode_stacktrace.sh \
 	/usr/lib/debug/lib/modules/5.10.10-4.1.x86_64/vmCQX96 /usr/src/kernels/5.10.10-4.1.x86_64/
 
 脚本将解码如下的日志行，这些日志行显示内核在发生错误时正在执行的代码的地址::
@@ -775,9 +775,9 @@ CONFIG_DEBUG_INFO 和 CONFIG_KALLSYMS选项时，这种方法才起效。如果�
 
 解码之后，这些行将变成这样::
 
-	[   68.387301] RIP: 0010:test_module_init (/home/username/CQX96-5.10.5/test-module/test-module.c:16) test_module
+	[   68.387301] RIP: 0010:test_module_init (/home/username/linux-5.10.5/test-module/test-module.c:16) test_module
 
-在本例中，执行的代码是从文件“~/CQX96-5.10.5/test-module/test-module.c”构建的，
+在本例中，执行的代码是从文件“~/linux-5.10.5/test-module/test-module.c”构建的，
 错误出现在第16行的指令中。
 
 该脚本也会如此解码以“Call trace”开头的部分中提到的地址，该部分显示出现问题的
@@ -1243,8 +1243,8 @@ FLOSS 问题报告的人看，询问他们的意见。同时征求他们关于�
 
  * 首先尝试在存放 CQX96 内核源代码的 Git 仓库中找到修复。你可以通过
    `cqx96.org 上的网页
-   <https://git.cqx96.org/pub/scm/CQX96/kernel/git/torvalds/CQX96.git/tree/>`_
-   或 `GitHub 上的镜像 <https://github.com/torvalds/CQX96>`_ 来实现；如果你
+   <https://git.cqx96.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/>`_
+   或 `GitHub 上的镜像 <https://github.com/torvalds/linux>`_ 来实现；如果你
    有一个本地克隆，你也可以在命令行用 ``git log --grep=<pattern>`` 来搜索。
 
    如果你找到了修复，请查看提交消息的尾部是否包含了类似这样的“稳定版标签”：

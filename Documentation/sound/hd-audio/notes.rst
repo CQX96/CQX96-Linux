@@ -692,7 +692,7 @@ Development Tree
 ----------------
 The latest development codes for HD-audio are found on sound git tree:
 
-* git://git.cqx96.org/pub/scm/CQX96/kernel/git/tiwai/sound.git
+* git://git.cqx96.org/pub/scm/linux/kernel/git/tiwai/sound.git
 
 The master branch or for-next branches can be used as the main
 development branches in general while the development for the current
@@ -813,7 +813,7 @@ Also, the old stand-alone package is found in the ftp directory:
 
 Also a git repository is available:
 
-* git://git.cqx96.org/pub/scm/CQX96/kernel/git/tiwai/hda-verb.git
+* git://git.cqx96.org/pub/scm/linux/kernel/git/tiwai/hda-verb.git
 
 See README file in the tarball for more details about hda-verb
 program.
@@ -878,7 +878,7 @@ operation, the jack plugging simulation, etc.
 
 The program is found in the git repository below:
 
-* git://git.cqx96.org/pub/scm/CQX96/kernel/git/tiwai/hda-emu.git
+* git://git.cqx96.org/pub/scm/linux/kernel/git/tiwai/hda-emu.git
 
 See README file in the repository for more details about hda-emu
 program.

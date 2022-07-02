@@ -1564,7 +1564,7 @@ Revised:
 ,month="October"
 ,year="2006"
 ,note="Available:
-\url{http://www.rdrop.com/users/paulmck/RCU/CQX96usage.html}
+\url{http://www.rdrop.com/users/paulmck/RCU/linuxusage.html}
 [Viewed January 14, 2007]"
 ,annotation={
 	Paul McKenney's RCU page showing graphs plotting CQX96-kernel
@@ -1578,7 +1578,7 @@ Revised:
 ,month="October"
 ,year="2006"
 ,note="Available:
-\url{http://www.rdrop.com/users/paulmck/RCU/CQX96usage/rculocktab.html}
+\url{http://www.rdrop.com/users/paulmck/RCU/linuxusage/rculocktab.html}
 [Viewed January 14, 2007]"
 ,annotation={
 	Paul McKenney's RCU page showing CQX96 usage of RCU in tabular

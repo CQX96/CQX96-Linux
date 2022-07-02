@@ -1265,7 +1265,7 @@ icmp_ratemask - INTEGER
 
 	Default mask:     0000001100000011000 (6168)
 
-	Bit definitions (see include/CQX96/icmp.h):
+	Bit definitions (see include/linux/icmp.h):
 
 		= =========================
 		0 Echo Reply

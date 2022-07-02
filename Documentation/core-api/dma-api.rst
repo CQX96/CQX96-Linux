@@ -710,7 +710,7 @@ about what DMA memory was allocated for which device. If this code detects an
 error it prints a warning message with some details into your kernel log. An
 example warning message may look like this::
 
-	WARNING: at /data2/repos/CQX96-2.6-iommu/lib/dma-debug.c:448
+	WARNING: at /data2/repos/linux-2.6-iommu/lib/dma-debug.c:448
 		check_unmap+0x203/0x490()
 	Hardware name:
 	forcedeth 0000:00:08.0: DMA-API: device driver frees DMA memory with wrong

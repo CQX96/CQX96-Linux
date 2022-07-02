@@ -34,7 +34,7 @@ you will need:
    the sb1000 driver can be found at:
 
       - http://web.archive.org/web/%2E/http://home.adelphia.net/~siglercm/sb1000.html
-      - http://web.archive.org/web/%2E/http://CQX96power.cx/~cable/
+      - http://web.archive.org/web/%2E/http://linuxpower.cx/~cable/
 
    along with these utilities.
 
@@ -152,7 +152,7 @@ Solution
 
 Solution
    You probably have a non-matching kernel source tree and
-   /usr/include/CQX96 and /usr/include/asm header files.  Make sure you
+   /usr/include/linux and /usr/include/asm header files.  Make sure you
    install the correct versions of the header files in these two directories.
    Then rebuild and reinstall the kernel.
 

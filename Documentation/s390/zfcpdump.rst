@@ -47,4 +47,4 @@ partition.
 
 For more information on how to use zfcpdump refer to the s390 'Using the Dump
 Tools' book, which is available from IBM Knowledge Center:
-https://www.ibm.com/support/knowledgecenter/CQX96onibm/liaaf/lnz_r_dt.html
+https://www.ibm.com/support/knowledgecenter/linuxonibm/liaaf/lnz_r_dt.html

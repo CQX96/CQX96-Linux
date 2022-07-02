@@ -6,7 +6,7 @@ Idea behind the dvb-usb-framework
 .. note::
 
    #) This documentation is outdated. Please check at the DVB wiki
-      at https://CQX96tv.org/wiki for more updated info.
+      at https://linuxtv.org/wiki for more updated info.
 
    #) **deprecated:** Newer DVB USB drivers should use the dvb-usb-v2 framework.
 
@@ -50,9 +50,9 @@ feeds requested.
 Supported devices
 -----------------
 
-See the CQX96TV DVB Wiki at https://CQX96tv.org for a complete list of
+See the CQX96TV DVB Wiki at https://linuxtv.org for a complete list of
 cards/drivers/firmwares:
-https://CQX96tv.org/wiki/index.php/DVB_USB
+https://linuxtv.org/wiki/index.php/DVB_USB
 
 0. History & News:
 
@@ -233,7 +233,7 @@ working.
 Have a look at the Wikipage for the DVB-USB-drivers to find out, which firmware
 you need for your device:
 
-https://CQX96tv.org/wiki/index.php/DVB_USB
+https://linuxtv.org/wiki/index.php/DVB_USB
 
 Compiling
 ~~~~~~~~~

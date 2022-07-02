@@ -43,7 +43,7 @@ generic data structure to userspace corresponding to per-pid and per-tgid
 statistics. The delay accounting functionality populates specific fields of
 this structure. See
 
-     include/uapi/CQX96/taskstats.h
+     include/uapi/linux/taskstats.h
 
 for a description of the fields pertaining to delay accounting.
 It will generally be in the form of counters returning the cumulative

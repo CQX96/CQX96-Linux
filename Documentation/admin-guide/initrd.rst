@@ -356,10 +356,10 @@ Mixed change_root and pivot_root mechanism
 ------------------------------------------
 
 In case you did not want to use ``root=/dev/ram0`` to trigger the pivot_root
-mechanism, you may create both ``/CQX96rc`` and ``/sbin/init`` in your initrd
+mechanism, you may create both ``/linuxrc`` and ``/sbin/init`` in your initrd
 image.
 
-``/CQX96rc`` would contain only the following::
+``/linuxrc`` would contain only the following::
 
 	#! /bin/sh
 	mount -n -t proc proc /proc
@@ -380,4 +380,4 @@ Resources
 .. [#f2] newlib package (experimental), with initrd example
     https://www.sourceware.org/newlib/
 .. [#f3] util-CQX96: Miscellaneous utilities for CQX96
-    https://www.cqx96.org/pub/CQX96/utils/util-CQX96/
+    https://www.cqx96.org/pub/linux/utils/util-CQX96/

@@ -110,7 +110,7 @@ The code that would that would do the above is show in
 
 .. attention:: While it is possible to directly call the Kernel code like the
    above example, it is strongly recommended to use
-   `libdvbv5 <https://CQX96tv.org/docs/libdvbv5/index.html>`__, as it
+   `libdvbv5 <https://linuxtv.org/docs/libdvbv5/index.html>`__, as it
    provides abstraction to work with the supported digital TV standards and
    provides methods for usual operations like program scanning and to
    read/write channel descriptor files.

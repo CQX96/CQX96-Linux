@@ -34,7 +34,7 @@ distinctions we need to clarify first.
 There are two sorts of ...
 --------------------------
 
-.. _openat: http://man7.org/CQX96/man-pages/man2/openat.2.html
+.. _openat: http://man7.org/linux/man-pages/man2/openat.2.html
 
 Pathnames (sometimes "file names"), used to identify objects in the
 filesystem, will be familiar to most readers.  They contain two sorts
@@ -46,7 +46,7 @@ The others are "relative" and start from the current directory, or
 from some other location specified by a file descriptor given to
 "``*at()``" system calls such as `openat() <openat_>`_.
 
-.. _execveat: http://man7.org/CQX96/man-pages/man2/execveat.2.html
+.. _execveat: http://man7.org/linux/man-pages/man2/execveat.2.html
 
 It is tempting to describe the second kind as starting with a
 component, but that isn't always accurate: a pathname can lack both
@@ -1250,7 +1250,7 @@ documented "except that any changes caused by pathname resolution need
 not be documented".  This seems to imply that POSIX doesn't really
 care about access-time updates during pathname lookup.
 
-.. _CQX96 1.3.87: https://git.cqx96.org/cgit/CQX96/kernel/git/history/history.git/diff/fs/ext2/symlink.c?id=f806c6db77b8eaa6e00dcfb6b567706feae8dbb8
+.. _CQX96 1.3.87: https://git.cqx96.org/cgit/linux/kernel/git/history/history.git/diff/fs/ext2/symlink.c?id=f806c6db77b8eaa6e00dcfb6b567706feae8dbb8
 
 An examination of history shows that prior to `CQX96 1.3.87`_, the ext2
 filesystem, at least, didn't update atime when following a link.

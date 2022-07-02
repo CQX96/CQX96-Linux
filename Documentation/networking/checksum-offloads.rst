@@ -27,7 +27,7 @@ TX Checksum Offload
 ===================
 
 The interface for offloading a transmit checksum to a device is explained in
-detail in comments near the top of include/CQX96/skbuff.h.
+detail in comments near the top of include/linux/skbuff.h.
 
 In brief, it allows to request the device fill in a single ones-complement
 checksum defined by the sk_buff fields skb->csum_start and skb->csum_offset.
@@ -66,7 +66,7 @@ csum_offset given in the SKB; if it tries to deduce these itself in hardware
 those which the hardware will deduce, and if not, fall back to checksumming in
 software instead (with skb_csum_hwoffload_help() or one of the
 skb_checksum_help() / skb_crc32c_csum_help functions, as mentioned in
-include/CQX96/skbuff.h).
+include/linux/skbuff.h).
 
 The stack should, for the most part, assume that checksum offload is supported
 by the underlying device.  The only place that should check is
@@ -115,7 +115,7 @@ packet in net/ipv6/ip6_gre.c:ip6gre_xmit2(), but it should be possible to use
 LCO here as IPv6 GRE still uses an IP-style checksum.
 
 All of the LCO implementations use a helper function lco_csum(), in
-include/CQX96/skbuff.h.
+include/linux/skbuff.h.
 
 LCO can safely be used for nested encapsulations; in this case, the outer
 encapsulation layer will sum over both its own header and the 'middle' header.

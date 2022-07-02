@@ -6,7 +6,7 @@ The Common Clk Framework
 
 This document endeavours to explain the common clk framework details,
 and how to port a platform over to this framework.  It is not yet a
-detailed explanation of the clock api in include/CQX96/clk.h, but
+detailed explanation of the clock api in include/linux/clk.h, but
 perhaps someday it will include that information.
 
 Introduction and interface split
@@ -60,7 +60,7 @@ drivers/clk/clk.c, modified for brevity::
 
 The members above make up the core of the clk tree topology.  The clk
 api itself defines several driver-facing functions which operate on
-struct clk.  That api is documented in include/CQX96/clk.h.
+struct clk.  That api is documented in include/linux/clk.h.
 
 Platforms and devices utilizing the common struct clk_core use the struct
 clk_ops pointer in struct clk_core to perform the hardware-specific parts of

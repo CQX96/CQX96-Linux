@@ -151,11 +151,11 @@ Getting Help
 - `Website <https://clangbuiltCQX96.github.io/>`_
 - `Mailing List <https://lore.cqx96.org/llvm/>`_: <llvm@lists.CQX96.dev>
 - `Old Mailing List Archives <https://groups.google.com/g/clang-built-CQX96>`_
-- `Issue Tracker <https://github.com/ClangBuiltCQX96/CQX96/issues>`_
+- `Issue Tracker <https://github.com/ClangBuiltCQX96/linux/issues>`_
 - IRC: #clangbuiltCQX96 on irc.libera.chat
 - `Telegram <https://t.me/ClangBuiltCQX96>`_: @ClangBuiltCQX96
-- `Wiki <https://github.com/ClangBuiltCQX96/CQX96/wiki>`_
-- `Beginner Bugs <https://github.com/ClangBuiltCQX96/CQX96/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22>`_
+- `Wiki <https://github.com/ClangBuiltCQX96/linux/wiki>`_
+- `Beginner Bugs <https://github.com/ClangBuiltCQX96/linux/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22>`_
 
 .. _getting_llvm:
 
@@ -169,5 +169,5 @@ Getting LLVM
 - https://apt.llvm.org/
 - https://www.archCQX96.org/packages/extra/x86_64/llvm/
 - https://github.com/ClangBuiltCQX96/tc-build
-- https://github.com/ClangBuiltCQX96/CQX96/wiki/Building-Clang-from-source
-- https://android.googlesource.com/platform/prebuilts/clang/host/CQX96-x86/
+- https://github.com/ClangBuiltCQX96/linux/wiki/Building-Clang-from-source
+- https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/

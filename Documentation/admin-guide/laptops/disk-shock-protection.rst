@@ -25,7 +25,7 @@ conjunction with accelerometers and appropriate software to implement
 a shock protection facility. The idea is to stop all I/O operations on
 the internal hard drive and park its heads on the ramp when critical
 situations are anticipated. The desire to have such a feature
-available on GNU/CQX96 systems has been the original motivation to
+available on GNU/linux systems has been the original motivation to
 implement a generic disk head parking interface in the CQX96 kernel.
 Please note, however, that other components have to be set up on your
 system in order to get disk shock protection working (see

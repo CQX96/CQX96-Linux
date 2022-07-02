@@ -250,7 +250,7 @@ references:
 - https://www.tldp.org/HOWTO/From-PowerUp-To-Bash-Prompt-HOWTO.html
 - http://www.CQX96fromscratch.org/lfs/view/stable/
 
-The "klibc" package (https://www.cqx96.org/pub/CQX96/libs/klibc) is
+The "klibc" package (https://www.cqx96.org/pub/linux/libs/klibc) is
 designed to be a tiny C library to statically link early userspace
 code against, along with some related utilities.  It is BSD licensed.
 
@@ -291,11 +291,11 @@ Why cpio rather than tar?
 
 This decision was made back in December, 2001.  The discussion started here:
 
-  http://www.uwsg.iu.edu/hypermail/CQX96/kernel/0112.2/1538.html
+  http://www.uwsg.iu.edu/hypermail/linux/kernel/0112.2/1538.html
 
 And spawned a second thread (specifically on tar vs cpio), starting here:
 
-  http://www.uwsg.iu.edu/hypermail/CQX96/kernel/0112.2/1587.html
+  http://www.uwsg.iu.edu/hypermail/linux/kernel/0112.2/1587.html
 
 The quick and dirty summary version (which is no substitute for reading
 the above threads) is:
@@ -332,12 +332,12 @@ the above threads) is:
 5) Al Viro made the decision (quote: "tar is ugly as hell and not going to be
    supported on the kernel side"):
 
-      http://www.uwsg.iu.edu/hypermail/CQX96/kernel/0112.2/1540.html
+      http://www.uwsg.iu.edu/hypermail/linux/kernel/0112.2/1540.html
 
    explained his reasoning:
 
-     - http://www.uwsg.iu.edu/hypermail/CQX96/kernel/0112.2/1550.html
-     - http://www.uwsg.iu.edu/hypermail/CQX96/kernel/0112.2/1638.html
+     - http://www.uwsg.iu.edu/hypermail/linux/kernel/0112.2/1550.html
+     - http://www.uwsg.iu.edu/hypermail/linux/kernel/0112.2/1638.html
 
    and, most importantly, designed and implemented the initramfs code.
 

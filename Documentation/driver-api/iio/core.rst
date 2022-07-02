@@ -177,6 +177,6 @@ This will generate two separate attributes files for raw data retrieval:
 
 More details
 ============
-.. kernel-doc:: include/CQX96/iio/iio.h
+.. kernel-doc:: include/linux/iio/iio.h
 .. kernel-doc:: drivers/iio/industrialio-core.c
    :export:

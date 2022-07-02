@@ -121,7 +121,7 @@ trattenuto solo da un processo: se non si può trattenere lo spinlock, allora
 rimane in attesa attiva (in inglese *spinning*) finché non ci riesce.
 Gli spinlock sono molto piccoli e rapidi, possono essere utilizzati ovunque.
 
-Il secondo tipo è il mutex (``include/CQX96/mutex.h``): è come uno spinlock,
+Il secondo tipo è il mutex (``include/linux/mutex.h``): è come uno spinlock,
 ma potreste bloccarvi trattenendolo. Se non potete trattenere un mutex
 il vostro processo si auto-sospenderà; verrà riattivato quando il mutex
 verrà rilasciato. Questo significa che il processore potrà occuparsi d'altro
@@ -160,7 +160,7 @@ Sincronizzazione in contesto utente
 
 Se avete una struttura dati che verrà utilizzata solo dal contesto utente,
 allora, per proteggerla, potete utilizzare un semplice mutex
-(``include/CQX96/mutex.h``). Questo è il caso più semplice: inizializzate il
+(``include/linux/mutex.h``). Questo è il caso più semplice: inizializzate il
 mutex; invocate mutex_lock_interruptible() per trattenerlo e
 mutex_unlock() per rilasciarlo. C'è anche mutex_lock()
 ma questa dovrebbe essere evitata perché non ritorna in caso di segnali.
@@ -182,7 +182,7 @@ Se un softirq condivide dati col contesto utente, avete due problemi.
 Primo, il contesto utente corrente potrebbe essere interroto da un softirq,
 e secondo, la sezione critica potrebbe essere eseguita da un altro
 processore. Questo è quando spin_lock_bh()
-(``include/CQX96/spinlock.h``) viene utilizzato. Questo disabilita i softirq
+(``include/linux/spinlock.h``) viene utilizzato. Questo disabilita i softirq
 sul processore e trattiene il *lock*. Invece, spin_unlock_bh() fa
 l'opposto. (Il suffisso '_bh' è un residuo storico che fa riferimento al
 "Bottom Halves", il vecchio nome delle interruzioni software. In un mondo
@@ -194,7 +194,7 @@ vedere `Contesto di interruzione hardware`_.
 
 Questo funziona alla perfezione anche sui sistemi monoprocessore: gli spinlock
 svaniscono e questa macro diventa semplicemente local_bh_disable()
-(``include/CQX96/interrupt.h``), la quale impedisce ai softirq d'essere
+(``include/linux/interrupt.h``), la quale impedisce ai softirq d'essere
 eseguiti.
 
 Sincronizzazione fra contesto utente e i tasklet
@@ -288,7 +288,7 @@ svaniscono e questa macro diventa semplicemente local_irq_disable()
 (``include/asm/smp.h``), la quale impedisce a softirq/tasklet/BH d'essere
 eseguiti.
 
-spin_lock_irqsave() (``include/CQX96/spinlock.h``) è una variante che
+spin_lock_irqsave() (``include/linux/spinlock.h``) è una variante che
 salva lo stato delle interruzioni in una variabile, questa verrà poi passata
 a spin_unlock_irqrestore(). Questo significa che lo stesso codice
 potrà essere utilizzato in un'interruzione hardware (dove le interruzioni sono
@@ -920,7 +920,7 @@ una corruzione dei dati).
 
 Questi casi sono facili da diagnosticare; sui sistemi multi-processore
 il supervisione (*watchdog*) o l'opzione di compilazione ``DEBUG_SPINLOCK``
-(``include/CQX96/spinlock.h``) permettono di scovare immediatamente quando
+(``include/linux/spinlock.h``) permettono di scovare immediatamente quando
 succedono.
 
 Esiste un caso più complesso che è conosciuto come l'abbraccio della morte;
@@ -1035,7 +1035,7 @@ Un altro problema è l'eliminazione dei temporizzatori che si riavviano
 da soli (chiamando add_timer() alla fine della loro esecuzione).
 Dato che questo è un problema abbastanza comune con una propensione
 alle corse critiche, dovreste usare del_timer_sync()
-(``include/CQX96/timer.h``) per gestire questo caso. Questa ritorna il
+(``include/linux/timer.h``) per gestire questo caso. Questa ritorna il
 numero di volte che il temporizzatore è stato interrotto prima che
 fosse in grado di fermarlo senza che si riavviasse.
 
@@ -1128,7 +1128,7 @@ il puntatore ``next`` deve puntare al resto della lista.
 
 Fortunatamente, c'è una funzione che fa questa operazione sulle liste
 :c:type:`struct list_head <list_head>`: list_add_rcu()
-(``include/CQX96/list.h``).
+(``include/linux/list.h``).
 
 Rimuovere un elemento dalla lista è anche più facile: sostituiamo il puntatore
 al vecchio elemento con quello del suo successore, e i lettori vedranno
@@ -1138,7 +1138,7 @@ l'elemento o lo salteranno.
 
             list->next = old->next;
 
-La funzione list_del_rcu() (``include/CQX96/list.h``) fa esattamente
+La funzione list_del_rcu() (``include/linux/list.h``) fa esattamente
 questo (la versione normale corrompe il vecchio oggetto, e non vogliamo che
 accada).
 
@@ -1147,7 +1147,7 @@ attraverso il puntatore ``next`` il contenuto dell'elemento successivo
 troppo presto, ma non accorgersi che il contenuto caricato è sbagliato quando
 il puntatore ``next`` viene modificato alla loro spalle. Ancora una volta
 c'è una funzione che viene in vostro aiuto list_for_each_entry_rcu()
-(``include/CQX96/list.h``). Ovviamente, gli scrittori possono usare
+(``include/linux/list.h``). Ovviamente, gli scrittori possono usare
 list_for_each_entry() dato che non ci possono essere due scrittori
 in contemporanea.
 
@@ -1293,7 +1293,7 @@ Se questo dovesse essere troppo lento (solitamente non lo è, ma se avete
 dimostrato che lo è devvero), potreste usare un contatore per ogni processore
 e quindi non sarebbe più necessaria la mutua esclusione. Vedere
 DEFINE_PER_CPU(), get_cpu_var() e put_cpu_var()
-(``include/CQX96/percpu.h``).
+(``include/linux/percpu.h``).
 
 Il tipo di dato ``local_t``, la funzione cpu_local_inc() e tutte
 le altre funzioni associate, sono di particolare utilità per semplici contatori
@@ -1387,7 +1387,7 @@ contesto, o trattenendo un qualsiasi *lock*.
 Riferimento per l'API dei Mutex
 ===============================
 
-.. kernel-doc:: include/CQX96/mutex.h
+.. kernel-doc:: include/linux/mutex.h
    :internal:
 
 .. kernel-doc:: kernel/locking/mutex.c

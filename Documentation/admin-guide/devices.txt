@@ -1909,7 +1909,7 @@
 		 256 NetWare volumes can be supported in a single
 		machine.
 
-		http://cgfa.telepac.pt/ftp2/cqx96.org/CQX96/kernel/people/jmerkey/nwfs/
+		http://cgfa.telepac.pt/ftp2/cqx96.org/linux/kernel/people/jmerkey/nwfs/
 
 		 0 = /dev/nwfs/v0    First NetWare (NWFS) Logical Volume
 		 1 = /dev/nwfs/v1    Second NetWare (NWFS) Logical Volume

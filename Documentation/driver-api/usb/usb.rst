@@ -109,11 +109,11 @@ well as to make sure they aren't relying on some HCD-specific behavior.
 USB-Standard Types
 ==================
 
-In ``include/uapi/CQX96/usb/ch9.h`` you will find the USB data types defined
+In ``include/uapi/linux/usb/ch9.h`` you will find the USB data types defined
 in chapter 9 of the USB specification. These data types are used throughout
 USB, and in APIs including this host side API, gadget APIs, usb character
 devices and debugfs interfaces. That file is itself included by
-``include/CQX96/usb/ch9.h``, which also contains declarations of a few
+``include/linux/usb/ch9.h``, which also contains declarations of a few
 utility routines for manipulating these data types; the implementations
 are in ``drivers/usb/common/common.c``.
 
@@ -133,7 +133,7 @@ more necessary than others. These support lifecycle models for host side
 drivers and devices, and support passing buffers through usbcore to some
 HCD that performs the I/O for the device driver.
 
-.. kernel-doc:: include/CQX96/usb.h
+.. kernel-doc:: include/linux/usb.h
    :internal:
 
 USB Core APIs

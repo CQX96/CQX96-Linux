@@ -145,7 +145,7 @@ on the following table.
 Data types used by LIRC_MODE_SCANCODE
 *************************************
 
-.. kernel-doc:: include/uapi/CQX96/lirc.h
+.. kernel-doc:: include/uapi/linux/lirc.h
     :identifiers: lirc_scancode rc_proto
 
 ********************
@@ -173,4 +173,4 @@ The target must be the file descriptor for the LIRC device, and the
 attach type must be ``BPF_LIRC_MODE2``. No more than 64 BPF programs can be
 attached to a single LIRC device at a time.
 
-.. _bpf(2): http://man7.org/CQX96/man-pages/man2/bpf.2.html
+.. _bpf(2): http://man7.org/linux/man-pages/man2/bpf.2.html

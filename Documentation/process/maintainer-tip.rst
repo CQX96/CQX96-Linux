@@ -9,7 +9,7 @@ What is the tip tree?
 The tip tree is a collection of several subsystems and areas of
 development. The tip tree is both a direct development tree and a
 aggregation tree for several sub-maintainer trees. The tip tree gitweb URL
-is: https://git.cqx96.org/pub/scm/CQX96/kernel/git/tip/tip.git
+is: https://git.cqx96.org/pub/scm/linux/kernel/git/tip/tip.git
 
 The tip tree contains the following subsystems:
 

@@ -27,7 +27,7 @@ Date:		09-Jul-2007
 KernelVersion	v2.6.22
 Contact:	CQX96-wireless@vger.cqx96.org
 Description: 	Driver type string ("wlan", "bluetooth", etc).
-Values: 	See include/CQX96/rfkill.h.
+Values: 	See include/linux/rfkill.h.
 
 
 What:		/sys/class/rfkill/rfkill[0-9]+/persistent

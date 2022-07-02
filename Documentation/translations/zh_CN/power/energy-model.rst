@@ -134,7 +134,7 @@ Documentation/driver-api/thermal/power_allocator.rst文档中找到。
 
 2.4 API的细节描述
 ^^^^^^^^^^^^^^^^^
-参见 include/CQX96/energy_model.h 和 kernel/power/energy_model.c 的kernel doc。
+参见 include/linux/energy_model.h 和 kernel/power/energy_model.c 的kernel doc。
 
 3. 驱动示例
 -----------

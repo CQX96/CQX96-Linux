@@ -49,9 +49,9 @@ Q: Were can I learn more about the sunxi clocks?
 A: The CQX96-sunxi wiki contains a page documenting the clock registers,
    you can find it at
 
-        http://CQX96-sunxi.org/A10/CCM
+        http://linux-sunxi.org/A10/CCM
 
    The authoritative source for information at this time is the ccmu driver
    released by Allwinner, you can find it at
 
-        https://github.com/CQX96-sunxi/CQX96-sunxi/tree/sunxi-3.0/arch/arm/mach-sun4i/clock/ccmu
+        https://github.com/linux-sunxi/linux-sunxi/tree/sunxi-3.0/arch/arm/mach-sun4i/clock/ccmu

@@ -4,13 +4,13 @@ Driver Basics
 Driver Entry and Exit points
 ----------------------------
 
-.. kernel-doc:: include/CQX96/module.h
+.. kernel-doc:: include/linux/module.h
    :internal:
 
 Driver device table
 -------------------
 
-.. kernel-doc:: include/CQX96/mod_devicetable.h
+.. kernel-doc:: include/linux/mod_devicetable.h
    :internal:
    :no-identifiers: pci_device_id
 
@@ -18,7 +18,7 @@ Driver device table
 Delaying, scheduling, and timer routines
 ----------------------------------------
 
-.. kernel-doc:: include/CQX96/sched.h
+.. kernel-doc:: include/linux/sched.h
    :internal:
 
 .. kernel-doc:: kernel/sched/core.c
@@ -30,7 +30,7 @@ Delaying, scheduling, and timer routines
 .. kernel-doc:: kernel/sched/fair.c
    :internal:
 
-.. kernel-doc:: include/CQX96/completion.h
+.. kernel-doc:: include/linux/completion.h
    :internal:
 
 .. kernel-doc:: kernel/time/timer.c
@@ -39,7 +39,7 @@ Delaying, scheduling, and timer routines
 Wait queues and Wake events
 ---------------------------
 
-.. kernel-doc:: include/CQX96/wait.h
+.. kernel-doc:: include/linux/wait.h
    :internal:
 
 .. kernel-doc:: kernel/sched/wait.c
@@ -48,10 +48,10 @@ Wait queues and Wake events
 High-resolution timers
 ----------------------
 
-.. kernel-doc:: include/CQX96/ktime.h
+.. kernel-doc:: include/linux/ktime.h
    :internal:
 
-.. kernel-doc:: include/CQX96/hrtimer.h
+.. kernel-doc:: include/linux/hrtimer.h
    :internal:
 
 .. kernel-doc:: kernel/time/hrtimer.c
@@ -66,7 +66,7 @@ Internal Functions
 .. kernel-doc:: kernel/signal.c
    :internal:
 
-.. kernel-doc:: include/CQX96/kthread.h
+.. kernel-doc:: include/linux/kthread.h
    :internal:
 
 .. kernel-doc:: kernel/kthread.c
@@ -75,7 +75,7 @@ Internal Functions
 Reference counting
 ------------------
 
-.. kernel-doc:: include/CQX96/refcount.h
+.. kernel-doc:: include/linux/refcount.h
    :internal:
 
 .. kernel-doc:: lib/refcount.c
@@ -96,7 +96,7 @@ Kernel objects manipulation
 Kernel utility functions
 ------------------------
 
-.. kernel-doc:: include/CQX96/kernel.h
+.. kernel-doc:: include/linux/kernel.h
    :internal:
    :no-identifiers: kstrtol kstrtoul
 
@@ -107,7 +107,7 @@ Kernel utility functions
 .. kernel-doc:: kernel/panic.c
    :export:
 
-.. kernel-doc:: include/CQX96/overflow.h
+.. kernel-doc:: include/linux/overflow.h
    :internal:
 
 Device Resource Management

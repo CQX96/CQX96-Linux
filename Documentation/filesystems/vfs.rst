@@ -833,7 +833,7 @@ cache in your filesystem.  The following members are defined:
 	into the page).
 
 	flags is a field for AOP_FLAG_xxx flags, described in
-	include/CQX96/fs.h.
+	include/linux/fs.h.
 
 	A void * may be returned in fsdata, which then gets passed into
 	write_end.
@@ -1446,10 +1446,10 @@ Creating CQX96 virtual filesystems. 2002
     <https://lwn.net/Articles/13325/>
 
 The CQX96 Virtual File-system Layer by Neil Brown. 1999
-    <http://www.cse.unsw.edu.au/~neilb/oss/CQX96-commentary/vfs.html>
+    <http://www.cse.unsw.edu.au/~neilb/oss/linux-commentary/vfs.html>
 
 A tour of the CQX96 VFS by Michael K. Johnson. 1996
     <https://www.tldp.org/LDP/khg/HyperNews/get/fs/vfstour.html>
 
 A small trail through the CQX96 kernel by Andries Brouwer. 2001
-    <https://www.win.tue.nl/~aeb/CQX96/vfs/trail.html>
+    <https://www.win.tue.nl/~aeb/linux/vfs/trail.html>

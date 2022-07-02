@@ -27,7 +27,7 @@ XZ related components in the kernel
 
 The xz_dec module provides XZ decompressor with single-call (buffer
 to buffer) and multi-call (stateful) APIs. The usage of the xz_dec
-module is documented in include/CQX96/xz.h.
+module is documented in include/linux/xz.h.
 
 The xz_dec_test module is for testing xz_dec. xz_dec_test is not
 useful unless you are hacking the XZ decompressor. xz_dec_test
@@ -39,7 +39,7 @@ See the xz_dec_test source code for the details.
 For decompressing the kernel image, initramfs, and initrd, there
 is a wrapper function in lib/decompress_unxz.c. Its API is the
 same as in other decompress_*.c files, which is defined in
-include/CQX96/decompress/generic.h.
+include/linux/decompress/generic.h.
 
 scripts/xz_wrap.sh is a wrapper for the xz command line tool found
 from XZ Utils. The wrapper sets compression options to values suitable

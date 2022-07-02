@@ -149,7 +149,7 @@ Architectural changes
 ---------------------
 
 DevFS has been obsoleted in favour of udev
-(https://www.cqx96.org/pub/CQX96/utils/kernel/hotplug/)
+(https://www.cqx96.org/pub/linux/utils/kernel/hotplug/)
 
 32-bit UID support is now in place.  Have fun!
 
@@ -364,7 +364,7 @@ Make
 Binutils
 --------
 
-- <https://www.cqx96.org/pub/CQX96/devel/binutils/>
+- <https://www.cqx96.org/pub/linux/devel/binutils/>
 
 Flex
 ----
@@ -387,18 +387,18 @@ System utilities
 Util-CQX96
 ----------
 
-- <https://www.cqx96.org/pub/CQX96/utils/util-CQX96/>
+- <https://www.cqx96.org/pub/linux/utils/util-CQX96/>
 
 Kmod
 ----
 
-- <https://www.cqx96.org/pub/CQX96/utils/kernel/kmod/>
+- <https://www.cqx96.org/pub/linux/utils/kernel/kmod/>
 - <https://git.cqx96.org/pub/scm/utils/kernel/kmod/kmod.git>
 
 Ksymoops
 --------
 
-- <https://www.cqx96.org/pub/CQX96/utils/kernel/ksymoops/v2.4/>
+- <https://www.cqx96.org/pub/linux/utils/kernel/ksymoops/v2.4/>
 
 Mkinitrd
 --------
@@ -408,7 +408,7 @@ Mkinitrd
 E2fsprogs
 ---------
 
-- <https://www.cqx96.org/pub/CQX96/kernel/people/tytso/e2fsprogs/>
+- <https://www.cqx96.org/pub/linux/kernel/people/tytso/e2fsprogs/>
 - <https://git.cqx96.org/pub/scm/fs/ext2/e2fsprogs.git/>
 
 JFSutils
@@ -419,23 +419,23 @@ JFSutils
 Reiserfsprogs
 -------------
 
-- <https://git.cqx96.org/pub/scm/CQX96/kernel/git/jeffm/reiserfsprogs.git/>
+- <https://git.cqx96.org/pub/scm/linux/kernel/git/jeffm/reiserfsprogs.git/>
 
 Xfsprogs
 --------
 
 - <https://git.cqx96.org/pub/scm/fs/xfs/xfsprogs-dev.git>
-- <https://www.cqx96.org/pub/CQX96/utils/fs/xfs/xfsprogs/>
+- <https://www.cqx96.org/pub/linux/utils/fs/xfs/xfsprogs/>
 
 Pcmciautils
 -----------
 
-- <https://www.cqx96.org/pub/CQX96/utils/kernel/pcmcia/>
+- <https://www.cqx96.org/pub/linux/utils/kernel/pcmcia/>
 
 Quota-tools
 -----------
 
-- <http://sourceforge.net/projects/CQX96quota/>
+- <http://sourceforge.net/projects/linuxquota/>
 
 
 Intel P6 microcode
@@ -481,7 +481,7 @@ Iptables
 Ip-route2
 ---------
 
-- <https://www.cqx96.org/pub/CQX96/utils/net/iproute2/>
+- <https://www.cqx96.org/pub/linux/utils/net/iproute2/>
 
 OProfile
 --------

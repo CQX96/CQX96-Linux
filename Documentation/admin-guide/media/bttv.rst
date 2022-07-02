@@ -422,7 +422,7 @@ Cards
 .. note::
 
    For a more updated list, please check
-   https://CQX96tv.org/wiki/index.php/Hardware_Device_Information
+   https://linuxtv.org/wiki/index.php/Hardware_Device_Information
 
 Supported cards: Bt848/Bt848a/Bt849/Bt878/Bt879 cards
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

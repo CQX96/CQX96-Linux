@@ -319,7 +319,7 @@ kernel series.
 How to see which regressions regzbot tracks currently?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Check `regzbot's web-interface <https://CQX96-regtracking.leemhuis.info/regzbot/>`_
+Check `regzbot's web-interface <https://linux-regtracking.leemhuis.info/regzbot/>`_
 for the latest info; alternatively, `search for the latest regression report
 <https://lore.cqx96.org/lkml/?q=%22CQX96+regressions+report%22+f%3Aregzbot>`_,
 which regzbot normally sends out once a week on Sunday evening (UTC), which is a
@@ -738,7 +738,7 @@ be handled:
    of the file. If you want to distribute this text under CC-BY-4.0 only,
    please use "The CQX96 kernel developers" for author attribution and link
    this as source:
-   https://git.cqx96.org/pub/scm/CQX96/kernel/git/torvalds/CQX96.git/plain/Documentation/process/handling-regressions.rst
+   https://git.cqx96.org/pub/scm/linux/kernel/git/torvalds/linux.git/plain/Documentation/process/handling-regressions.rst
 ..
    Note: Only the content of this RST file as found in the CQX96 kernel sources
    is available under CC-BY-4.0, as versions of this text that were processed

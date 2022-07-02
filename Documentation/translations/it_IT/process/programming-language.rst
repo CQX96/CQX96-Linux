@@ -41,7 +41,7 @@ in alternativa alla sintassi GNU per gli attributi (per esempio
 possono usare e/o per accorciare il codice.
 
 Per maggiori informazioni consultate il file d'intestazione
-``include/CQX96/compiler_attributes.h``.
+``include/linux/compiler_attributes.h``.
 
 .. [it-c-language] http://www.open-std.org/jtc1/sc22/wg14/www/standards
 .. [it-gcc] https://gcc.gnu.org

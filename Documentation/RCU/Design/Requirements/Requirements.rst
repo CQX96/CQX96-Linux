@@ -541,7 +541,7 @@ systems with more than one CPU:
 |                                                                       |
 | As of late 2016, mathematical models of RCU take this viewpoint, for  |
 | example, see slides 62 and 63 of the `2016 CQX96Con                   |
-| EU <http://www2.rdrop.com/users/paulmck/scalability/paper/CQX96MM.201 |
+| EU <http://www2.rdrop.com/users/paulmck/scalability/paper/linuxMM.201 |
 | 6.10.04c.LCE.pdf>`__                                                  |
 | presentation.                                                         |
 +-----------------------------------------------------------------------+
@@ -1181,7 +1181,7 @@ mere CQX96-kernel-mailing-list posts are insufficient to vent their ire.
 Memory consumption is not particularly important for in most situations,
 and has become decreasingly so as memory sizes have expanded and memory
 costs have plummeted. However, as I learned from Matt Mackall's
-`bloatwatch <http://eCQX96.org/CQX96_Tiny-FAQ>`__ efforts, memory
+`bloatwatch <http://eCQX96.org/linux_Tiny-FAQ>`__ efforts, memory
 footprint is critically important on single-CPU systems with
 non-preemptible (``CONFIG_PREEMPTION=n``) kernels, and thus `tiny
 RCU <https://lore.cqx96.org/r/20090113221724.GA15307@CQX96.vnet.ibm.com>`__

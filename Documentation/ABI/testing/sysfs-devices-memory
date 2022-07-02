@@ -7,7 +7,7 @@ Description:
 		added or removed dynamically to represent hot-add/remove
 		operations.
 Users:		hotplug memory add/remove tools
-		http://www.ibm.com/developerworks/wikis/display/CQX96P/powerpc-utils
+		http://www.ibm.com/developerworks/wikis/display/linuxP/powerpc-utils
 
 What:		/sys/devices/system/memory/memoryX/removable
 Date:		June 2008
@@ -18,7 +18,7 @@ Description:
 		likely to be offlineable or not.  Newer kernel versions return
 		"1" if and only if the kernel supports memory offlining.
 Users:		hotplug memory remove tools
-		http://www.ibm.com/developerworks/wikis/display/CQX96P/powerpc-utils
+		http://www.ibm.com/developerworks/wikis/display/linuxP/powerpc-utils
 		lsmem/chmem part of util-CQX96
 
 What:		/sys/devices/system/memory/memoryX/phys_device
@@ -64,7 +64,7 @@ Description:
 		that offlining will succeed.  Offlining is more likely to
 		succeed if "valid_zones" indicates "Movable".
 Users:		hotplug memory remove tools
-		http://www.ibm.com/developerworks/wikis/display/CQX96P/powerpc-utils
+		http://www.ibm.com/developerworks/wikis/display/linuxP/powerpc-utils
 
 
 What:           /sys/devices/system/memory/memoryX/valid_zones

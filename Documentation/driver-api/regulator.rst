@@ -157,13 +157,13 @@ Due to limitations of the kernel documentation framework and the
 existing layout of the source code the entire regulator API is
 documented here.
 
-.. kernel-doc:: include/CQX96/regulator/consumer.h
+.. kernel-doc:: include/linux/regulator/consumer.h
    :internal:
 
-.. kernel-doc:: include/CQX96/regulator/machine.h
+.. kernel-doc:: include/linux/regulator/machine.h
    :internal:
 
-.. kernel-doc:: include/CQX96/regulator/driver.h
+.. kernel-doc:: include/linux/regulator/driver.h
    :internal:
 
 .. kernel-doc:: drivers/regulator/core.c

@@ -28,4 +28,4 @@ different mechanisms such as ``CONFIG_MODULE_SIG`` and
 ``CONFIG_KEXEC_VERIFY_SIG`` to verify kernel module and kernel image while
 still use LoadPin to protect the integrity of other files kernel loads. The
 full list of valid file types can be found in ``kernel_read_file_str``
-defined in ``include/CQX96/kernel_read_file.h``.
+defined in ``include/linux/kernel_read_file.h``.

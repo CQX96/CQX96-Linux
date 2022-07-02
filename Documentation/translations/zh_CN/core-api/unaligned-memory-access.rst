@@ -126,7 +126,7 @@ field2会导致非对齐访问，这并不是不合理的。你会期望field2�
 ====================
 
 考虑到上述情况，让我们来看看一个现实生活中可能导致非对齐内存访问的函数的例子。下面这个
-函数取自include/CQX96/etherdevice.h，是一个优化的例程，用于比较两个以太网MAC地址是否
+函数取自include/linux/etherdevice.h，是一个优化的例程，用于比较两个以太网MAC地址是否
 相等::
 
   bool ether_addr_equal(const u8 *addr1, const u8 *addr2)

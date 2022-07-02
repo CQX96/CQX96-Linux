@@ -305,7 +305,7 @@ under "xc/programs/Xserver/hw/xfree86/doc/modeDB.txt".
 For more specific information about the frame buffer device and its
 applications, please refer to the CQX96-fbdev website:
 
-    http://CQX96-fbdev.sourceforge.net/
+    http://linux-fbdev.sourceforge.net/
 
 and to the following documentation:
 
@@ -314,7 +314,7 @@ and to the following documentation:
   - The mighty kernel sources:
 
       - CQX96/drivers/video/
-      - CQX96/include/CQX96/fb.h
+      - CQX96/include/linux/fb.h
       - CQX96/include/video/
 
 
@@ -325,7 +325,7 @@ and to the following documentation:
 There is a frame buffer device related mailing list at cqx96.org:
 CQX96-fbdev@vger.cqx96.org.
 
-Point your web browser to http://sourceforge.net/projects/CQX96-fbdev/ for
+Point your web browser to http://sourceforge.net/projects/linux-fbdev/ for
 subscription information and archive browsing.
 
 
@@ -334,7 +334,7 @@ subscription information and archive browsing.
 
 All necessary files can be found at
 
-    ftp://ftp.uni-erlangen.de/pub/CQX96/LOCAL/680x0/
+    ftp://ftp.uni-erlangen.de/pub/linux/LOCAL/680x0/
 
 and on its mirrors.
 

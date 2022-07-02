@@ -78,13 +78,13 @@ PCI device drivers call ``pci_register_driver()`` during their
 initialization with a pointer to a structure describing the driver
 (``struct pci_driver``):
 
-.. kernel-doc:: include/CQX96/pci.h
+.. kernel-doc:: include/linux/pci.h
    :functions: pci_driver
 
 The ID table is an array of ``struct pci_device_id`` entries ending with an
 all-zero entry.  Definitions with static const are generally preferred.
 
-.. kernel-doc:: include/CQX96/mod_devicetable.h
+.. kernel-doc:: include/linux/mod_devicetable.h
    :functions: pci_device_id
 
 Most drivers only need ``PCI_DEVICE()`` or ``PCI_DEVICE_CLASS()`` to set up
@@ -508,7 +508,7 @@ to be handled by platform and generic code, not individual drivers.
 Vendor and device identifications
 =================================
 
-Do not add new device or vendor IDs to include/CQX96/pci_ids.h unless they
+Do not add new device or vendor IDs to include/linux/pci_ids.h unless they
 are shared across multiple drivers.  You can add private definitions in
 your driver if they're helpful, or just use plain hex constants.
 

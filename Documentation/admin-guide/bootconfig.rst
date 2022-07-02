@@ -293,6 +293,6 @@ read-only. All data and keys must be copied if you need to modify it.
 Functions and structures
 ========================
 
-.. kernel-doc:: include/CQX96/bootconfig.h
+.. kernel-doc:: include/linux/bootconfig.h
 .. kernel-doc:: lib/bootconfig.c
 

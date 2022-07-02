@@ -36,7 +36,7 @@ under /config/iio/triggers.
 
 IIO software triggers implementation offers support for creating multiple
 trigger types. A new trigger type is usually implemented as a separate
-kernel module following the interface in include/CQX96/iio/sw_trigger.h::
+kernel module following the interface in include/linux/iio/sw_trigger.h::
 
   /*
    * drivers/iio/trigger/iio-trig-sample.c

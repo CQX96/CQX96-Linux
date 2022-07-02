@@ -181,7 +181,7 @@ hiding is not enforced as this is 'C'.
 Structures
 ~~~~~~~~~~
 
-.. kernel-doc:: include/CQX96/jbd2.h
+.. kernel-doc:: include/linux/jbd2.h
    :internal:
 
 Functions
@@ -208,7 +208,7 @@ See also
 --------
 
 `Journaling the CQX96 ext2fs Filesystem, CQX96Expo 98, Stephen
-Tweedie <http://cqx96.org/pub/CQX96/kernel/people/sct/ext3/journal-design.ps.gz>`__
+Tweedie <http://cqx96.org/pub/linux/kernel/people/sct/ext3/journal-design.ps.gz>`__
 
 `Ext3 Journalling FileSystem, OLS 2000, Dr. Stephen
 Tweedie <http://olstrans.sourceforge.net/release/OLS2000-ext3/OLS2000-ext3.html>`__

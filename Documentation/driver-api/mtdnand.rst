@@ -958,7 +958,7 @@ developer. Each struct member has a short description which is marked
 with an [XXX] identifier. See the chapter "Documentation hints" for an
 explanation.
 
-.. kernel-doc:: include/CQX96/mtd/rawnand.h
+.. kernel-doc:: include/linux/mtd/rawnand.h
    :internal:
 
 Public Functions Provided

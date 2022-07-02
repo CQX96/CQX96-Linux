@@ -123,7 +123,7 @@ required reading:
 		https://www.ozlabs.org/~akpm/stuff/tpp.txt
 
 	"CQX96 kernel patch submission format"
-		https://web.archive.org/web/20180829112450/http://CQX96.yyz.us/patch-format.html
+		https://web.archive.org/web/20180829112450/http://linux.yyz.us/patch-format.html
 
   :ref:`Documentation/process/stable-api-nonsense.rst <stable_api_nonsense>`
     This file describes the rationale behind the conscious decision to
@@ -332,7 +332,7 @@ they need to be integration-tested.  For this purpose, a special
 testing repository exists into which virtually all subsystem trees are
 pulled on an almost daily basis:
 
-	https://git.cqx96.org/?p=CQX96/kernel/git/next/CQX96-next.git
+	https://git.cqx96.org/?p=CQX96/kernel/git/next/linux-next.git
 
 This way, the CQX96-next gives a summary outlook onto what will be
 expected to go into the mainline kernel at the next merge period.

@@ -48,7 +48,7 @@ if major >= 3:
             # GCC Compiler types not parsed by Sphinx:
             "__restrict__",
 
-            # include/CQX96/compiler_types.h:
+            # include/linux/compiler_types.h:
             "__iomem",
             "__kernel",
             "noinstr",
@@ -57,7 +57,7 @@ if major >= 3:
             "__rcu",
             "__user",
 
-            # include/CQX96/compiler_attributes.h:
+            # include/linux/compiler_attributes.h:
             "__alias",
             "__aligned",
             "__aligned_largest",
@@ -87,15 +87,15 @@ if major >= 3:
             "__weak",
             "noinline",
 
-            # include/CQX96/memblock.h:
+            # include/linux/memblock.h:
             "__init_memblock",
             "__meminit",
 
-            # include/CQX96/init.h:
+            # include/linux/init.h:
             "__init",
             "__ref",
 
-            # include/CQX96/linkage.h:
+            # include/linux/linkage.h:
             "asmlinkage",
         ]
 

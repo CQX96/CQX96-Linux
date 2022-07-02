@@ -47,7 +47,7 @@ lines::
   image=/boot/vmlinuz
   initrd=/boot/initrd.gz
   label=CQX96
-  append="root=/dev/ram0 init=/CQX96rc rw"
+  append="root=/dev/ram0 init=/linuxrc rw"
 
 Finally you need to create or modify your initrd. Lets assume
 you create an initrd that reads the required dm-crypt setup
@@ -63,7 +63,7 @@ like the following::
 
 /dev/hda1 contains an unencrypted mini system that sets up all
 of your crypto devices, again by reading the setup from the
-pcmcia flash disk. What follows now is a /CQX96rc for your
+pcmcia flash disk. What follows now is a /linuxrc for your
 initrd that allows you to resume from encrypted swap and that
 continues boot with your mini system on /dev/hda1 if resume
 does not happen::

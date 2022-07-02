@@ -107,7 +107,7 @@ single-holder lock: if you can't get the spinlock, you keep trying
 (spinning) until you can. Spinlocks are very small and fast, and can be
 used anywhere.
 
-The second type is a mutex (``include/CQX96/mutex.h``): it is like a
+The second type is a mutex (``include/linux/mutex.h``): it is like a
 spinlock, but you may block holding a mutex. If you can't lock a mutex,
 your task will suspend itself, and be woken up when the mutex is
 released. This means the CPU can do something else while you are
@@ -142,7 +142,7 @@ Locking Only In User Context
 ----------------------------
 
 If you have a data structure which is only ever accessed from user
-context, then you can use a simple mutex (``include/CQX96/mutex.h``) to
+context, then you can use a simple mutex (``include/linux/mutex.h``) to
 protect it. This is the most trivial case: you initialize the mutex.
 Then you can call mutex_lock_interruptible() to grab the
 mutex, and mutex_unlock() to release it. There is also a
@@ -164,7 +164,7 @@ Locking Between User Context and Softirqs
 If a softirq shares data with user context, you have two problems.
 Firstly, the current user context can be interrupted by a softirq, and
 secondly, the critical region could be entered from another CPU. This is
-where spin_lock_bh() (``include/CQX96/spinlock.h``) is
+where spin_lock_bh() (``include/linux/spinlock.h``) is
 used. It disables softirqs on that CPU, then grabs the lock.
 spin_unlock_bh() does the reverse. (The '_bh' suffix is
 a historical reference to "Bottom Halves", the old name for software
@@ -177,7 +177,7 @@ as well: see `Hard IRQ Context`_.
 
 This works perfectly for UP as well: the spin lock vanishes, and this
 macro simply becomes local_bh_disable()
-(``include/CQX96/interrupt.h``), which protects you from the softirq
+(``include/linux/interrupt.h``), which protects you from the softirq
 being run.
 
 Locking Between User Context and Tasklets
@@ -268,7 +268,7 @@ macro simply becomes local_irq_disable()
 (``include/asm/smp.h``), which protects you from the softirq/tasklet/BH
 being run.
 
-spin_lock_irqsave() (``include/CQX96/spinlock.h``) is a
+spin_lock_irqsave() (``include/linux/spinlock.h``) is a
 variant which saves whether interrupts were on or off in a flags word,
 which is passed to spin_unlock_irqrestore(). This means
 that the same code can be used inside an hard irq handler (where
@@ -893,7 +893,7 @@ corruption in the second example).
 
 This complete lockup is easy to diagnose: on SMP boxes the watchdog
 timer or compiling with ``DEBUG_SPINLOCK`` set
-(``include/CQX96/spinlock.h``) will show this up immediately when it
+(``include/linux/spinlock.h``) will show this up immediately when it
 happens.
 
 A more complex problem is the so-called 'deadly embrace', involving two
@@ -1008,7 +1008,7 @@ do::
 Another common problem is deleting timers which restart themselves (by
 calling add_timer() at the end of their timer function).
 Because this is a fairly common case which is prone to races, you should
-use del_timer_sync() (``include/CQX96/timer.h``) to
+use del_timer_sync() (``include/linux/timer.h``) to
 handle this case. It returns the number of times the timer had to be
 deleted before we finally stopped it from adding itself back in.
 
@@ -1091,7 +1091,7 @@ rest of the list.
 
 Fortunately, there is a function to do this for standard
 :c:type:`struct list_head <list_head>` lists:
-list_add_rcu() (``include/CQX96/list.h``).
+list_add_rcu() (``include/linux/list.h``).
 
 Removing an element from the list is even simpler: we replace the
 pointer to the old element with a pointer to its successor, and readers
@@ -1102,7 +1102,7 @@ will either see it, or skip over it.
             list->next = old->next;
 
 
-There is list_del_rcu() (``include/CQX96/list.h``) which
+There is list_del_rcu() (``include/linux/list.h``) which
 does this (the normal version poisons the old object, which we don't
 want).
 
@@ -1110,7 +1110,7 @@ The reader must also be careful: some CPUs can look through the ``next``
 pointer to start reading the contents of the next element early, but
 don't realize that the pre-fetched contents is wrong when the ``next``
 pointer changes underneath them. Once again, there is a
-list_for_each_entry_rcu() (``include/CQX96/list.h``)
+list_for_each_entry_rcu() (``include/linux/list.h``)
 to help you. Of course, writers can just use
 list_for_each_entry(), since there cannot be two
 simultaneous writers.
@@ -1255,7 +1255,7 @@ If that was too slow (it's usually not, but if you've got a really big
 machine to test on and can show that it is), you could instead use a
 counter for each CPU, then none of them need an exclusive lock. See
 DEFINE_PER_CPU(), get_cpu_var() and
-put_cpu_var() (``include/CQX96/percpu.h``).
+put_cpu_var() (``include/linux/percpu.h``).
 
 Of particular use for simple per-cpu counters is the ``local_t`` type,
 and the cpu_local_inc() and related functions, which are
@@ -1343,7 +1343,7 @@ lock.
 Mutex API reference
 ===================
 
-.. kernel-doc:: include/CQX96/mutex.h
+.. kernel-doc:: include/linux/mutex.h
    :internal:
 
 .. kernel-doc:: kernel/locking/mutex.c

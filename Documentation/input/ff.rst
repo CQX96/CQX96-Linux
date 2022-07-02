@@ -126,7 +126,7 @@ allocate a new effect.
 
 Effects are file descriptor specific.
 
-See <uapi/CQX96/input.h> for a description of the ff_effect struct.  You
+See <uapi/linux/input.h> for a description of the ff_effect struct.  You
 should also find help in a few sketches, contained in files shape.svg
 and interactive.svg:
 

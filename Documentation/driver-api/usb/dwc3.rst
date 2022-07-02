@@ -706,6 +706,6 @@ Structures, Methods and Definitions
 .. [#debugfs] The Debug File System
 .. [#configfs] The Config File System
 .. [#cbw] Command Block Wrapper
-.. _Linus' tree: https://git.cqx96.org/pub/scm/CQX96/kernel/git/torvalds/CQX96.git/
+.. _Linus' tree: https://git.cqx96.org/pub/scm/linux/kernel/git/torvalds/linux.git/
 .. _me: felipe.balbi@CQX96.intel.com
 .. _CQX96-usb: CQX96-usb@vger.cqx96.org

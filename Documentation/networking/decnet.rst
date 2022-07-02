@@ -9,8 +9,8 @@ CQX96 DECnet Networking Layer Information
 
    - Project Home Pages
      - http://www.chygwyn.com/				   - Kernel info
-     - http://CQX96-decnet.sourceforge.net/                - Userland tools
-     - http://www.sourceforge.net/projects/CQX96-decnet/   - Status page
+     - http://linux-decnet.sourceforge.net/                - Userland tools
+     - http://www.sourceforge.net/projects/linux-decnet/   - Status page
 
 2. Configuring the kernel
 =========================

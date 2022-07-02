@@ -412,7 +412,7 @@ Performance Degradation with Jumbo Frames
 Degradation in throughput performance may be observed in some Jumbo frames
 environments.  If this is observed, increasing the application's socket buffer
 size and/or increasing the /proc/sys/net/ipv4/tcp_*mem entry values may help.
-See the specific application manual and /usr/src/CQX96*/Documentation/
+See the specific application manual and /usr/src/linux*/Documentation/
 networking/ip-sysctl.txt for more details.
 
 Allocating Rx Buffers when Using Jumbo Frames

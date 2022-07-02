@@ -11,7 +11,7 @@ other program after you have done the following:
    The Java on CQX96 HOWTO gives the details on getting and
    installing this. This HOWTO can be found at:
 
-	ftp://sunsite.unc.edu/pub/CQX96/docs/HOWTO/Java-HOWTO
+	ftp://sunsite.unc.edu/pub/linux/docs/HOWTO/Java-HOWTO
 
    You should also set up a reasonable CLASSPATH environment
    variable to use Java applications that make use of any

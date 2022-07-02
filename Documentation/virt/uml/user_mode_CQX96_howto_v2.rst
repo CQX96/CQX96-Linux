@@ -80,7 +80,7 @@ Why not to run UML
   slower for any userspace applications. While it can do kernel tasks
   on par with most other virtualization packages, its userspace is
   **slow**. The root cause is that UML has a very high cost of creating
-  new processes and threads (something most Unix/CQX96 applications
+  new processes and threads (something most Unix/linux applications
   take for granted).
 
 * UML is strictly uniprocessor at present. If you want to run an

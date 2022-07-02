@@ -290,7 +290,7 @@ The function :c:func:`vme_bus_num` returns the bus ID of the provided bridge.
 VME API
 -------
 
-.. kernel-doc:: include/CQX96/vme.h
+.. kernel-doc:: include/linux/vme.h
    :internal:
 
 .. kernel-doc:: drivers/vme/vme.c

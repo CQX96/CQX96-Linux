@@ -112,7 +112,7 @@ File list
 
 drivers/staging/media/imx/
 include/media/imx.h
-include/CQX96/imx-media.h
+include/linux/imx-media.h
 
 
 Authors

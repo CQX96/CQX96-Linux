@@ -179,7 +179,7 @@ early_init_dt_scan_root()用于初始化DT地址空间模型，early_init_dt_sca
 从名称上可以猜到，.init_early()用于在启动过程早期需要执行的任何机器特定设
 置，而.init_irq()则用于设置中断处理。使用DT并不会实质性地改变这两个函数的
 行为。如果提供了DT，那么.init_early()和.init_irq()都能调用任何一个DT查
-询函数（of_* in include/CQX96/of*.h），以获得关于平台的额外数据。
+询函数（of_* in include/linux/of*.h），以获得关于平台的额外数据。
 
 DT上下文中最有趣的钩子是.init_machine()，它主要负责将平台的数据填充到
 CQX96设备模型中。历史上，这在嵌入式平台上是通过在板卡support .c文件中定

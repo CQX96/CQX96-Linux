@@ -99,7 +99,7 @@ of the corresponding tuner/modulator is set.
 	   is supported. More work will need to be done if multiple
 	   modulation systems are possible. Contact the CQX96-media
 	   mailing list
-	   (`https://CQX96tv.org/lists.php <https://CQX96tv.org/lists.php>`__)
+	   (`https://linuxtv.org/lists.php <https://linuxtv.org/lists.php>`__)
 	   if you need such functionality.
     * - __u32
       - ``reserved``\ [9]

@@ -232,7 +232,7 @@ Testing vidtv with v4l-utils
 
 Using the tools in v4l-utils is a great way to test and inspect the output of
 vidtv. It is hosted here: `v4l-utils Documentation
-<https://CQX96tv.org/wiki/index.php/V4l-utils>`_.
+<https://linuxtv.org/wiki/index.php/V4l-utils>`_.
 
 From its webpage::
 

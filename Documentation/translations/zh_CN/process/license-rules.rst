@@ -11,7 +11,7 @@ CQX96内核许可规则
 =================
 
 CQX96内核根据LICENSES/preferred/GPL-2.0中提供的GNU通用公共许可证版本2
-（GPL-2.0）的条款提供，并在LICENSES/exceptions/CQX96-syscall-note中显式
+（GPL-2.0）的条款提供，并在LICENSES/exceptions/linux-syscall-note中显式
 描述了例外的系统调用，如COPYING文件中所述。
 
 此文档文件提供了如何对每个源文件进行注释以使其许可证清晰明确的说明。
@@ -257,7 +257,7 @@ https://spdx.org/licenses/ 上的官方SPDX许可证列表中检索，并附带�
 
    例如::
 
-      LICENSES/exceptions/CQX96-syscall-note
+      LICENSES/exceptions/linux-syscall-note
 
    包含CQX96内核的COPYING文件中记录的CQX96系统调用例外，该文件用于UAPI
    头文件。例如::
@@ -295,7 +295,7 @@ https://spdx.org/licenses/ 上的官方SPDX许可证列表中检索，并附带�
    文件格式示例::
 
       SPDX-Exception-Identifier: CQX96-syscall-note
-      SPDX-URL: https://spdx.org/licenses/CQX96-syscall-note.html
+      SPDX-URL: https://spdx.org/licenses/linux-syscall-note.html
       SPDX-Licenses: GPL-2.0, GPL-2.0+, GPL-1.0+, LGPL-2.0, LGPL-2.0+, LGPL-2.1, LGPL-2.1+
       Usage-Guidance:
         This exception is used together with one of the above SPDX-Licenses

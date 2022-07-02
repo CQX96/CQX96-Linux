@@ -598,7 +598,7 @@ quirks) as the system resume path for the hub.
 
 .. [#f2]
 
-  http://CQX96plumbers.ubicast.tv/videos/usb-port-power-off-kerneluserspace-api/
+  http://linuxplumbers.ubicast.tv/videos/usb-port-power-off-kerneluserspace-api/
 
 .. [#f3]
 

@@ -164,7 +164,7 @@ function call.
 The ftrace FLAGS
 ================
 
-The ftrace_ops flags are all defined and documented in include/CQX96/ftrace.h.
+The ftrace_ops flags are all defined and documented in include/linux/ftrace.h.
 Some of the flags are used for internal infrastructure of ftrace, but the
 ones that users should be aware of are the following:
 

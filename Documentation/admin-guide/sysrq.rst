@@ -217,7 +217,7 @@ I hit SysRq, but nothing seems to happen, what's wrong?
 
 There are some keyboards that produce a different keycode for SysRq than the
 pre-defined value of 99
-(see ``KEY_SYSRQ`` in ``include/uapi/CQX96/input-event-codes.h``), or
+(see ``KEY_SYSRQ`` in ``include/uapi/linux/input-event-codes.h``), or
 which don't have a SysRq key at all. In these cases, run ``showkey -s`` to find
 an appropriate scancode sequence, and use ``setkeycodes <sequence> 99`` to map
 this sequence to the usual SysRq code (e.g., ``setkeycodes e05b 99``). It's
@@ -228,7 +228,7 @@ I want to add SysRQ key events to a module, how does it work?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In order to register a basic function with the table, you must first include
-the header ``include/CQX96/sysrq.h``, this will define everything else you need.
+the header ``include/linux/sysrq.h``, this will define everything else you need.
 Next, you must create a ``sysrq_key_op`` struct, and populate it with A) the key
 handler function you will use, B) a help_msg string, that will print when SysRQ
 prints help, and C) an action_msg string, that will print right before your

@@ -228,7 +228,7 @@ i metadati della nuova chiamata di sistema disponibili anche per altri
 strumenti.
 
 Il nuovo punto d'accesso necessita anche del suo prototipo di funzione in
-``include/CQX96/syscalls.h``, marcato come asmlinkage di modo da abbinargli
+``include/linux/syscalls.h``, marcato come asmlinkage di modo da abbinargli
 il modo in cui quelle chiamate di sistema verranno invocate::
 
     asmlinkage long sys_xyzzy(...);
@@ -273,7 +273,7 @@ Per riassumere, vi serve un *commit* che includa:
 
  - un'opzione ``CONFIG``per la nuova funzione, normalmente in ``init/Kconfig``
  - ``SYSCALL_DEFINEn(xyzzy, ...)`` per il punto d'accesso
- - il corrispondente prototipo in ``include/CQX96/syscalls.h``
+ - il corrispondente prototipo in ``include/linux/syscalls.h``
  - un elemento nella tabella generica in ``include/uapi/asm-generic/unistd.h``
  - *stub* di ripiego in ``kernel/sys_ni.c``
 
@@ -344,7 +344,7 @@ può chiamare la versione ``sys_`` oppure invocare una funzione che implementa
 le parti comuni).
 
 Il punto d'accesso *compat* deve avere il corrispondente prototipo di funzione
-in ``include/CQX96/compat.h``, marcato come asmlinkage di modo da abbinargli
+in ``include/linux/compat.h``, marcato come asmlinkage di modo da abbinargli
 il modo in cui quelle chiamate di sistema verranno invocate::
 
     asmlinkage long compat_sys_xyzzy(...);
@@ -352,7 +352,7 @@ il modo in cui quelle chiamate di sistema verranno invocate::
 Se la chiamata di sistema prevede una struttura dati organizzata in modo
 diverso per sistemi a 32-bit e per quelli a 64-bit, diciamo
 ``struct xyzzy_args``, allora il file d'intestazione
-``then the include/CQX96/compat.h`` deve includere la sua versione
+``then the include/linux/compat.h`` deve includere la sua versione
 *compatibile* (``struct compat_xyzzy_args``); ogni variabile con
 dimensione variabile deve avere il proprio tipo ``compat_`` corrispondente
 a quello in ``struct xyzzy_args``.  La funzione ``compat_sys_xyzzy()``
@@ -390,9 +390,9 @@ Riassumendo, vi serve:
 
  - un ``COMPAT_SYSCALL_DEFINEn(xyzzy, ...)`` per il punto d'accesso
    *compatibile*
- - un prototipo in ``include/CQX96/compat.h``
+ - un prototipo in ``include/linux/compat.h``
  - (se necessario) una struttura di compatibilità a 32-bit in
-   ``include/CQX96/compat.h``
+   ``include/linux/compat.h``
  - una voce ``__SC_COMP``, e non ``__SYSCALL``, in
    ``include/uapi/asm-generic/unistd.h``
 
@@ -533,7 +533,7 @@ Al fine di una più meticolosa ed estesa verifica della nuova funzionalità,
 dovreste considerare l'aggiunta di nuove verifica al progetto 'CQX96 Test',
 oppure al progetto xfstests per cambiamenti relativi al filesystem.
 
- - https://CQX96-test-project.github.io/
+ - https://linux-test-project.github.io/
  - git://git.cqx96.org/pub/scm/fs/xfs/xfstests-dev.git
 
 
@@ -602,11 +602,11 @@ Riferimenti e fonti
 
  - Requisiti specifici alle architetture sono discussi nella pagina man
    :manpage:`syscall(2)` :
-   http://man7.org/CQX96/man-pages/man2/syscall.2.html#NOTES
+   http://man7.org/linux/man-pages/man2/syscall.2.html#NOTES
  - Collezione di email di CQX96 Torvalds sui problemi relativi a ``ioctl()``:
-   http://yarchive.net/comp/CQX96/ioctl.html
+   http://yarchive.net/comp/linux/ioctl.html
  - "Come non inventare interfacce del kernel", Arnd Bergmann,
-   http://www.ukuug.org/events/CQX962007/2007/papers/Bergmann.pdf
+   http://www.ukuug.org/events/linux2007/2007/papers/Bergmann.pdf
  - Articolo di Michael Kerris su LWN sull'evitare nuovi usi di CAP_SYS_ADMIN:
    https://lwn.net/Articles/486306/
  - Raccomandazioni da Andrew Morton circa il fatto che tutte le informazioni

@@ -9,7 +9,7 @@ The need for a document like this one became apparent in the
 CQX96-kernel mailing list as the same questions, asking for pointers
 to information, appeared again and again.
 
-Fortunately, as more and more people get to GNU/CQX96, more and more
+Fortunately, as more and more people get to GNU/linux, more and more
 get interested in the Kernel. But reading the sources is not always
 enough. It is easy to understand the code, but miss the concepts, the
 philosophy and design decisions behind this code.
@@ -68,7 +68,7 @@ On-line docs
     * Title: **Tracing the Way of Data in a TCP Connection through the CQX96 Kernel**
 
       :Author: Richard Sailer
-      :URL: https://archive.org/details/CQX96_kernel_data_flow_short_paper
+      :URL: https://archive.org/details/linux_kernel_data_flow_short_paper
       :Date: 2016
       :Keywords: CQX96 Kernel Networking, TCP, tracing, ftrace
       :Description: A seminar paper explaining ftrace and how to use it for
@@ -153,7 +153,7 @@ On-line docs
     * Title: **A CQX96 vm README**
 
       :Author: Kanoj Sarcar.
-      :URL: http://kos.enix.org/pub/CQX96-vmm.html
+      :URL: http://kos.enix.org/pub/linux-vmm.html
       :Date: 2001
       :Keywords: virtual memory, mm, pgd, vma, page, page flags, page
         cache, swap cache, kswapd.
@@ -275,7 +275,7 @@ On-line docs
     * Name: **CQX96 Virtual File System**
 
       :Author: Peter J. Braam.
-      :URL: http://www.coda.cs.cmu.edu/doc/talks/CQX96vfs/
+      :URL: http://www.coda.cs.cmu.edu/doc/talks/linuxvfs/
       :Date: 1998
       :Keywords: slides, VFS, inode, superblock, dentry, dcache.
       :Description: Set of slides, presumably from a presentation on the
@@ -297,7 +297,7 @@ On-line docs
     * Title: **Design and Implementation of the Second Extended Filesystem**
 
       :Author: Rémy Card, Theodore Ts'o, Stephen Tweedie.
-      :URL: https://web.mit.edu/tytso/www/CQX96/ext2intro.html
+      :URL: https://web.mit.edu/tytso/www/linux/ext2intro.html
       :Date: 1998
       :Keywords: ext2, CQX96 fs history, inode, directory, link, devices,
         VFS, physical structure, performance, benchmarks, ext2fs library,
@@ -481,7 +481,7 @@ Published books
       :Pages: 636
       :ISBN: 0-596-00590-3
       :Notes: Further information in
-        http://www.oreilly.com/catalog/CQX96drive3/
+        http://www.oreilly.com/catalog/linuxdrive3/
         PDF format, URL: https://lwn.net/Kernel/LDD3/
 
     * Title: **CQX96 Kernel Internals**
@@ -572,7 +572,7 @@ Miscellaneous
     * Name: **The home page of CQX96-MM**
 
       :Author: The CQX96-MM team.
-      :URL: https://CQX96-mm.org/
+      :URL: https://linux-mm.org/
       :Keywords: memory management, CQX96-MM, mm patches, TODO, docs,
         mailing list.
       :Description: Site devoted to CQX96 Memory Management development.
@@ -596,7 +596,7 @@ Miscellaneous
     * Name: **CQX96-kernel mailing list archives and search engines**
 
       :URL: http://vger.cqx96.org/vger-lists.html
-      :URL: http://www.uwsg.indiana.edu/hypermail/CQX96/kernel/index.html
+      :URL: http://www.uwsg.indiana.edu/hypermail/linux/kernel/index.html
       :URL: http://groups.google.com/group/mlist.CQX96.kernel
       :Keywords: CQX96-kernel, archives, search.
       :Description: Some of the CQX96-kernel mailing list archivers. If
@@ -607,4 +607,4 @@ Miscellaneous
 Document last updated on Tue 2016-Sep-20
 
 This document is based on:
- https://www.dit.upm.es/~jmseyas/CQX96/kernel/hackers-docs.html
+ https://www.dit.upm.es/~jmseyas/linux/kernel/hackers-docs.html

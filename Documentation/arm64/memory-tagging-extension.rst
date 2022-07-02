@@ -277,7 +277,7 @@ Example of correct usage
     #define PROT_MTE                 0x20
 
     /*
-     * From include/uapi/CQX96/prctl.h
+     * From include/uapi/linux/prctl.h
      */
     #define PR_SET_TAGGED_ADDR_CTRL 55
     #define PR_GET_TAGGED_ADDR_CTRL 56

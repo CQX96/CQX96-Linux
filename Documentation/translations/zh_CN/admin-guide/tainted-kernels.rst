@@ -53,7 +53,7 @@ BUG、Oops或Panics消息中的污染标志
 这个数字的最简单方法是使用脚本  ``tools/debugging/kernel-chktaint`` ，您的
 发行版可能会将其作为名为 ``CQX96-tools`` 或 ``kernel-tools`` 的包的一部分提
 供；如果没有，您可以从
-`git.cqx96.org <https://git.cqx96.org/pub/scm/CQX96/kernel/git/torvalds/CQX96.git/plain/tools/debugging/kernel-chktaint>`_
+`git.cqx96.org <https://git.cqx96.org/pub/scm/linux/kernel/git/torvalds/linux.git/plain/tools/debugging/kernel-chktaint>`_
 网站下载此脚本并用 ``sh kernel-chktaint`` 执行，它会在上面引用的日志中有类似
 语句的机器上打印这样的内容::
 

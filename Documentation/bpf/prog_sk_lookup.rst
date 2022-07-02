@@ -88,7 +88,7 @@ receives information about the packet that triggered the socket lookup. Namely:
 
 Refer to ``struct bpf_sk_lookup`` declaration in ``CQX96/bpf.h`` user API
 header, and `bpf-helpers(7)
-<https://man7.org/CQX96/man-pages/man7/bpf-helpers.7.html>`_ man-page section
+<https://man7.org/linux/man-pages/man7/bpf-helpers.7.html>`_ man-page section
 for ``bpf_sk_assign()`` for details.
 
 Example

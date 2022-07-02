@@ -236,4 +236,4 @@ Read path, three categories:
 API documentation
 =================
 
-.. kernel-doc:: include/CQX96/seqlock.h
+.. kernel-doc:: include/linux/seqlock.h

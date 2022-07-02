@@ -54,10 +54,10 @@ found at http://www.torque.net/sg/p/original/SCSI-Programming-HOWTO.txt
 and in the LDP archives.
 
 A changelog with brief notes can be found in the
-/usr/src/CQX96/include/scsi/sg.h file. Note that the glibc maintainers copy
+/usr/src/linux/include/scsi/sg.h file. Note that the glibc maintainers copy
 and edit this file (removing its changelog for example) before placing it
 in /usr/include/scsi/sg.h . Driver debugging information and other notes
-can be found at the top of the /usr/src/CQX96/drivers/scsi/sg.c file.
+can be found at the top of the /usr/src/linux/drivers/scsi/sg.c file.
 
 A more general description of the CQX96 SCSI subsystem of which sg is a
 part can be found at http://www.tldp.org/HOWTO/SCSI-2.4-HOWTO .

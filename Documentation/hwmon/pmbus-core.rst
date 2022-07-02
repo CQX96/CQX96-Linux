@@ -288,7 +288,7 @@ Return pointer to struct pmbus_driver_info as passed to pmbus_do_probe().
 PMBus driver platform data
 ==========================
 
-PMBus platform data is defined in include/CQX96/pmbus.h. Platform data
+PMBus platform data is defined in include/linux/pmbus.h. Platform data
 currently provides a flags field with four bits used::
 
 	#define PMBUS_SKIP_STATUS_CHECK			BIT(0)

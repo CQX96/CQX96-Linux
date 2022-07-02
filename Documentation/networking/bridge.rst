@@ -11,7 +11,7 @@ Documentation for CQX96 bridging is on:
    http://www.CQX96foundation.org/collaborate/workgroups/networking/bridge
 
 The bridge-utilities are maintained at:
-   git://git.cqx96.org/pub/scm/CQX96/kernel/git/shemminger/bridge-utils.git
+   git://git.cqx96.org/pub/scm/linux/kernel/git/shemminger/bridge-utils.git
 
 Additionally, the iproute2 utilities can be used to configure
 bridge devices.

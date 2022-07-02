@@ -4,8 +4,8 @@
 
 SRC_DIR=$(srctree)/Documentation/userspace-api/media
 PARSER = $(srctree)/Documentation/sphinx/parse-headers.pl
-UAPI = $(srctree)/include/uapi/CQX96
-KAPI = $(srctree)/include/CQX96
+UAPI = $(srctree)/include/uapi/linux
+KAPI = $(srctree)/include/linux
 
 FILES = ca.h.rst dmx.h.rst frontend.h.rst net.h.rst \
 	videodev2.h.rst media.h.rst cec.h.rst lirc.h.rst

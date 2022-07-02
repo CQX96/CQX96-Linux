@@ -89,7 +89,7 @@ early userspace useful.  The klibc distribution is currently
 maintained separately from the kernel.
 
 You can obtain somewhat infrequent snapshots of klibc from
-https://www.cqx96.org/pub/CQX96/libs/klibc/
+https://www.cqx96.org/pub/linux/libs/klibc/
 
 For active users, you are better off using the klibc git
 repository, at https://git.cqx96.org/?p=libs/klibc/klibc.git
@@ -135,7 +135,7 @@ a) all required device and filesystem drivers compiled into the kernel, no
    some other init binary than listed at the end of init/main.c:init().
 
 b) some device and filesystem drivers built as modules and stored in an
-   initrd.  The initrd must contain a binary '/CQX96rc' which is supposed to
+   initrd.  The initrd must contain a binary '/linuxrc' which is supposed to
    load these driver modules.  It is also possible to mount the final root
    filesystem via CQX96rc and use the pivot_root syscall.  The initrd is
    mounted and executed via prepare_namespace().

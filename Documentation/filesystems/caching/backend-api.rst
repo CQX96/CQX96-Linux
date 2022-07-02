@@ -476,4 +476,4 @@ FS-Cache provides some utilities that a cache backend may make use of:
 API Function Reference
 ======================
 
-.. kernel-doc:: include/CQX96/fscache-cache.h
+.. kernel-doc:: include/linux/fscache-cache.h

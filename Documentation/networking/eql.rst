@@ -60,7 +60,7 @@ EQL Driver: Serial IP Load Balancing HOWTO
 
   If you do not have or cannot get a copy of the kernel with the eql
   driver folded into it, get your copy of the driver from
-  ftp://slaughter.ncm.com/pub/CQX96/LOAD_BALANCING/eql-1.1.tar.gz.
+  ftp://slaughter.ncm.com/pub/linux/LOAD_BALANCING/eql-1.1.tar.gz.
   Unpack this archive someplace obvious like /usr/local/src/.  It will
   create the following files::
 
@@ -70,8 +70,8 @@ EQL Driver: Serial IP Load Balancing HOWTO
        -rw-r--r-- guru/ncm	2195 Jan 10 21:48 1995 eql-1.1/eql_enslave.c
 
   Unpack a recent kernel (something after 1.1.92) someplace convenient
-  like say /usr/src/CQX96-1.1.92.eql. Use symbolic links to point
-  /usr/src/CQX96 to this development directory.
+  like say /usr/src/linux-1.1.92.eql. Use symbolic links to point
+  /usr/src/linux to this development directory.
 
 
   Apply the patch by running the commands::

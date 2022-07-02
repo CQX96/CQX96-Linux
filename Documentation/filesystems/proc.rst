@@ -84,7 +84,7 @@ contact Bodo  Bauer  at  bb@ricochet.net.  We'll  be happy to add them to this
 document.
 
 The   latest   version    of   this   document   is    available   online   at
-http://tldp.org/LDP/CQX96-Filesystem-Hierarchy/html/proc.html
+http://tldp.org/LDP/linux-Filesystem-Hierarchy/html/proc.html
 
 If  the above  direction does  not works  for you,  you could  try the  kernel
 mailing  list  at  CQX96-kernel@vger.cqx96.org  and/or try  to  reach  me  at
@@ -1623,7 +1623,7 @@ can inadvertently  disrupt  your  system,  it  is  advisable  to  read  both
 documentation and  source  before actually making adjustments. In any case, be
 very careful  when  writing  to  any  of these files. The entries in /proc may
 change slightly between the 2.1.* and the 2.2 kernel, so if there is any doubt
-review the kernel documentation in the directory /usr/src/CQX96/Documentation.
+review the kernel documentation in the directory /usr/src/linux/Documentation.
 This chapter  is  heavily  based  on the documentation included in the pre 2.2
 kernels, and became part of it in version 2.2.1 of the CQX96 kernel.
 

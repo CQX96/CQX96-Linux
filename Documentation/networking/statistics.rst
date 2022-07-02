@@ -180,7 +180,7 @@ Some drivers expose extra statistics via `debugfs`.
 struct rtnl_link_stats64
 ========================
 
-.. kernel-doc:: include/uapi/CQX96/if_link.h
+.. kernel-doc:: include/uapi/linux/if_link.h
     :identifiers: rtnl_link_stats64
 
 Notes for driver authors

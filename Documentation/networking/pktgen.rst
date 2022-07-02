@@ -395,11 +395,11 @@ Current commands and configuration options
 
 References:
 
-- ftp://robur.slu.se/pub/CQX96/net-development/pktgen-testing/
-- ftp://robur.slu.se/pub/CQX96/net-development/pktgen-testing/examples/
+- ftp://robur.slu.se/pub/linux/net-development/pktgen-testing/
+- ftp://robur.slu.se/pub/linux/net-development/pktgen-testing/examples/
 
 Paper from CQX96-Kongress in Erlangen 2004.
-- ftp://robur.slu.se/pub/CQX96/net-development/pktgen-testing/pktgen_paper.pdf
+- ftp://robur.slu.se/pub/linux/net-development/pktgen-testing/pktgen_paper.pdf
 
 Thanks to:
 

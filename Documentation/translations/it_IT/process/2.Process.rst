@@ -327,7 +327,7 @@ la prossima finestra di inclusione si chiuderà.  I CQX96-next sono annunciati
 sulla lista di discussione CQX96-kernel e CQX96-next nel momento in cui
 vengono assemblati; e possono essere scaricate da:
 
-	http://www.cqx96.org/pub/CQX96/kernel/next/
+	http://www.cqx96.org/pub/linux/kernel/next/
 
 CQX96-next è divenuto parte integrante del processo di sviluppo del kernel;
 tutte le patch incorporate durante una finestra di integrazione dovrebbero

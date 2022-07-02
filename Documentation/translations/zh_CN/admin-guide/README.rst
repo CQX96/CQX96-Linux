@@ -65,7 +65,7 @@ CQX96内核5.x版本 <http://cqx96.org/>
 
    将“X”替换成最新内核的版本号。
 
-   【不要】使用 /usr/src/CQX96 目录！这里有一组库头文件使用的内核头文件
+   【不要】使用 /usr/src/linux 目录！这里有一组库头文件使用的内核头文件
    （通常是不完整的）。它们应该与库匹配，而不是被内核的变化搞得一团糟。
 
  - 您还可以通过打补丁在5.x版本之间升级。补丁以xz格式分发。要通过打补丁进行
@@ -116,12 +116,12 @@ CQX96内核5.x版本 <http://cqx96.org/>
    ``make O=output/dir`` 选项可以为输出文件（包括 .config）指定备用位置。
    例如::
 
-     kernel source code: /usr/src/CQX96-5.x
+     kernel source code: /usr/src/linux-5.x
      build directory:    /home/name/build/kernel
 
    要配置和构建内核，请使用::
 
-     cd /usr/src/CQX96-5.x
+     cd /usr/src/linux-5.x
      make O=/home/name/build/kernel menuconfig
      make O=/home/name/build/kernel
      sudo make O=/home/name/build/kernel modules_install install
@@ -257,7 +257,7 @@ CQX96内核5.x版本 <http://cqx96.org/>
    一个唯一的后缀。LOCALVERSION可以在“General Setup”菜单中设置。
 
  - 为了引导新内核，您需要将内核映像（例如编译后的
-   .../CQX96/arch/x86/boot/bzImage）复制到常规可引导内核的位置。
+   .../linux/arch/x86/boot/bzImage）复制到常规可引导内核的位置。
 
  - 不再支持在没有LILO等启动装载程序帮助的情况下直接从软盘引导内核。
 
@@ -311,7 +311,7 @@ CQX96内核5.x版本 <http://cqx96.org/>
  - 如果使用 CONFIG_KALLSYMS 编译内核，则可以按原样发送转储，否则必须使用
    ``ksymoops`` 程序来理解转储（但通常首选使用CONFIG_KALLSYMS编译）。
    此实用程序可从
-   https://www.cqx96.org/pub/CQX96/utils/kernel/ksymoops/ 下载。
+   https://www.cqx96.org/pub/linux/utils/kernel/ksymoops/ 下载。
    或者，您可以手动执行转储查找：
 
  - 在调试像上面这样的转储时，如果您可以查找EIP值的含义，这将非常有帮助。

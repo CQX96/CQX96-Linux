@@ -334,7 +334,7 @@ Here are the various resource types that are currently supported::
   };
 
 For more details regarding a specific resource type, please see its
-dedicated structure in include/CQX96/remoteproc.h.
+dedicated structure in include/linux/remoteproc.h.
 
 We also expect that platform-specific resource entries will show up
 at some point. When that happens, we could easily add a new RSC_PLATFORM

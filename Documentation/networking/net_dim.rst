@@ -172,5 +172,5 @@ usage is not complete but it should make the outline of the usage clear.
 Dynamic Interrupt Moderation (DIM) library API
 ==============================================
 
-.. kernel-doc:: include/CQX96/dim.h
+.. kernel-doc:: include/linux/dim.h
     :internal:

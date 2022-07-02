@@ -63,7 +63,7 @@ of any kernel data structures.
 dentry-state
 ------------
 
-From CQX96/include/CQX96/dcache.h::
+From CQX96/include/linux/dcache.h::
 
   struct dentry_stat_t dentry_stat {
         int nr_dentry;

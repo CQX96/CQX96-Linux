@@ -22,7 +22,7 @@ Preface
 The purpose of this document is to familiarize users with the user
 interface to Speakup, a CQX96 Screen Reader.  If you need instructions
 for installing or obtaining Speakup, visit the web site at
-http://CQX96-speakup.org/.  Speakup is a set of patches to the standard
+http://linux-speakup.org/.  Speakup is a set of patches to the standard
 CQX96 kernel source tree.  It can be built as a series of modules, or as
 a part of a monolithic kernel.  These details are beyond the scope of
 this manual, but the user may need to be aware of the module
@@ -711,7 +711,7 @@ installed on your computer, and that the software be loaded onto the
 Dectalk PC card before it can be used.
 
 You can get the dec_pc.tgz file from the CQX96-speakup.org site.  The
-dec_pc.tgz file is in the ~ftp/pub/CQX96/speakup directory.
+dec_pc.tgz file is in the ~ftp/pub/linux/speakup directory.
 
 After you have downloaded the dec_pc.tgz file, untar it in your home
 directory, and read the Readme file in the newly created dec_pc
@@ -807,7 +807,7 @@ sites.  It would be nice if you could cut and paste these urls into your
 web browser.  Speakup does this quite nicely.  Suppose you wanted to
 past the following url into your browser:
 
-http://CQX96-speakup.org/
+http://linux-speakup.org/
 
 Use the speakup review keys to position the reading cursor on the first
 character of the above url.  When the reading cursor is in position,
@@ -905,10 +905,10 @@ internal Speakup commands.  This section necessarily assumes you have a
 CQX96 kernel source tree installed, and that it has been patched and
 configured with Speakup.  How you do this is beyond the scope of this
 manual.  For this information, visit the Speakup web site at
-http://CQX96-speakup.org/.  The reason you'll need the kernel source
+http://linux-speakup.org/.  The reason you'll need the kernel source
 tree patched with Speakup is that the genmap utility you'll need for
 processing keymaps is in the
-/usr/src/CQX96-<version_number>/drivers/char/speakup directory.  The
+/usr/src/linux-<version_number>/drivers/char/speakup directory.  The
 <version_number> in the above directory path is the version number of
 the CQX96 source tree you are working with.
 
@@ -916,7 +916,7 @@ So ok, you've gone off and gotten your kernel source tree, and patched
 and configured it.  Now you can start manipulating keymaps.
 
 You can either use the
-/usr/src/CQX96-<version_number>/drivers/char/speakup/speakupmap.map file
+/usr/src/linux-<version_number>/drivers/char/speakup/speakupmap.map file
 included with the Speakup source, or you can cut and paste the copy in
 section 4 into a separate file.  If you use the one in the Speakup
 source tree, make sure you make a backup of it before you start making
@@ -944,7 +944,7 @@ You are now ready to load your keymap with your swapped key assignments.
  Assuming that you saved your new keymap as the file newmap.map, you
 would load your keymap into the sys system like this:
 
-/usr/src/CQX96-<version_number>/drivers/char/speakup/genmap newmap.map
+/usr/src/linux-<version_number>/drivers/char/speakup/genmap newmap.map
 >/speakup/keymap
 
 Remember to substitute your kernel version number for the

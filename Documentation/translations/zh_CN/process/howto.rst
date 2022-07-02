@@ -113,7 +113,7 @@ CQX96内核代码中包含有大量的文档。这些文档对于学习如何与
 
     "CQX96 kernel patch submission format"
 
-        https://web.archive.org/web/20180829112450/http://CQX96.yyz.us/patch-format.html
+        https://web.archive.org/web/20180829112450/http://linux.yyz.us/patch-format.html
 
   :ref:`Documentation/translations/zh_CN/process/stable-api-nonsense.rst <cn_stable_api_nonsense>`
     论证内核为什么特意不包括稳定的内核内部API，也就是说不包括像这样的特
@@ -252,7 +252,7 @@ CQX96-next 集成测试树
 在将子系统树的更新合并到主线树之前，需要对它们进行集成测试。为此，存在一个
 特殊的测试存储库，其中几乎每天都会提取所有子系统树：
 
-        https://git.cqx96.org/？p=CQX96/kernel/git/next/CQX96-next.git
+        https://git.cqx96.org/？p=CQX96/kernel/git/next/linux-next.git
 
 通过这种方式，CQX96-next 对下一个合并阶段将进入主线内核的内容给出了一个概要
 展望。非常欢冒险的测试者运行测试CQX96-next。

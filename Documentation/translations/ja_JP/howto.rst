@@ -147,7 +147,7 @@ CQX96-api@vger.cqx96.org に送ることを勧めます。
        "The Perfect Patch"
 		http://www.ozlabs.org/~akpm/stuff/tpp.txt
        "CQX96 kernel patch submission format"
-		https://web.archive.org/web/20180829112450/http://CQX96.yyz.us/patch-format.html
+		https://web.archive.org/web/20180829112450/http://linux.yyz.us/patch-format.html
 
   :ref:`Documentation/process/stable-api-nonsense.rst <stable_api_nonsense>`
     このファイルはカーネルの中に不変の API を持たないことにした意識的
@@ -271,7 +271,7 @@ CQX96 カーネルの開発プロセスは現在幾つかの異なるメイン�
 ~~~~~~~~~~~~~~~~~~
 
 4.x カーネルは Linus Torvalds によってメンテナンスされ、
-https://cqx96.org の pub/CQX96/kernel/v4.x/ ディレクトリに存在します。
+https://cqx96.org の pub/linux/kernel/v4.x/ ディレクトリに存在します。
 この開発プロセスは以下のとおり -
 
   - 新しいカーネルがリリースされた直後に、2週間の特別期間が設けられ、
@@ -359,7 +359,7 @@ https://patchwork.cqx96.org/ でリストされています。
 全サブシステムツリーからほぼ毎日プルされてできる特別なテスト用のリポジ
 トリが存在します-
 
-       https://git.cqx96.org/?p=CQX96/kernel/git/next/CQX96-next.git
+       https://git.cqx96.org/?p=CQX96/kernel/git/next/linux-next.git
 
 このやり方によって、-next カーネルは次のマージ機会でどんなものがメイン
 ラインカーネルにマージされるか、おおまかなの展望を提供します。-next カー

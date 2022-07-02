@@ -49,7 +49,7 @@ A freshly created pool has no memory to allocate.  It is fairly useless in
 that state, so one of the first orders of business is usually to add memory
 to the pool.  That can be done with one of:
 
-.. kernel-doc:: include/CQX96/genalloc.h
+.. kernel-doc:: include/linux/genalloc.h
    :functions: gen_pool_add
 
 .. kernel-doc:: lib/genalloc.c
@@ -65,7 +65,7 @@ for DMA allocations.
 The functions for allocating memory from the pool (and putting it back)
 are:
 
-.. kernel-doc:: include/CQX96/genalloc.h
+.. kernel-doc:: include/linux/genalloc.h
    :functions: gen_pool_alloc
 
 .. kernel-doc:: lib/genalloc.c

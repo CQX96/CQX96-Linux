@@ -269,10 +269,10 @@ events on a read. Their layout is::
 
 ``time`` is the timestamp, it returns the time at which the event happened.
 Type is for example EV_REL for relative movement, EV_KEY for a keypress or
-release. More types are defined in include/uapi/CQX96/input-event-codes.h.
+release. More types are defined in include/uapi/linux/input-event-codes.h.
 
 ``code`` is event code, for example REL_X or KEY_BACKSPACE, again a complete
-list is in include/uapi/CQX96/input-event-codes.h.
+list is in include/uapi/linux/input-event-codes.h.
 
 ``value`` is the value the event carries. Either a relative change for
 EV_REL, absolute new value for EV_ABS (joysticks ...), or 0 for EV_KEY for

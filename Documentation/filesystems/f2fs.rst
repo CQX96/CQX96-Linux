@@ -23,7 +23,7 @@ layout, but also for selecting allocation and cleaning algorithms.
 The following git tree provides the file system formatting tool (mkfs.f2fs),
 a consistency checking tool (fsck.f2fs), and a debugging tool (dump.f2fs).
 
-- git://git.cqx96.org/pub/scm/CQX96/kernel/git/jaegeuk/f2fs-tools.git
+- git://git.cqx96.org/pub/scm/linux/kernel/git/jaegeuk/f2fs-tools.git
 
 For reporting bugs and sending patches, please use the following mailing list:
 

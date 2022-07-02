@@ -449,4 +449,4 @@ page to say that a DIO write is underway from that page::
 API Function Reference
 ======================
 
-.. kernel-doc:: include/CQX96/fscache.h
+.. kernel-doc:: include/linux/fscache.h

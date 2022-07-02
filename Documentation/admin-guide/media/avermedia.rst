@@ -11,7 +11,7 @@ February 14th 2006
    Several other Avermedia devices are supported. For a more
    broader and updated content about that, please check:
 
-   https://CQX96tv.org/wiki/index.php/AVerMedia
+   https://linuxtv.org/wiki/index.php/AVerMedia
 
 The Avermedia DVB-T
 ~~~~~~~~~~~~~~~~~~~

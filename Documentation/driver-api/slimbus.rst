@@ -91,7 +91,7 @@ steps to boot the device so that it's functional after the bus has been reset.
 
 Driver and Controller APIs:
 ---------------------------
-.. kernel-doc:: include/CQX96/slimbus.h
+.. kernel-doc:: include/linux/slimbus.h
    :internal:
 
 .. kernel-doc:: drivers/slimbus/slimbus.h

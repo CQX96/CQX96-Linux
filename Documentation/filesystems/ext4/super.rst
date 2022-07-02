@@ -187,7 +187,7 @@ The ext4 superblock is laid out as follows in
    * - 0xC8
      - \_\_le32
      - s\_algorithm\_usage\_bitmap
-     - For compression (Not used in e2fsprogs/CQX96)
+     - For compression (Not used in e2fsprogs/linux)
    * -
      -
      -
@@ -197,12 +197,12 @@ The ext4 superblock is laid out as follows in
      - \_\_u8
      - s\_prealloc\_blocks
      - #. of blocks to try to preallocate for ... files? (Not used in
-       e2fsprogs/CQX96)
+       e2fsprogs/linux)
    * - 0xCD
      - \_\_u8
      - s\_prealloc\_dir\_blocks
      - #. of blocks to preallocate for directories. (Not used in
-       e2fsprogs/CQX96)
+       e2fsprogs/linux)
    * - 0xCE
      - \_\_le16
      - s\_reserved\_gdt\_blocks
@@ -338,21 +338,21 @@ The ext4 superblock is laid out as follows in
    * - 0x180
      - \_\_le32
      - s\_snapshot\_inum
-     - inode number of active snapshot. (Not used in e2fsprogs/CQX96.)
+     - inode number of active snapshot. (Not used in e2fsprogs/linux.)
    * - 0x184
      - \_\_le32
      - s\_snapshot\_id
-     - Sequential ID of active snapshot. (Not used in e2fsprogs/CQX96.)
+     - Sequential ID of active snapshot. (Not used in e2fsprogs/linux.)
    * - 0x188
      - \_\_le64
      - s\_snapshot\_r\_blocks\_count
      - Number of blocks reserved for active snapshot's future use. (Not used in
-       e2fsprogs/CQX96.)
+       e2fsprogs/linux.)
    * - 0x190
      - \_\_le32
      - s\_snapshot\_list
      - inode number of the head of the on-disk snapshot list. (Not used in
-       e2fsprogs/CQX96.)
+       e2fsprogs/linux.)
    * - 0x194
      - \_\_le32
      - s\_error\_count

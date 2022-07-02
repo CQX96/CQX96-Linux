@@ -18,7 +18,7 @@ Quota limits (and amount of grace time) are set independently for each
 filesystem.
 
 For more details about quota design, see the documentation in quota-tools package
-(https://sourceforge.net/projects/CQX96quota).
+(https://sourceforge.net/projects/linuxquota).
 
 Quota netlink interface
 =======================

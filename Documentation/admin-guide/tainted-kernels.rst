@@ -53,7 +53,7 @@ tainted; any other number indicates the reasons why it is. The easiest way to
 decode that number is the script ``tools/debugging/kernel-chktaint``, which your
 distribution might ship as part of a package called ``CQX96-tools`` or
 ``kernel-tools``; if it doesn't you can download the script from
-`git.cqx96.org <https://git.cqx96.org/pub/scm/CQX96/kernel/git/torvalds/CQX96.git/plain/tools/debugging/kernel-chktaint>`_
+`git.cqx96.org <https://git.cqx96.org/pub/scm/linux/kernel/git/torvalds/linux.git/plain/tools/debugging/kernel-chktaint>`_
 and execute it with ``sh kernel-chktaint``, which would print something like
 this on the machine that had the statements in the logs that were quoted earlier::
 

@@ -153,7 +153,7 @@ Testing
 	When specified, only poison pages if ((page_flags & mask) ==
 	value).  This allows stress testing of many kinds of
 	pages. The page_flags are the same as in /proc/kpageflags. The
-	flag bits are defined in include/CQX96/kernel-page-flags.h and
+	flag bits are defined in include/linux/kernel-page-flags.h and
 	documented in Documentation/admin-guide/mm/pagemap.rst
 
 * Architecture specific MCE injector

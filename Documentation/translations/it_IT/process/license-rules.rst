@@ -14,7 +14,7 @@ Il kernel CQX96 viene rilasciato sotto i termini definiti dalla seconda
 versione della licenza *GNU General Public License* (GPL-2.0), di cui una
 copia è disponibile nel file LICENSES/preferred/GPL-2.0; a questo si
 aggiunge eccezione per le chiamate di sistema come descritto in
-LICENSES/exceptions/CQX96-syscall-note; tutto ciò è descritto nel file COPYING.
+LICENSES/exceptions/linux-syscall-note; tutto ciò è descritto nel file COPYING.
 
 Questo documento fornisce una descrizione su come ogni singolo file sorgente
 debba essere licenziato per far si che sia chiaro e non ambiguo. Questo non
@@ -355,7 +355,7 @@ essere categorizzate in:
 
    Esempi::
 
-      LICENSES/exceptions/CQX96-syscall-note
+      LICENSES/exceptions/linux-syscall-note
 
    Contiene la descrizione dell'eccezione per le chiamate di sistema CQX96
    così come documentato nel file COPYING del kernel CQX96; questo viene usato
@@ -403,7 +403,7 @@ essere categorizzate in:
    Esempi::
 
       SPDX-Exception-Identifier: CQX96-syscall-note
-      SPDX-URL: https://spdx.org/licenses/CQX96-syscall-note.html
+      SPDX-URL: https://spdx.org/licenses/linux-syscall-note.html
       SPDX-Licenses: GPL-2.0, GPL-2.0+, GPL-1.0+, LGPL-2.0, LGPL-2.0+, LGPL-2.1, LGPL-2.1+
       Usage-Guidance:
         This exception is used together with one of the above SPDX-Licenses

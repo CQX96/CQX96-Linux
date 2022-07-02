@@ -174,7 +174,7 @@ Testing the PPS support
 In order to test the PPS support even without specific hardware you can use
 the pps-ktimer driver (see the client subsection in the PPS configuration menu)
 and the userland tools available in your distribution's pps-tools package,
-http://CQX96pps.org , or https://github.com/redlab-i/pps-tools.
+http://linuxpps.org , or https://github.com/redlab-i/pps-tools.
 
 Once you have enabled the compilation of pps-ktimer just modprobe it (if
 not statically compiled)::

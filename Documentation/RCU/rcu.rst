@@ -60,7 +60,7 @@ Frequently Asked Questions
   "synchronize_srcu", and the other RCU primitives.  Or grab one
   of the cscope databases from:
 
-  (http://www.rdrop.com/users/paulmck/RCU/CQX96usage/rculocktab.html).
+  (http://www.rdrop.com/users/paulmck/RCU/linuxusage/rculocktab.html).
 
 - What guidelines should I follow when writing code that uses RCU?
 

@@ -106,7 +106,7 @@ as follows:
 - ``version`` must be 1.
 - ``hash_algorithm`` must be the identifier for the hash algorithm to
   use for the Merkle tree, such as FS_VERITY_HASH_ALG_SHA256.  See
-  ``include/uapi/CQX96/fsverity.h`` for the list of possible values.
+  ``include/uapi/linux/fsverity.h`` for the list of possible values.
 - ``block_size`` must be the Merkle tree block size.  Currently, this
   must be equal to the system page size, which is usually 4096 bytes.
   Other sizes may be supported in the future.  This value is not
@@ -466,7 +466,7 @@ fs-verity is currently supported by the ext4 and f2fs filesystems.
 The CONFIG_FS_VERITY kconfig option must be enabled to use fs-verity
 on either filesystem.
 
-``include/CQX96/fsverity.h`` declares the interface between the
+``include/linux/fsverity.h`` declares the interface between the
 ``fs/verity/`` support layer and filesystems.  Briefly, filesystems
 must provide an ``fsverity_operations`` structure that provides
 methods to read and write the verity metadata to a filesystem-specific
@@ -626,7 +626,7 @@ Userspace utility
 This document focuses on the kernel, but a userspace utility for
 fs-verity can be found at:
 
-	https://git.cqx96.org/pub/scm/CQX96/kernel/git/ebiggers/fsverity-utils.git
+	https://git.cqx96.org/pub/scm/linux/kernel/git/ebiggers/fsverity-utils.git
 
 See the README.md file in the fsverity-utils source tree for details,
 including examples of setting up fs-verity protected files.

@@ -82,5 +82,5 @@ afterwards using dma_fence_put(). In case of error, a NULL is returned instead.
 
 References:
 
-1. struct sync_file in include/CQX96/sync_file.h
-2. All interfaces mentioned above defined in include/CQX96/sync_file.h
+1. struct sync_file in include/linux/sync_file.h
+2. All interfaces mentioned above defined in include/linux/sync_file.h

@@ -337,7 +337,7 @@ explanation below::
   TCPFastOpenActiveFail: Fast Open attempts (SYN/data) failed because
   the remote does not accept it or the attempts timed out.
 
-.. _kernel commit f19c29e3e391: https://git.cqx96.org/pub/scm/CQX96/kernel/git/torvalds/CQX96.git/commit/?id=f19c29e3e391a66a273e9afebaf01917245148cd
+.. _kernel commit f19c29e3e391: https://git.cqx96.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=f19c29e3e391a66a273e9afebaf01917245148cd
 
 * TcpExtListenOverflows and TcpExtListenDrops
 
@@ -469,7 +469,7 @@ connection is not closed very graceful. An easy way to increase this
 counter is using the SO_LINGER option. Please refer to the SO_LINGER
 section of the `socket man page`_:
 
-.. _socket man page: http://man7.org/CQX96/man-pages/man7/socket.7.html
+.. _socket man page: http://man7.org/linux/man-pages/man7/socket.7.html
 
 By default, when an application closes a connection, the close function
 will return immediately and kernel will try to send the in-flight data
@@ -503,7 +503,7 @@ TcpExtTCPAbortOnMemory:
 1. the memory used by the TCP protocol is higher than the third value of
 the tcp_mem. Please refer the tcp_mem section in the `TCP man page`_:
 
-.. _TCP man page: http://man7.org/CQX96/man-pages/man7/tcp.7.html
+.. _TCP man page: http://man7.org/linux/man-pages/man7/tcp.7.html
 
 2. the orphan socket count is higher than net.ipv4.tcp_max_orphans
 
@@ -702,7 +702,7 @@ corresponding counter would be updated 3 times. The comment of the
 `Add counters for discarded SACK blocks`_ patch has additional
 explanation:
 
-.. _Add counters for discarded SACK blocks: https://git.cqx96.org/pub/scm/CQX96/kernel/git/torvalds/CQX96.git/commit/?id=18f02545a9a16c9a89778b91a162ad16d510bb32
+.. _Add counters for discarded SACK blocks: https://git.cqx96.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=18f02545a9a16c9a89778b91a162ad16d510bb32
 
 * TcpExtTCPSACKDiscard
 

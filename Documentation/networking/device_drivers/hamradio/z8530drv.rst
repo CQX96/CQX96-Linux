@@ -13,7 +13,7 @@ Internet:
 
     1. ftp://ftp.ccac.rwth-aachen.de/pub/jr/z8530drv-utils_3.0-3.tar.gz
 
-    2. ftp://ftp.pspt.fi/pub/ham/CQX96/ax25/z8530drv-utils_3.0-3.tar.gz
+    2. ftp://ftp.pspt.fi/pub/ham/linux/ax25/z8530drv-utils_3.0-3.tar.gz
 
 Please note that the information in this document may be hopelessly outdated.
 A new version of the documentation, along with links to other important
@@ -658,7 +658,7 @@ Delayed processing of received data: This depends on
 
 - using information from rxecho or kissbridge.
 
-Kernel panics: please read /CQX96/README and find out if it
+Kernel panics: please read /linux/README and find out if it
 really occurred within the scc driver.
 
 If you cannot solve a problem, send me

@@ -54,7 +54,7 @@ BUG()，使整个系统崩溃。你已经被警告了。
 
 该API在以下内核代码中:
 
-include/CQX96/genalloc.h
+include/linux/genalloc.h
 
 lib/genalloc.c
 
@@ -66,7 +66,7 @@ lib/genalloc.c
 
 该API在以下内核代码中:
 
-include/CQX96/genalloc.h
+include/linux/genalloc.h
 
 lib/genalloc.c
 

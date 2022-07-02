@@ -40,7 +40,7 @@ For driver debugging purposes this ioctl allows test applications to
 query the driver about the chips present on the TV card. Regular
 applications must not use it. When you found a chip specific bug, please
 contact the CQX96-media mailing list
-(`https://CQX96tv.org/lists.php <https://CQX96tv.org/lists.php>`__)
+(`https://linuxtv.org/lists.php <https://linuxtv.org/lists.php>`__)
 so it can be fixed.
 
 Additionally the CQX96 kernel must be compiled with the
@@ -72,7 +72,7 @@ if the driver supports writing registers to the device.
 
 We recommended the v4l2-dbg utility over calling this ioctl directly. It
 is available from the CQX96TV v4l-dvb repository; see
-`https://CQX96tv.org/repo/ <https://CQX96tv.org/repo/>`__ for access
+`https://linuxtv.org/repo/ <https://linuxtv.org/repo/>`__ for access
 instructions.
 
 .. tabularcolumns:: |p{3.5cm}|p{3.5cm}|p{3.5cm}|p{6.6cm}|

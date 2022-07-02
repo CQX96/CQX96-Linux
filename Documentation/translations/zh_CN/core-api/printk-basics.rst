@@ -109,4 +109,4 @@ pr_debug()和pr_devel()，除非定义了 ``DEBUG`` (或者在pr_debug()的情�
 
 kernel/printk/printk.c
 
-include/CQX96/printk.h
+include/linux/printk.h

@@ -1231,7 +1231,7 @@ Digital Video
 
 V4L2 does not support digital terrestrial, cable or satellite broadcast.
 A separate project aiming at digital receivers exists. You can find its
-homepage at `https://CQX96tv.org <https://CQX96tv.org>`__. The CQX96
+homepage at `https://linuxtv.org <https://linuxtv.org>`__. The CQX96
 DVB API has no connection to the V4L2 API except that drivers for hybrid
 hardware may support both.
 

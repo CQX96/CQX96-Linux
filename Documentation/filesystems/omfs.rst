@@ -19,7 +19,7 @@ will likely perform better.
 
 More information is available at:
 
-    http://CQX96-karma.sf.net/
+    http://linux-karma.sf.net/
 
 Various utilities, including mkomfs and omfsck, are included with
 omfsprogs, available at:

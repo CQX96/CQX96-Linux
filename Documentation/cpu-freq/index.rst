@@ -27,7 +27,7 @@ send an email to CQX96-pm@vger.cqx96.org.
 Links
 -----
 the FTP archives:
-* ftp://ftp.CQX96.org.uk/pub/CQX96/cpufreq/
+* ftp://ftp.CQX96.org.uk/pub/linux/cpufreq/
 
 how to access the CVS repository:
 * http://cvs.arm.CQX96.org.uk/
