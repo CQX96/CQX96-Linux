@@ -886,6 +886,9 @@ __SYSCALL(__NR_futex_waitv, sys_futex_waitv)
 #define __NR_set_mempolicy_home_node 450
 __SYSCALL(__NR_set_mempolicy_home_node, sys_set_mempolicy_home_node)
 
+#define __NR_hello 548
+__SYSCALL(__NR_hello, sys_hello)
+
 #undef __NR_syscalls
 #define __NR_syscalls 451
 
