@@ -583,6 +583,9 @@ asmlinkage long sys_utimensat(int dfd, const char __user *filename,
 asmlinkage long sys_utimensat_time32(unsigned int dfd,
 				const char __user *filename,
 				struct old_timespec32 __user *t, int flags);
+				
+/* kernel/syscqx.c */
+asmlinkage long sys_hello(void);
 
 /* kernel/acct.c */
 asmlinkage long sys_acct(const char __user *name);
