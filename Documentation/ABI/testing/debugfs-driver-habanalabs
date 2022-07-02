@@ -1,7 +1,7 @@
 What:           /sys/kernel/debug/habanalabs/hl<n>/addr
 Date:           Jan 2019
 KernelVersion:  5.1
-Contact:        ogabbay@kernel.org
+Contact:        ogabbay@cqx96.org
 Description:    Sets the device address to be used for read or write through
                 PCI bar, or the device VA of a host mapped memory to be read or
                 written directly from the host. The latter option is allowed
@@ -11,39 +11,39 @@ Description:    Sets the device address to be used for read or write through
 What:           /sys/kernel/debug/habanalabs/hl<n>/clk_gate
 Date:           May 2020
 KernelVersion:  5.8
-Contact:        ogabbay@kernel.org
+Contact:        ogabbay@cqx96.org
 Description:    This setting is now deprecated as clock gating is handled solely by the f/w
 
 What:           /sys/kernel/debug/habanalabs/hl<n>/command_buffers
 Date:           Jan 2019
 KernelVersion:  5.1
-Contact:        ogabbay@kernel.org
+Contact:        ogabbay@cqx96.org
 Description:    Displays a list with information about the currently allocated
                 command buffers
 
 What:           /sys/kernel/debug/habanalabs/hl<n>/command_submission
 Date:           Jan 2019
 KernelVersion:  5.1
-Contact:        ogabbay@kernel.org
+Contact:        ogabbay@cqx96.org
 Description:    Displays a list with information about the currently active
                 command submissions
 
 What:           /sys/kernel/debug/habanalabs/hl<n>/command_submission_jobs
 Date:           Jan 2019
 KernelVersion:  5.1
-Contact:        ogabbay@kernel.org
+Contact:        ogabbay@cqx96.org
 Description:    Displays a list with detailed information about each JOB (CB) of
                 each active command submission
 
 What:           /sys/kernel/debug/habanalabs/hl<n>/data32
 Date:           Jan 2019
 KernelVersion:  5.1
-Contact:        ogabbay@kernel.org
+Contact:        ogabbay@cqx96.org
 Description:    Allows the root user to read or write directly through the
                 device's PCI bar. Writing to this file generates a write
                 transaction while reading from the file generates a read
                 transaction. This custom interface is needed (instead of using
-                the generic Linux user-space PCI mapping) because the DDR bar
+                the generic CQX96 user-space PCI mapping) because the DDR bar
                 is very small compared to the DDR memory and only the driver can
                 move the bar before and after the transaction.
 
@@ -53,12 +53,12 @@ Description:    Allows the root user to read or write directly through the
 What:           /sys/kernel/debug/habanalabs/hl<n>/data64
 Date:           Jan 2020
 KernelVersion:  5.6
-Contact:        ogabbay@kernel.org
+Contact:        ogabbay@cqx96.org
 Description:    Allows the root user to read or write 64 bit data directly
                 through the device's PCI bar. Writing to this file generates a
                 write transaction while reading from the file generates a read
                 transaction. This custom interface is needed (instead of using
-                the generic Linux user-space PCI mapping) because the DDR bar
+                the generic CQX96 user-space PCI mapping) because the DDR bar
                 is very small compared to the DDR memory and only the driver can
                 move the bar before and after the transaction.
 
@@ -68,13 +68,13 @@ Description:    Allows the root user to read or write 64 bit data directly
 What:           /sys/kernel/debug/habanalabs/hl<n>/data_dma
 Date:           Apr 2021
 KernelVersion:  5.13
-Contact:        ogabbay@kernel.org
+Contact:        ogabbay@cqx96.org
 Description:    Allows the root user to read from the device's internal
                 memory (DRAM/SRAM) through a DMA engine.
                 This property is a binary blob that contains the result of the
                 DMA transfer.
                 This custom interface is needed (instead of using the generic
-                Linux user-space PCI mapping) because the amount of internal
+                CQX96 user-space PCI mapping) because the amount of internal
                 memory is huge (>32GB) and reading it via the PCI bar will take
                 a very long time.
                 This interface doesn't support concurrency in the same device.
@@ -86,7 +86,7 @@ Description:    Allows the root user to read from the device's internal
 What:           /sys/kernel/debug/habanalabs/hl<n>/device
 Date:           Jan 2019
 KernelVersion:  5.1
-Contact:        ogabbay@kernel.org
+Contact:        ogabbay@cqx96.org
 Description:    Enables the root user to set the device to specific state.
                 Valid values are "disable", "enable", "suspend", "resume".
                 User can read this property to see the valid values
@@ -94,7 +94,7 @@ Description:    Enables the root user to set the device to specific state.
 What:           /sys/kernel/debug/habanalabs/hl<n>/dma_size
 Date:           Apr 2021
 KernelVersion:  5.13
-Contact:        ogabbay@kernel.org
+Contact:        ogabbay@cqx96.org
 Description:    Specify the size of the DMA transaction when using DMA to read
                 from the device's internal memory. The value can not be larger
                 than 128MB. Writing to this value initiates the DMA transfer.
@@ -104,7 +104,7 @@ Description:    Specify the size of the DMA transaction when using DMA to read
 What:           /sys/kernel/debug/habanalabs/hl<n>/dump_security_violations
 Date:           Jan 2021
 KernelVersion:  5.12
-Contact:        ogabbay@kernel.org
+Contact:        ogabbay@cqx96.org
 Description:    Dumps all security violations to dmesg. This will also ack
                 all security violations meanings those violations will not be
                 dumped next time user calls this API
@@ -112,28 +112,28 @@ Description:    Dumps all security violations to dmesg. This will also ack
 What:           /sys/kernel/debug/habanalabs/hl<n>/engines
 Date:           Jul 2019
 KernelVersion:  5.3
-Contact:        ogabbay@kernel.org
+Contact:        ogabbay@cqx96.org
 Description:    Displays the status registers values of the device engines and
                 their derived idle status
 
 What:           /sys/kernel/debug/habanalabs/hl<n>/i2c_addr
 Date:           Jan 2019
 KernelVersion:  5.1
-Contact:        ogabbay@kernel.org
+Contact:        ogabbay@cqx96.org
 Description:    Sets I2C device address for I2C transaction that is generated
                 by the device's CPU
 
 What:           /sys/kernel/debug/habanalabs/hl<n>/i2c_bus
 Date:           Jan 2019
 KernelVersion:  5.1
-Contact:        ogabbay@kernel.org
+Contact:        ogabbay@cqx96.org
 Description:    Sets I2C bus address for I2C transaction that is generated by
                 the device's CPU
 
 What:           /sys/kernel/debug/habanalabs/hl<n>/i2c_data
 Date:           Jan 2019
 KernelVersion:  5.1
-Contact:        ogabbay@kernel.org
+Contact:        ogabbay@cqx96.org
 Description:    Triggers an I2C transaction that is generated by the device's
                 CPU. Writing to this file generates a write transaction while
                 reading from the file generates a read transaction
@@ -148,32 +148,32 @@ Description:    Sets I2C length in bytes for I2C transaction that is generated b
 What:           /sys/kernel/debug/habanalabs/hl<n>/i2c_reg
 Date:           Jan 2019
 KernelVersion:  5.1
-Contact:        ogabbay@kernel.org
+Contact:        ogabbay@cqx96.org
 Description:    Sets I2C register id for I2C transaction that is generated by
                 the device's CPU
 
 What:           /sys/kernel/debug/habanalabs/hl<n>/led0
 Date:           Jan 2019
 KernelVersion:  5.1
-Contact:        ogabbay@kernel.org
+Contact:        ogabbay@cqx96.org
 Description:    Sets the state of the first S/W led on the device
 
 What:           /sys/kernel/debug/habanalabs/hl<n>/led1
 Date:           Jan 2019
 KernelVersion:  5.1
-Contact:        ogabbay@kernel.org
+Contact:        ogabbay@cqx96.org
 Description:    Sets the state of the second S/W led on the device
 
 What:           /sys/kernel/debug/habanalabs/hl<n>/led2
 Date:           Jan 2019
 KernelVersion:  5.1
-Contact:        ogabbay@kernel.org
+Contact:        ogabbay@cqx96.org
 Description:    Sets the state of the third S/W led on the device
 
 What:           /sys/kernel/debug/habanalabs/hl<n>/mmu
 Date:           Jan 2019
 KernelVersion:  5.1
-Contact:        ogabbay@kernel.org
+Contact:        ogabbay@cqx96.org
 Description:    Displays the hop values and physical address for a given ASID
                 and virtual address. The user should write the ASID and VA into
                 the file and then read the file to get the result.
@@ -193,7 +193,7 @@ Description:    Check and display page fault or access violation mmu errors for
 What:           /sys/kernel/debug/habanalabs/hl<n>/set_power_state
 Date:           Jan 2019
 KernelVersion:  5.1
-Contact:        ogabbay@kernel.org
+Contact:        ogabbay@cqx96.org
 Description:    Sets the PCI power state. Valid values are "1" for D0 and "2"
                 for D3Hot
 
@@ -219,7 +219,7 @@ Description:    Gets the state dump occurring on a CS timeout or failure.
 What:           /sys/kernel/debug/habanalabs/hl<n>/stop_on_err
 Date:           Mar 2020
 KernelVersion:  5.6
-Contact:        ogabbay@kernel.org
+Contact:        ogabbay@cqx96.org
 Description:    Sets the stop-on_error option for the device engines. Value of
                 "0" is for disable, otherwise enable.
                 Relevant only for GOYA and GAUDI.
@@ -233,7 +233,7 @@ Description:    Sets the command submission timeout value in seconds.
 What:           /sys/kernel/debug/habanalabs/hl<n>/userptr
 Date:           Jan 2019
 KernelVersion:  5.1
-Contact:        ogabbay@kernel.org
+Contact:        ogabbay@cqx96.org
 Description:    Displays a list with information about the currently user
                 pointers (user virtual addresses) that are pinned and mapped
                 to DMA addresses
@@ -241,7 +241,7 @@ Description:    Displays a list with information about the currently user
 What:           /sys/kernel/debug/habanalabs/hl<n>/userptr_lookup
 Date:           Aug 2021
 KernelVersion:  5.15
-Contact:        ogabbay@kernel.org
+Contact:        ogabbay@cqx96.org
 Description:    Allows to search for specific user pointers (user virtual
                 addresses) that are pinned and mapped to DMA addresses, and see
                 their resolution to the specific dma address.
@@ -249,6 +249,6 @@ Description:    Allows to search for specific user pointers (user virtual
 What:           /sys/kernel/debug/habanalabs/hl<n>/vm
 Date:           Jan 2019
 KernelVersion:  5.1
-Contact:        ogabbay@kernel.org
+Contact:        ogabbay@cqx96.org
 Description:    Displays a list with information about all the active virtual
                 address mappings per ASID and all user mappings of HW blocks

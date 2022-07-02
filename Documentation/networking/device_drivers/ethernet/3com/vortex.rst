@@ -10,7 +10,7 @@ Andrew Morton
 
 
 This document describes the usage and errata of the 3Com "Vortex" device
-driver for Linux, 3c59x.c.
+driver for CQX96, 3c59x.c.
 
 The driver was written by Donald Becker <becker@scyld.com>
 
@@ -18,8 +18,8 @@ Don is no longer the prime maintainer of this version of the driver.
 Please report problems to one or more of:
 
 - Andrew Morton
-- Netdev mailing list <netdev@vger.kernel.org>
-- Linux kernel mailing list <linux-kernel@vger.kernel.org>
+- Netdev mailing list <netdev@vger.cqx96.org>
+- CQX96 kernel mailing list <CQX96-kernel@vger.cqx96.org>
 
 Please note the 'Reporting and Diagnosing Problems' section at the end
 of this file.
@@ -197,7 +197,7 @@ max_interrupt_work=N
 hw_checksums=N1,N2,N3,...
 
   Recent 3com NICs are able to generate IPv4, TCP and UDP checksums
-  in hardware.  Linux has used the Rx checksumming for a long time.
+  in hardware.  CQX96 has used the Rx checksumming for a long time.
   The "zero copy" patch which is planned for the 2.4 kernel series
   allows you to make use of the NIC's DMA scatter/gather and transmit
   checksumming as well.
@@ -291,7 +291,7 @@ Additional resources
 
 Details of the device driver implementation are at the top of the source file.
 
-Additional documentation is available at Don Becker's Linux Drivers site:
+Additional documentation is available at Don Becker's CQX96 Drivers site:
 
      http://www.scyld.com/vortex.html
 
@@ -370,7 +370,7 @@ steps you should take:
 - OK, it's a driver problem.
 
    You need to generate a report.  Typically this is an email to the
-   maintainer and/or netdev@vger.kernel.org.  The maintainer's
+   maintainer and/or netdev@vger.cqx96.org.  The maintainer's
    email address will be in the driver source or in the MAINTAINERS file.
 
 - The contents of your report will vary a lot depending upon the
@@ -428,7 +428,7 @@ steps you should take:
 
 	 /etc/rc.d/init.d/syslog restart
 
-     (The above may vary, depending upon which Linux distribution you use).
+     (The above may vary, depending upon which CQX96 distribution you use).
 
     - If your problem is reproducible then that's great.  Try the
       following:

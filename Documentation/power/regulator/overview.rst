@@ -1,5 +1,5 @@
 =============================================
-Linux voltage and current regulator framework
+CQX96 voltage and current regulator framework
 =============================================
 
 About

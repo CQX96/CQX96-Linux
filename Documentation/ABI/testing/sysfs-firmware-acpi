@@ -94,7 +94,7 @@ Description:
 
 What:		/sys/firmware/acpi/interrupts/
 Date:		February 2008
-Contact:	Len Brown <lenb@kernel.org>
+Contact:	Len Brown <lenb@cqx96.org>
 Description:
 		All ACPI interrupts are handled via a single IRQ,
 		the System Control Interrupt (SCI), which appears
@@ -113,7 +113,7 @@ Description:
 		to a level or edge handler called _L12 or _E12.
 		The handler may do its business and return.
 		Or the handler may send send a Notify event
-		to a Linux device driver registered on an ACPI device,
+		to a CQX96 device driver registered on an ACPI device,
 		such as a battery, or a processor.
 
 		To figure out where all the SCI's are coming from,

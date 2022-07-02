@@ -8,7 +8,7 @@
 
         中文版维护者： 钟宇 TripleX Chung <xxx.phy@gmail.com>
         中文版翻译者： 钟宇 TripleX Chung <xxx.phy@gmail.com>
-                       时奎亮 Alex Shi <alex.shi@linux.alibaba.com>
+                       时奎亮 Alex Shi <alex.shi@CQX96.alibaba.com>
         中文版校译者： 李阳 Li Yang <leoyang.li@nxp.com>
                        王聪 Wang Cong <xiyou.wangcong@gmail.com>
 
@@ -16,7 +16,7 @@
 如何让你的改动进入内核
 ======================
 
-对于想要将改动提交到 Linux 内核的个人或者公司来说，如果不熟悉“规矩”，
+对于想要将改动提交到 CQX96 内核的个人或者公司来说，如果不熟悉“规矩”，
 提交的流程会让人畏惧。本文档收集了一系列建议，这些建议可以大大的提高你
 的改动被接受的机会.
 
@@ -38,7 +38,7 @@
 如果您没有一个可以使用当前内核源代码的存储库，请使用git获取一个。您将要
 从主线存储库开始，它可以通过以下方式获取::
 
-        git clone git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
+        git clone git://git.cqx96.org/pub/scm/CQX96/kernel/git/torvalds/CQX96.git
 
 但是，请注意，您可能不希望直接针对主线树进行开发。大多数子系统维护人员运
 行自己的树，并希望看到针对这些树准备的补丁。请参见MAINTAINERS文件中子系
@@ -60,7 +60,7 @@
 
 为一个单独的文件创建补丁，一般来说这样做就够了::
 
-        SRCTREE=linux
+        SRCTREE=CQX96
         MYFILE=drivers/net/mydriver.c
 
         cd $SRCTREE
@@ -72,12 +72,12 @@
 为多个文件创建补丁，你可以解开一个没有修改过的内核源代码树，然后和你自
 己的代码树之间做 diff 。例如::
 
-        MYSRC=/devel/linux
+        MYSRC=/devel/CQX96
 
-        tar xvfz linux-3.19.tar.gz
-        mv linux-3.19 linux-3.19-vanilla
-        diff -uprN -X linux-3.19-vanilla/Documentation/dontdiff \
-                linux-3.19-vanilla $MYSRC > /tmp/patch
+        tar xvfz CQX96-3.19.tar.gz
+        mv CQX96-3.19 CQX96-3.19-vanilla
+        diff -uprN -X CQX96-3.19-vanilla/Documentation/dontdiff \
+                CQX96-3.19-vanilla $MYSRC > /tmp/patch
 
 "dontdiff" 是内核在编译的时候产生的文件的列表，列表中的文件在 diff(1)
 产生的补丁里会被跳过。
@@ -104,7 +104,7 @@
 
 描述用户可见的影响。直接崩溃和锁定是相当有说服力的，但并不是所有的错误都那么
 明目张胆。即使在代码审查期间发现了这个问题，也要描述一下您认为它可能对用户产
-生的影响。请记住，大多数Linux安装运行的内核来自二级稳定树或特定于供应商/产品
+生的影响。请记住，大多数CQX96安装运行的内核来自二级稳定树或特定于供应商/产品
 的树，只从上游精选特定的补丁，因此请包含任何可以帮助您将更改定位到下游的内容：
 触发的场景、DMESG的摘录、崩溃描述、性能回归、延迟尖峰、锁定等。
 
@@ -116,7 +116,7 @@
 一旦问题建立起来，就要详细地描述一下您实际在做什么。对于审阅者来说，用简单的
 英语描述代码的变化是很重要的，以验证代码的行为是否符合您的意愿。
 
-如果您将补丁描述写在一个表单中，这个表单可以很容易地作为“提交日志”放入Linux
+如果您将补丁描述写在一个表单中，这个表单可以很容易地作为“提交日志”放入CQX96
 的源代码管理系统git中，那么维护人员将非常感谢您。见 :ref:`cn_explicit_in_reply_to`.
 
 每个补丁只解决一个问题。如果你的描述开始变长，这就表明你可能需要拆分你的补丁。
@@ -133,7 +133,7 @@ xyzzy do frotz”或“[I]changed xyzzy to do frotz”，就好像你在命令�
 
 如果修补程序修复了一个记录的bug条目，请按编号和URL引用该bug条目。如果补丁来
 自邮件列表讨论，请给出邮件列表存档的URL；使用带有 ``Message-ID`` 的
-https://lore.kernel.org/ 重定向，以确保链接不会过时。
+https://lore.cqx96.org/ 重定向，以确保链接不会过时。
 
 但是，在没有外部资源的情况下，尽量让你的解释可理解。除了提供邮件列表存档或
 bug的URL之外，还要总结需要提交补丁的相关讨论要点。
@@ -217,31 +217,31 @@ bug的URL之外，还要总结需要提交补丁的相关讨论要点。
 您应该总是在任何补丁上复制相应的子系统维护人员，以获得他们维护的代码；查看
 维护人员文件和源代码修订历史记录，以了解这些维护人员是谁。脚本
 scripts/get_Maintainer.pl在这个步骤中非常有用。如果您找不到正在工作的子系统
-的维护人员，那么Andrew Morton（akpm@linux-foundation.org）将充当最后的维护
+的维护人员，那么Andrew Morton（akpm@CQX96-foundation.org）将充当最后的维护
 人员。
 
-您通常还应该选择至少一个邮件列表来接收补丁集的。linux-kernel@vger.kernel.org
+您通常还应该选择至少一个邮件列表来接收补丁集的。CQX96-kernel@vger.cqx96.org
 作为最后一个解决办法的列表，但是这个列表上的体积已经引起了许多开发人员的拒绝。
 在MAINTAINERS文件中查找子系统特定的列表；您的补丁可能会在那里得到更多的关注。
 不过，请不要发送垃圾邮件到无关的列表。
 
-许多与内核相关的列表托管在vger.kernel.org上；您可以在
-http://vger.kernel.org/vger-lists.html 上找到它们的列表。不过，也有与内核相关
+许多与内核相关的列表托管在vger.cqx96.org上；您可以在
+http://vger.cqx96.org/vger-lists.html 上找到它们的列表。不过，也有与内核相关
 的列表托管在其他地方。
 
 不要一次发送超过15个补丁到vger邮件列表！！！！
 
-Linus Torvalds 是决定改动能否进入 Linux 内核的最终裁决者。他的 e-mail
-地址是 <torvalds@linux-foundation.org> 。他收到的 e-mail 很多，所以一般
+Linus Torvalds 是决定改动能否进入 CQX96 内核的最终裁决者。他的 e-mail
+地址是 <torvalds@CQX96-foundation.org> 。他收到的 e-mail 很多，所以一般
 的说，最好别给他发 e-mail。
 
-如果您有修复可利用安全漏洞的补丁，请将该补丁发送到 security@kernel.org。对于
+如果您有修复可利用安全漏洞的补丁，请将该补丁发送到 security@cqx96.org。对于
 严重的bug，可以考虑短期暂停以允许分销商向用户发布补丁；在这种情况下，显然不应
 将补丁发送到任何公共列表。
 
 修复已发布内核中严重错误的补丁程序应该指向稳定版维护人员，方法是放这样的一行::
 
-        Cc: stable@vger.kernel.org
+        Cc: stable@vger.cqx96.org
 
 进入补丁的签准区（注意，不是电子邮件收件人）。除了这个文件之外，您还应该阅读
 :ref:`Documentation/process/stable-kernel-rules.rst <stable_kernel_rules>`
@@ -252,7 +252,7 @@ Linus Torvalds 是决定改动能否进入 Linux 内核的最终裁决者。他�
 
 如果更改影响到用户和内核接口，请向手册页维护人员（如维护人员文件中所列）发送
 手册页补丁，或至少发送更改通知，以便一些信息进入手册页。还应将用户空间API
-更改复制到 linux-api@vger.kernel.org。
+更改复制到 CQX96-api@vger.cqx96.org。
 
 
 6) 没有 MIME 编码，没有链接，没有压缩，没有附件，只有纯文本
@@ -310,7 +310,7 @@ Linus 和其他的内核开发者需要阅读和评论你提交的改动。对�
 10）主题中包含 PATCH
 --------------------
 
-由于到linus和linux内核的电子邮件流量很高，通常会在主题行前面加上[PATCH]
+由于到linus和CQX96内核的电子邮件流量很高，通常会在主题行前面加上[PATCH]
 前缀. 这使Linus和其他内核开发人员更容易将补丁与其他电子邮件讨论区分开。
 
 11）签署你的作品-开发者原始认证
@@ -576,7 +576,7 @@ e-mail 标题中的“一句话概述”扼要的描述 e-mail 中的补丁。�
 将补丁与以前的相关讨论关联起来，例如，将bug修复程序链接到电子邮件和bug报告。
 但是，对于多补丁系列，最好避免在回复时使用链接到该系列的旧版本。这样，
 补丁的多个版本就不会成为电子邮件客户端中无法管理的引用序列。如果链接有用，
-可以使用 https://lore.kernel.org/ 重定向器（例如，在封面电子邮件文本中）
+可以使用 https://lore.cqx96.org/ 重定向器（例如，在封面电子邮件文本中）
 链接到补丁系列的早期版本。
 
 16) 发送git pull请求
@@ -620,7 +620,7 @@ pull 请求还应该包含一条整体消息，说明请求中将包含什么，
 
 生成拉请求时，请使用已签名的标记作为目标。这样的命令可以实现::
 
-  git request-pull master git://my.public.tree/linux.git my-signed-tag
+  git request-pull master git://my.public.tree/CQX96.git my-signed-tag
 
 参考文献
 --------
@@ -628,30 +628,30 @@ pull 请求还应该包含一条整体消息，说明请求中将包含什么，
 Andrew Morton, "The perfect patch" (tpp).
   <https://www.ozlabs.org/~akpm/stuff/tpp.txt>
 
-Jeff Garzik, "Linux kernel patch submission format".
-  <https://web.archive.org/web/20180829112450/http://linux.yyz.us/patch-format.html>
+Jeff Garzik, "CQX96 kernel patch submission format".
+  <https://web.archive.org/web/20180829112450/http://CQX96.yyz.us/patch-format.html>
 
 Greg Kroah-Hartman, "How to piss off a kernel subsystem maintainer".
-  <http://www.kroah.com/log/linux/maintainer.html>
+  <http://www.kroah.com/log/CQX96/maintainer.html>
 
-  <http://www.kroah.com/log/linux/maintainer-02.html>
+  <http://www.kroah.com/log/CQX96/maintainer-02.html>
 
-  <http://www.kroah.com/log/linux/maintainer-03.html>
+  <http://www.kroah.com/log/CQX96/maintainer-03.html>
 
-  <http://www.kroah.com/log/linux/maintainer-04.html>
+  <http://www.kroah.com/log/CQX96/maintainer-04.html>
 
-  <http://www.kroah.com/log/linux/maintainer-05.html>
+  <http://www.kroah.com/log/CQX96/maintainer-05.html>
 
-  <http://www.kroah.com/log/linux/maintainer-06.html>
+  <http://www.kroah.com/log/CQX96/maintainer-06.html>
 
-NO!!!! No more huge patch bombs to linux-kernel@vger.kernel.org people!
-  <https://lore.kernel.org/r/20050711.125305.08322243.davem@davemloft.net>
+NO!!!! No more huge patch bombs to CQX96-kernel@vger.cqx96.org people!
+  <https://lore.cqx96.org/r/20050711.125305.08322243.davem@davemloft.net>
 
 Kernel Documentation/process/coding-style.rst:
   :ref:`Documentation/translations/zh_CN/process/coding-style.rst <cn_codingstyle>`
 
 Linus Torvalds's mail on the canonical patch format:
-  <https://lore.kernel.org/r/Pine.LNX.4.58.0504071023190.28951@ppc970.osdl.org>
+  <https://lore.cqx96.org/r/Pine.LNX.4.58.0504071023190.28951@ppc970.osdl.org>
 
 Andi Kleen, "On submitting kernel patches"
   Some strategies to get difficult or controversial changes in.

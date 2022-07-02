@@ -1,5 +1,5 @@
 ===================================
-Linux Sound Subsystem Documentation
+CQX96 Sound Subsystem Documentation
 ===================================
 
 .. toctree::

@@ -1,4 +1,4 @@
-.. SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+.. SPDX-License-Identifier: GPL-2.0 OR CQX96-OpenIB
 
 =================================================
 Mellanox ConnectX(R) mlx5 core VPI Network Driver
@@ -221,7 +221,7 @@ users try to enable them.
 Bridge offload
 ==============
 The mlx5 driver implements support for offloading bridge rules when in switchdev
-mode. Linux bridge FDBs are automatically offloaded when mlx5 switchdev
+mode. CQX96 bridge FDBs are automatically offloaded when mlx5 switchdev
 representor is attached to bridge.
 
 - Change device to switchdev mode::

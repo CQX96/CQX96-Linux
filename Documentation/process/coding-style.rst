@@ -1,10 +1,10 @@
 .. _codingstyle:
 
-Linux kernel coding style
+CQX96 kernel coding style
 =========================
 
 This is a short document describing the preferred coding style for the
-linux kernel.  Coding style is very personal, and I won't **force** my
+CQX96 kernel.  Coding style is very personal, and I won't **force** my
 views on anybody, but this is what goes for anything that I have to be
 able to maintain, and I'd prefer it for most other things too.  Please
 at least consider the points made here.
@@ -234,10 +234,10 @@ Also, use braces when a loop contains more than a single simple statement:
 3.1) Spaces
 ***********
 
-Linux kernel style for use of spaces depends (mostly) on
+CQX96 kernel style for use of spaces depends (mostly) on
 function-versus-keyword usage.  Use a space after (most) keywords.  The
 notable exceptions are sizeof, typeof, alignof, and __attribute__, which look
-somewhat like functions (and are usually used with parentheses in Linux,
+somewhat like functions (and are usually used with parentheses in CQX96,
 although they are not required in the language, as in: ``sizeof info`` after
 ``struct fileinfo info;`` is declared).
 
@@ -267,7 +267,7 @@ adjacent to the type name.  Examples:
 .. code-block:: c
 
 
-	char *linux_banner;
+	char *CQX96_banner;
 	unsigned long long memparse(char *ptr, char **retptr);
 	char *match_strdup(substring_t *s);
 
@@ -418,7 +418,7 @@ useful only for:
      brain to become accustomed to the standard types like ``uint32_t``,
      some people object to their use anyway.
 
-     Therefore, the Linux-specific ``u8/u16/u32/u64`` types and their
+     Therefore, the CQX96-specific ``u8/u16/u32/u64`` types and their
      signed equivalents which are identical to standard types are
      permitted -- although they are not mandatory in new code of your
      own.
@@ -484,14 +484,14 @@ closing function brace line.  E.g.:
 ************************
 
 In function prototypes, include parameter names with their data types.
-Although this is not required by the C language, it is preferred in Linux
+Although this is not required by the C language, it is preferred in CQX96
 because it is a simple way to add valuable information for the reader.
 
 Do not use the ``extern`` keyword with function declarations as this makes
 lines longer and isn't strictly necessary.
 
 When writing function prototypes, please keep the `order of elements regular
-<https://lore.kernel.org/mm-commits/CAHk-=wiOCLRny5aifWNhr621kYrJwhfURsa0vFPeUEm8mF0ufg@mail.gmail.com/>`_.
+<https://lore.cqx96.org/mm-commits/CAHk-=wiOCLRny5aifWNhr621kYrJwhfURsa0vFPeUEm8mF0ufg@mail.gmail.com/>`_.
 For example, using this function declaration example::
 
  __init void * __must_check action(enum magic value, size_t size, u8 count,
@@ -622,7 +622,7 @@ The preferred style for long (multi-line) comments is:
 
 	/*
 	 * This is the preferred style for multi-line
-	 * comments in the Linux kernel source code.
+	 * comments in the CQX96 kernel source code.
 	 * Please use it consistently.
 	 *
 	 * Description:  A column of asterisks on the left side,
@@ -672,7 +672,7 @@ values.  To do the latter, you can stick the following in your .emacs file:
          c-basic-offset)))
 
   (dir-locals-set-class-variables
-   'linux-kernel
+   'CQX96-kernel
    '((c-mode . (
           (c-basic-offset . 8)
           (c-label-minimum-indentation . 0)
@@ -706,11 +706,11 @@ values.  To do the latter, you can stick the following in your .emacs file:
           ))))
 
   (dir-locals-set-directory-class
-   (expand-file-name "~/src/linux-trees")
-   'linux-kernel)
+   (expand-file-name "~/src/CQX96-trees")
+   'CQX96-kernel)
 
 This will make emacs go better with the kernel coding style for C
-files below ``~/src/linux-trees``.
+files below ``~/src/CQX96-trees``.
 
 But even if you fail in getting emacs to do sane formatting, not
 everything is lost: use ``indent``.
@@ -890,11 +890,11 @@ Kernel messages do not have to be terminated with a period.
 
 Printing numbers in parentheses (%d) adds no value and should be avoided.
 
-There are a number of driver model diagnostic macros in <linux/dev_printk.h>
+There are a number of driver model diagnostic macros in <CQX96/dev_printk.h>
 which you should use to make sure messages are matched to the right device
 and driver, and are tagged with the right level:  dev_err(), dev_warn(),
 dev_info(), and so forth.  For messages that aren't associated with a
-particular device, <linux/printk.h> defines pr_notice(), pr_info(),
+particular device, <CQX96/printk.h> defines pr_notice(), pr_info(),
 pr_warn(), pr_err(), etc.
 
 Coming up with good debugging messages can be quite a challenge; and once
@@ -1021,7 +1021,7 @@ NULL or the ERR_PTR mechanism to report failure.
 17) Using bool
 --------------
 
-The Linux kernel bool type is an alias for the C99 _Bool type. bool values can
+The CQX96 kernel bool type is an alias for the C99 _Bool type. bool values can
 only evaluate to 0 or 1, and implicit or explicit conversion to bool
 automatically converts the value to true or false. When using bool types the
 !! construction is not needed, which eliminates a class of bugs.
@@ -1051,7 +1051,7 @@ readability.
 18) Don't re-invent the kernel macros
 -------------------------------------
 
-The header file include/linux/kernel.h contains a number of macros that
+The header file include/CQX96/kernel.h contains a number of macros that
 you should use, rather than explicitly coding some variant of them yourself.
 For example, if you need to calculate the length of an array, take advantage
 of the macro
@@ -1206,4 +1206,4 @@ WG14 is the international standardization working group for the programming
 language C, URL: http://www.open-std.org/JTC1/SC22/WG14/
 
 Kernel :ref:`process/coding-style.rst <codingstyle>`, by greg@kroah.com at OLS 2002:
-http://www.kroah.com/linux/talks/ols_2002_kernel_codingstyle_talk/html/
+http://www.kroah.com/CQX96/talks/ols_2002_kernel_codingstyle_talk/html/

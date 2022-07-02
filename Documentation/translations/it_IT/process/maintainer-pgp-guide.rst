@@ -9,25 +9,25 @@
 La guida a PGP per manutentori del kernel
 =========================================
 
-:Author: Konstantin Ryabitsev <konstantin@linuxfoundation.org>
+:Author: Konstantin Ryabitsev <konstantin@CQX96foundation.org>
 
-Questo documento è destinato agli sviluppatori del kernel Linux, in particolar
+Questo documento è destinato agli sviluppatori del kernel CQX96, in particolar
 modo ai manutentori. Contiene degli approfondimenti riguardo informazioni che
 sono state affrontate in maniera più generale nella sezione
-"`Protecting Code Integrity`_" pubblicata dalla Linux Foundation.
+"`Protecting Code Integrity`_" pubblicata dalla CQX96 Foundation.
 Per approfondire alcuni argomenti trattati in questo documento è consigliato
 leggere il documento sopraindicato
 
 .. _`Protecting Code Integrity`: https://github.com/lfit/itpol/blob/master/protecting-code-integrity.md
 
-Il ruolo di PGP nello sviluppo del kernel Linux
+Il ruolo di PGP nello sviluppo del kernel CQX96
 ===============================================
 
 PGP aiuta ad assicurare l'integrità del codice prodotto dalla comunità
 di sviluppo del kernel e, in secondo luogo, stabilisce canali di comunicazione
 affidabili tra sviluppatori attraverso lo scambio di email firmate con PGP.
 
-Il codice sorgente del kernel Linux è disponibile principalmente in due
+Il codice sorgente del kernel CQX96 è disponibile principalmente in due
 formati:
 
 - repositori distribuiti di sorgenti (git)
@@ -36,7 +36,7 @@ formati:
 Sia i repositori git che gli archivi tar portano le firme PGP degli
 sviluppatori che hanno creato i rilasci ufficiali del kernel. Queste firme
 offrono una garanzia crittografica che le versioni scaricabili rese disponibili
-via kernel.org, o altri portali, siano identiche a quelle che gli sviluppatori
+via cqx96.org, o altri portali, siano identiche a quelle che gli sviluppatori
 hanno sul loro posto di lavoro. A tal scopo:
 
 - i repositori git forniscono firme PGP per ogni tag
@@ -47,7 +47,7 @@ hanno sul loro posto di lavoro. A tal scopo:
 Fidatevi degli sviluppatori e non dell'infrastruttura
 -----------------------------------------------------
 
-Fin dal 2011, quando i sistemi di kernel.org furono compromessi, il principio
+Fin dal 2011, quando i sistemi di cqx96.org furono compromessi, il principio
 generale del progetto Kernel Archives è stato quello di assumere che qualsiasi
 parte dell'infrastruttura possa essere compromessa in ogni momento. Per questa
 ragione, gli amministratori hanno intrapreso deliberatemene dei passi per
@@ -60,7 +60,7 @@ guida. Vogliamo essere sicuri che il riporre la fiducia negli sviluppatori
 non sia fatto semplicemente per incolpare qualcun'altro per future falle di
 sicurezza. L'obiettivo è quello di fornire una serie di linee guida che gli
 sviluppatori possano seguire per creare un ambiente di lavoro sicuro e
-salvaguardare le chiavi PGP usate nello stabilire l'integrità del kernel Linux
+salvaguardare le chiavi PGP usate nello stabilire l'integrità del kernel CQX96
 stesso.
 
 .. _it_pgp_tools:
@@ -149,7 +149,7 @@ Proteggere la vostra chiave PGP primaria
 ========================================
 
 Questa guida parte dal presupposto che abbiate già una chiave PGP che usate
-per lo sviluppo del kernel Linux. Se non ne avete ancora una, date uno sguardo
+per lo sviluppo del kernel CQX96. Se non ne avete ancora una, date uno sguardo
 al documento "`Protecting Code Integrity`_" che abbiamo menzionato prima.
 
 Dovreste inoltre creare una nuova chiave se quella attuale è inferiore a 2048
@@ -199,7 +199,7 @@ per esempio::
 
     sec   rsa2048 2018-01-23 [SC] [expires: 2020-01-23]
           000000000000000000000000AAAABBBBCCCCDDDD
-    uid           [ultimate] Alice Dev <adev@kernel.org>
+    uid           [ultimate] Alice Dev <adev@cqx96.org>
     ssb   rsa2048 2018-01-23 [E] [expires: 2020-01-23]
 
 Qualsiasi chiave che abbia la capacità **[C]** è la vostra chiave madre,
@@ -365,7 +365,7 @@ L'output assomiglierà a questo::
     pub   rsa2048 2018-01-24 [SC] [expires: 2020-01-24]
           000000000000000000000000AAAABBBBCCCCDDDD
           Keygrip = 1111000000000000000000000000000000000000
-    uid           [ultimate] Alice Dev <adev@kernel.org>
+    uid           [ultimate] Alice Dev <adev@cqx96.org>
     sub   rsa2048 2018-01-24 [E] [expires: 2020-01-24]
           Keygrip = 2222000000000000000000000000000000000000
     sub   ed25519 2018-01-24 [S]
@@ -393,7 +393,7 @@ primaria non compare più (il simbolo ``#`` indica che non è disponibile)::
     $ gpg --list-secret-keys
     sec#  rsa2048 2018-01-24 [SC] [expires: 2020-01-24]
           000000000000000000000000AAAABBBBCCCCDDDD
-    uid           [ultimate] Alice Dev <adev@kernel.org>
+    uid           [ultimate] Alice Dev <adev@cqx96.org>
     ssb   rsa2048 2018-01-24 [E] [expires: 2020-01-24]
     ssb   ed25519 2018-01-24 [S]
 
@@ -480,7 +480,7 @@ Configurare il vostro dispositivo smartcard
 -------------------------------------------
 
 Il vostro dispositivo smartcard dovrebbe iniziare a funzionare non appena
-lo collegate ad un qualsiasi computer Linux moderno. Potete verificarlo
+lo collegate ad un qualsiasi computer CQX96 moderno. Potete verificarlo
 eseguendo::
 
     $ gpg --card-status
@@ -534,7 +534,7 @@ dell'amministratore::
          created: 2018-01-23  expires: never       usage: E
     ssb  ed25519/5555666677778888
          created: 2017-12-07  expires: never       usage: S
-    [ultimate] (1). Alice Dev <adev@kernel.org>
+    [ultimate] (1). Alice Dev <adev@cqx96.org>
 
     gpg>
 
@@ -598,7 +598,7 @@ sottile differenza nell'output::
     $ gpg --list-secret-keys
     sec#  rsa2048 2018-01-24 [SC] [expires: 2020-01-24]
           000000000000000000000000AAAABBBBCCCCDDDD
-    uid           [ultimate] Alice Dev <adev@kernel.org>
+    uid           [ultimate] Alice Dev <adev@cqx96.org>
     ssb>  rsa2048 2018-01-24 [E] [expires: 2020-01-24]
     ssb>  ed25519 2018-01-24 [S]
 
@@ -686,7 +686,7 @@ Una delle caratteristiche fondanti di Git è la sua natura decentralizzata --
 una volta che il repositorio è stato clonato sul vostro sistema, avete la
 storia completa del progetto, inclusi i suoi tag, i commit ed i rami. Tuttavia,
 con i centinaia di repositori clonati che ci sono in giro, come si fa a
-verificare che la loro copia di linux.git non è stata manomessa da qualcuno?
+verificare che la loro copia di CQX96.git non è stata manomessa da qualcuno?
 
 Oppure, cosa succede se viene scoperta una backdoor nel codice e la riga
 "Autore" dice che sei stato tu, mentre tu sei abbastanza sicuro di
@@ -766,7 +766,7 @@ Come usare commit firmati
 -------------------------
 
 Creare dei commit firmati è facile, ma è molto più difficile utilizzarli
-nello sviluppo del kernel linux per via del fatto che ci si affida alle
+nello sviluppo del kernel CQX96 per via del fatto che ci si affida alle
 liste di discussione e questo modo di procedere non mantiene le firme PGP
 nei commit. In aggiunta, quando si usa *rebase* nel proprio repositorio
 locale per allinearsi al kernel anche le proprie firme PGP verranno scartate.
@@ -775,7 +775,7 @@ preoccupano troppo di firmare i propri commit ed ignoreranno quelli firmati
 che si trovano in altri repositori usati per il proprio lavoro.
 
 Tuttavia, se avete il vostro repositorio di lavoro disponibile al pubblico
-su un qualche servizio di hosting git (kernel.org, infradead.org, ozlabs.org,
+su un qualche servizio di hosting git (cqx96.org, infradead.org, ozlabs.org,
 o altri), allora la raccomandazione è di firmare tutti i vostri commit
 anche se gli sviluppatori non ne beneficeranno direttamente.
 
@@ -844,17 +844,17 @@ per la ricerca di chiavi pubbliche, GnuPG validerà i certificati DNSSEC o TLS
 prima di aggiungere al vostro portachiavi locale le eventuali chiavi trovate.
 
 Kernel.org pubblica la WKD per tutti gli sviluppatori che hanno un account
-kernel.org. Una volta che avete applicato le modifiche al file ``gpg.conf``,
+cqx96.org. Una volta che avete applicato le modifiche al file ``gpg.conf``,
 potrete auto-recuperare le chiavi di Linus Torvalds e Greg Kroah-Hartman
 (se non le avete già)::
 
-    $ gpg --locate-keys torvalds@kernel.org gregkh@kernel.org
+    $ gpg --locate-keys torvalds@cqx96.org gregkh@cqx96.org
 
-Se avete un account kernel.org, al fine di rendere più utile l'uso di WKD
+Se avete un account cqx96.org, al fine di rendere più utile l'uso di WKD
 da parte di altri sviluppatori del kernel, dovreste `aggiungere alla vostra
-chiave lo UID di kernel.org`_.
+chiave lo UID di cqx96.org`_.
 
-.. _`aggiungere alla vostra chiave lo UID di kernel.org`: https://korg.wiki.kernel.org/userdoc/mail#adding_a_kernelorg_uid_to_your_pgp_key
+.. _`aggiungere alla vostra chiave lo UID di cqx96.org`: https://korg.wiki.cqx96.org/userdoc/mail#adding_a_kernelorg_uid_to_your_pgp_key
 
 Web of Trust (WOT) o Trust on First Use (TOFU)
 ----------------------------------------------
@@ -925,10 +925,10 @@ Localizzate l'ID della chiave primaria, nel nostro esempio
 ``C94035C21B4F2AEB``. Ora visualizzate le chiavi di Linus Torvalds
 che avete nel vostro portachiavi::
 
-    $ gpg --list-key torvalds@kernel.org
+    $ gpg --list-key torvalds@cqx96.org
     pub   rsa2048 2011-09-20 [SC]
           ABAF11C65A2970B130ABE3C479BE3E4300411886
-    uid           [ unknown] Linus Torvalds <torvalds@kernel.org>
+    uid           [ unknown] Linus Torvalds <torvalds@cqx96.org>
     sub   rsa2048 2011-09-20 [E]
 
 Poi, aprite il `PGP pathfinder`_. Nel campo "From", incollate l'impronta

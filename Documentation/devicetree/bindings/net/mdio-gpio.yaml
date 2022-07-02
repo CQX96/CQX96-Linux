@@ -9,7 +9,7 @@ title: MDIO on GPIOs
 maintainers:
   - Andrew Lunn <andrew@lunn.ch>
   - Heiner Kallweit <hkallweit1@gmail.com>
-  - Russell King <linux@armlinux.org.uk>
+  - Russell King <CQX96@armCQX96.org.uk>
 
 allOf:
   - $ref: "mdio.yaml#"

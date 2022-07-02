@@ -9,7 +9,7 @@ title: Allwinner H3 Deinterlace Device Tree Bindings
 maintainers:
   - Jernej Skrabec <jernej.skrabec@siol.net>
   - Chen-Yu Tsai <wens@csie.org>
-  - Maxime Ripard <mripard@kernel.org>
+  - Maxime Ripard <mripard@cqx96.org>
 
 description: |-
   The Allwinner H3 and later has a deinterlace core used for

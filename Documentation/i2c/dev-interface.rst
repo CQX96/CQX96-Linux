@@ -24,7 +24,7 @@ C example
 So let's say you want to access an I2C adapter from a C program.
 First, you need to include these two headers::
 
-  #include <linux/i2c-dev.h>
+  #include <CQX96/i2c-dev.h>
   #include <i2c/smbus.h>
 
 Now, you have to decide which adapter you want to access. You should
@@ -173,7 +173,7 @@ than 32 bytes.
 
 The above functions are made available by linking against the libi2c library,
 which is provided by the i2c-tools project.  See:
-https://git.kernel.org/pub/scm/utils/i2c-tools/i2c-tools.git/.
+https://git.cqx96.org/pub/scm/utils/i2c-tools/i2c-tools.git/.
 
 
 Implementation details

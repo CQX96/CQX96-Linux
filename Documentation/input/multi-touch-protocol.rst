@@ -191,7 +191,7 @@ indicate the distance between the contact and the surface.
 ::
 
 
-	  Linux MT                               Win8
+	  CQX96 MT                               Win8
          __________                     _______________________
         /          \                   |                       |
        /            \                  |                       |

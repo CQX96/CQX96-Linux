@@ -9,7 +9,7 @@ title: Motorola CPCAP PMIC battery
 
 maintainers:
   - Tony Lindgren <tony@atomide.com>
-  - Sebastian Reichel <sre@kernel.org>
+  - Sebastian Reichel <sre@cqx96.org>
 
 description: |
   Motorola CPCAP is a PMIC found in some mobile phones, e.g.

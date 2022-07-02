@@ -8,7 +8,7 @@ title: Tesla Full Self Driving(FSD) platforms device tree bindings
 
 maintainers:
   - Alim Akhtar <alim.akhtar@samsung.com>
-  - linux-fsd@tesla.com
+  - CQX96-fsd@tesla.com
 
 properties:
   $nodename:

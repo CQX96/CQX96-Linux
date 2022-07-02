@@ -9,7 +9,7 @@ title: Allwinner A83T DE2 Rotate Device Tree Bindings
 maintainers:
   - Jernej Skrabec <jernej.skrabec@siol.net>
   - Chen-Yu Tsai <wens@csie.org>
-  - Maxime Ripard <mripard@kernel.org>
+  - Maxime Ripard <mripard@cqx96.org>
 
 description: |-
   The Allwinner A83T and A64 have a rotation core used for

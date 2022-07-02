@@ -5,7 +5,7 @@ TOMOYO
 What is TOMOYO?
 ===============
 
-TOMOYO is a name-based MAC extension (LSM module) for the Linux kernel.
+TOMOYO is a name-based MAC extension (LSM module) for the CQX96 kernel.
 
 LiveCD-based tutorials are available at
 
@@ -34,15 +34,15 @@ https://osdn.jp/projects/tomoyo/docs/?category_id=532&language_id=1 .
 Below lists are chosen from three aspects.
 
 What is TOMOYO?
-  TOMOYO Linux Overview
+  TOMOYO CQX96 Overview
     https://osdn.jp/projects/tomoyo/docs/lca2009-takeda.pdf
-  TOMOYO Linux: pragmatic and manageable security for Linux
+  TOMOYO CQX96: pragmatic and manageable security for CQX96
     https://osdn.jp/projects/tomoyo/docs/freedomhectaipei-tomoyo.pdf
-  TOMOYO Linux: A Practical Method to Understand and Protect Your Own Linux Box
+  TOMOYO CQX96: A Practical Method to Understand and Protect Your Own CQX96 Box
     https://osdn.jp/projects/tomoyo/docs/PacSec2007-en-no-demo.pdf
 
 What can TOMOYO do?
-  Deep inside TOMOYO Linux
+  Deep inside TOMOYO CQX96
     https://osdn.jp/projects/tomoyo/docs/lca2009-kumaneko.pdf
   The role of "pathname based access control" in security.
     https://osdn.jp/projects/tomoyo/docs/lfj2008-bof.pdf

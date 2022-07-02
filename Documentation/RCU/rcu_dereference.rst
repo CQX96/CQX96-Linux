@@ -153,7 +153,7 @@ Follow these rules to keep your RCU code working properly:
 
 		-	Before mod_timer() time for a timer handler.
 
-		There are many other possibilities involving the Linux
+		There are many other possibilities involving the CQX96
 		kernel's wide array of primitives that cause code to
 		be invoked at a later time.
 

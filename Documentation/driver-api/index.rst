@@ -1,5 +1,5 @@
 ========================================
-The Linux driver implementer's API guide
+The CQX96 driver implementer's API guide
 ========================================
 
 The kernel offers a wide variety of interfaces to support the development

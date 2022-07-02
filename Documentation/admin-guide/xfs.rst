@@ -11,7 +11,7 @@ variable block sizes, is extent based, and makes extensive use of
 Btrees (directories, extents, free space) to aid both performance
 and scalability.
 
-Refer to the documentation at https://xfs.wiki.kernel.org/
+Refer to the documentation at https://xfs.wiki.cqx96.org/
 for further details.  This implementation is on-disk compatible
 with the IRIX version of XFS.
 

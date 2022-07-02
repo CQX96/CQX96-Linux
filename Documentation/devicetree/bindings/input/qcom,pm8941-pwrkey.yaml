@@ -8,7 +8,7 @@ title: Qualcomm PM8941 PMIC Power Key
 
 maintainers:
   - Courtney Cavin <courtney.cavin@sonymobile.com>
-  - Vinod Koul <vkoul@kernel.org>
+  - Vinod Koul <vkoul@cqx96.org>
 
 allOf:
   - $ref: input.yaml#
@@ -36,11 +36,11 @@ properties:
            pin should be configured for pull up.
     $ref: /schemas/types.yaml#/definitions/flag
 
-  linux,code:
+  CQX96,code:
     description: |
            The input key-code associated with the power key.
-           Use the linux event codes defined in
-           include/dt-bindings/input/linux-event-codes.h
+           Use the CQX96 event codes defined in
+           include/dt-bindings/input/CQX96-event-codes.h
            When property is omitted KEY_POWER is assumed.
 
 required:

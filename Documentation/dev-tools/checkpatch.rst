@@ -247,7 +247,7 @@ Allocation style
     number of elements.  sizeof() as the first argument is generally
     wrong.
 
-    See: https://www.kernel.org/doc/html/latest/core-api/memory-allocation.html
+    See: https://www.cqx96.org/doc/html/latest/core-api/memory-allocation.html
 
   **ALLOC_SIZEOF_STRUCT**
     The allocation style is bad.  In general for family of
@@ -260,13 +260,13 @@ Allocation style
 
       p = alloc(sizeof(*p), ...)
 
-    See: https://www.kernel.org/doc/html/latest/process/coding-style.html#allocating-memory
+    See: https://www.cqx96.org/doc/html/latest/process/coding-style.html#allocating-memory
 
   **ALLOC_WITH_MULTIPLY**
     Prefer kmalloc_array/kcalloc over kmalloc/kzalloc with a
     sizeof multiply.
 
-    See: https://www.kernel.org/doc/html/latest/core-api/memory-allocation.html
+    See: https://www.cqx96.org/doc/html/latest/core-api/memory-allocation.html
 
 
 API usage
@@ -277,8 +277,8 @@ API usage
     possible.
 
   **ARCH_INCLUDE_LINUX**
-    Whenever asm/file.h is included and linux/file.h exists, a
-    conversion can be made when linux/file.h includes asm/file.h.
+    Whenever asm/file.h is included and CQX96/file.h exists, a
+    conversion can be made when CQX96/file.h includes asm/file.h.
     However this is not always the case (See signal.h).
     This message type is emitted only for includes from arch/.
 
@@ -287,7 +287,7 @@ API usage
     Use WARN() and WARN_ON() instead, and handle the "impossible"
     error condition as gracefully as possible.
 
-    See: https://www.kernel.org/doc/html/latest/process/deprecated.html#bug-and-bug-on
+    See: https://www.cqx96.org/doc/html/latest/process/deprecated.html#bug-and-bug-on
 
   **CONSIDER_KSTRTO**
     The simple_strtol(), simple_strtoll(), simple_strtoul(), and
@@ -296,7 +296,7 @@ API usage
     kstrtoll(), kstrtoul(), and kstrtoull() functions tend to be the
     correct replacements.
 
-    See: https://www.kernel.org/doc/html/latest/process/deprecated.html#simple-strtol-simple-strtoll-simple-strtoul-simple-strtoull
+    See: https://www.cqx96.org/doc/html/latest/process/deprecated.html#simple-strtol-simple-strtoll-simple-strtoul-simple-strtoull
 
   **CONSTANT_CONVERSION**
     Use of __constant_<foo> form is discouraged for the following functions::
@@ -332,7 +332,7 @@ API usage
     using the __constant_... forms are unnecessarily verbose and
     not preferred outside of include/uapi.
 
-    See: https://lore.kernel.org/lkml/1400106425.12666.6.camel@joe-AO725/
+    See: https://lore.cqx96.org/lkml/1400106425.12666.6.camel@joe-AO725/
 
   **DEPRECATED_API**
     Usage of a deprecated RCU API is detected.  It is recommended to replace
@@ -340,7 +340,7 @@ API usage
 
     The full list of available RCU APIs can be viewed from the kernel docs.
 
-    See: https://www.kernel.org/doc/html/latest/RCU/whatisRCU.html#full-list-of-rcu-apis
+    See: https://www.cqx96.org/doc/html/latest/RCU/whatisRCU.html#full-list-of-rcu-apis
 
   **DEPRECATED_VARIABLE**
     EXTRA_{A,C,CPP,LD}FLAGS are deprecated and should be replaced by the new
@@ -356,9 +356,9 @@ API usage
 
     See:
 
-      1. https://lore.kernel.org/lkml/20070930191054.GA15876@uranus.ravnborg.org/
-      2. https://lore.kernel.org/lkml/1313384834-24433-12-git-send-email-lacombar@gmail.com/
-      3. https://www.kernel.org/doc/html/latest/kbuild/makefiles.html#compilation-flags
+      1. https://lore.cqx96.org/lkml/20070930191054.GA15876@uranus.ravnborg.org/
+      2. https://lore.cqx96.org/lkml/1313384834-24433-12-git-send-email-lacombar@gmail.com/
+      3. https://www.cqx96.org/doc/html/latest/kbuild/makefiles.html#compilation-flags
 
   **DEVICE_ATTR_FUNCTIONS**
     The function names used in DEVICE_ATTR is unusual.
@@ -372,7 +372,7 @@ API usage
 
     The function names should preferably follow the above pattern.
 
-    See: https://www.kernel.org/doc/html/latest/driver-api/driver-model/device.html#attributes
+    See: https://www.cqx96.org/doc/html/latest/driver-api/driver-model/device.html#attributes
 
   **DEVICE_ATTR_RO**
     The DEVICE_ATTR_RO(name) helper macro can be used instead of
@@ -381,7 +381,7 @@ API usage
     Note that the macro automatically appends _show to the named
     attribute variable of the device for the show method.
 
-    See: https://www.kernel.org/doc/html/latest/driver-api/driver-model/device.html#attributes
+    See: https://www.cqx96.org/doc/html/latest/driver-api/driver-model/device.html#attributes
 
   **DEVICE_ATTR_RW**
     The DEVICE_ATTR_RW(name) helper macro can be used instead of
@@ -390,7 +390,7 @@ API usage
     Note that the macro automatically appends _show and _store to the
     named attribute variable of the device for the show and store methods.
 
-    See: https://www.kernel.org/doc/html/latest/driver-api/driver-model/device.html#attributes
+    See: https://www.cqx96.org/doc/html/latest/driver-api/driver-model/device.html#attributes
 
   **DEVICE_ATTR_WO**
     The DEVICE_AATR_WO(name) helper macro can be used instead of
@@ -399,7 +399,7 @@ API usage
     Note that the macro automatically appends _store to the
     named attribute variable of the device for the store method.
 
-    See: https://www.kernel.org/doc/html/latest/driver-api/driver-model/device.html#attributes
+    See: https://www.cqx96.org/doc/html/latest/driver-api/driver-model/device.html#attributes
 
   **DUPLICATED_SYSCTL_CONST**
     Commit d91bff3011cf ("proc/sysctl: add shared variables for range
@@ -407,7 +407,7 @@ API usage
     copy in each source file.
 
     Consider replacing the sysctl range checking value with the shared
-    one in include/linux/sysctl.h.  The following conversion scheme may
+    one in include/CQX96/sysctl.h.  The following conversion scheme may
     be used::
 
       &zero     ->  SYSCTL_ZERO
@@ -416,21 +416,21 @@ API usage
 
     See:
 
-      1. https://lore.kernel.org/lkml/20190430180111.10688-1-mcroce@redhat.com/
-      2. https://lore.kernel.org/lkml/20190531131422.14970-1-mcroce@redhat.com/
+      1. https://lore.cqx96.org/lkml/20190430180111.10688-1-mcroce@redhat.com/
+      2. https://lore.cqx96.org/lkml/20190531131422.14970-1-mcroce@redhat.com/
 
   **ENOSYS**
     ENOSYS means that a nonexistent system call was called.
     Earlier, it was wrongly used for things like invalid operations on
     otherwise valid syscalls.  This should be avoided in new code.
 
-    See: https://lore.kernel.org/lkml/5eb299021dec23c1a48fa7d9f2c8b794e967766d.1408730669.git.luto@amacapital.net/
+    See: https://lore.cqx96.org/lkml/5eb299021dec23c1a48fa7d9f2c8b794e967766d.1408730669.git.luto@amacapital.net/
 
   **ENOTSUPP**
     ENOTSUPP is not a standard error code and should be avoided in new patches.
     EOPNOTSUPP should be used instead.
 
-    See: https://lore.kernel.org/netdev/20200510182252.GA411829@lunn.ch/
+    See: https://lore.cqx96.org/netdev/20200510182252.GA411829@lunn.ch/
 
   **EXPORT_SYMBOL**
     EXPORT_SYMBOL should immediately follow the symbol to be exported.
@@ -443,14 +443,14 @@ API usage
 
     However, in_atomic() is ok for core kernel use.
 
-    See: https://lore.kernel.org/lkml/20080320201723.b87b3732.akpm@linux-foundation.org/
+    See: https://lore.cqx96.org/lkml/20080320201723.b87b3732.akpm@CQX96-foundation.org/
 
   **LOCKDEP**
     The lockdep_no_validate class was added as a temporary measure to
     prevent warnings on conversion of device->sem to device->mutex.
     It should not be used for any other purpose.
 
-    See: https://lore.kernel.org/lkml/1268959062.9440.467.camel@laptop/
+    See: https://lore.cqx96.org/lkml/1268959062.9440.467.camel@laptop/
 
   **MALFORMED_INCLUDE**
     The #include statement has a malformed path.  This has happened
@@ -461,7 +461,7 @@ API usage
     lockdep_assert_held() annotations should be preferred over
     assertions based on spin_is_locked()
 
-    See: https://www.kernel.org/doc/html/latest/locking/lockdep-design.html#annotations
+    See: https://www.cqx96.org/doc/html/latest/locking/lockdep-design.html#annotations
 
   **UAPI_INCLUDE**
     No #include statements in include/uapi should use a uapi/ path.
@@ -470,7 +470,7 @@ API usage
     usleep_range() should be preferred over udelay(). The proper way of
     using usleep_range() is mentioned in the kernel docs.
 
-    See: https://www.kernel.org/doc/html/latest/timers/timers-howto.html#delays-information-on-the-various-kernel-delay-sleep-mechanisms
+    See: https://www.cqx96.org/doc/html/latest/timers/timers-howto.html#delays-information-on-the-various-kernel-delay-sleep-mechanisms
 
 
 Comments
@@ -492,19 +492,19 @@ Comments
       * for files in net/ and drivers/net/
       */
 
-    See: https://www.kernel.org/doc/html/latest/process/coding-style.html#commenting
+    See: https://www.cqx96.org/doc/html/latest/process/coding-style.html#commenting
 
   **C99_COMMENTS**
     C99 style single line comments (//) should not be used.
     Prefer the block comment style instead.
 
-    See: https://www.kernel.org/doc/html/latest/process/coding-style.html#commenting
+    See: https://www.cqx96.org/doc/html/latest/process/coding-style.html#commenting
 
   **DATA_RACE**
     Applications of data_race() should have a comment so as to document the
     reasoning behind why it was deemed safe.
 
-    See: https://lore.kernel.org/lkml/20200401101714.44781-1-elver@google.com/
+    See: https://lore.cqx96.org/lkml/20200401101714.44781-1-elver@google.com/
 
   **FSF_MAILING_ADDRESS**
     Kernel maintainers reject new instances of the GPL boilerplate paragraph
@@ -513,7 +513,7 @@ Comments
     So do not write paragraphs about writing to the Free Software Foundation's
     mailing address.
 
-    See: https://lore.kernel.org/lkml/20131006222342.GT19510@leaf/
+    See: https://lore.cqx96.org/lkml/20131006222342.GT19510@leaf/
 
 
 Commit message
@@ -523,18 +523,18 @@ Commit message
     The signed-off-by line does not fall in line with the standards
     specified by the community.
 
-    See: https://www.kernel.org/doc/html/latest/process/submitting-patches.html#developer-s-certificate-of-origin-1-1
+    See: https://www.cqx96.org/doc/html/latest/process/submitting-patches.html#developer-s-certificate-of-origin-1-1
 
   **BAD_STABLE_ADDRESS_STYLE**
     The email format for stable is incorrect.
     Some valid options for stable address are::
 
-      1. stable@vger.kernel.org
-      2. stable@kernel.org
+      1. stable@vger.cqx96.org
+      2. stable@cqx96.org
 
     For adding version info, the following comment style should be used::
 
-      stable@vger.kernel.org # version info
+      stable@vger.cqx96.org # version info
 
   **COMMIT_COMMENT_SYMBOL**
     Commit log lines starting with a '#' are ignored by git as
@@ -545,14 +545,14 @@ Commit message
     The patch is missing a commit description.  A brief
     description of the changes made by the patch should be added.
 
-    See: https://www.kernel.org/doc/html/latest/process/submitting-patches.html#describe-your-changes
+    See: https://www.cqx96.org/doc/html/latest/process/submitting-patches.html#describe-your-changes
 
   **EMAIL_SUBJECT**
     Naming the tool that found the issue is not very useful in the
     subject line.  A good subject line summarizes the change that
     the patch brings.
 
-    See: https://www.kernel.org/doc/html/latest/process/submitting-patches.html#describe-your-changes
+    See: https://www.cqx96.org/doc/html/latest/process/submitting-patches.html#describe-your-changes
 
   **FROM_SIGN_OFF_MISMATCH**
     The author's email does not match with that in the Signed-off-by:
@@ -571,7 +571,7 @@ Commit message
     line should be added according to Developer's certificate of
     Origin.
 
-    See: https://www.kernel.org/doc/html/latest/process/submitting-patches.html#sign-your-work-the-developer-s-certificate-of-origin
+    See: https://www.cqx96.org/doc/html/latest/process/submitting-patches.html#sign-your-work-the-developer-s-certificate-of-origin
 
   **NO_AUTHOR_SIGN_OFF**
     The author of the patch has not signed off the patch.  It is
@@ -580,7 +580,7 @@ Commit message
     written it or otherwise has the rights to pass it on as an open
     source patch.
 
-    See: https://www.kernel.org/doc/html/latest/process/submitting-patches.html#sign-your-work-the-developer-s-certificate-of-origin
+    See: https://www.cqx96.org/doc/html/latest/process/submitting-patches.html#sign-your-work-the-developer-s-certificate-of-origin
 
   **DIFF_IN_COMMIT_MSG**
     Avoid having diff content in commit message.
@@ -588,7 +588,7 @@ Commit message
     the changelog and the diff because patch(1) tries to apply the diff
     which it found in the changelog.
 
-    See: https://lore.kernel.org/lkml/20150611134006.9df79a893e3636019ad2759e@linux-foundation.org/
+    See: https://lore.cqx96.org/lkml/20150611134006.9df79a893e3636019ad2759e@CQX96-foundation.org/
 
   **GERRIT_CHANGE_ID**
     To be picked up by gerrit, the footer of the commit message might
@@ -610,7 +610,7 @@ Commit message
       platform_set_drvdata(), but left the variable "dev" unused,
       delete it.
 
-    See: https://www.kernel.org/doc/html/latest/process/submitting-patches.html#describe-your-changes
+    See: https://www.cqx96.org/doc/html/latest/process/submitting-patches.html#describe-your-changes
 
 
 Comparison style
@@ -631,7 +631,7 @@ Comparison style
     Comparisons of A to true and false are better written
     as A and !A.
 
-    See: https://lore.kernel.org/lkml/1365563834.27174.12.camel@joe-AO722/
+    See: https://lore.cqx96.org/lkml/1365563834.27174.12.camel@joe-AO722/
 
   **COMPARISON_TO_NULL**
     Comparisons to NULL in the form (foo == NULL) or (foo != NULL)
@@ -650,7 +650,7 @@ Indentation and Line Breaks
     Outside of comments, documentation and Kconfig,
     spaces are never used for indentation.
 
-    See: https://www.kernel.org/doc/html/latest/process/coding-style.html#indentation
+    See: https://www.cqx96.org/doc/html/latest/process/coding-style.html#indentation
 
   **DEEP_INDENTATION**
     Indentation with 6 or more tabs usually indicate overly indented
@@ -659,7 +659,7 @@ Indentation and Line Breaks
     It is suggested to refactor excessive indentation of
     if/else/for/do/while/switch statements.
 
-    See: https://lore.kernel.org/lkml/1328311239.21255.24.camel@joe2Laptop/
+    See: https://lore.cqx96.org/lkml/1328311239.21255.24.camel@joe2Laptop/
 
   **SWITCH_CASE_INDENT_LEVEL**
     switch should be at the same indent as case.
@@ -682,7 +682,7 @@ Indentation and Line Breaks
               break;
       }
 
-    See: https://www.kernel.org/doc/html/latest/process/coding-style.html#indentation
+    See: https://www.cqx96.org/doc/html/latest/process/coding-style.html#indentation
 
   **LONG_LINE**
     The line has exceeded the specified maximum length.
@@ -694,27 +694,27 @@ Indentation and Line Breaks
     limit to 100 columns.  This is not a hard limit either and it's
     preferable to stay within 80 columns whenever possible.
 
-    See: https://www.kernel.org/doc/html/latest/process/coding-style.html#breaking-long-lines-and-strings
+    See: https://www.cqx96.org/doc/html/latest/process/coding-style.html#breaking-long-lines-and-strings
 
   **LONG_LINE_STRING**
     A string starts before but extends beyond the maximum line length.
     To use a different maximum line length, the --max-line-length=n option
     may be added while invoking checkpatch.
 
-    See: https://www.kernel.org/doc/html/latest/process/coding-style.html#breaking-long-lines-and-strings
+    See: https://www.cqx96.org/doc/html/latest/process/coding-style.html#breaking-long-lines-and-strings
 
   **LONG_LINE_COMMENT**
     A comment starts before but extends beyond the maximum line length.
     To use a different maximum line length, the --max-line-length=n option
     may be added while invoking checkpatch.
 
-    See: https://www.kernel.org/doc/html/latest/process/coding-style.html#breaking-long-lines-and-strings
+    See: https://www.cqx96.org/doc/html/latest/process/coding-style.html#breaking-long-lines-and-strings
 
   **SPLIT_STRING**
     Quoted strings that appear as messages in userspace and can be
     grepped, should not be split across multiple lines.
 
-    See: https://lore.kernel.org/lkml/20120203052727.GA15035@leaf/
+    See: https://lore.cqx96.org/lkml/20120203052727.GA15035@leaf/
 
   **MULTILINE_DEREFERENCE**
     A single dereferencing identifier spanned on multiple lines like::
@@ -764,7 +764,7 @@ Macros, Attributes and Symbols
     sizeof(foo)/sizeof(foo[0]) for finding number of elements in an
     array.
 
-    The macro is defined in include/linux/kernel.h::
+    The macro is defined in include/CQX96/kernel.h::
 
       #define ARRAY_SIZE(x) (sizeof(x) / sizeof((x)[0]))
 
@@ -786,7 +786,7 @@ Macros, Attributes and Symbols
 
   **BIT_MACRO**
     Defines like: 1 << <digit> could be BIT(digit).
-    The BIT() macro is defined via include/linux/bits.h::
+    The BIT() macro is defined via include/CQX96/bits.h::
 
       #define BIT(nr)         (1UL << (nr))
 
@@ -807,7 +807,7 @@ Macros, Attributes and Symbols
     and enables warnings if they are used as they can lead to
     non-deterministic builds.
 
-    See: https://www.kernel.org/doc/html/latest/kbuild/reproducible-builds.html#timestamps
+    See: https://www.cqx96.org/doc/html/latest/kbuild/reproducible-builds.html#timestamps
 
   **DEFINE_ARCH_HAS**
     The ARCH_HAS_xyz and ARCH_HAVE_xyz patterns are wrong.
@@ -818,7 +818,7 @@ Macros, Attributes and Symbols
     should either use weak functions (appropriate for some cases), or
     the symbol that protects them should be the same symbol we use.
 
-    See: https://lore.kernel.org/lkml/CA+55aFycQ9XJvEOsiM3txHL5bjUc8CeKWJNR_H+MiicaddB42Q@mail.gmail.com/
+    See: https://lore.cqx96.org/lkml/CA+55aFycQ9XJvEOsiM3txHL5bjUc8CeKWJNR_H+MiicaddB42Q@mail.gmail.com/
 
   **DO_WHILE_MACRO_WITH_TRAILING_SEMICOLON**
     do {} while(0) macros should not have a trailing semicolon.
@@ -859,7 +859,7 @@ Macros, Attributes and Symbols
     "struct". The preferred location is before the "=" sign if there is
     one, or before the trailing ";" otherwise.
 
-    See: https://lore.kernel.org/lkml/1377655732.3619.19.camel@joe-AO722/
+    See: https://lore.cqx96.org/lkml/1377655732.3619.19.camel@joe-AO722/
 
   **MULTISTATEMENT_MACRO_USE_DO_WHILE**
     Macros with multiple statements should be enclosed in a
@@ -872,7 +872,7 @@ Macros, Attributes and Symbols
                         do_this(b, c);          \
         } while (0)
 
-    See: https://www.kernel.org/doc/html/latest/process/coding-style.html#macros-enums-and-rtl
+    See: https://www.cqx96.org/doc/html/latest/process/coding-style.html#macros-enums-and-rtl
 
   **PREFER_FALLTHROUGH**
     Use the `fallthrough;` pseudo keyword instead of
@@ -897,7 +897,7 @@ Macros, Attributes and Symbols
     expanded there are two trailing semicolons, so the else branch gets
     orphaned.
 
-    See: https://lore.kernel.org/lkml/1399671106.2912.21.camel@joe-AO725/
+    See: https://lore.cqx96.org/lkml/1399671106.2912.21.camel@joe-AO725/
 
   **SINGLE_STATEMENT_DO_WHILE_MACRO**
     For the multi-statement macros, it is necessary to use the do-while
@@ -921,7 +921,7 @@ Functions and Variables
   **CAMELCASE**
     Avoid CamelCase Identifiers.
 
-    See: https://www.kernel.org/doc/html/latest/process/coding-style.html#naming
+    See: https://www.cqx96.org/doc/html/latest/process/coding-style.html#naming
 
   **CONST_CONST**
     Using `const <type> const *` is generally meant to be
@@ -935,7 +935,7 @@ Functions and Variables
     The existing structs list can be viewed from
     `scripts/const_structs.checkpatch`.
 
-    See: https://lore.kernel.org/lkml/alpine.DEB.2.10.1608281509480.3321@hadrien/
+    See: https://lore.cqx96.org/lkml/alpine.DEB.2.10.1608281509480.3321@hadrien/
 
   **EMBEDDED_FUNCTION_NAME**
     Embedded function names are less appropriate to use as
@@ -1008,7 +1008,7 @@ Permissions
     Typically only three permissions are used - 0644 (RW), 0444 (RO)
     and 0200 (WO).
 
-    See: https://www.kernel.org/doc/html/latest/filesystems/sysfs.html#attributes
+    See: https://www.cqx96.org/doc/html/latest/filesystems/sysfs.html#attributes
 
   **EXECUTE_PERMISSIONS**
     There is no reason for source files to be executable.  The executable
@@ -1021,7 +1021,7 @@ Permissions
     any local user to write arbitrary values into device registers - a
     situation from which little good can be expected to emerge.
 
-    See: https://lore.kernel.org/linux-arm-kernel/cover.1296818921.git.segoon@openwall.com/
+    See: https://lore.cqx96.org/CQX96-arm-kernel/cover.1296818921.git.segoon@openwall.com/
 
   **NON_OCTAL_PERMISSIONS**
     Permission bits should use 4 digit octal permissions (like 0700 or 0444).
@@ -1036,7 +1036,7 @@ Permissions
     For example, it is harder to read S_IWUSR|S_IRUGO than 0644, which
     obscures the developer's intent rather than clarifying it.
 
-    See: https://lore.kernel.org/lkml/CA+55aFw5v23T-zvDZp-MmD_EYxF8WbafwwB59934FV7g21uMGQ@mail.gmail.com/
+    See: https://lore.cqx96.org/lkml/CA+55aFw5v23T-zvDZp-MmD_EYxF8WbafwwB59934FV7g21uMGQ@mail.gmail.com/
 
 
 Spacing and Brackets
@@ -1064,7 +1064,7 @@ Spacing and Brackets
               body of function
       }
 
-    See: https://www.kernel.org/doc/html/latest/process/coding-style.html#placing-braces-and-spaces
+    See: https://www.cqx96.org/doc/html/latest/process/coding-style.html#placing-braces-and-spaces
 
   **BRACKET_SPACE**
     Whitespace before opening bracket '[' is prohibited.
@@ -1095,20 +1095,20 @@ Spacing and Brackets
   **ELSE_AFTER_BRACE**
     `else {` should follow the closing block `}` on the same line.
 
-    See: https://www.kernel.org/doc/html/latest/process/coding-style.html#placing-braces-and-spaces
+    See: https://www.cqx96.org/doc/html/latest/process/coding-style.html#placing-braces-and-spaces
 
   **LINE_SPACING**
     Vertical space is wasted given the limited number of lines an
     editor window can display when multiple blank lines are used.
 
-    See: https://www.kernel.org/doc/html/latest/process/coding-style.html#spaces
+    See: https://www.cqx96.org/doc/html/latest/process/coding-style.html#spaces
 
   **OPEN_BRACE**
     The opening brace should be following the function definitions on the
     next line.  For any non-functional block it should be on the same line
     as the last construct.
 
-    See: https://www.kernel.org/doc/html/latest/process/coding-style.html#placing-braces-and-spaces
+    See: https://www.cqx96.org/doc/html/latest/process/coding-style.html#placing-braces-and-spaces
 
   **POINTER_LOCATION**
     When using pointer data or a function that returns a pointer type,
@@ -1116,23 +1116,23 @@ Spacing and Brackets
     and not adjacent to the type name.
     Examples::
 
-      char *linux_banner;
+      char *CQX96_banner;
       unsigned long long memparse(char *ptr, char **retptr);
       char *match_strdup(substring_t *s);
 
-    See: https://www.kernel.org/doc/html/latest/process/coding-style.html#spaces
+    See: https://www.cqx96.org/doc/html/latest/process/coding-style.html#spaces
 
   **SPACING**
     Whitespace style used in the kernel sources is described in kernel docs.
 
-    See: https://www.kernel.org/doc/html/latest/process/coding-style.html#spaces
+    See: https://www.cqx96.org/doc/html/latest/process/coding-style.html#spaces
 
   **TRAILING_WHITESPACE**
     Trailing whitespace should always be removed.
     Some editors highlight the trailing whitespace and cause visual
     distractions when editing files.
 
-    See: https://www.kernel.org/doc/html/latest/process/coding-style.html#spaces
+    See: https://www.cqx96.org/doc/html/latest/process/coding-style.html#spaces
 
   **UNNECESSARY_PARENTHESES**
     Parentheses are not required in the following cases:
@@ -1172,7 +1172,7 @@ Spacing and Brackets
               ...
       } while(something);
 
-    See: https://www.kernel.org/doc/html/latest/process/coding-style.html#placing-braces-and-spaces
+    See: https://www.cqx96.org/doc/html/latest/process/coding-style.html#placing-braces-and-spaces
 
 
 Others
@@ -1187,7 +1187,7 @@ Others
     Please regenerate the patch file before sending it to the maintainer.
 
   **CVS_KEYWORD**
-    Since linux moved to git, the CVS markers are no longer used.
+    Since CQX96 moved to git, the CVS markers are no longer used.
     So, CVS style keywords ($Id$, $Revision$, $Log$) should not be
     added.
 
@@ -1206,7 +1206,7 @@ Others
     DT bindings moved to a json-schema based format instead of
     freeform text.
 
-    See: https://www.kernel.org/doc/html/latest/devicetree/bindings/writing-schema.html
+    See: https://www.cqx96.org/doc/html/latest/devicetree/bindings/writing-schema.html
 
   **DT_SPLIT_BINDING_PATCH**
     Devicetree bindings should be their own patch.  This is because
@@ -1215,7 +1215,7 @@ Others
     are applied via the same tree), and it makes for a cleaner history in the
     DT only tree created with git-filter-branch.
 
-    See: https://www.kernel.org/doc/html/latest/devicetree/bindings/submitting-patches.html#i-for-patch-submitters
+    See: https://www.cqx96.org/doc/html/latest/devicetree/bindings/submitting-patches.html#i-for-patch-submitters
 
   **EMBEDDED_FILENAME**
     Embedding the complete filename path inside the file isn't particularly
@@ -1240,10 +1240,10 @@ Others
 
   **SPDX_LICENSE_TAG**
     The source file is missing or has an improper SPDX identifier tag.
-    The Linux kernel requires the precise SPDX identifier in all source files,
+    The CQX96 kernel requires the precise SPDX identifier in all source files,
     and it is thoroughly documented in the kernel docs.
 
-    See: https://www.kernel.org/doc/html/latest/process/license-rules.html
+    See: https://www.cqx96.org/doc/html/latest/process/license-rules.html
 
   **TYPO_SPELLING**
     Some words may have been misspelled.  Consider reviewing them.

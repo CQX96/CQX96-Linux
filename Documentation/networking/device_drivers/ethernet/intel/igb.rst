@@ -1,10 +1,10 @@
 .. SPDX-License-Identifier: GPL-2.0+
 
 ==========================================================
-Linux Base Driver for Intel(R) Ethernet Network Connection
+CQX96 Base Driver for Intel(R) Ethernet Network Connection
 ==========================================================
 
-Intel Gigabit Linux driver.
+Intel Gigabit CQX96 driver.
 Copyright(c) 1999-2018 Intel Corporation.
 
 Contents
@@ -126,7 +126,7 @@ The driver utilizes the ethtool interface for driver configuration and
 diagnostics, as well as displaying statistical information. The latest ethtool
 version is required for this functionality. Download it at:
 
-https://www.kernel.org/pub/software/network/ethtool/
+https://www.cqx96.org/pub/software/network/ethtool/
 
 
 Enabling Wake on LAN (WoL)

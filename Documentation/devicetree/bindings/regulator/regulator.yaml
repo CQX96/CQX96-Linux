@@ -8,7 +8,7 @@ title: Voltage/Current Regulators
 
 maintainers:
   - Liam Girdwood <lgirdwood@gmail.com>
-  - Mark Brown <broonie@kernel.org>
+  - Mark Brown <broonie@cqx96.org>
 
 properties:
   regulator-name:
@@ -234,7 +234,7 @@ patternProperties:
     type: object
     description:
       sub-nodes for regulator state in Standby, Suspend-to-RAM, and
-      Suspend-to-DISK modes. Equivalent with standby, mem, and disk Linux
+      Suspend-to-DISK modes. Equivalent with standby, mem, and disk CQX96
       sleep states.
 
     properties:

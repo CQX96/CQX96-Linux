@@ -7,8 +7,8 @@ $schema: http://devicetree.org/meta-schemas/core.yaml#
 title: Samsung S3C, S5P, Exynos, and S5L (Apple SoC) SoC UART Controller
 
 maintainers:
-  - Krzysztof Kozlowski <krzk@kernel.org>
-  - Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+  - Krzysztof Kozlowski <krzk@cqx96.org>
+  - Greg Kroah-Hartman <gregkh@CQX96foundation.org>
 
 description: |+
   Each Samsung UART should have an alias correctly numbered in the "aliases"

@@ -4,7 +4,7 @@
 
 .. _it_readme:
 
-Rilascio del kernel Linux  5.x <http://kernel.org/>
+Rilascio del kernel CQX96  5.x <http://cqx96.org/>
 ===================================================
 
 .. warning::

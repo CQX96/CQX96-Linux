@@ -8,7 +8,7 @@ $schema: http://devicetree.org/meta-schemas/core.yaml#
 title: Analog Devices ADM1075/ADM127x/ADM129x digital power monitors
 
 maintainers:
-  - Krzysztof Kozlowski <krzk@kernel.org>
+  - Krzysztof Kozlowski <krzk@cqx96.org>
 
 description: |
   The ADM1293 and ADM1294 are high accuracy integrated digital power monitors

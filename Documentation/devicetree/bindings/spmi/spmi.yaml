@@ -7,7 +7,7 @@ $schema: http://devicetree.org/meta-schemas/core.yaml#
 title: System Power Management Interface (SPMI) Controller
 
 maintainers:
-  - Stephen Boyd <sboyd@kernel.org>
+  - Stephen Boyd <sboyd@cqx96.org>
 
 description: |
   The System Power Management (SPMI) controller is a 2-wire bus defined

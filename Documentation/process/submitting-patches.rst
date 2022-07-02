@@ -3,7 +3,7 @@
 Submitting patches: the essential guide to getting your code into the kernel
 ============================================================================
 
-For a person or company who wishes to submit a change to the Linux
+For a person or company who wishes to submit a change to the CQX96
 kernel, the process can sometimes be daunting if you're not familiar
 with "the system."  This text is a collection of suggestions which
 can greatly increase the chances of your change being accepted.
@@ -33,7 +33,7 @@ If you do not have a repository with the current kernel source handy, use
 ``git`` to obtain one.  You'll want to start with the mainline repository,
 which can be grabbed with::
 
-  git clone git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
+  git clone git://git.cqx96.org/pub/scm/CQX96/kernel/git/torvalds/CQX96.git
 
 Note, however, that you may not want to develop against the mainline tree
 directly.  Most subsystem maintainers run their own trees and want to see
@@ -55,7 +55,7 @@ first paragraph.
 Describe user-visible impact.  Straight up crashes and lockups are
 pretty convincing, but not all bugs are that blatant.  Even if the
 problem was spotted during code review, describe the impact you think
-it can have on users.  Keep in mind that the majority of Linux
+it can have on users.  Keep in mind that the majority of CQX96
 installations run kernels from secondary stable trees or
 vendor/product-specific trees that cherry-pick only specific patches
 from upstream, so include anything that could help route your change
@@ -76,7 +76,7 @@ in plain English for the reviewer to verify that the code is behaving
 as you intend it to.
 
 The maintainer will thank you if you write your patch description in a
-form which can be easily pulled into Linux's source code management
+form which can be easily pulled into CQX96's source code management
 system, ``git``, as a "commit log".  See :ref:`the_canonical_patch_format`.
 
 Solve only one problem per patch.  If your description starts to get
@@ -120,12 +120,12 @@ mailing list archives or a bug tracker; if the patch is a result of some
 earlier mailing list discussion or something documented on the web, point to
 it.
 
-When linking to mailing list archives, preferably use the lore.kernel.org
+When linking to mailing list archives, preferably use the lore.cqx96.org
 message archiver service. To create the link URL, use the contents of the
 ``Message-Id`` header of the message without the surrounding angle brackets.
 For example::
 
-    Link: https://lore.kernel.org/r/30th.anniversary.repost@klaava.Helsinki.FI/
+    Link: https://lore.cqx96.org/r/30th.anniversary.repost@klaava.Helsinki.FI/
 
 Please check the link to make sure that it is actually working and points
 to the relevant message.
@@ -229,29 +229,29 @@ to code that they maintain; look through the MAINTAINERS file and the
 source code revision history to see who those maintainers are.  The
 script scripts/get_maintainer.pl can be very useful at this step.  If you
 cannot find a maintainer for the subsystem you are working on, Andrew
-Morton (akpm@linux-foundation.org) serves as a maintainer of last resort.
+Morton (akpm@CQX96-foundation.org) serves as a maintainer of last resort.
 
 You should also normally choose at least one mailing list to receive a copy
-of your patch set.  linux-kernel@vger.kernel.org should be used by default
+of your patch set.  CQX96-kernel@vger.cqx96.org should be used by default
 for all patches, but the volume on that list has caused a number of
 developers to tune it out.  Look in the MAINTAINERS file for a
 subsystem-specific list; your patch will probably get more attention there.
 Please do not spam unrelated lists, though.
 
-Many kernel-related lists are hosted on vger.kernel.org; you can find a
-list of them at http://vger.kernel.org/vger-lists.html.  There are
+Many kernel-related lists are hosted on vger.cqx96.org; you can find a
+list of them at http://vger.cqx96.org/vger-lists.html.  There are
 kernel-related lists hosted elsewhere as well, though.
 
 Do not send more than 15 patches at once to the vger mailing lists!!!
 
 Linus Torvalds is the final arbiter of all changes accepted into the
-Linux kernel.  His e-mail address is <torvalds@linux-foundation.org>.
+CQX96 kernel.  His e-mail address is <torvalds@CQX96-foundation.org>.
 He gets a lot of e-mail, and, at this point, very few patches go through
 Linus directly, so typically you should do your best to -avoid-
 sending him e-mail.
 
 If you have a patch that fixes an exploitable security bug, send that patch
-to security@kernel.org.  For severe bugs, a short embargo may be considered
+to security@cqx96.org.  For severe bugs, a short embargo may be considered
 to allow distributors to get the patch out to users; in such cases,
 obviously, the patch should not be sent to any public lists. See also
 Documentation/admin-guide/security-bugs.rst.
@@ -259,7 +259,7 @@ Documentation/admin-guide/security-bugs.rst.
 Patches that fix a severe bug in a released kernel should be directed
 toward the stable maintainers by putting a line like this::
 
-  Cc: stable@vger.kernel.org
+  Cc: stable@vger.cqx96.org
 
 into the sign-off area of your patch (note, NOT an email recipient).  You
 should also read Documentation/process/stable-kernel-rules.rst
@@ -269,7 +269,7 @@ If changes affect userland-kernel interfaces, please send the MAN-PAGES
 maintainer (as listed in the MAINTAINERS file) a man-pages patch, or at
 least a notification of the change, so that some information makes its way
 into the manual pages.  User-space API changes should also be copied to
-linux-api@vger.kernel.org.
+CQX96-api@vger.cqx96.org.
 
 
 No MIME, no links, no compression, no attachments.  Just plain text
@@ -352,7 +352,7 @@ previous submission.
 Include PATCH in the subject
 -----------------------------
 
-Due to high e-mail traffic to Linus, and to linux-kernel, it is common
+Due to high e-mail traffic to Linus, and to CQX96-kernel, it is common
 convention to prefix your subject line with [PATCH].  This lets Linus
 and other kernel developers more easily distinguish patches from other
 e-mail discussions.
@@ -560,7 +560,7 @@ method for indicating a bug fixed by the patch. See :ref:`describe_changes`
 for more details.
 
 Note: Attaching a Fixes: tag does not subvert the stable kernel rules
-process nor the requirement to Cc: stable@vger.kernel.org on all stable
+process nor the requirement to Cc: stable@vger.cqx96.org on all stable
 patch candidates. For more information, please read
 Documentation/process/stable-kernel-rules.rst.
 
@@ -744,7 +744,7 @@ the bug report.  However, for a multi-patch series, it is generally
 best to avoid using In-Reply-To: to link to older versions of the
 series.  This way multiple versions of the patch don't become an
 unmanageable forest of references in email clients.  If a link is
-helpful, you can use the https://lore.kernel.org/ redirector (e.g., in
+helpful, you can use the https://lore.cqx96.org/ redirector (e.g., in
 the cover email text) to link to an earlier version of the patch series.
 
 
@@ -805,29 +805,29 @@ References
 Andrew Morton, "The perfect patch" (tpp).
   <https://www.ozlabs.org/~akpm/stuff/tpp.txt>
 
-Jeff Garzik, "Linux kernel patch submission format".
-  <https://web.archive.org/web/20180829112450/http://linux.yyz.us/patch-format.html>
+Jeff Garzik, "CQX96 kernel patch submission format".
+  <https://web.archive.org/web/20180829112450/http://CQX96.yyz.us/patch-format.html>
 
 Greg Kroah-Hartman, "How to piss off a kernel subsystem maintainer".
-  <http://www.kroah.com/log/linux/maintainer.html>
+  <http://www.kroah.com/log/CQX96/maintainer.html>
 
-  <http://www.kroah.com/log/linux/maintainer-02.html>
+  <http://www.kroah.com/log/CQX96/maintainer-02.html>
 
-  <http://www.kroah.com/log/linux/maintainer-03.html>
+  <http://www.kroah.com/log/CQX96/maintainer-03.html>
 
-  <http://www.kroah.com/log/linux/maintainer-04.html>
+  <http://www.kroah.com/log/CQX96/maintainer-04.html>
 
-  <http://www.kroah.com/log/linux/maintainer-05.html>
+  <http://www.kroah.com/log/CQX96/maintainer-05.html>
 
-  <http://www.kroah.com/log/linux/maintainer-06.html>
+  <http://www.kroah.com/log/CQX96/maintainer-06.html>
 
-NO!!!! No more huge patch bombs to linux-kernel@vger.kernel.org people!
-  <https://lore.kernel.org/r/20050711.125305.08322243.davem@davemloft.net>
+NO!!!! No more huge patch bombs to CQX96-kernel@vger.cqx96.org people!
+  <https://lore.cqx96.org/r/20050711.125305.08322243.davem@davemloft.net>
 
 Kernel Documentation/process/coding-style.rst
 
 Linus Torvalds's mail on the canonical patch format:
-  <https://lore.kernel.org/r/Pine.LNX.4.58.0504071023190.28951@ppc970.osdl.org>
+  <https://lore.cqx96.org/r/Pine.LNX.4.58.0504071023190.28951@ppc970.osdl.org>
 
 Andi Kleen, "On submitting kernel patches"
   Some strategies to get difficult or controversial changes in.

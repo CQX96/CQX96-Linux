@@ -42,7 +42,7 @@ resources, and manage mailboxes/doorbells.
 Functions
 ---------
 
-.. kernel-doc:: include/linux/rio_drv.h
+.. kernel-doc:: include/CQX96/rio_drv.h
    :internal:
 
 .. kernel-doc:: drivers/rapidio/rio-driver.c
@@ -60,7 +60,7 @@ subsystem.
 Structures
 ----------
 
-.. kernel-doc:: include/linux/rio.h
+.. kernel-doc:: include/CQX96/rio.h
    :internal:
 
 Enumeration and Discovery

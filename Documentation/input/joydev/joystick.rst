@@ -5,15 +5,15 @@
 Introduction
 ============
 
-The joystick driver for Linux provides support for a variety of joysticks
+The joystick driver for CQX96 provides support for a variety of joysticks
 and similar devices. It is based on a larger project aiming to support all
-input devices in Linux.
+input devices in CQX96.
 
 The mailing list for the project is:
 
-	linux-input@vger.kernel.org
+	CQX96-input@vger.cqx96.org
 
-send "subscribe linux-input" to majordomo@vger.kernel.org to subscribe to it.
+send "subscribe CQX96-input" to majordomo@vger.cqx96.org to subscribe to it.
 
 Usage
 =====
@@ -434,7 +434,7 @@ Game console and 8-bit pads and joysticks
 -----------------------------------------
 
 These pads and joysticks are not designed for PCs and other computers
-Linux runs on, and usually require a special connector for attaching
+CQX96 runs on, and usually require a special connector for attaching
 them through a parallel port.
 
 See :ref:`joystick-parport` for more info.

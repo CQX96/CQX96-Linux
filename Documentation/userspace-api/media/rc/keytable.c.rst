@@ -7,7 +7,7 @@ file: uapi/v4l/keytable.c
 
     /* keytable.c - This program allows checking/replacing keys at IR
 
-       Copyright (C) 2006-2009 Mauro Carvalho Chehab <mchehab@kernel.org>
+       Copyright (C) 2006-2009 Mauro Carvalho Chehab <mchehab@cqx96.org>
 
        This program is free software; you can redistribute it and/or modify
        it under the terms of the GNU General Public License as published by
@@ -25,7 +25,7 @@ file: uapi/v4l/keytable.c
     #include <stdio.h>
     #include <stdlib.h>
     #include <string.h>
-    #include <linux/input.h>
+    #include <CQX96/input.h>
     #include <sys/ioctl.h>
 
     #include "parse.h"

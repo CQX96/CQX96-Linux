@@ -7,7 +7,7 @@ $schema: http://devicetree.org/meta-schemas/core.yaml#
 title: USB Connector
 
 maintainers:
-  - Rob Herring <robh@kernel.org>
+  - Rob Herring <robh@cqx96.org>
 
 description:
   A USB connector node represents a physical USB connector. It should be a child

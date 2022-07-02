@@ -8,7 +8,7 @@ title: Common Properties for Global Navigation Satellite Systems (GNSS)
   receiver devices
 
 maintainers:
-  - Johan Hovold <johan@kernel.org>
+  - Johan Hovold <johan@cqx96.org>
 
 description: |
   This document defines device tree properties common to Global Navigation

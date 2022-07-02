@@ -11,7 +11,7 @@
 :校译:
 
  王普宇 Puyu Wang <realpuyuwang@gmail.com>
- 时奎亮 Alex Shi <alexs@kernel.org>
+ 时奎亮 Alex Shi <alexs@cqx96.org>
 
 .. _cn_infiniband_index:
 

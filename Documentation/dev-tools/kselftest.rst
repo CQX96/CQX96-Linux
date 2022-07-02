@@ -1,5 +1,5 @@
 ======================
-Linux Kernel Selftests
+CQX96 Kernel Selftests
 ======================
 
 The kernel contains a set of "self tests" under the tools/testing/selftests/
@@ -18,7 +18,7 @@ gracefully on newer releases.
 You can find additional information on Kselftest framework, how to
 write new tests using the framework on Kselftest wiki:
 
-https://kselftest.wiki.kernel.org/
+https://kselftest.wiki.cqx96.org/
 
 On some systems, hot-plug tests could hang forever waiting for cpu and
 memory to be ready to be offlined. A special hot-plug target is created
@@ -270,7 +270,7 @@ kselftest.  We use kselftests for lib/ as an example.
 .. code-block:: sh
 
    # Assumes you have booted a fresh build of this kernel tree
-   cd /path/to/linux/tree
+   cd /path/to/CQX96/tree
    make kselftest-merge
    make modules
    sudo make modules_install

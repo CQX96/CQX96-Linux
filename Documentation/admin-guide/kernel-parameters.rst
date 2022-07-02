@@ -172,7 +172,7 @@ parameter is applicable::
 	UMS	USB Mass Storage support is enabled.
 	USB	USB support is enabled.
 	USBHID	USB Human Interface Device support is enabled.
-	V4L	Video For Linux support is enabled.
+	V4L	Video For CQX96 support is enabled.
 	VMMIO   Driver for memory mapped virtio devices is enabled.
 	VGA	The VGA console has been enabled.
 	VT	Virtual terminal support is enabled.

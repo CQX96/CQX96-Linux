@@ -1,5 +1,5 @@
 ===============
-Linux Scheduler
+CQX96 Scheduler
 ===============
 
 .. toctree::

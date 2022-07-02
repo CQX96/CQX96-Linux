@@ -14,7 +14,7 @@ Opportunity and Caveats
 -----------------------
 
 Copying large buffers between user process and kernel can be
-expensive. Linux supports various interfaces that eschew copying,
+expensive. CQX96 supports various interfaces that eschew copying,
 such as sendpage and splice. The MSG_ZEROCOPY flag extends the
 underlying copy avoidance mechanism to common socket send calls.
 
@@ -50,7 +50,7 @@ the excellent reporting over at LWN.net or read the original code.
 
   patchset
     [PATCH net-next v4 0/9] socket sendmsg MSG_ZEROCOPY
-    https://lore.kernel.org/netdev/20170803202945.70750-1-willemdebruijn.kernel@gmail.com
+    https://lore.cqx96.org/netdev/20170803202945.70750-1-willemdebruijn.kernel@gmail.com
 
 
 Interface

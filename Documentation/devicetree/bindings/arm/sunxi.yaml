@@ -8,7 +8,7 @@ title: Allwinner platforms device tree bindings
 
 maintainers:
   - Chen-Yu Tsai <wens@csie.org>
-  - Maxime Ripard <mripard@kernel.org>
+  - Maxime Ripard <mripard@cqx96.org>
 
 properties:
   $nodename:
@@ -572,22 +572,22 @@ properties:
 
       - description: Olimex A10-OlinuXino LIME
         items:
-          - const: olimex,a10-olinuxino-lime
+          - const: olimex,a10-oCQX96ino-lime
           - const: allwinner,sun4i-a10
 
       - description: Olimex A10s-OlinuXino Micro
         items:
-          - const: olimex,a10s-olinuxino-micro
+          - const: olimex,a10s-oCQX96ino-micro
           - const: allwinner,sun5i-a10s
 
       - description: Olimex A13-OlinuXino
         items:
-          - const: olimex,a13-olinuxino
+          - const: olimex,a13-oCQX96ino
           - const: allwinner,sun5i-a13
 
       - description: Olimex A13-OlinuXino Micro
         items:
-          - const: olimex,a13-olinuxino-micro
+          - const: olimex,a13-oCQX96ino-micro
           - const: allwinner,sun5i-a13
 
       - description: Olimex A20-Olimex SOM Evaluation Board
@@ -602,32 +602,32 @@ properties:
 
       - description: Olimex A20-OlinuXino LIME
         items:
-          - const: olimex,a20-olinuxino-lime
+          - const: olimex,a20-oCQX96ino-lime
           - const: allwinner,sun7i-a20
 
       - description: Olimex A20-OlinuXino LIME (with eMMC)
         items:
-          - const: olimex,a20-olinuxino-lime-emmc
+          - const: olimex,a20-oCQX96ino-lime-emmc
           - const: allwinner,sun7i-a20
 
       - description: Olimex A20-OlinuXino LIME2
         items:
-          - const: olimex,a20-olinuxino-lime2
+          - const: olimex,a20-oCQX96ino-lime2
           - const: allwinner,sun7i-a20
 
       - description: Olimex A20-OlinuXino LIME2 (with eMMC)
         items:
-          - const: olimex,a20-olinuxino-lime2-emmc
+          - const: olimex,a20-oCQX96ino-lime2-emmc
           - const: allwinner,sun7i-a20
 
       - description: Olimex A20-OlinuXino Micro
         items:
-          - const: olimex,a20-olinuxino-micro
+          - const: olimex,a20-oCQX96ino-micro
           - const: allwinner,sun7i-a20
 
       - description: Olimex A20-OlinuXino Micro (with eMMC)
         items:
-          - const: olimex,a20-olinuxino-micro-emmc
+          - const: olimex,a20-oCQX96ino-micro-emmc
           - const: allwinner,sun7i-a20
 
       - description: Olimex A20-SOM204 Evaluation Board
@@ -642,17 +642,17 @@ properties:
 
       - description: Olimex A33-OlinuXino
         items:
-          - const: olimex,a33-olinuxino
+          - const: olimex,a33-oCQX96ino
           - const: allwinner,sun8i-a33
 
       - description: Olimex A64-OlinuXino
         items:
-          - const: olimex,a64-olinuxino
+          - const: olimex,a64-oCQX96ino
           - const: allwinner,sun50i-a64
 
       - description: Olimex A64-OlinuXino (with eMMC)
         items:
-          - const: olimex,a64-olinuxino-emmc
+          - const: olimex,a64-oCQX96ino-emmc
           - const: allwinner,sun50i-a64
 
       - description: Olimex A64 Teres-I

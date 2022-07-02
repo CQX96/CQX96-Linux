@@ -154,7 +154,7 @@ examples:
 
       uid {
         label = "UID";
-        linux,code = <102>;
+        CQX96,code = <102>;
         gpios = <&gpio0 14 GPIO_ACTIVE_HIGH>;
       };
     };

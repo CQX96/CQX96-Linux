@@ -7,7 +7,7 @@ $schema: http://devicetree.org/meta-schemas/core.yaml#
 title: Sony 1/3.06-Inch 13.13MP CMOS Digital Image Sensor
 
 maintainers:
-  - Ricardo Ribalda <ribalda@kernel.org>
+  - Ricardo Ribalda <ribalda@cqx96.org>
 
 description: |
   The Sony IMX214 is a 1/3.06-inch CMOS active pixel digital image sensor with

@@ -8,7 +8,7 @@ title: Analog Devices AD5421 DAC
 
 maintainers:
   - Lars-Peter Clausen <lars@metafoo.de>
-  - Jonathan Cameron <jic23@kernel.org>
+  - Jonathan Cameron <jic23@cqx96.org>
 
 description: |
   AD5421 is designed for us in loop-powered, 4 mA to 20 mA smart transmitter

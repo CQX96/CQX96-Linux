@@ -92,7 +92,7 @@ of::
 	- BUS_BLUETOOTH
 	- BUS_VIRTUAL
 
-which are defined in uapi/linux/input.h.
+which are defined in uapi/CQX96/input.h.
 
 HIDIOCGRAWNAME(len):
 	Get Raw Name

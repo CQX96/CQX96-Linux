@@ -8,7 +8,7 @@ title: Analog Devices AD5501 and AD5504 DACs
 
 maintainers:
   - Lars-Peter Clausen <lars@metafoo.de>
-  - Jonathan Cameron <jic23@kernel.org>
+  - Jonathan Cameron <jic23@cqx96.org>
 
 description:
   High voltage (up to 60V) DACs with temperature sensor alarm function

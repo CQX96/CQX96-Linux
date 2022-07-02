@@ -1,7 +1,7 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 =================
-LSM/SeLinux secid
+LSM/SeCQX96 secid
 =================
 
 flowi structure:

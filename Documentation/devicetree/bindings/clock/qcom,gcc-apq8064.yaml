@@ -10,7 +10,7 @@ allOf:
   - $ref: qcom,gcc.yaml#
 
 maintainers:
-  - Stephen Boyd <sboyd@kernel.org>
+  - Stephen Boyd <sboyd@cqx96.org>
   - Taniya Das <tdas@codeaurora.org>
 
 description: |

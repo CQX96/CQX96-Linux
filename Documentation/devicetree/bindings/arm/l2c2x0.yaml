@@ -7,7 +7,7 @@ $schema: http://devicetree.org/meta-schemas/core.yaml#
 title: ARM L2 Cache Controller
 
 maintainers:
-  - Rob Herring <robh@kernel.org>
+  - Rob Herring <robh@cqx96.org>
 
 description: |+
   ARM cores often have a separate L2C210/L2C220/L2C310 (also known as PL210/

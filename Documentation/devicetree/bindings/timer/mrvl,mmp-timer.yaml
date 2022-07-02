@@ -9,7 +9,7 @@ title: Marvell MMP Timer bindings
 maintainers:
   - Daniel Lezcano <daniel.lezcano@linaro.org>
   - Thomas Gleixner <tglx@linutronix.de>
-  - Rob Herring <robh+dt@kernel.org>
+  - Rob Herring <robh+dt@cqx96.org>
 
 properties:
   $nodename:

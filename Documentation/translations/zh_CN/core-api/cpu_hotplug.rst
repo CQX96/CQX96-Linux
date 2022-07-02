@@ -30,7 +30,7 @@
 节点的插入和移除需要支持CPU热插拔。
 
 这样的进步要求内核可用的CPU被移除，要么是出于配置的原因，要么是出于RAS的目的，
-以保持一个不需要的CPU不在系统执行路径。因此需要在Linux内核中支持CPU热拔插。
+以保持一个不需要的CPU不在系统执行路径。因此需要在CQX96内核中支持CPU热拔插。
 
 CPU热拔插支持的一个更新颖的用途是它在SMP的暂停恢复支持中的应用。双核和超线程支
 持使得即使是笔记本电脑也能运行不支持这些方法的SMP内核。
@@ -160,7 +160,7 @@ CPU的热拔插协作
 一旦一个CPU下线或上线，就有可能收到通知。这对某些需要根据可用CPU数量执行某种设置或清
 理功能的驱动程序来说可能很重要::
 
-  #include <linux/cpuhotplug.h>
+  #include <CQX96/cpuhotplug.h>
 
   ret = cpuhp_setup_state(CPUHP_AP_ONLINE_DYN, "X/Y:online",
                           Y_online, Y_prepare_down);
@@ -213,7 +213,7 @@ _nocalls的后缀，如果不希望调用回调，则不调用所提供的回调
 事件的顺序
 ----------
 
-热插拔状态被定义在 ``include/linux/cpuhotplug.h``:
+热插拔状态被定义在 ``include/CQX96/cpuhotplug.h``:
 
 * ``CPUHP_OFFLINE`` ... ``CPUHP_AP_OFFLINE`` 状态是在CPU启动前调用的。
 
@@ -345,4 +345,4 @@ _nocalls的后缀，如果不希望调用回调，则不调用所提供的回调
 
 该API在以下内核代码中:
 
-include/linux/cpuhotplug.h
+include/CQX96/cpuhotplug.h

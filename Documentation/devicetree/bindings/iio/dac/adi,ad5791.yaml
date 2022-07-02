@@ -8,7 +8,7 @@ title: Analog Devices AD5791 and similar DACs
 
 maintainers:
   - Michael Hennerich <michael.hennerich@analog.com>
-  - Jonathan Cameron <jic23@kernel.org>
+  - Jonathan Cameron <jic23@cqx96.org>
 
 properties:
 

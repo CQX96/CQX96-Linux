@@ -57,9 +57,9 @@ Description:
 			template:= name of a defined IMA template type
 			(eg, ima-ng). Only valid when action is "measure".
 			pcr:= decimal value
-			label:= [selinux]|[kernel_info]|[data_label]
+			label:= [seCQX96]|[kernel_info]|[data_label]
 			data_label:= a unique string used for grouping and limiting critical data.
-			For example, "selinux" to measure critical data for SELinux.
+			For example, "seCQX96" to measure critical data for SELinux.
 			appraise_algos:= comma-separated list of hash algorithms
 			For example, "sha256,sha512" to only accept to appraise
 			files where the security.ima xattr was hashed with one

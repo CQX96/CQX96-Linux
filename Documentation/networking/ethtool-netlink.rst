@@ -8,7 +8,7 @@ Basic information
 
 Netlink interface for ethtool uses generic netlink family ``ethtool``
 (userspace application should use macros ``ETHTOOL_GENL_NAME`` and
-``ETHTOOL_GENL_VERSION`` defined in ``<linux/ethtool_netlink.h>`` uapi
+``ETHTOOL_GENL_VERSION`` defined in ``<CQX96/ethtool_netlink.h>`` uapi
 header). This family does not use a specific header, all information in
 requests and replies is passed using netlink attributes.
 
@@ -1073,7 +1073,7 @@ in ``ETHTOOL_A_HEADER_FLAGS``.
 It will be empty if driver did not report any statistics. Drivers fill in
 the statistics in the following structure:
 
-.. kernel-doc:: include/linux/ethtool.h
+.. kernel-doc:: include/CQX96/ethtool.h
     :identifiers: ethtool_pause_stats
 
 Each member has a corresponding attribute defined.
@@ -1401,7 +1401,7 @@ the array will be:
 
 Drivers fill in the statistics in the following structure:
 
-.. kernel-doc:: include/linux/ethtool.h
+.. kernel-doc:: include/CQX96/ethtool.h
     :identifiers: ethtool_fec_stats
 
 FEC_SET
@@ -1589,7 +1589,7 @@ The optional ``ETHTHOOL_A_MODULE_POWER_MODE`` attribute encodes the operational
 power mode policy of the transceiver module. It is only reported when a module
 is plugged-in. Possible values are:
 
-.. kernel-doc:: include/uapi/linux/ethtool.h
+.. kernel-doc:: include/uapi/CQX96/ethtool.h
     :identifiers: ethtool_module_power_mode
 
 MODULE_SET
@@ -1608,7 +1608,7 @@ When set, the optional ``ETHTOOL_A_MODULE_POWER_MODE_POLICY`` attribute is used
 to set the transceiver module power policy enforced by the host. Possible
 values are:
 
-.. kernel-doc:: include/uapi/linux/ethtool.h
+.. kernel-doc:: include/uapi/CQX96/ethtool.h
     :identifiers: ethtool_module_power_mode_policy
 
 For SFF-8636 modules, low power mode is forced by the host according to table

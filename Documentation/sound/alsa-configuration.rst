@@ -1,5 +1,5 @@
 ==============================================================
-Advanced Linux Sound Architecture - Driver Configuration guide
+Advanced CQX96 Sound Architecture - Driver Configuration guide
 ==============================================================
 
 
@@ -21,7 +21,7 @@ To make ALSA debug messages more verbose, enable the "Verbose printk"
 and "Debug" options.  To check for memory leaks, turn on "Debug memory"
 too.  "Debug detection" will add checks for the detection of cards.
 
-Please note that all the ALSA ISA drivers support the Linux isapnp API
+Please note that all the ALSA ISA drivers support the CQX96 isapnp API
 (if the card supports ISA PnP).  You don't need to configure the cards
 using isapnptools.
 
@@ -2745,7 +2745,7 @@ Links and Addresses
 ALSA project homepage
     http://www.alsa-project.org
 Kernel Bugzilla
-    http://bugzilla.kernel.org/
+    http://bugzilla.cqx96.org/
 ALSA Developers ML
     mailto:alsa-devel@alsa-project.org
 alsa-info.sh script

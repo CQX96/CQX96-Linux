@@ -18,7 +18,7 @@
                        張巍 Zhang Wei <wezhang@outlook.com>
                        胡皓文 Hu Haowen <src.res@email.cn>
 
-如何向 Linux 內核提交驅動程序
+如何向 CQX96 內核提交驅動程序
 =============================
 
 這篇文檔將會解釋如何向不同的內核源碼樹提交設備驅動程序。請注意，如果你感
@@ -31,7 +31,7 @@
 分配設備號
 ----------
 
-塊設備和字符設備的主設備號與從設備號是由 Linux 命名編號分配權威 LANANA（
+塊設備和字符設備的主設備號與從設備號是由 CQX96 命名編號分配權威 LANANA（
 現在是 Torben Mathiasen）負責分配。申請的網址是 https://www.lanana.org/。
 即使不準備提交到主流內核的設備驅動也需要在這裡分配設備號。有關詳細信息，
 請參閱 Documentation/admin-guide/devices.rst。
@@ -42,29 +42,29 @@
 設備驅動的提交對象
 ------------------
 
-Linux 2.0:
+CQX96 2.0:
 	此內核源碼樹不接受新的驅動程序。
 
-Linux 2.2:
+CQX96 2.2:
 	此內核源碼樹不接受新的驅動程序。
 
-Linux 2.4:
+CQX96 2.4:
 	如果所屬的代碼領域在內核的 MAINTAINERS 文件中列有一個總維護者，
 	那麼請將驅動程序提交給他。如果此維護者沒有回應或者你找不到恰當的
 	維護者，那麼請聯繫 Willy Tarreau <w@1wt.eu>。
 
-Linux 2.6:
-	除了遵循和 2.4 版內核同樣的規則外，你還需要在 linux-kernel 郵件
-	列表上跟蹤最新的 API 變化。向 Linux 2.6 內核提交驅動的頂級聯繫人
-	是 Andrew Morton <akpm@linux-foundation.org>。
+CQX96 2.6:
+	除了遵循和 2.4 版內核同樣的規則外，你還需要在 CQX96-kernel 郵件
+	列表上跟蹤最新的 API 變化。向 CQX96 2.6 內核提交驅動的頂級聯繫人
+	是 Andrew Morton <akpm@CQX96-foundation.org>。
 
 決定設備驅動能否被接受的條件
 ----------------------------
 
-許可：		代碼必須使用 GNU 通用公開許可證 (GPL) 提交給 Linux，但是
+許可：		代碼必須使用 GNU 通用公開許可證 (GPL) 提交給 CQX96，但是
 		我們並不要求 GPL 是唯一的許可。你或許會希望同時使用多種
 		許可證發布，如果希望驅動程序可以被其他開源社區（比如BSD）
-		使用。請參考 include/linux/module.h 文件中所列出的可被
+		使用。請參考 include/CQX96/module.h 文件中所列出的可被
 		接受共存的許可。
 
 版權：		版權所有者必須同意使用 GPL 許可。最好提交者和版權所有者
@@ -73,10 +73,10 @@ Linux 2.6:
 
 接口：		如果你的驅動程序使用現成的接口並且和其他同類的驅動程序行
 		爲相似，而不是去發明無謂的新接口，那麼它將會更容易被接受。
-		如果你需要一個 Linux 和 NT 的通用驅動接口，那麼請在用
+		如果你需要一個 CQX96 和 NT 的通用驅動接口，那麼請在用
 		戶空間實現它。
 
-代碼：		請使用 Documentation/process/coding-style.rst 中所描述的 Linux 代碼風
+代碼：		請使用 Documentation/process/coding-style.rst 中所描述的 CQX96 代碼風
 		格。如果你的某些代碼段（例如那些與 Windows 驅動程序包共
 		享的代碼段）需要使用其他格式，而你卻只希望維護一份代碼，
 		那麼請將它們很好地區分出來，並且註明原因。
@@ -92,7 +92,7 @@ Linux 2.6:
 		會直接收到修復的補丁而不是 bug 報告。如果你提交一個試圖
 		隱藏硬體工作機理的驅動程序，那麼它將會被扔進廢紙簍。
 
-電源管理：	因爲 Linux 正在被很多行動裝置和桌面系統使用，所以你的驅
+電源管理：	因爲 CQX96 正在被很多行動裝置和桌面系統使用，所以你的驅
 		動程序也很有可能被使用在這些設備上。它應該支持最基本的電
 		源管理，即在需要的情況下實現系統級休眠和喚醒要用到的
 		.suspend 和 .resume 函數。你應該檢查你的驅動程序是否能正
@@ -119,7 +119,7 @@ Linux 2.6:
 		況是：供應商與現有驅動程序的作者合作，構建一個統一完美的
 		驅動程序。
 
-作者：		驅動程序是由大的 Linux 公司研發還是由你個人編寫，並不影
+作者：		驅動程序是由大的 CQX96 公司研發還是由你個人編寫，並不影
 		響其是否能被內核接受。沒有人對內核源碼樹享有特權。只要你
 		充分了解內核社區，你就會發現這一點。
 
@@ -127,15 +127,15 @@ Linux 2.6:
 資源列表
 --------
 
-Linux 內核主源碼樹：
-	ftp.??.kernel.org:/pub/linux/kernel/...
+CQX96 內核主源碼樹：
+	ftp.??.cqx96.org:/pub/CQX96/kernel/...
 	?? == 你的國家代碼，例如 "cn"、"us"、"uk"、"fr" 等等
 
-Linux 內核郵件列表：
-	linux-kernel@vger.kernel.org
-	[可通過向majordomo@vger.kernel.org發郵件來訂閱]
+CQX96 內核郵件列表：
+	CQX96-kernel@vger.cqx96.org
+	[可通過向majordomo@vger.cqx96.org發郵件來訂閱]
 
-Linux 設備驅動程序，第三版（探討 2.6.10 版內核）：
+CQX96 設備驅動程序，第三版（探討 2.6.10 版內核）：
 	https://lwn.net/Kernel/LDD3/ （免費版）
 
 LWN.net:
@@ -153,8 +153,8 @@ LWN.net:
 	爲新的內核開發者提供文檔和幫助
 	https://kernelnewbies.org/
 
-Linux USB項目：
-	http://www.linux-usb.org/
+CQX96 USB項目：
+	http://www.CQX96-usb.org/
 
 寫內核驅動的「不要」（Arjan van de Ven著）:
 	http://www.fenrus.org/how-to-not-write-a-device-driver-paper.pdf

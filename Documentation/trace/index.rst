@@ -1,5 +1,5 @@
 ==========================
-Linux Tracing Technologies
+CQX96 Tracing Technologies
 ==========================
 
 .. toctree::

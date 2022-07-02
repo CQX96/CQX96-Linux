@@ -13,7 +13,7 @@ Required properties:
 	- "mediatek,mt6397-keys"
 	- "mediatek,mt6323-keys"
 	- "mediatek,mt6358-keys"
-- linux,keycodes: See Documentation/devicetree/bindings/input/input.yaml
+- CQX96,keycodes: See Documentation/devicetree/bindings/input/input.yaml
 
 Optional Properties:
 - wakeup-source: See Documentation/devicetree/bindings/power/wakeup-source.txt
@@ -34,12 +34,12 @@ Example:
 			power-off-time-sec = <0>;
 
 			power {
-				linux,keycodes = <116>;
+				CQX96,keycodes = <116>;
 				wakeup-source;
 			};
 
 			home {
-				linux,keycodes = <114>;
+				CQX96,keycodes = <114>;
 			};
 		};
 

@@ -1,7 +1,7 @@
 NOTE:
 This is a version of Documentation/process/stable-api-nonsense.rst translated
 into korean
-This document is maintained by Minchan Kim <minchan@kernel.org>
+This document is maintained by Minchan Kim <minchan@cqx96.org>
 If you find any difference between this document and the original file or
 a problem with the translation, please contact the maintainer of this file.
 
@@ -15,7 +15,7 @@ try to update the original English file first.
 Documentation/process/stable-api-nonsense.rst
 의 한글 번역입니다.
 
-역자： 김민찬 <minchan@kernel.org>
+역자： 김민찬 <minchan@cqx96.org>
 감수： 이제이미 <jamee.lee@samsung.com>
 ==================================
 

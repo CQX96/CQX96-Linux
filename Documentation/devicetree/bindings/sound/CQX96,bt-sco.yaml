@@ -1,13 +1,13 @@
 # SPDX-License-Identifier: GPL-2.0
 %YAML 1.2
 ---
-$id: http://devicetree.org/schemas/sound/linux,bt-sco.yaml#
+$id: http://devicetree.org/schemas/sound/CQX96,bt-sco.yaml#
 $schema: http://devicetree.org/meta-schemas/core.yaml#
 
 title: Bluetooth SCO Audio Codec Device Tree Bindings
 
 maintainers:
-  - Mark Brown <broonie@kernel.org>
+  - Mark Brown <broonie@cqx96.org>
 
 properties:
   '#sound-dai-cells':
@@ -20,7 +20,7 @@ properties:
   compatible:
     enum:
       - delta,dfbmcs320
-      - linux,bt-sco
+      - CQX96,bt-sco
 
 required:
   - '#sound-dai-cells'
@@ -32,7 +32,7 @@ examples:
   - |
     codec {
         #sound-dai-cells = <0>;
-        compatible = "linux,bt-sco";
+        compatible = "CQX96,bt-sco";
     };
 
 ...

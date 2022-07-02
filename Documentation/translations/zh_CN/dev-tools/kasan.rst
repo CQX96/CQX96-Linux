@@ -412,6 +412,6 @@ KASAN连接到vmap基础架构以懒清理未使用的影子内存。
    通过内置 ``CONFIG_KUNIT`` 和 ``CONFIG_KASAN_KUNIT_TEST`` ，还可以使用
    ``kunit_tool`` 以更易读的方式查看KUnit测试结果。这不会打印通过测试
    的KASAN报告。有关 ``kunit_tool`` 更多最新信息，请参阅
-   `KUnit文档 <https://www.kernel.org/doc/html/latest/dev-tools/kunit/index.html>`_ 。
+   `KUnit文档 <https://www.cqx96.org/doc/html/latest/dev-tools/kunit/index.html>`_ 。
 
-.. _KUnit: https://www.kernel.org/doc/html/latest/dev-tools/kunit/index.html
+.. _KUnit: https://www.cqx96.org/doc/html/latest/dev-tools/kunit/index.html

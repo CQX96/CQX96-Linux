@@ -8,7 +8,7 @@ $schema: http://devicetree.org/meta-schemas/core.yaml#
 title: Texas Instruments INA209 family of power/voltage monitors
 
 maintainers:
-  - Krzysztof Kozlowski <krzk@kernel.org>
+  - Krzysztof Kozlowski <krzk@cqx96.org>
 
 description: |
   The INA209 is a high-side current shunt and power monitor with

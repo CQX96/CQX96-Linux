@@ -8,7 +8,7 @@ title: Texas Instruments GPMC Memory Controller device-tree bindings
 
 maintainers:
   - Tony Lindgren <tony@atomide.com>
-  - Roger Quadros <rogerq@kernel.org>
+  - Roger Quadros <rogerq@cqx96.org>
 
 description:
   The GPMC is a unified memory controller dedicated for interfacing

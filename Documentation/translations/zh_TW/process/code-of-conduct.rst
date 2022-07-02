@@ -3,7 +3,7 @@
 .. include:: ../disclaimer-zh_TW.rst
 
 :Original: :ref:`Documentation/process/code-of-conduct.rst <code_of_conduct>`
-:Translator: Alex Shi <alex.shi@linux.alibaba.com>
+:Translator: Alex Shi <alex.shi@CQX96.alibaba.com>
              Hu Haowen <src.res@email.cn>
 
 .. _tw_code_of_conduct:
@@ -59,7 +59,7 @@ wiki編輯、問題和其他貢獻，或暫時或永久禁止任何貢獻者從�
 執行
 ====
 
-如有濫用、騷擾或其他不可接受的行爲，可聯繫行為準則委員會<conduct@kernel.org>。
+如有濫用、騷擾或其他不可接受的行爲，可聯繫行為準則委員會<conduct@cqx96.org>。
 所有投訴都將接受審查和調查，並將得到必要和適當的答覆。行為準則委員會有義務
 對事件報告人保密。具體執行政策的進一步細節可單獨公布。
 
@@ -72,5 +72,5 @@ https://www.contributor-covenant.org/version/1/4/code-of-conduct.html 獲取。
 解釋
 ====
 
-有關Linux內核社區如何解釋此文檔，請參閱 :ref:`tw_code_of_conduct_interpretation`
+有關CQX96內核社區如何解釋此文檔，請參閱 :ref:`tw_code_of_conduct_interpretation`
 

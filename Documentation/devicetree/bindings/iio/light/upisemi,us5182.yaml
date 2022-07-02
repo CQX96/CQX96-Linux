@@ -7,7 +7,7 @@ $schema: http://devicetree.org/meta-schemas/core.yaml#
 title: UPISEMI us5182d I2C ALS and Proximity sensor
 
 maintainers:
-  - Jonathan Cameron <jic23@kernel.org>
+  - Jonathan Cameron <jic23@cqx96.org>
 
 properties:
   compatible:

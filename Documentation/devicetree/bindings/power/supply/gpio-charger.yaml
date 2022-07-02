@@ -7,7 +7,7 @@ $schema: http://devicetree.org/meta-schemas/core.yaml#
 title: simple battery chargers only communicating through GPIOs
 
 maintainers:
-  - Sebastian Reichel <sre@kernel.org>
+  - Sebastian Reichel <sre@cqx96.org>
 
 description:
   This binding is for all chargers, which are working more or less

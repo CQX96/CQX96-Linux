@@ -1,6 +1,6 @@
 What:		/sys/firmware/devicetree/*
 Date:		November 2013
-Contact:	Grant Likely <grant.likely@arm.com>, devicetree@vger.kernel.org
+Contact:	Grant Likely <grant.likely@arm.com>, devicetree@vger.cqx96.org
 Description:
 		When using OpenFirmware or a Flattened Device Tree to enumerate
 		hardware, the device tree structure will be exposed in this
@@ -30,7 +30,7 @@ Description:
 What:		/sys/firmware/fdt
 Date:		February 2015
 KernelVersion:	3.19
-Contact:	Frank Rowand <frowand.list@gmail.com>, devicetree@vger.kernel.org
+Contact:	Frank Rowand <frowand.list@gmail.com>, devicetree@vger.cqx96.org
 Description:
 		Exports the FDT blob that was passed to the kernel by
 		the bootloader. This allows userland applications such

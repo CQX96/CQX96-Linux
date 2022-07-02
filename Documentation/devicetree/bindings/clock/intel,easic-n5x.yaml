@@ -7,7 +7,7 @@ $schema: http://devicetree.org/meta-schemas/core.yaml#
 title: Intel SoCFPGA eASIC N5X platform clock controller binding
 
 maintainers:
-  - Dinh Nguyen <dinguyen@kernel.org>
+  - Dinh Nguyen <dinguyen@cqx96.org>
 
 description:
   The Intel eASIC N5X Clock controller is an integrated clock controller, which

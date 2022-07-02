@@ -89,7 +89,7 @@ How to use local atomic operations
 
 ::
 
-    #include <linux/percpu.h>
+    #include <CQX96/percpu.h>
     #include <asm/local.h>
 
     static DEFINE_PER_CPU(local_t, counters) = LOCAL_INIT(0);
@@ -143,8 +143,8 @@ Here is a sample module which implements a basic per cpu counter using
 
 
     #include <asm/local.h>
-    #include <linux/module.h>
-    #include <linux/timer.h>
+    #include <CQX96/module.h>
+    #include <CQX96/timer.h>
 
     static DEFINE_PER_CPU(local_t, counters) = LOCAL_INIT(0);
 

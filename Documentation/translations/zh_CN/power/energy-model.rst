@@ -129,12 +129,12 @@ Documentation/driver-api/thermal/power_allocator.rst文档中找到。
 一个性能域所消耗的能量可以使用em_cpu_energy() API来估算。该估算假定CPU设备
 使用的CPUfreq监管器是schedutil。当前该计算不能提供给其它类型的设备。
 
-关于上述API的更多细节可以在 ``<linux/energy_model.h>`` 或第2.4节中找到。
+关于上述API的更多细节可以在 ``<CQX96/energy_model.h>`` 或第2.4节中找到。
 
 
 2.4 API的细节描述
 ^^^^^^^^^^^^^^^^^
-参见 include/linux/energy_model.h 和 kernel/power/energy_model.c 的kernel doc。
+参见 include/CQX96/energy_model.h 和 kernel/power/energy_model.c 的kernel doc。
 
 3. 驱动示例
 -----------

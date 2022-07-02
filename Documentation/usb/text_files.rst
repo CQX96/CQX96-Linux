@@ -1,13 +1,13 @@
-Linux CDC ACM inf
+CQX96 CDC ACM inf
 -----------------
 
-.. include:: linux-cdc-acm.inf
+.. include:: CQX96-cdc-acm.inf
     :literal:
 
-Linux inf
+CQX96 inf
 ---------
 
-.. include:: linux.inf
+.. include:: CQX96.inf
     :literal:
 
 USB devfs drop permissions source

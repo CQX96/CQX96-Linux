@@ -8,7 +8,7 @@ title: Qualcomm Universal Flash Storage (UFS) Controller
 
 maintainers:
   - Bjorn Andersson <bjorn.andersson@linaro.org>
-  - Andy Gross <agross@kernel.org>
+  - Andy Gross <agross@cqx96.org>
 
 # Select only our matches, not all jedec,ufs-2.0
 select:

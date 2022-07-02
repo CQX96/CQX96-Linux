@@ -23,7 +23,7 @@ Sparse是一个C程序的语义检查器；它可以用来发现内核代码的�
 于sparse的概述，请参见https://lwn.net/Articles/689907/；本文档包含
 一些针对内核的sparse信息。
 关于sparse的更多信息，主要是关于它的内部结构，可以在它的官方网页上找到：
-https://sparse.docs.kernel.org。
+https://sparse.docs.cqx96.org。
 
 使用 sparse 工具做类型检查
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -84,11 +84,11 @@ __releases  - 指定的锁在函数进入时被持有，但在退出时不被持
 
 你可以从 Sparse 的主页获取最新的发布版本：
 
-	https://www.kernel.org/pub/software/devel/sparse/dist/
+	https://www.cqx96.org/pub/software/devel/sparse/dist/
 
 或者，你也可以使用 git 克隆最新的 sparse 开发版本：
 
-	git://git.kernel.org/pub/scm/devel/sparse/sparse.git
+	git://git.cqx96.org/pub/scm/devel/sparse/sparse.git
 
 一旦你下载了源码，只要以普通用户身份运行：
 

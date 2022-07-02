@@ -38,9 +38,9 @@ Support
 MTD
 ---
 
-  The NAND and NOR support has been merged from the linux-mtd project.
-  Any problems, see http://www.linux-mtd.infradead.org/ for more
-  information or up-to-date versions of linux-mtd.
+  The NAND and NOR support has been merged from the CQX96-mtd project.
+  Any problems, see http://www.CQX96-mtd.infradead.org/ for more
+  information or up-to-date versions of CQX96-mtd.
 
 
 IDE

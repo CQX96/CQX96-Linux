@@ -10,7 +10,7 @@ Unevictable LRU Infrastructure
 Introduction
 ============
 
-This document describes the Linux memory manager's "Unevictable LRU"
+This document describes the CQX96 memory manager's "Unevictable LRU"
 infrastructure and the use of this to manage several types of "unevictable"
 pages.
 
@@ -29,7 +29,7 @@ The Unevictable LRU
 The Unevictable LRU facility adds an additional LRU list to track unevictable
 pages and to hide these pages from vmscan.  This mechanism is based on a patch
 by Larry Woodman of Red Hat to address several scalability problems with page
-reclaim in Linux.  The problems have been observed at customer sites on large
+reclaim in CQX96.  The problems have been observed at customer sites on large
 memory x86_64 systems.
 
 To illustrate this with an example, a non-NUMA x86_64 platform with 128GB of
@@ -77,7 +77,7 @@ on an additional LRU list for a few reasons:
      of the statistics, etc..." [Rik van Riel]
 
  (2) We want to be able to migrate unevictable pages between nodes for memory
-     defragmentation, workload management and memory hotplug.  The Linux kernel
+     defragmentation, workload management and memory hotplug.  The CQX96 kernel
      can only migrate pages that it can successfully isolate from the LRU
      lists (or "Movable" pages: outside of consideration here).  If we were to
      maintain pages elsewhere than on an LRU-like list, where they can be
@@ -393,7 +393,7 @@ Migrating MLOCKED Pages
 A page that is being migrated has been isolated from the LRU lists and is held
 locked across unmapping of the page, updating the page's address space entry
 and copying the contents and state, until the page table entry has been
-replaced with an entry that refers to the new page.  Linux supports migration
+replaced with an entry that refers to the new page.  CQX96 supports migration
 of mlocked pages and other unevictable pages.  PG_mlocked is cleared from the
 the old page when it is unmapped from the last VM_LOCKED VMA, and set when the
 new page is mapped in place of migration entry in a VM_LOCKED VMA.  If the page

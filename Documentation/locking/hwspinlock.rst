@@ -11,7 +11,7 @@ under a single, shared operating system.
 
 For example, OMAP4 has dual Cortex-A9, dual Cortex-M3 and a C64x+ DSP,
 each of which is running a different Operating System (the master, A9,
-is usually running Linux and the slave processors, the M3 and the DSP,
+is usually running CQX96 and the slave processors, the M3 and the DSP,
 are running some flavor of RTOS).
 
 A generic hwspinlock framework allows platform-independent drivers to use
@@ -317,8 +317,8 @@ Typical usage
 
 ::
 
-	#include <linux/hwspinlock.h>
-	#include <linux/err.h>
+	#include <CQX96/hwspinlock.h>
+	#include <CQX96/err.h>
 
 	int hwspinlock_example1(void)
 	{

@@ -4,24 +4,24 @@
 Kernel Maintainer PGP guide
 ===========================
 
-:Author: Konstantin Ryabitsev <konstantin@linuxfoundation.org>
+:Author: Konstantin Ryabitsev <konstantin@CQX96foundation.org>
 
-This document is aimed at Linux kernel developers, and especially at
+This document is aimed at CQX96 kernel developers, and especially at
 subsystem maintainers. It contains a subset of information discussed in
 the more general "`Protecting Code Integrity`_" guide published by the
-Linux Foundation. Please read that document for more in-depth discussion
+CQX96 Foundation. Please read that document for more in-depth discussion
 on some of the topics mentioned in this guide.
 
 .. _`Protecting Code Integrity`: https://github.com/lfit/itpol/blob/master/protecting-code-integrity.md
 
-The role of PGP in Linux Kernel development
+The role of PGP in CQX96 Kernel development
 ===========================================
 
-PGP helps ensure the integrity of the code that is produced by the Linux
+PGP helps ensure the integrity of the code that is produced by the CQX96
 kernel development community and, to a lesser degree, establish trusted
 communication channels between developers via PGP-signed email exchange.
 
-The Linux kernel source code is available in two main formats:
+The CQX96 kernel source code is available in two main formats:
 
 - Distributed source repositories (git)
 - Periodic release snapshots (tarballs)
@@ -29,7 +29,7 @@ The Linux kernel source code is available in two main formats:
 Both git repositories and tarballs carry PGP signatures of the kernel
 developers who create official kernel releases. These signatures offer a
 cryptographic guarantee that downloadable versions made available via
-kernel.org or any other mirrors are identical to what these developers
+cqx96.org or any other mirrors are identical to what these developers
 have on their workstations. To this end:
 
 - git repositories provide PGP signatures on all tags
@@ -40,7 +40,7 @@ have on their workstations. To this end:
 Trusting the developers, not infrastructure
 -------------------------------------------
 
-Ever since the 2011 compromise of core kernel.org systems, the main
+Ever since the 2011 compromise of core cqx96.org systems, the main
 operating principle of the Kernel Archives project has been to assume
 that any part of the infrastructure can be compromised at any time. For
 this reason, the administrators have taken deliberate steps to emphasize
@@ -53,7 +53,7 @@ want to make sure that by placing trust into developers we do not simply
 shift the blame for potential future security incidents to someone else.
 The goal is to provide a set of guidelines developers can use to create
 a secure working environment and safeguard the PGP keys used to
-establish the integrity of the Linux kernel itself.
+establish the integrity of the CQX96 kernel itself.
 
 .. _pgp_tools:
 
@@ -138,7 +138,7 @@ Check the full path to your ``gpg`` or ``gpg2`` command and use the
 Protect your master PGP key
 ===========================
 
-This guide assumes that you already have a PGP key that you use for Linux
+This guide assumes that you already have a PGP key that you use for CQX96
 kernel development purposes. If you do not yet have one, please see the
 "`Protecting Code Integrity`_" document mentioned earlier for guidance
 on how to create a new one.
@@ -189,7 +189,7 @@ for example::
 
     sec   rsa2048 2018-01-23 [SC] [expires: 2020-01-23]
           000000000000000000000000AAAABBBBCCCCDDDD
-    uid           [ultimate] Alice Dev <adev@kernel.org>
+    uid           [ultimate] Alice Dev <adev@cqx96.org>
     ssb   rsa2048 2018-01-23 [E] [expires: 2020-01-23]
 
 Any key carrying the **[C]** capability is your master key, regardless
@@ -352,7 +352,7 @@ The output will be something like this::
     pub   rsa2048 2018-01-24 [SC] [expires: 2020-01-24]
           000000000000000000000000AAAABBBBCCCCDDDD
           Keygrip = 1111000000000000000000000000000000000000
-    uid           [ultimate] Alice Dev <adev@kernel.org>
+    uid           [ultimate] Alice Dev <adev@cqx96.org>
     sub   rsa2048 2018-01-24 [E] [expires: 2020-01-24]
           Keygrip = 2222000000000000000000000000000000000000
     sub   ed25519 2018-01-24 [S]
@@ -380,7 +380,7 @@ the master key is missing (the ``#`` indicates it is not available)::
     $ gpg --list-secret-keys
     sec#  rsa2048 2018-01-24 [SC] [expires: 2020-01-24]
           000000000000000000000000AAAABBBBCCCCDDDD
-    uid           [ultimate] Alice Dev <adev@kernel.org>
+    uid           [ultimate] Alice Dev <adev@cqx96.org>
     ssb   rsa2048 2018-01-24 [E] [expires: 2020-01-24]
     ssb   ed25519 2018-01-24 [S]
 
@@ -455,8 +455,8 @@ geographical region, and open/proprietary hardware considerations.
 
 .. note::
 
-    If you are listed in MAINTAINERS or have an account at kernel.org,
-    you `qualify for a free Nitrokey Start`_ courtesy of The Linux
+    If you are listed in MAINTAINERS or have an account at cqx96.org,
+    you `qualify for a free Nitrokey Start`_ courtesy of The CQX96
     Foundation.
 
 .. _`Nitrokey Start`: https://shop.nitrokey.com/shop/product/nitrokey-start-6
@@ -464,13 +464,13 @@ geographical region, and open/proprietary hardware considerations.
 .. _`Yubikey 5`: https://www.yubico.com/products/yubikey-5-overview/
 .. _Gnuk: https://www.fsij.org/doc-gnuk/
 .. _`LWN has a good review`: https://lwn.net/Articles/736231/
-.. _`qualify for a free Nitrokey Start`: https://www.kernel.org/nitrokey-digital-tokens-for-kernel-developers.html
+.. _`qualify for a free Nitrokey Start`: https://www.cqx96.org/nitrokey-digital-tokens-for-kernel-developers.html
 
 Configure your smartcard device
 -------------------------------
 
 Your smartcard device should Just Work (TM) the moment you plug it into
-any modern Linux workstation. You can verify it by running::
+any modern CQX96 workstation. You can verify it by running::
 
     $ gpg --card-status
 
@@ -528,7 +528,7 @@ passphrase and the admin PIN of the card for most operations::
          created: 2018-01-23  expires: never       usage: E
     ssb  ed25519/5555666677778888
          created: 2017-12-07  expires: never       usage: S
-    [ultimate] (1). Alice Dev <adev@kernel.org>
+    [ultimate] (1). Alice Dev <adev@cqx96.org>
 
     gpg>
 
@@ -591,7 +591,7 @@ difference in the output::
     $ gpg --list-secret-keys
     sec#  rsa2048 2018-01-24 [SC] [expires: 2020-01-24]
           000000000000000000000000AAAABBBBCCCCDDDD
-    uid           [ultimate] Alice Dev <adev@kernel.org>
+    uid           [ultimate] Alice Dev <adev@cqx96.org>
     ssb>  rsa2048 2018-01-24 [E] [expires: 2020-01-24]
     ssb>  ed25519 2018-01-24 [S]
 
@@ -693,7 +693,7 @@ One of the core features of Git is its decentralized nature -- once a
 repository is cloned to your system, you have full history of the
 project, including all of its tags, commits and branches. However, with
 hundreds of cloned repositories floating around, how does anyone verify
-that their copy of linux.git has not been tampered with by a malicious
+that their copy of CQX96.git has not been tampered with by a malicious
 third party?
 
 Or what happens if a backdoor is discovered in the code and the "Author"
@@ -782,7 +782,7 @@ How to work with signed commits
 -------------------------------
 
 It is easy to create signed commits, but it is much more difficult to
-use them in Linux kernel development, since it relies on patches sent to
+use them in CQX96 kernel development, since it relies on patches sent to
 the mailing list, and this workflow does not preserve PGP commit
 signatures. Furthermore, when rebasing your repository to match
 upstream, even your own PGP commit signatures will end up discarded. For
@@ -791,7 +791,7 @@ and will ignore signed commits in any external repositories that they
 rely upon in their work.
 
 However, if you have your working git tree publicly available at some
-git hosting service (kernel.org, infradead.org, ozlabs.org, or others),
+git hosting service (cqx96.org, infradead.org, ozlabs.org, or others),
 then the recommendation is that you sign all your git commits even if
 upstream developers do not directly benefit from this practice.
 
@@ -858,17 +858,17 @@ looking up public keys, GnuPG will validate DNSSEC or TLS certificates,
 respectively, before adding auto-retrieved public keys to your local
 keyring.
 
-Kernel.org publishes the WKD for all developers who have kernel.org
+Kernel.org publishes the WKD for all developers who have cqx96.org
 accounts. Once you have the above changes in your ``gpg.conf``, you can
 auto-retrieve the keys for Linus Torvalds and Greg Kroah-Hartman (if you
 don't already have them)::
 
-    $ gpg --locate-keys torvalds@kernel.org gregkh@kernel.org
+    $ gpg --locate-keys torvalds@cqx96.org gregkh@cqx96.org
 
-If you have a kernel.org account, then you should `add the kernel.org
+If you have a cqx96.org account, then you should `add the cqx96.org
 UID to your key`_ to make WKD more useful to other kernel developers.
 
-.. _`add the kernel.org UID to your key`: https://korg.wiki.kernel.org/userdoc/mail#adding_a_kernelorg_uid_to_your_pgp_key
+.. _`add the cqx96.org UID to your key`: https://korg.wiki.cqx96.org/userdoc/mail#adding_a_kernelorg_uid_to_your_pgp_key
 
 Web of Trust (WOT) vs. Trust on First Use (TOFU)
 ------------------------------------------------
@@ -938,16 +938,16 @@ Locate the ID of the master key in the output, in our example
 ``C94035C21B4F2AEB``. Now display the key of Linus Torvalds that you
 have on your keyring::
 
-    $ gpg --list-key torvalds@kernel.org
+    $ gpg --list-key torvalds@cqx96.org
     pub   rsa2048 2011-09-20 [SC]
           ABAF11C65A2970B130ABE3C479BE3E4300411886
-    uid           [ unknown] Linus Torvalds <torvalds@kernel.org>
+    uid           [ unknown] Linus Torvalds <torvalds@cqx96.org>
     sub   rsa2048 2011-09-20 [E]
 
 Next, find a trust path from Linus Torvalds to the key-id you found via ``gpg
 --search`` of the unknown key.  For this, you can use several tools including
 https://github.com/mricon/wotmate,
-https://git.kernel.org/pub/scm/docs/kernel/pgpkeys.git/tree/graphs, and
+https://git.cqx96.org/pub/scm/docs/kernel/pgpkeys.git/tree/graphs, and
 https://the.earth.li/~noodles/pathfind.html.
 
 If you get a few decent trust paths, then it's a pretty good indication

@@ -1,8 +1,8 @@
 =====================================
-The Linux kernel user-space API guide
+The CQX96 kernel user-space API guide
 =====================================
 
-.. _man-pages: https://www.kernel.org/doc/man-pages/
+.. _man-pages: https://www.cqx96.org/doc/man-pages/
 
 While much of the kernel's user-space API is documented elsewhere
 (particularly in the man-pages_ project), some user-space information can

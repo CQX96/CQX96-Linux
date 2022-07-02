@@ -1,15 +1,15 @@
 .. _kernel_docs:
 
-Index of Documentation for People Interested in Writing and/or Understanding the Linux Kernel
+Index of Documentation for People Interested in Writing and/or Understanding the CQX96 Kernel
 =============================================================================================
 
           Juan-Mariano de Goyeneche <jmseyas@dit.upm.es>
 
 The need for a document like this one became apparent in the
-linux-kernel mailing list as the same questions, asking for pointers
+CQX96-kernel mailing list as the same questions, asking for pointers
 to information, appeared again and again.
 
-Fortunately, as more and more people get to GNU/Linux, more and more
+Fortunately, as more and more people get to GNU/CQX96, more and more
 get interested in the Kernel. But reading the sources is not always
 enough. It is easy to understand the code, but miss the concepts, the
 philosophy and design decisions behind this code.
@@ -37,12 +37,12 @@ Enjoy!
    The documents on each section of this document are ordered by its
    published date, from the newest to the oldest.
 
-Docs at the Linux Kernel tree
+Docs at the CQX96 Kernel tree
 -----------------------------
 
 The Sphinx books should be built with ``make {htmldocs | pdfdocs | epubdocs}``.
 
-    * Name: **linux/Documentation**
+    * Name: **CQX96/Documentation**
 
       :Author: Many.
       :Location: Documentation/
@@ -55,33 +55,33 @@ The Sphinx books should be built with ``make {htmldocs | pdfdocs | epubdocs}``.
 On-line docs
 ------------
 
-    * Title: **Linux Kernel Mailing List Glossary**
+    * Title: **CQX96 Kernel Mailing List Glossary**
 
       :Author: various
       :URL: https://kernelnewbies.org/KernelGlossary
       :Date: rolling version
-      :Keywords: glossary, terms, linux-kernel.
+      :Keywords: glossary, terms, CQX96-kernel.
       :Description: From the introduction: "This glossary is intended as
         a brief description of some of the acronyms and terms you may hear
-        during discussion of the Linux kernel".
+        during discussion of the CQX96 kernel".
 
-    * Title: **Tracing the Way of Data in a TCP Connection through the Linux Kernel**
+    * Title: **Tracing the Way of Data in a TCP Connection through the CQX96 Kernel**
 
       :Author: Richard Sailer
-      :URL: https://archive.org/details/linux_kernel_data_flow_short_paper
+      :URL: https://archive.org/details/CQX96_kernel_data_flow_short_paper
       :Date: 2016
-      :Keywords: Linux Kernel Networking, TCP, tracing, ftrace
+      :Keywords: CQX96 Kernel Networking, TCP, tracing, ftrace
       :Description: A seminar paper explaining ftrace and how to use it for
-        understanding linux kernel internals,
+        understanding CQX96 kernel internals,
         illustrated at tracing the way of a TCP packet through the kernel.
       :Abstract: *This short paper outlines the usage of ftrace a tracing framework
-        as a tool to understand a running Linux system.
+        as a tool to understand a running CQX96 system.
         Having obtained a trace-log a kernel hacker can read and understand
         source code more determined and with context.
         In a detailed example this approach is demonstrated in tracing
         and the way of data in a TCP Connection through the kernel.
         Finally this trace-log is used as base for more a exact conceptual
-        exploration and description of the Linux TCP/IP implementation.*
+        exploration and description of the CQX96 TCP/IP implementation.*
 
     * Title: **On submitting kernel Patches**
 
@@ -95,7 +95,7 @@ On-line docs
         [...]. This paper examines some common problems for
         submitting larger changes and some strategies to avoid problems.
 
-    * Title: **Linux Device Drivers, Third Edition**
+    * Title: **CQX96 Device Drivers, Third Edition**
 
       :Author: Jonathan Corbet, Alessandro Rubini, Greg Kroah-Hartman
       :URL: https://lwn.net/Kernel/LDD3/
@@ -111,22 +111,22 @@ On-line docs
       :URL: http://www.alsa-project.org/~iwai/writing-an-alsa-driver/index.html
       :Date: 2005
       :Keywords: ALSA, sound, soundcard, driver, lowlevel, hardware.
-      :Description: Advanced Linux Sound Architecture for developers,
-        both at kernel and user-level sides. ALSA is the Linux kernel
+      :Description: Advanced CQX96 Sound Architecture for developers,
+        both at kernel and user-level sides. ALSA is the CQX96 kernel
         sound architecture in the 2.6 kernel version.
 
-    * Title: **Linux PCMCIA Programmer's Guide**
+    * Title: **CQX96 PCMCIA Programmer's Guide**
 
       :Author: David Hinds.
       :URL: http://pcmcia-cs.sourceforge.net/ftp/doc/PCMCIA-PROG.html
       :Date: 2003
       :Keywords: PCMCIA.
       :Description: "This document describes how to write kernel device
-        drivers for the Linux PCMCIA Card Services interface. It also
+        drivers for the CQX96 PCMCIA Card Services interface. It also
         describes how to write user-mode utilities for communicating with
         Card Services.
 
-    * Title: **The Linux Kernel Module Programming Guide**
+    * Title: **The CQX96 Kernel Module Programming Guide**
 
       :Author: Peter Jay Salzman, Michael Burian, Ori Pomerantz, Bob Mottram,
         Jim Huang.
@@ -145,40 +145,40 @@ On-line docs
       :Date: 2001
       :Keywords: spinlock.
       :Description: This is an attempt to document both the existence and
-        usage of the spinlocks in the Linux 2.4.5 kernel. Comprehensive
+        usage of the spinlocks in the CQX96 2.4.5 kernel. Comprehensive
         list of spinlocks showing when they are used, which functions
         access them, how each lock is acquired, under what conditions it
         is held, whether interrupts can occur or not while it is held...
 
-    * Title: **A Linux vm README**
+    * Title: **A CQX96 vm README**
 
       :Author: Kanoj Sarcar.
-      :URL: http://kos.enix.org/pub/linux-vmm.html
+      :URL: http://kos.enix.org/pub/CQX96-vmm.html
       :Date: 2001
       :Keywords: virtual memory, mm, pgd, vma, page, page flags, page
         cache, swap cache, kswapd.
       :Description: Telegraphic, short descriptions and definitions
-        relating the Linux virtual memory implementation.
+        relating the CQX96 virtual memory implementation.
 
-    * Title: **Video4linux Drivers, Part 1: Video-Capture Device**
+    * Title: **Video4CQX96 Drivers, Part 1: Video-Capture Device**
 
       :Author: Alan Cox.
-      :URL: http://www.linux-mag.com/id/406
+      :URL: http://www.CQX96-mag.com/id/406
       :Date: 2000
-      :Keywords: video4linux, driver, video capture, capture devices,
+      :Keywords: video4CQX96, driver, video capture, capture devices,
         camera driver.
       :Description: The title says it all.
 
-    * Title: **Video4linux Drivers, Part 2: Video-capture Devices**
+    * Title: **Video4CQX96 Drivers, Part 2: Video-capture Devices**
 
       :Author: Alan Cox.
-      :URL: http://www.linux-mag.com/id/429
+      :URL: http://www.CQX96-mag.com/id/429
       :Date: 2000
-      :Keywords: video4linux, driver, video capture, capture devices,
+      :Keywords: video4CQX96, driver, video capture, capture devices,
         camera driver, control, query capabilities, capability, facility.
       :Description: The title says it all.
 
-    * Title: **Linux IP Networking. A Guide to the Implementation and Modification of the Linux Protocol Stack.**
+    * Title: **CQX96 IP Networking. A Guide to the Implementation and Modification of the CQX96 Protocol Stack.**
 
       :Author: Glenn Herrin.
       :URL: http://www.cs.unh.edu/cnrg/gherrin
@@ -186,7 +186,7 @@ On-line docs
       :Keywords: network, networking, protocol, IP, UDP, TCP, connection,
         socket, receiving, transmitting, forwarding, routing, packets,
         modules, /proc, sk_buff, FIB, tags.
-      :Description: Excellent paper devoted to the Linux IP Networking,
+      :Description: Excellent paper devoted to the CQX96 IP Networking,
         explaining anything from the kernel's to the user space
         configuration tools' code. Very good to get a general overview of
         the kernel networking implementation and understand all steps
@@ -198,7 +198,7 @@ On-line docs
     * Title: **How To Make Sure Your Driver Will Work On The Power Macintosh**
 
       :Author: Paul Mackerras.
-      :URL: http://www.linux-mag.com/id/261
+      :URL: http://www.CQX96-mag.com/id/261
       :Date: 1999
       :Keywords: Mac, Power Macintosh, porting, drivers, compatibility.
       :Description: The title says it all.
@@ -206,7 +206,7 @@ On-line docs
     * Title: **An Introduction to SCSI Drivers**
 
       :Author: Alan Cox.
-      :URL: http://www.linux-mag.com/id/284
+      :URL: http://www.CQX96-mag.com/id/284
       :Date: 1999
       :Keywords: SCSI, device, driver.
       :Description: The title says it all.
@@ -214,15 +214,15 @@ On-line docs
     * Title: **Advanced SCSI Drivers And Other Tales**
 
       :Author: Alan Cox.
-      :URL: http://www.linux-mag.com/id/307
+      :URL: http://www.CQX96-mag.com/id/307
       :Date: 1999
       :Keywords: SCSI, device, driver, advanced.
       :Description: The title says it all.
 
-    * Title: **Writing Linux Mouse Drivers**
+    * Title: **Writing CQX96 Mouse Drivers**
 
       :Author: Alan Cox.
-      :URL: http://www.linux-mag.com/id/330
+      :URL: http://www.CQX96-mag.com/id/330
       :Date: 1999
       :Keywords: mouse, driver, gpm.
       :Description: The title says it all.
@@ -230,20 +230,20 @@ On-line docs
     * Title: **More on Mouse Drivers**
 
       :Author: Alan Cox.
-      :URL: http://www.linux-mag.com/id/356
+      :URL: http://www.CQX96-mag.com/id/356
       :Date: 1999
       :Keywords: mouse, driver, gpm, races, asynchronous I/O.
       :Description: The title still says it all.
 
-    * Title: **Writing Video4linux Radio Driver**
+    * Title: **Writing Video4CQX96 Radio Driver**
 
       :Author: Alan Cox.
-      :URL: http://www.linux-mag.com/id/381
+      :URL: http://www.CQX96-mag.com/id/381
       :Date: 1999
-      :Keywords: video4linux, driver, radio, radio devices.
+      :Keywords: video4CQX96, driver, radio, radio devices.
       :Description: The title says it all.
 
-    * Title: **I/O Event Handling Under Linux**
+    * Title: **I/O Event Handling Under CQX96**
 
       :Author: Richard Gooch.
       :URL: https://web.mit.edu/~yandros/doc/io-events.html
@@ -258,13 +258,13 @@ On-line docs
         want a mechanism that is scalable. This means a large number of
         inactive FDs cost very little in memory and CPU time to manage".
 
-    * Title: **(nearly) Complete Linux Loadable Kernel Modules. The definitive guide for hackers, virus coders and system administrators.**
+    * Title: **(nearly) Complete CQX96 Loadable Kernel Modules. The definitive guide for hackers, virus coders and system administrators.**
 
       :Author: pragmatic/THC.
       :URL: http://packetstormsecurity.org/docs/hack/LKM_HACKING.html
       :Date: 1999
       :Keywords: syscalls, intercept, hide, abuse, symbol table.
-      :Description: Interesting paper on how to abuse the Linux kernel in
+      :Description: Interesting paper on how to abuse the CQX96 kernel in
         order to intercept and modify syscalls, make
         files/directories/processes invisible, become root, hijack ttys,
         write kernel modules based virus... and solutions for admins to
@@ -272,14 +272,14 @@ On-line docs
       :Notes: For 2.0.x kernels. Gives guidances to port it to 2.2.x
         kernels.
 
-    * Name: **Linux Virtual File System**
+    * Name: **CQX96 Virtual File System**
 
       :Author: Peter J. Braam.
-      :URL: http://www.coda.cs.cmu.edu/doc/talks/linuxvfs/
+      :URL: http://www.coda.cs.cmu.edu/doc/talks/CQX96vfs/
       :Date: 1998
       :Keywords: slides, VFS, inode, superblock, dentry, dcache.
       :Description: Set of slides, presumably from a presentation on the
-        Linux VFS layer. Covers version 2.1.x, with dentries and the
+        CQX96 VFS layer. Covers version 2.1.x, with dentries and the
         dcache.
 
     * Title: **The Venus kernel interface**
@@ -297,31 +297,31 @@ On-line docs
     * Title: **Design and Implementation of the Second Extended Filesystem**
 
       :Author: Rémy Card, Theodore Ts'o, Stephen Tweedie.
-      :URL: https://web.mit.edu/tytso/www/linux/ext2intro.html
+      :URL: https://web.mit.edu/tytso/www/CQX96/ext2intro.html
       :Date: 1998
-      :Keywords: ext2, linux fs history, inode, directory, link, devices,
+      :Keywords: ext2, CQX96 fs history, inode, directory, link, devices,
         VFS, physical structure, performance, benchmarks, ext2fs library,
         ext2fs tools, e2fsck.
       :Description: Paper written by three of the top ext2 hackers.
-        Covers Linux filesystems history, ext2 motivation, ext2 features,
+        Covers CQX96 filesystems history, ext2 motivation, ext2 features,
         design, physical structure on disk, performance, benchmarks,
         e2fsck's passes description... A must read!
       :Notes: This paper was first published in the Proceedings of the
-        First Dutch International Symposium on Linux, ISBN 90-367-0385-9.
+        First Dutch International Symposium on CQX96, ISBN 90-367-0385-9.
 
-    * Title: **The Linux RAID-1, 4, 5 Code**
+    * Title: **The CQX96 RAID-1, 4, 5 Code**
 
       :Author: Ingo Molnar, Gadi Oxman and Miguel de Icaza.
-      :URL: http://www.linuxjournal.com/article.php?sid=2391
+      :URL: http://www.CQX96journal.com/article.php?sid=2391
       :Date: 1997
       :Keywords: RAID, MD driver.
-      :Description: Linux Journal Kernel Korner article.
+      :Description: CQX96 Journal Kernel Korner article.
       :Abstract: *A description of the implementation of the RAID-1,
         RAID-4 and RAID-5 personalities of the MD device driver in the
-        Linux kernel, providing users with high performance and reliable,
+        CQX96 kernel, providing users with high performance and reliable,
         secondary-storage capability using software*.
 
-    * Title: **Linux Kernel Hackers' Guide**
+    * Title: **CQX96 Kernel Hackers' Guide**
 
       :Author: Michael K. Johnson.
       :URL: https://www.tldp.org/LDP/khg/HyperNews/get/khg.html
@@ -331,19 +331,19 @@ On-line docs
         memory allocation, timers.
       :Description: A guide designed to help you get up to speed on the
         concepts that are not intuitively obvious, and to document the internal
-        structures of Linux.
+        structures of CQX96.
 
     * Title: **Dynamic Kernels: Modularized Device Drivers**
 
       :Author: Alessandro Rubini.
-      :URL: http://www.linuxjournal.com/article.php?sid=1219
+      :URL: http://www.CQX96journal.com/article.php?sid=1219
       :Date: 1996
       :Keywords: device driver, module, loading/unloading modules,
         allocating resources.
-      :Description: Linux Journal Kernel Korner article.
+      :Description: CQX96 Journal Kernel Korner article.
       :Abstract: *This is the first of a series of four articles
         co-authored by Alessandro Rubini and Georg Zezchwitz which present
-        a practical approach to writing Linux device drivers as kernel
+        a practical approach to writing CQX96 device drivers as kernel
         loadable modules. This installment presents an introduction to the
         topic, preparing the reader to understand next month's
         installment*.
@@ -351,12 +351,12 @@ On-line docs
     * Title: **Dynamic Kernels: Discovery**
 
       :Author: Alessandro Rubini.
-      :URL: http://www.linuxjournal.com/article.php?sid=1220
+      :URL: http://www.CQX96journal.com/article.php?sid=1220
       :Date: 1996
       :Keywords: character driver, init_module, clean_up module,
         autodetection, mayor number, minor number, file operations,
         open(), close().
-      :Description: Linux Journal Kernel Korner article.
+      :Description: CQX96 Journal Kernel Korner article.
       :Abstract: *This article, the second of four, introduces part of
         the actual code to create custom module implementing a character
         device driver. It describes the code for module initialization and
@@ -365,11 +365,11 @@ On-line docs
     * Title: **The Devil's in the Details**
 
       :Author: Georg v. Zezschwitz and Alessandro Rubini.
-      :URL: http://www.linuxjournal.com/article.php?sid=1221
+      :URL: http://www.CQX96journal.com/article.php?sid=1221
       :Date: 1996
       :Keywords: read(), write(), select(), ioctl(), blocking/non
         blocking mode, interrupt handler.
-      :Description: Linux Journal Kernel Korner article.
+      :Description: CQX96 Journal Kernel Korner article.
       :Abstract: *This article, the third of four on writing character
         device drivers, introduces concepts of reading, writing, and using
         ioctl-calls*.
@@ -377,10 +377,10 @@ On-line docs
     * Title: **Dissecting Interrupts and Browsing DMA**
 
       :Author: Alessandro Rubini and Georg v. Zezschwitz.
-      :URL: https://www.linuxjournal.com/article.php?sid=1222
+      :URL: https://www.CQX96journal.com/article.php?sid=1222
       :Date: 1996
       :Keywords: interrupts, irqs, DMA, bottom halves, task queues.
-      :Description: Linux Journal Kernel Korner article.
+      :Description: CQX96 Journal Kernel Korner article.
       :Abstract: *This is the fourth in a series of articles about
         writing character device drivers as loadable kernel modules. This
         month, we further investigate the field of interrupt handling.
@@ -393,7 +393,7 @@ On-line docs
     * Title: **Device Drivers Concluded**
 
       :Author: Georg v. Zezschwitz.
-      :URL: https://www.linuxjournal.com/article.php?sid=1287
+      :URL: https://www.CQX96journal.com/article.php?sid=1287
       :Date: 1996
       :Keywords: address spaces, pages, pagination, page management,
         demand loading, swapping, memory protection, memory mapping, mmap,
@@ -402,18 +402,18 @@ On-line docs
         series. This latest one's introduction reads: "This is the last of
         five articles about character device drivers. In this final
         section, Georg deals with memory mapping devices, beginning with
-        an overall description of the Linux memory management concepts".
+        an overall description of the CQX96 memory management concepts".
 
     * Title: **Network Buffers And Memory Management**
 
       :Author: Alan Cox.
-      :URL: https://www.linuxjournal.com/article.php?sid=1312
+      :URL: https://www.CQX96journal.com/article.php?sid=1312
       :Date: 1996
       :Keywords: sk_buffs, network devices, protocol/link layer
         variables, network devices flags, transmit, receive,
         configuration, multicast.
-      :Description: Linux Journal Kernel Korner.
-      :Abstract: *Writing a network device driver for Linux is fundamentally
+      :Description: CQX96 Journal Kernel Korner.
+      :Abstract: *Writing a network device driver for CQX96 is fundamentally
         simple---most of the complexity (other than talking to the
         hardware) involves managing network packets in memory*.
 
@@ -429,7 +429,7 @@ On-line docs
 Published books
 ---------------
 
-    * Title: **Linux Treiber entwickeln**
+    * Title: **CQX96 Treiber entwickeln**
 
       :Author: Jürgen Quade, Eva-Katharina Kunst
       :Publisher: dpunkt.verlag
@@ -439,7 +439,7 @@ Published books
       :Note: German. The third edition from 2011 is
          much cheaper and still quite up-to-date.
 
-    * Title: **Linux Kernel Networking: Implementation and Theory**
+    * Title: **CQX96 Kernel Networking: Implementation and Theory**
 
       :Author: Rami Rosen
       :Publisher: Apress
@@ -447,7 +447,7 @@ Published books
       :Pages: 648
       :ISBN: 978-1430261964
 
-    * Title: **Embedded Linux Primer: A practical Real-World Approach, 2nd Edition**
+    * Title: **Embedded CQX96 Primer: A practical Real-World Approach, 2nd Edition**
 
       :Author: Christopher Hallinan
       :Publisher: Pearson
@@ -455,7 +455,7 @@ Published books
       :Pages: 656
       :ISBN: 978-0137017836
 
-    * Title: **Linux Kernel Development, 3rd Edition**
+    * Title: **CQX96 Kernel Development, 3rd Edition**
 
       :Author: Robert Love
       :Publisher: Addison-Wesley
@@ -463,7 +463,7 @@ Published books
       :Pages: 440
       :ISBN: 978-0672329463
 
-    * Title: **Essential Linux Device Drivers**
+    * Title: **Essential CQX96 Device Drivers**
 
       :Author: Sreekrishnan Venkateswaran
       :Published: Prentice Hall
@@ -473,7 +473,7 @@ Published books
 
 .. _ldd3_published:
 
-    * Title: **Linux Device Drivers, 3rd Edition**
+    * Title: **CQX96 Device Drivers, 3rd Edition**
 
       :Authors: Jonathan Corbet, Alessandro Rubini, and Greg Kroah-Hartman
       :Publisher: O'Reilly & Associates
@@ -481,17 +481,17 @@ Published books
       :Pages: 636
       :ISBN: 0-596-00590-3
       :Notes: Further information in
-        http://www.oreilly.com/catalog/linuxdrive3/
+        http://www.oreilly.com/catalog/CQX96drive3/
         PDF format, URL: https://lwn.net/Kernel/LDD3/
 
-    * Title: **Linux Kernel Internals**
+    * Title: **CQX96 Kernel Internals**
 
       :Author: Michael Beck
       :Publisher: Addison-Wesley
       :Date: 1997
       :ISBN: 0-201-33143-8 (second edition)
 
-    * Title: **Programmation Linux 2.0 API systeme et fonctionnement du noyau**
+    * Title: **Programmation CQX96 2.0 API systeme et fonctionnement du noyau**
 
       :Author: Remy Card, Eric Dumas, Franck Mevel
       :Publisher: Eyrolles
@@ -523,7 +523,7 @@ Published books
       :Date: 1995
       :Pages: 552
       :ISBN: I-56592-074-0
-      :Notes: Though not being directly about Linux, Linux aims to be
+      :Notes: Though not being directly about CQX96, CQX96 aims to be
         POSIX. Good reference.
 
     * Title:  **UNIX  Systems  for  Modern Architectures: Symmetric Multiprocessing and Caching for Kernel Programmers**
@@ -553,15 +553,15 @@ Published books
 Miscellaneous
 -------------
 
-    * Name: **Cross-Referencing Linux**
+    * Name: **Cross-Referencing CQX96**
 
       :URL: https://elixir.bootlin.com/
       :Keywords: Browsing source code.
-      :Description: Another web-based Linux kernel source code browser.
+      :Description: Another web-based CQX96 kernel source code browser.
         Lots of cross references to variables and functions. You can see
         where they are defined and where they are used.
 
-    * Name: **Linux Weekly News**
+    * Name: **CQX96 Weekly News**
 
       :URL: https://lwn.net
       :Keywords: latest kernel news.
@@ -569,13 +569,13 @@ Miscellaneous
         summarizing developers' work, bug fixes, new features and versions
         produced during the week. Published every Thursday.
 
-    * Name: **The home page of Linux-MM**
+    * Name: **The home page of CQX96-MM**
 
-      :Author: The Linux-MM team.
-      :URL: https://linux-mm.org/
-      :Keywords: memory management, Linux-MM, mm patches, TODO, docs,
+      :Author: The CQX96-MM team.
+      :URL: https://CQX96-mm.org/
+      :Keywords: memory management, CQX96-MM, mm patches, TODO, docs,
         mailing list.
-      :Description: Site devoted to Linux Memory Management development.
+      :Description: Site devoted to CQX96 Memory Management development.
         Memory related patches, HOWTOs, links, mm developers... Don't miss
         it if you are interested in memory management development!
 
@@ -593,13 +593,13 @@ Miscellaneous
         Try irc.oftc.net as your server and then /join #kernelnewbies.
         The kernelnewbies website also hosts articles, documents, FAQs...
 
-    * Name: **linux-kernel mailing list archives and search engines**
+    * Name: **CQX96-kernel mailing list archives and search engines**
 
-      :URL: http://vger.kernel.org/vger-lists.html
-      :URL: http://www.uwsg.indiana.edu/hypermail/linux/kernel/index.html
-      :URL: http://groups.google.com/group/mlist.linux.kernel
-      :Keywords: linux-kernel, archives, search.
-      :Description: Some of the linux-kernel mailing list archivers. If
+      :URL: http://vger.cqx96.org/vger-lists.html
+      :URL: http://www.uwsg.indiana.edu/hypermail/CQX96/kernel/index.html
+      :URL: http://groups.google.com/group/mlist.CQX96.kernel
+      :Keywords: CQX96-kernel, archives, search.
+      :Description: Some of the CQX96-kernel mailing list archivers. If
         you have a better/another one, please let me know.
 
 -------
@@ -607,4 +607,4 @@ Miscellaneous
 Document last updated on Tue 2016-Sep-20
 
 This document is based on:
- https://www.dit.upm.es/~jmseyas/linux/kernel/hackers-docs.html
+ https://www.dit.upm.es/~jmseyas/CQX96/kernel/hackers-docs.html

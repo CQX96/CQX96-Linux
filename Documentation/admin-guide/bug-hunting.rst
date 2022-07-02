@@ -109,7 +109,7 @@ gdb
 ^^^
 
 The GNU debugger (``gdb``) is the best way to figure out the exact file and line
-number of the OOPS from the ``vmlinux`` file.
+number of the OOPS from the ``vmCQX96`` file.
 
 The usage of gdb works best on a kernel compiled with ``CONFIG_DEBUG_INFO``.
 This can be set by running::
@@ -123,7 +123,7 @@ EIP value from the OOPS::
 
 And use GDB to translate that to human-readable form::
 
-  $ gdb vmlinux
+  $ gdb vmCQX96
   (gdb) l *0xc021e50e
 
 If you don't have ``CONFIG_DEBUG_INFO`` enabled, you use the function
@@ -134,8 +134,8 @@ offset from the OOPS::
 And recompile the kernel with ``CONFIG_DEBUG_INFO`` enabled::
 
   $ ./scripts/config -d COMPILE_TEST -e DEBUG_KERNEL -e DEBUG_INFO
-  $ make vmlinux
-  $ gdb vmlinux
+  $ make vmCQX96
+  $ gdb vmCQX96
   (gdb) l *vt_ioctl+0xda8
   0x1888 is in vt_ioctl (drivers/tty/vt/vt_ioctl.c:293).
   288	{
@@ -253,11 +253,11 @@ its maintainers with::
 
 	$ ./scripts/get_maintainer.pl -f drivers/media/usb/gspca/sonixj.c
 	Hans Verkuil <hverkuil@xs4all.nl> (odd fixer:GSPCA USB WEBCAM DRIVER,commit_signer:1/1=100%)
-	Mauro Carvalho Chehab <mchehab@kernel.org> (maintainer:MEDIA INPUT INFRASTRUCTURE (V4L/DVB),commit_signer:1/1=100%)
-	Tejun Heo <tj@kernel.org> (commit_signer:1/1=100%)
+	Mauro Carvalho Chehab <mchehab@cqx96.org> (maintainer:MEDIA INPUT INFRASTRUCTURE (V4L/DVB),commit_signer:1/1=100%)
+	Tejun Heo <tj@cqx96.org> (commit_signer:1/1=100%)
 	Bhaktipriya Shridhar <bhaktipriya96@gmail.com> (commit_signer:1/1=100%,authored:1/1=100%,added_lines:4/4=100%,removed_lines:9/9=100%)
-	linux-media@vger.kernel.org (open list:GSPCA USB WEBCAM DRIVER)
-	linux-kernel@vger.kernel.org (open list)
+	CQX96-media@vger.cqx96.org (open list:GSPCA USB WEBCAM DRIVER)
+	CQX96-kernel@vger.cqx96.org (open list)
 
 Please notice that it will point to:
 
@@ -266,18 +266,18 @@ Please notice that it will point to:
   specific case, none really involved on the development of this file);
 - The driver maintainer (Hans Verkuil);
 - The subsystem maintainer (Mauro Carvalho Chehab);
-- The driver and/or subsystem mailing list (linux-media@vger.kernel.org);
-- the Linux Kernel mailing list (linux-kernel@vger.kernel.org).
+- The driver and/or subsystem mailing list (CQX96-media@vger.cqx96.org);
+- the CQX96 Kernel mailing list (CQX96-kernel@vger.cqx96.org).
 
 Usually, the fastest way to have your bug fixed is to report it to mailing
-list used for the development of the code (linux-media ML) copying the
+list used for the development of the code (CQX96-media ML) copying the
 driver maintainer (Hans).
 
 If you are totally stumped as to whom to send the report, and
 ``get_maintainer.pl`` didn't provide you anything useful, send it to
-linux-kernel@vger.kernel.org.
+CQX96-kernel@vger.cqx96.org.
 
-Thanks for your help in making Linux as stable as humanly possible.
+Thanks for your help in making CQX96 as stable as humanly possible.
 
 Fixing the bug
 --------------

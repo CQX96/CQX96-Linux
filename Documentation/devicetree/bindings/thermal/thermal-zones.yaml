@@ -8,7 +8,7 @@ $schema: http://devicetree.org/meta-schemas/base.yaml#
 title: Thermal zone binding
 
 maintainers:
-  - Amit Kucheria <amitk@kernel.org>
+  - Amit Kucheria <amitk@cqx96.org>
 
 description: |
   Thermal management is achieved in devicetree by describing the sensor hardware

@@ -4,7 +4,7 @@
 Histogram Design Notes
 ======================
 
-:Author: Tom Zanussi <zanussi@kernel.org>
+:Author: Tom Zanussi <zanussi@cqx96.org>
 
 This document attempts to provide a description of how the ftrace
 histograms work and how the individual pieces map to the data

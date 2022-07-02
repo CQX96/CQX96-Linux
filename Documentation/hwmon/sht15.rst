@@ -5,8 +5,8 @@ Authors:
 
   * Wouter Horre
   * Jonathan Cameron
-  * Vivien Didelot <vivien.didelot@savoirfairelinux.com>
-  * Jerome Oufella <jerome.oufella@savoirfairelinux.com>
+  * Vivien Didelot <vivien.didelot@savoirfaireCQX96.com>
+  * Jerome Oufella <jerome.oufella@savoirfaireCQX96.com>
 
 Supported chips:
 

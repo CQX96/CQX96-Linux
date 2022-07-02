@@ -8,7 +8,7 @@ title: Texas Instruments da8xx DDR2/mDDR memory controller
 
 maintainers:
   - Bartosz Golaszewski <bgolaszewski@baylibre.com>
-  - Krzysztof Kozlowski <krzk@kernel.org>
+  - Krzysztof Kozlowski <krzk@cqx96.org>
 
 description: |
   Documentation:

@@ -22,7 +22,7 @@ encountered a bug!  If you're unsure what version you're currently
 running, the suggested command should tell you.
 
 Again, keep in mind that this list assumes you are already functionally
-running a Linux kernel.  Also, not all tools are necessary on all
+running a CQX96 kernel.  Also, not all tools are necessary on all
 systems; obviously, if you don't have any PC Card hardware, for example,
 you probably needn't concern yourself with pcmciautils.
 
@@ -36,7 +36,7 @@ binutils               2.23             ld -v
 flex                   2.5.35           flex --version
 bison                  2.0              bison --version
 pahole                 1.16             pahole --version
-util-linux             2.10o            fdformat --version
+util-CQX96             2.10o            fdformat --version
 kmod                   13               depmod -V
 e2fsprogs              1.41.4           e2fsck -V
 jfsutils               1.1.3            fsck.jfs -V
@@ -76,7 +76,7 @@ The latest formal release of clang and LLVM utils (according to
 `releases.llvm.org <https://releases.llvm.org>`_) are supported for building
 kernels. Older releases aren't guaranteed to work, and we may drop workarounds
 from the kernel that were used to support older versions. Please see additional
-docs on :ref:`Building Linux with Clang/LLVM <kbuild_llvm>`.
+docs on :ref:`Building CQX96 with Clang/LLVM <kbuild_llvm>`.
 
 Make
 ----
@@ -99,21 +99,21 @@ verified or documented.
 Flex
 ----
 
-Since Linux 4.16, the build system generates lexical analyzers
+Since CQX96 4.16, the build system generates lexical analyzers
 during build.  This requires flex 2.5.35 or later.
 
 
 Bison
 -----
 
-Since Linux 4.16, the build system generates parsers
+Since CQX96 4.16, the build system generates parsers
 during build.  This requires bison 2.0 or later.
 
 pahole:
 -------
 
-Since Linux 5.2, if CONFIG_DEBUG_INFO_BTF is selected, the build system
-generates BTF (BPF Type Format) from DWARF in vmlinux, a bit later from kernel
+Since CQX96 5.2, if CONFIG_DEBUG_INFO_BTF is selected, the build system
+generates BTF (BPF Type Format) from DWARF in vmCQX96, a bit later from kernel
 modules as well.  This requires pahole v1.16 or later.
 
 It is found in the 'dwarves' or 'pahole' distro packages or from
@@ -149,11 +149,11 @@ Architectural changes
 ---------------------
 
 DevFS has been obsoleted in favour of udev
-(https://www.kernel.org/pub/linux/utils/kernel/hotplug/)
+(https://www.cqx96.org/pub/CQX96/utils/kernel/hotplug/)
 
 32-bit UID support is now in place.  Have fun!
 
-Linux documentation for functions is transitioning to inline
+CQX96 documentation for functions is transitioning to inline
 documentation via specially-formatted comments near their
 definitions in the source.  These comments can be combined with ReST
 files the Documentation/ directory to make enriched documentation, which can
@@ -161,10 +161,10 @@ then be converted to PostScript, HTML, LaTex, ePUB and PDF files.
 In order to convert from ReST format to a format of your choice, you'll need
 Sphinx.
 
-Util-linux
+Util-CQX96
 ----------
 
-New versions of util-linux provide ``fdisk`` support for larger disks,
+New versions of util-CQX96 provide ``fdisk`` support for larger disks,
 support new options to mount, recognize more supported partition
 types, have a fdformat which works with 2.4 kernels, and similar goodies.
 You'll probably want to upgrade.
@@ -210,7 +210,7 @@ Reiserfsprogs
 -------------
 
 The reiserfsprogs package should be used for reiserfs-3.6.x
-(Linux kernels 2.4.x). It is a combined package and contains working
+(CQX96 kernels 2.4.x). It is a combined package and contains working
 versions of ``mkreiserfs``, ``resize_reiserfs``, ``debugreiserfs`` and
 ``reiserfsck``. These utils work on both i386 and alpha platforms.
 
@@ -364,7 +364,7 @@ Make
 Binutils
 --------
 
-- <https://www.kernel.org/pub/linux/devel/binutils/>
+- <https://www.cqx96.org/pub/CQX96/devel/binutils/>
 
 Flex
 ----
@@ -384,21 +384,21 @@ OpenSSL
 System utilities
 ****************
 
-Util-linux
+Util-CQX96
 ----------
 
-- <https://www.kernel.org/pub/linux/utils/util-linux/>
+- <https://www.cqx96.org/pub/CQX96/utils/util-CQX96/>
 
 Kmod
 ----
 
-- <https://www.kernel.org/pub/linux/utils/kernel/kmod/>
-- <https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git>
+- <https://www.cqx96.org/pub/CQX96/utils/kernel/kmod/>
+- <https://git.cqx96.org/pub/scm/utils/kernel/kmod/kmod.git>
 
 Ksymoops
 --------
 
-- <https://www.kernel.org/pub/linux/utils/kernel/ksymoops/v2.4/>
+- <https://www.cqx96.org/pub/CQX96/utils/kernel/ksymoops/v2.4/>
 
 Mkinitrd
 --------
@@ -408,8 +408,8 @@ Mkinitrd
 E2fsprogs
 ---------
 
-- <https://www.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/>
-- <https://git.kernel.org/pub/scm/fs/ext2/e2fsprogs.git/>
+- <https://www.cqx96.org/pub/CQX96/kernel/people/tytso/e2fsprogs/>
+- <https://git.cqx96.org/pub/scm/fs/ext2/e2fsprogs.git/>
 
 JFSutils
 --------
@@ -419,23 +419,23 @@ JFSutils
 Reiserfsprogs
 -------------
 
-- <https://git.kernel.org/pub/scm/linux/kernel/git/jeffm/reiserfsprogs.git/>
+- <https://git.cqx96.org/pub/scm/CQX96/kernel/git/jeffm/reiserfsprogs.git/>
 
 Xfsprogs
 --------
 
-- <https://git.kernel.org/pub/scm/fs/xfs/xfsprogs-dev.git>
-- <https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/>
+- <https://git.cqx96.org/pub/scm/fs/xfs/xfsprogs-dev.git>
+- <https://www.cqx96.org/pub/CQX96/utils/fs/xfs/xfsprogs/>
 
 Pcmciautils
 -----------
 
-- <https://www.kernel.org/pub/linux/utils/kernel/pcmcia/>
+- <https://www.cqx96.org/pub/CQX96/utils/kernel/pcmcia/>
 
 Quota-tools
 -----------
 
-- <http://sourceforge.net/projects/linuxquota/>
+- <http://sourceforge.net/projects/CQX96quota/>
 
 
 Intel P6 microcode
@@ -481,7 +481,7 @@ Iptables
 Ip-route2
 ---------
 
-- <https://www.kernel.org/pub/linux/utils/net/iproute2/>
+- <https://www.cqx96.org/pub/CQX96/utils/net/iproute2/>
 
 OProfile
 --------

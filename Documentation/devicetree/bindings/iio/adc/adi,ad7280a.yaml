@@ -8,7 +8,7 @@ title: Analog Devices AD7280a Lithium Ion Battery Monitoring System
 
 maintainers:
   - Michael Hennerich <michael.hennerich@analog.com>
-  - Jonathan Cameron <jic23@kernel.org>
+  - Jonathan Cameron <jic23@cqx96.org>
 
 description: |
   Bindings for the Analog Devices AD7280a Battery Monitoring System.

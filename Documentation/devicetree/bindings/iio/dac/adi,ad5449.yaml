@@ -8,7 +8,7 @@ title: Analog Devices AD5449 and similar DACs
 
 maintainers:
   - Lars-Peter Clausen <lars@metafoo.de>
-  - Jonathan Cameron <jic23@kernel.org>
+  - Jonathan Cameron <jic23@cqx96.org>
 
 description:
   Family of multiplying DACs from Analog Devices

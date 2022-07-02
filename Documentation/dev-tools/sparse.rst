@@ -10,7 +10,7 @@ number of potential problems with kernel code.  See
 https://lwn.net/Articles/689907/ for an overview of sparse; this document
 contains some kernel-specific sparse information.
 More information on sparse, mainly about its internals, can be found in
-its official pages at https://sparse.docs.kernel.org.
+its official pages at https://sparse.docs.cqx96.org.
 
 
 Using sparse for typechecking
@@ -76,12 +76,12 @@ Getting sparse
 --------------
 
 You can get tarballs of the latest released versions from:
-https://www.kernel.org/pub/software/devel/sparse/dist/
+https://www.cqx96.org/pub/software/devel/sparse/dist/
 
 Alternatively, you can get snapshots of the latest development version
 of sparse using git to clone::
 
-        git://git.kernel.org/pub/scm/devel/sparse/sparse.git
+        git://git.cqx96.org/pub/scm/devel/sparse/sparse.git
 
 Once you have it, just do::
 

@@ -8,7 +8,7 @@ title: Allwinner A31 NMI/Wakeup Interrupt Controller Device Tree Bindings
 
 maintainers:
   - Chen-Yu Tsai <wens@csie.org>
-  - Maxime Ripard <mripard@kernel.org>
+  - Maxime Ripard <mripard@cqx96.org>
 
 allOf:
   - $ref: /schemas/interrupt-controller.yaml#

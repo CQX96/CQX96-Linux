@@ -9,8 +9,8 @@ title: Allwinner A10 S/PDIF Controller Device Tree Bindings
 maintainers:
   - Chen-Yu Tsai <wens@csie.org>
   - Liam Girdwood <lgirdwood@gmail.com>
-  - Mark Brown <broonie@kernel.org>
-  - Maxime Ripard <mripard@kernel.org>
+  - Mark Brown <broonie@cqx96.org>
+  - Maxime Ripard <mripard@cqx96.org>
 
 properties:
   "#sound-dai-cells":

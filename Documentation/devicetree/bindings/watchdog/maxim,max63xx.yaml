@@ -10,7 +10,7 @@ allOf:
   - $ref: "watchdog.yaml#"
 
 maintainers:
-  - Marc Zyngier <maz@kernel.org>
+  - Marc Zyngier <maz@cqx96.org>
   - Linus Walleij <linus.walleij@linaro.org>
 
 properties:

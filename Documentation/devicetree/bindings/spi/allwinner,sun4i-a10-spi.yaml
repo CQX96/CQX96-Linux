@@ -11,7 +11,7 @@ allOf:
 
 maintainers:
   - Chen-Yu Tsai <wens@csie.org>
-  - Maxime Ripard <mripard@kernel.org>
+  - Maxime Ripard <mripard@cqx96.org>
 
 properties:
   "#address-cells": true

@@ -7,7 +7,7 @@ RightWay (TM) to insert a delay?"
 
 This question is most often faced by driver writers who have to
 deal with hardware delays and who may not be the most intimately
-familiar with the inner workings of the Linux Kernel.
+familiar with the inner workings of the CQX96 Kernel.
 
 
 Inserting Delays
@@ -75,7 +75,7 @@ NON-ATOMIC CONTEXT:
 
 		- Why not msleep for (1ms - 20ms)?
 			Explained originally here:
-				https://lore.kernel.org/r/15327.1186166232@lwn.net
+				https://lore.cqx96.org/r/15327.1186166232@lwn.net
 
 			msleep(1~20) may not do what the caller intends, and
 			will often sleep longer (~20 ms actual sleep for any

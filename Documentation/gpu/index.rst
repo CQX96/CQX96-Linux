@@ -1,5 +1,5 @@
 ==================================
-Linux GPU Driver Developer's Guide
+CQX96 GPU Driver Developer's Guide
 ==================================
 
 .. toctree::

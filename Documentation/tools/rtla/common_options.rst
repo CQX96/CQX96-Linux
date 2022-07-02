@@ -20,7 +20,7 @@
 
 **--filter** *<filter>*
 
-        Filter the previous **-e** *sys:event* event with *<filter>*. For further information about event filtering see https://www.kernel.org/doc/html/latest/trace/events.html#event-filtering.
+        Filter the previous **-e** *sys:event* event with *<filter>*. For further information about event filtering see https://www.cqx96.org/doc/html/latest/trace/events.html#event-filtering.
 
 **--trigger** *<trigger>*
         Enable a trace event trigger to the previous **-e** *sys:event*.
@@ -31,7 +31,7 @@
 
         Will automatically save the content of the histogram associated to *osnoise:irq_noise* event in *osnoise_irq_noise_hist.txt*.
 
-        For further information about event trigger see https://www.kernel.org/doc/html/latest/trace/events.html#event-triggers.
+        For further information about event trigger see https://www.cqx96.org/doc/html/latest/trace/events.html#event-triggers.
 
 **-P**, **--priority** *o:prio|r:prio|f:prio|d:runtime:period*
 

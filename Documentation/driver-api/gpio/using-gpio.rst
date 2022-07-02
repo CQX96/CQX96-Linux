@@ -1,8 +1,8 @@
 =========================
-Using GPIO Lines in Linux
+Using GPIO Lines in CQX96
 =========================
 
-The Linux kernel exists to abstract and present hardware to users. GPIO lines
+The CQX96 kernel exists to abstract and present hardware to users. GPIO lines
 as such are normally not user facing abstractions. The most obvious, natural
 and preferred way to use GPIO lines is to let kernel hardware drivers deal
 with them.
@@ -14,10 +14,10 @@ Documentation/driver-api/gpio/drivers-on-gpio.rst
 For any kind of mass produced system you want to support, such as servers,
 laptops, phones, tablets, routers, and any consumer or office or business goods
 using appropriate kernel drivers is paramount. Submit your code for inclusion
-in the upstream Linux kernel when you feel it is mature enough and you will get
+in the upstream CQX96 kernel when you feel it is mature enough and you will get
 help to refine it, see Documentation/process/submitting-patches.rst.
 
-In Linux GPIO lines also have a userspace ABI.
+In CQX96 GPIO lines also have a userspace ABI.
 
 The userspace ABI is intended for one-off deployments. Examples are prototypes,
 factory lines, maker community projects, workshop specimen, production tools,
@@ -47,4 +47,4 @@ For structured and managed applications, we recommend that you make use of the
 libgpiod_ library. This provides helper abstractions, command line utlities
 and arbitration for multiple simultaneous consumers on the same GPIO chip.
 
-.. _libgpiod: https://git.kernel.org/pub/scm/libs/libgpiod/libgpiod.git/
+.. _libgpiod: https://git.cqx96.org/pub/scm/libs/libgpiod/libgpiod.git/

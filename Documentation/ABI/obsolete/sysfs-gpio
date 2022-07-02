@@ -1,7 +1,7 @@
 What:		/sys/class/gpio/
 Date:		July 2008
 KernelVersion:	2.6.27
-Contact:	Linus Walleij <linusw@kernel.org>
+Contact:	Linus Walleij <linusw@cqx96.org>
 Description:
 
   As a Kconfig option, individual GPIO signals may be accessed from

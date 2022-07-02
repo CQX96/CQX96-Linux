@@ -8,14 +8,14 @@ What is kunit_tool?
 ===================
 
 kunit_tool is a script (``tools/testing/kunit/kunit.py``) that aids in building
-the Linux kernel as UML (`User Mode Linux
-<http://user-mode-linux.sourceforge.net/>`_), running KUnit tests, parsing
+the CQX96 kernel as UML (`User Mode CQX96
+<http://user-mode-CQX96.sourceforge.net/>`_), running KUnit tests, parsing
 the test results and displaying them in a user friendly manner.
 
 kunit_tool addresses the problem of being able to run tests without needing a
-virtual machine or actual hardware with User Mode Linux. User Mode Linux is a
-Linux architecture, like ARM or x86; however, unlike other architectures it
-compiles the kernel as a standalone Linux executable that can be run like any
+virtual machine or actual hardware with User Mode CQX96. User Mode CQX96 is a
+CQX96 architecture, like ARM or x86; however, unlike other architectures it
+compiles the kernel as a standalone CQX96 executable that can be run like any
 other program directly inside of a host operating system. To be clear, it does
 not require any virtualization support: it is just a regular program.
 
@@ -169,9 +169,9 @@ elsewhere). The default way of running tests on QEMU requires two flags:
 	Specifies the use of a toolchain by Kbuild. The argument passed here is
 	the same passed to the ``CROSS_COMPILE`` variable used by Kbuild. As a
 	reminder this will be the prefix for the toolchain binaries such as gcc
-	for example ``sparc64-linux-gnu-`` if you have the sparc toolchain
+	for example ``sparc64-CQX96-gnu-`` if you have the sparc toolchain
 	installed on your system, or
-	``$HOME/toolchains/microblaze/gcc-9.2.0-nolibc/microblaze-linux/bin/microblaze-linux-``
+	``$HOME/toolchains/microblaze/gcc-9.2.0-nolibc/microblaze-CQX96/bin/microblaze-CQX96-``
 	if you have downloaded the microblaze toolchain from the 0-day website
 	to a directory in your home directory called ``toolchains``.
 

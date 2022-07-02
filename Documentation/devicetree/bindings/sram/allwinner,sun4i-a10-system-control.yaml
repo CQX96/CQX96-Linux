@@ -8,7 +8,7 @@ title: Allwinner A10 System Control Device Tree Bindings
 
 maintainers:
   - Chen-Yu Tsai <wens@csie.org>
-  - Maxime Ripard <mripard@kernel.org>
+  - Maxime Ripard <mripard@cqx96.org>
 
 description:
   The SRAM controller found on most Allwinner devices is represented

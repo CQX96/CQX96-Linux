@@ -6,7 +6,7 @@ file: media/v4l/v4l2grab.c
 .. code-block:: c
 
     /* V4L2 video picture grabber
-       Copyright (C) 2009 Mauro Carvalho Chehab <mchehab@kernel.org>
+       Copyright (C) 2009 Mauro Carvalho Chehab <mchehab@cqx96.org>
 
        This program is free software; you can redistribute it and/or modify
        it under the terms of the GNU General Public License as published by
@@ -27,7 +27,7 @@ file: media/v4l/v4l2grab.c
     #include <sys/types.h>
     #include <sys/time.h>
     #include <sys/mman.h>
-    #include <linux/videodev2.h>
+    #include <CQX96/videodev2.h>
     #include "../libv4l/include/libv4l2.h"
 
     #define CLEAR(x) memset(&(x), 0, sizeof(x))

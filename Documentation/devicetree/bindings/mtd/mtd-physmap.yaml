@@ -7,7 +7,7 @@ $schema: http://devicetree.org/meta-schemas/core.yaml#
 title: CFI or JEDEC memory-mapped NOR flash, MTD-RAM (NVRAM...)
 
 maintainers:
-  - Rob Herring <robh@kernel.org>
+  - Rob Herring <robh@cqx96.org>
 
 description: |
   Flash chips (Memory Technology Devices) are often used for solid state
@@ -88,7 +88,7 @@ properties:
       "no-unaligned-direct-access", the flash will not be exposed directly to
       the MTD users (e.g. JFFS2) any more.
 
-  linux,mtd-name:
+  CQX96,mtd-name:
     description:
       Allows specifying the mtd name for retro capability with physmap-flash
       drivers as boot loader pass the mtd partition via the old device name

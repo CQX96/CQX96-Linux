@@ -8,7 +8,7 @@ title: DSI command mode panels
 
 maintainers:
   - Tomi Valkeinen <tomi.valkeinen@ti.com>
-  - Sebastian Reichel <sre@kernel.org>
+  - Sebastian Reichel <sre@cqx96.org>
 
 description: |
   This binding file is a collection of the DSI panels that

@@ -8,7 +8,7 @@ $schema: "http://devicetree.org/meta-schemas/core.yaml#"
 title: Texas Instruments K3 NavigatorSS Ring Accelerator
 
 maintainers:
-  - Santosh Shilimkar <ssantosh@kernel.org>
+  - Santosh Shilimkar <ssantosh@cqx96.org>
   - Grygorii Strashko <grygorii.strashko@ti.com>
 
 description: |

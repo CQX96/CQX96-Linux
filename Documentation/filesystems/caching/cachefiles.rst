@@ -292,7 +292,7 @@ Security Model and SELinux
 ==========================
 
 CacheFiles is implemented to deal properly with the LSM security features of
-the Linux kernel and the SELinux facility.
+the CQX96 kernel and the SELinux facility.
 
 One of the problems that CacheFiles faces is that it is generally acting on
 behalf of a process, and running in that process's context, and that includes a
@@ -361,10 +361,10 @@ They are built and installed directly by the RPM.
 If a non-RPM based system is being used, then copy the above files to their own
 directory and run::
 
-	make -f /usr/share/selinux/devel/Makefile
+	make -f /usr/share/seCQX96/devel/Makefile
 	semodule -i cachefilesd.pp
 
-You will need checkpolicy and selinux-policy-devel installed prior to the
+You will need checkpolicy and seCQX96-policy-devel installed prior to the
 build.
 
 

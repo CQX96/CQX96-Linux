@@ -7,7 +7,7 @@ $schema: http://devicetree.org/meta-schemas/core.yaml#
 title: ARM Primecell Peripherals
 
 maintainers:
-  - Rob Herring <robh@kernel.org>
+  - Rob Herring <robh@cqx96.org>
 
 description: |+
   ARM, Ltd. Primecell peripherals have a standard id register that can be used to

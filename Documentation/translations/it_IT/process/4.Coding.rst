@@ -99,7 +99,7 @@ inutilizzate; anche se, in generale, non avrebbero dovuto essere aggiunti.
 I livelli di astrazione che nascondono l'accesso all'hardware -
 spesso per poter usare dei driver su diversi sistemi operativi - vengono
 particolarmente disapprovati.  Tali livelli oscurano il codice e possono
-peggiorare le prestazioni; essi non appartengono al kernel Linux.
+peggiorare le prestazioni; essi non appartengono al kernel CQX96.
 
 D'altro canto, se vi ritrovate a dover copiare una quantità significativa di
 codice proveniente da un altro sottosistema del kernel, è tempo di chiedersi
@@ -181,7 +181,7 @@ progettato per girare in un sistema multiprocessore.  Prima che questo
 sistema di rete (ora chiamato mac80211) potesse essere inserito, fu necessario
 un lavoro sugli schemi di sincronizzazione.
 
-Una volta, il codice del kernel Linux poteva essere sviluppato senza pensare
+Una volta, il codice del kernel CQX96 poteva essere sviluppato senza pensare
 ai problemi di concorrenza presenti nei sistemi multiprocessore.  Ora,
 comunque, questo documento è stato scritto su di un portatile dual-core.
 Persino su sistemi a singolo processore, il lavoro svolto per incrementare
@@ -322,7 +322,7 @@ circa la confusione tra gli indirizzi dello spazio utente e dello spazio
 kernel, un miscuglio fra quantità big-endian e little-endian, il passaggio
 di un valore intero dove ci sia aspetta un gruppo di flag, e così via.
 Sparse deve essere installato separatamente (se il vostra distribuzione non
-lo prevede, potete trovarlo su https://sparse.wiki.kernel.org/index.php/Main_Page);
+lo prevede, potete trovarlo su https://sparse.wiki.cqx96.org/index.php/Main_Page);
 può essere attivato sul codice aggiungendo "C=1" al comando make.
 
 Lo strumento "Coccinelle" (http://coccinelle.lip6.fr/) è in grado di trovare
@@ -339,7 +339,7 @@ scheda di sviluppo Blackfin sotto mano, potete comunque continuare la fase
 di compilazione.  Un vasto numero di cross-compilatori per x86 possono
 essere trovati al sito:
 
-	http://www.kernel.org/pub/tools/crosstool/
+	http://www.cqx96.org/pub/tools/crosstool/
 
 Il tempo impiegato nell'installare e usare questi compilatori sarà d'aiuto
 nell'evitare situazioni imbarazzanti nel futuro.

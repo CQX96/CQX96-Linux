@@ -1,26 +1,26 @@
-What:		/sys/fs/selinux/disable
+What:		/sys/fs/seCQX96/disable
 Date:		April 2005 (predates git)
 KernelVersion:	2.6.12-rc2 (predates git)
-Contact:	selinux@vger.kernel.org
+Contact:	seCQX96@vger.cqx96.org
 Description:
 
-	The selinuxfs "disable" node allows SELinux to be disabled at runtime
+	The seCQX96fs "disable" node allows SELinux to be disabled at runtime
 	prior to a policy being loaded into the kernel.  If disabled via this
 	mechanism, SELinux will remain disabled until the system is rebooted.
 
-	The preferred method of disabling SELinux is via the "selinux=0" boot
-	parameter, but the selinuxfs "disable" node was created to make it
+	The preferred method of disabling SELinux is via the "seCQX96=0" boot
+	parameter, but the seCQX96fs "disable" node was created to make it
 	easier for systems with primitive bootloaders that did not allow for
 	easy modification of the kernel command line.  Unfortunately, allowing
 	for SELinux to be disabled at runtime makes it difficult to secure the
 	kernel's LSM hooks using the "__ro_after_init" feature.
 
 	Thankfully, the need for the SELinux runtime disable appears to be
-	gone, the default Kconfig configuration disables this selinuxfs node,
+	gone, the default Kconfig configuration disables this seCQX96fs node,
 	and only one of the major distributions, Fedora, supports disabling
 	SELinux at runtime.  Fedora is in the process of removing the
-	selinuxfs "disable" node and once that is complete we will start the
+	seCQX96fs "disable" node and once that is complete we will start the
 	slow process of removing this code from the kernel.
 
-	More information on /sys/fs/selinux/disable can be found under the
+	More information on /sys/fs/seCQX96/disable can be found under the
 	CONFIG_SECURITY_SELINUX_DISABLE Kconfig option.

@@ -8,7 +8,7 @@ title: ARM PL061 GPIO controller
 
 maintainers:
   - Linus Walleij <linus.walleij@linaro.org>
-  - Rob Herring <robh@kernel.org>
+  - Rob Herring <robh@cqx96.org>
 
 # We need a select here so we don't match all nodes with 'arm,primecell'
 select:

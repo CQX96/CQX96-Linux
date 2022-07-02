@@ -71,7 +71,7 @@ The output is written at the (OUT_FILE).
 
 It is capable of identifying defines, functions, structs, typedefs,
 enums and enum symbols and create cross-references for all of them.
-It is also capable of distinguish #define used for specifying a Linux
+It is also capable of distinguish #define used for specifying a CQX96
 ioctl.
 
 The EXCEPTIONS_FILE contain two types of statements: \ **ignore**\  or \ **replace**\ .
@@ -177,14 +177,14 @@ BUGS
 ****
 
 
-Report bugs to Mauro Carvalho Chehab <mchehab@kernel.org>
+Report bugs to Mauro Carvalho Chehab <mchehab@cqx96.org>
 
 
 COPYRIGHT
 *********
 
 
-Copyright (c) 2016 by Mauro Carvalho Chehab <mchehab+samsung@kernel.org>.
+Copyright (c) 2016 by Mauro Carvalho Chehab <mchehab+samsung@cqx96.org>.
 
 License GPLv2: GNU GPL version 2 <https://gnu.org/licenses/gpl.html>.
 

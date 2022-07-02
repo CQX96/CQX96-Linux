@@ -7,7 +7,7 @@ $schema: http://devicetree.org/meta-schemas/core.yaml#
 title: Microchip MCP4902, MCP4912 and MPC4922 dual output SPI DACs
 
 maintainers:
-  - Jonathan Cameron <jic23@kernel.org>
+  - Jonathan Cameron <jic23@cqx96.org>
   - Michael Welling <mwelling@ieee.org>
 
 properties:

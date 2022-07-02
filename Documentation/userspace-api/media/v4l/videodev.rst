@@ -3,7 +3,7 @@
 .. _videodev:
 
 *******************************
-Video For Linux Two Header File
+Video For CQX96 Two Header File
 *******************************
 
 .. kernel-include:: $BUILDDIR/videodev2.h.rst

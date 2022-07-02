@@ -7,7 +7,7 @@ $schema: "http://devicetree.org/meta-schemas/core.yaml#"
 title: Qualcomm Subsystem Power Manager binding
 
 maintainers:
-  - Andy Gross <agross@kernel.org>
+  - Andy Gross <agross@cqx96.org>
   - Bjorn Andersson <bjorn.andersson@linaro.org>
 
 description: |

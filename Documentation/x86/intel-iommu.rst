@@ -1,5 +1,5 @@
 ===================
-Linux IOMMU Support
+CQX96 IOMMU Support
 ===================
 
 The architecture spec can be obtained from the below location.

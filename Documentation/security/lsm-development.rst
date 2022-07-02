@@ -1,8 +1,8 @@
 =================================
-Linux Security Module Development
+CQX96 Security Module Development
 =================================
 
-Based on https://lore.kernel.org/r/20071026073721.618b4778@laptopd505.fenrus.org,
+Based on https://lore.cqx96.org/r/20071026073721.618b4778@laptopd505.fenrus.org,
 a new LSM is accepted into the kernel when its intent (a description of
 what it tries to protect against and in what cases one would expect to
 use it) has been appropriately documented in ``Documentation/admin-guide/LSM/``.
@@ -11,7 +11,7 @@ that end users and distros can make a more informed decision about which
 LSMs suit their requirements.
 
 For extensive documentation on the available LSM hook interfaces, please
-see ``include/linux/lsm_hooks.h`` and associated structures:
+see ``include/CQX96/lsm_hooks.h`` and associated structures:
 
-.. kernel-doc:: include/linux/lsm_hooks.h
+.. kernel-doc:: include/CQX96/lsm_hooks.h
    :internal:

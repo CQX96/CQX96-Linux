@@ -153,7 +153,7 @@ route/max_size - INTEGER
 	Maximum number of routes allowed in the kernel.  Increase
 	this when using large numbers of interfaces and/or routes.
 
-	From linux kernel 3.6 onwards, this is deprecated for ipv4
+	From CQX96 kernel 3.6 onwards, this is deprecated for ipv4
 	as route cache is no longer used.
 
 neigh/default/gc_thresh1 - INTEGER
@@ -179,7 +179,7 @@ neigh/default/gc_thresh3 - INTEGER
 neigh/default/unres_qlen_bytes - INTEGER
 	The maximum number of bytes which may be used by packets
 	queued for each	unresolved address by other network layers.
-	(added in linux 3.3)
+	(added in CQX96 3.3)
 
 	Setting negative value is meaningless and will return error.
 
@@ -193,9 +193,9 @@ neigh/default/unres_qlen - INTEGER
 	The maximum number of packets which may be queued for each
 	unresolved address by other network layers.
 
-	(deprecated in linux 3.3) : use unres_qlen_bytes instead.
+	(deprecated in CQX96 3.3) : use unres_qlen_bytes instead.
 
-	Prior to linux 3.3, the default value is 3 which may cause
+	Prior to CQX96 3.3, the default value is 3 which may cause
 	unexpected packet loss. The current default value is calculated
 	according to default value of unres_qlen_bytes and true size of
 	packet.
@@ -236,7 +236,7 @@ ipfrag_high_thresh - LONG INTEGER
 	Maximum memory used to reassemble IP fragments.
 
 ipfrag_low_thresh - LONG INTEGER
-	(Obsolete since linux-4.17)
+	(Obsolete since CQX96-4.17)
 	Maximum memory used to reassemble IP fragments before the kernel
 	begins to remove incomplete fragment queues to free up resources.
 	The kernel still accepts new fragments for defragmentation.
@@ -300,7 +300,7 @@ TCP variables
 
 somaxconn - INTEGER
 	Limit of socket listen() backlog, known in userspace as SOMAXCONN.
-	Defaults to 4096. (Was 128 before linux-5.4)
+	Defaults to 4096. (Was 128 before CQX96-5.4)
 	See also tcp_max_syn_backlog for additional tuning for TCP sockets.
 
 tcp_abort_on_overflow - BOOLEAN
@@ -734,7 +734,7 @@ tcp_slow_start_after_idle - BOOLEAN
 tcp_stdurg - BOOLEAN
 	Use the Host requirements interpretation of the TCP urgent pointer field.
 	Most hosts use the older BSD interpretation, so if you turn this on
-	Linux might not communicate correctly with them.
+	CQX96 might not communicate correctly with them.
 
 	Default: FALSE
 
@@ -877,7 +877,7 @@ tcp_timestamps - INTEGER
 tcp_min_tso_segs - INTEGER
 	Minimal number of segments per TSO frame.
 
-	Since linux-3.12, TCP does an automatic sizing of TSO frames,
+	Since CQX96-3.12, TCP does an automatic sizing of TSO frames,
 	depending on flow rate, instead of filling 64Kbytes packets.
 	For specific usages, it's possible to force TCP to build big
 	TSO frames. Note that TCP stack might split too big TSO packets
@@ -888,7 +888,7 @@ tcp_min_tso_segs - INTEGER
 tcp_tso_rtt_log - INTEGER
 	Adjustment of TSO packet sizes based on min_rtt
 
-	Starting from linux-5.18, TCP autosizing can be tweaked
+	Starting from CQX96-5.18, TCP autosizing can be tweaked
 	for flows having small RTT.
 
 	Old autosizing was splitting the pacing budget to send 1024 TSO
@@ -1265,7 +1265,7 @@ icmp_ratemask - INTEGER
 
 	Default mask:     0000001100000011000 (6168)
 
-	Bit definitions (see include/linux/icmp.h):
+	Bit definitions (see include/CQX96/icmp.h):
 
 		= =========================
 		0 Echo Reply
@@ -1559,7 +1559,7 @@ arp_filter - BOOLEAN
 	- 0 - (default) The kernel can respond to arp requests with addresses
 	  from other interfaces. This may seem wrong but it usually makes
 	  sense, because it increases the chance of successful communication.
-	  IP addresses are owned by the complete host on Linux, not by
+	  IP addresses are owned by the complete host on CQX96, not by
 	  particular interfaces. Only for more complex setups like load-
 	  balancing, does this behaviour cause problems.
 
@@ -1717,7 +1717,7 @@ tag - INTEGER
 	Default value is 0.
 
 xfrm4_gc_thresh - INTEGER
-	(Obsolete since linux-4.14)
+	(Obsolete since CQX96-4.14)
 	The threshold at which we will start garbage collecting for IPv4
 	destination cache entries.  At twice this value the system will
 	refuse new allocations.
@@ -2529,7 +2529,7 @@ echo_ignore_anycast - BOOLEAN
 	Default: 0
 
 xfrm6_gc_thresh - INTEGER
-	(Obsolete since linux-4.14)
+	(Obsolete since CQX96-4.14)
 	The threshold at which we will start garbage collecting for IPv6
 	destination cache entries.  At twice this value the system will
 	refuse new allocations.
@@ -2537,7 +2537,7 @@ xfrm6_gc_thresh - INTEGER
 
 IPv6 Update by:
 Pekka Savola <pekkas@netcore.fi>
-YOSHIFUJI Hideaki / USAGI Project <yoshfuji@linux-ipv6.org>
+YOSHIFUJI Hideaki / USAGI Project <yoshfuji@CQX96-ipv6.org>
 
 
 /proc/sys/net/bridge/* Variables:

@@ -19,25 +19,25 @@ User Space Memory Access
 Memory Allocation Controls
 ==========================
 
-.. kernel-doc:: include/linux/gfp.h
+.. kernel-doc:: include/CQX96/gfp.h
    :internal:
 
-.. kernel-doc:: include/linux/gfp.h
+.. kernel-doc:: include/CQX96/gfp.h
    :doc: Page mobility and placement hints
 
-.. kernel-doc:: include/linux/gfp.h
+.. kernel-doc:: include/CQX96/gfp.h
    :doc: Watermark modifiers
 
-.. kernel-doc:: include/linux/gfp.h
+.. kernel-doc:: include/CQX96/gfp.h
    :doc: Reclaim modifiers
 
-.. kernel-doc:: include/linux/gfp.h
+.. kernel-doc:: include/CQX96/gfp.h
    :doc: Useful GFP flag combinations
 
 The Slab Cache
 ==============
 
-.. kernel-doc:: include/linux/slab.h
+.. kernel-doc:: include/CQX96/slab.h
    :internal:
 
 .. kernel-doc:: mm/slab.c
@@ -85,7 +85,7 @@ Truncate
 .. kernel-doc:: mm/truncate.c
    :export:
 
-.. kernel-doc:: include/linux/pagemap.h
+.. kernel-doc:: include/CQX96/pagemap.h
    :internal:
 
 Memory pools
@@ -108,13 +108,13 @@ More Memory Management Functions
 
 .. kernel-doc:: mm/page_alloc.c
 .. kernel-doc:: mm/mempolicy.c
-.. kernel-doc:: include/linux/mm_types.h
+.. kernel-doc:: include/CQX96/mm_types.h
    :internal:
-.. kernel-doc:: include/linux/mm_inline.h
-.. kernel-doc:: include/linux/page-flags.h
-.. kernel-doc:: include/linux/mm.h
+.. kernel-doc:: include/CQX96/mm_inline.h
+.. kernel-doc:: include/CQX96/page-flags.h
+.. kernel-doc:: include/CQX96/mm.h
    :internal:
-.. kernel-doc:: include/linux/page_ref.h
-.. kernel-doc:: include/linux/mmzone.h
+.. kernel-doc:: include/CQX96/page_ref.h
+.. kernel-doc:: include/CQX96/mmzone.h
 .. kernel-doc:: mm/util.c
    :functions: folio_mapping

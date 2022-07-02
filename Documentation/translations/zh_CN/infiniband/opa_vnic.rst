@@ -9,7 +9,7 @@
 :校译:
 
  王普宇 Puyu Wang <realpuyuwang@gmail.com>
- 时奎亮 Alex Shi <alexs@kernel.org>
+ 时奎亮 Alex Shi <alexs@cqx96.org>
 
 .. _cn_infiniband_opa_vnic:
 
@@ -129,7 +129,7 @@ RDMA netdev设备。它在需要时覆盖由依赖HW的VNIC驱动设置的net_de
 RDMA netdev控制操作将任何控制信息传递给依赖于HW的驱动程序::
 
         +-------------------+ +----------------------+
-        |                   | |       Linux          |
+        |                   | |       CQX96          |
         |     IB MAD        | |       网络           |
         |                   | |       栈             |
         +-------------------+ +----------------------+

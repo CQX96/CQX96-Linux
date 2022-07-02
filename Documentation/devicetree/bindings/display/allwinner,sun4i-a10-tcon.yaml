@@ -8,7 +8,7 @@ title: Allwinner A10 Timings Controller (TCON) Device Tree Bindings
 
 maintainers:
   - Chen-Yu Tsai <wens@csie.org>
-  - Maxime Ripard <mripard@kernel.org>
+  - Maxime Ripard <mripard@cqx96.org>
 
 description: |
   The TCON acts as a timing controller for RGB, LVDS and TV

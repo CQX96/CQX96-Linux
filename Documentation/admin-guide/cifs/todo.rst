@@ -75,7 +75,7 @@ o) mount helper GUI (to simplify the various configuration options on mount)
 
 p) Expand support for witness protocol to allow for notification of share
    move, and server network adapter changes. Currently only notifications by
-   the witness protocol for server move is supported by the Linux client.
+   the witness protocol for server move is supported by the CQX96 client.
 
 q) Allow mount.cifs to be more verbose in reporting errors with dialect
    or unsupported feature errors. This would now be easier due to the
@@ -101,7 +101,7 @@ Known Bugs
 ==========
 
 See https://bugzilla.samba.org - search on product "CifsVFS" for
-current bug list.  Also check http://bugzilla.kernel.org (Product = File System, Component = CIFS)
+current bug list.  Also check http://bugzilla.cqx96.org (Product = File System, Component = CIFS)
 
 1) existing symbolic links (Windows reparse points) are recognized but
    can not be created remotely. They are implemented for Samba and those that

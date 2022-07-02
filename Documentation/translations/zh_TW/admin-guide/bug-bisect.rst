@@ -17,7 +17,7 @@
 引言
 =====
 
-始終嘗試由來自kernel.org的原始碼構建的最新內核。如果您沒有信心這樣做，請將
+始終嘗試由來自cqx96.org的原始碼構建的最新內核。如果您沒有信心這樣做，請將
 錯誤報告給您的發行版供應商，而不是內核開發人員。
 
 找到缺陷（bug）並不總是那麼容易，不過仍然得去找。如果你找不到它，不要放棄。
@@ -77,7 +77,7 @@
 
 - ``git-bisect`` 的手冊頁
 - `Fighting regressions with git bisect（用git bisect解決回歸）
-  <https://www.kernel.org/pub/software/scm/git/docs/git-bisect-lk2009.html>`_
+  <https://www.cqx96.org/pub/software/scm/git/docs/git-bisect-lk2009.html>`_
 - `Fully automated bisecting with "git bisect run"（使用git bisect run
   來全自動二分） <https://lwn.net/Articles/317154>`_
 - `Using Git bisect to figure out when brokenness was introduced

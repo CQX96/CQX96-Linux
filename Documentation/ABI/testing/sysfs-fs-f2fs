@@ -70,19 +70,19 @@ Description:	Controls the FS utilization condition for the in-place-update
 
 What:		/sys/fs/f2fs/<disk>/min_fsync_blocks
 Date:		September 2014
-Contact:	"Jaegeuk Kim" <jaegeuk@kernel.org>
+Contact:	"Jaegeuk Kim" <jaegeuk@cqx96.org>
 Description:	Controls the dirty page count condition for the in-place-update
 		policies.
 
 What:		/sys/fs/f2fs/<disk>/min_seq_blocks
 Date:		August 2018
-Contact:	"Jaegeuk Kim" <jaegeuk@kernel.org>
+Contact:	"Jaegeuk Kim" <jaegeuk@cqx96.org>
 Description:	Controls the dirty page count condition for batched sequential
 		writes in writepages.
 
 What:		/sys/fs/f2fs/<disk>/min_hot_blocks
 Date:		March 2017
-Contact:	"Jaegeuk Kim" <jaegeuk@kernel.org>
+Contact:	"Jaegeuk Kim" <jaegeuk@cqx96.org>
 Description:	Controls the dirty page count condition for redefining hot data.
 
 What:		/sys/fs/f2fs/<disk>/min_ssr_sections
@@ -136,13 +136,13 @@ Description:	Controls discard granularity of inner discard thread. Inner thread
 
 What:		/sys/fs/f2fs/<disk>/umount_discard_timeout
 Date:		January 2019
-Contact:	"Jaegeuk Kim" <jaegeuk@kernel.org>
+Contact:	"Jaegeuk Kim" <jaegeuk@cqx96.org>
 Description:	Set timeout to issue discard commands during umount.
 	        Default: 5 secs
 
 What:		/sys/fs/f2fs/<disk>/pending_discard
 Date:		November 2021
-Contact:	"Jaegeuk Kim" <jaegeuk@kernel.org>
+Contact:	"Jaegeuk Kim" <jaegeuk@cqx96.org>
 Description:	Shows the number of pending discard commands in the queue.
 
 What:		/sys/fs/f2fs/<disk>/max_victim_search
@@ -178,18 +178,18 @@ Description:	Controls the memory footprint used by free nids and cached
 
 What:		/sys/fs/f2fs/<disk>/batched_trim_sections
 Date:		February 2015
-Contact:	"Jaegeuk Kim" <jaegeuk@kernel.org>
+Contact:	"Jaegeuk Kim" <jaegeuk@cqx96.org>
 Description:	Controls the trimming rate in batch mode.
 		<deprecated>
 
 What:		/sys/fs/f2fs/<disk>/cp_interval
 Date:		October 2015
-Contact:	"Jaegeuk Kim" <jaegeuk@kernel.org>
+Contact:	"Jaegeuk Kim" <jaegeuk@cqx96.org>
 Description:	Controls the checkpoint timing, set to 60 seconds by default.
 
 What:		/sys/fs/f2fs/<disk>/idle_interval
 Date:		January 2016
-Contact:	"Jaegeuk Kim" <jaegeuk@kernel.org>
+Contact:	"Jaegeuk Kim" <jaegeuk@cqx96.org>
 Description:	Controls the idle timing of system, if there is no FS operation
 		during given interval.
 		Set to 5 seconds by default.
@@ -234,7 +234,7 @@ Description:	Shows total written kbytes issued to disk.
 
 What:		/sys/fs/f2fs/<disk>/features
 Date:		July 2017
-Contact:	"Jaegeuk Kim" <jaegeuk@kernel.org>
+Contact:	"Jaegeuk Kim" <jaegeuk@cqx96.org>
 Description:	<deprecated: should use /sys/fs/f2fs/<disk>/feature_list/
 		Shows all enabled features in current device.
 		Supported features:
@@ -244,7 +244,7 @@ Description:	<deprecated: should use /sys/fs/f2fs/<disk>/feature_list/
 
 What:		/sys/fs/f2fs/<disk>/feature_list/
 Date:		June 2021
-Contact:	"Jaegeuk Kim" <jaegeuk@kernel.org>
+Contact:	"Jaegeuk Kim" <jaegeuk@cqx96.org>
 Description:	Expand /sys/fs/f2fs/<disk>/features to meet sysfs rule.
 		Supported on-disk features:
 		encryption, block_zoned (aka blkzoned), extra_attr,
@@ -255,7 +255,7 @@ Description:	Expand /sys/fs/f2fs/<disk>/features to meet sysfs rule.
 
 What:		/sys/fs/f2fs/features/
 Date:		July 2017
-Contact:	"Jaegeuk Kim" <jaegeuk@kernel.org>
+Contact:	"Jaegeuk Kim" <jaegeuk@cqx96.org>
 Description:	Shows all enabled kernel features.
 		Supported features:
 		encryption, block_zoned, extra_attr, project_quota,
@@ -276,7 +276,7 @@ Description:	Controls the injection type of arbitrary faults.
 
 What:		/sys/fs/f2fs/<disk>/dirty_segments
 Date:		October 2017
-Contact:	"Jaegeuk Kim" <jaegeuk@kernel.org>
+Contact:	"Jaegeuk Kim" <jaegeuk@cqx96.org>
 Description:	Shows the number of dirty segments.
 
 What:		/sys/fs/f2fs/<disk>/reserved_blocks
@@ -296,7 +296,7 @@ Description:	Shows current reserved blocks in system, it may be temporarily
 
 What:		/sys/fs/f2fs/<disk>/gc_urgent
 Date:		August 2017
-Contact:	"Jaegeuk Kim" <jaegeuk@kernel.org>
+Contact:	"Jaegeuk Kim" <jaegeuk@cqx96.org>
 Description:	Do background GC aggressively when set. Set to 0 by default.
 		gc urgent high(1): does GC forcibly in a period of given
 		gc_urgent_sleep_time and ignores I/O idling check. uses greedy
@@ -310,7 +310,7 @@ Description:	Do background GC aggressively when set. Set to 0 by default.
 
 What:		/sys/fs/f2fs/<disk>/gc_urgent_sleep_time
 Date:		August 2017
-Contact:	"Jaegeuk Kim" <jaegeuk@kernel.org>
+Contact:	"Jaegeuk Kim" <jaegeuk@cqx96.org>
 Description:	Controls sleep time of GC urgent mode. Set to 500ms by default.
 
 What:		/sys/fs/f2fs/<disk>/readdir_ra
@@ -320,7 +320,7 @@ Description:	Controls readahead inode block in readdir. Enabled by default.
 
 What:		/sys/fs/f2fs/<disk>/gc_pin_file_thresh
 Date:		January 2018
-Contact:	Jaegeuk Kim <jaegeuk@kernel.org>
+Contact:	Jaegeuk Kim <jaegeuk@cqx96.org>
 Description:	This indicates how many GC can be failed for the pinned
 		file. If it exceeds this, F2FS doesn't guarantee its pinning
 		state. 2048 trials is set by default.
@@ -398,12 +398,12 @@ Description:	Average number of valid blocks.
 
 What:		/sys/fs/f2fs/<disk>/mounted_time_sec
 Date:		February 2020
-Contact:	"Jaegeuk Kim" <jaegeuk@kernel.org>
+Contact:	"Jaegeuk Kim" <jaegeuk@cqx96.org>
 Description:	Show the mounted time in secs of this partition.
 
 What:		/sys/fs/f2fs/<disk>/data_io_flag
 Date:		April 2020
-Contact:	"Jaegeuk Kim" <jaegeuk@kernel.org>
+Contact:	"Jaegeuk Kim" <jaegeuk@cqx96.org>
 Description:	Give a way to attach REQ_META|FUA to data writes
 		given temperature-based bits. Now the bits indicate:
 
@@ -417,7 +417,7 @@ Description:	Give a way to attach REQ_META|FUA to data writes
 
 What:		/sys/fs/f2fs/<disk>/node_io_flag
 Date:		June 2020
-Contact:	"Jaegeuk Kim" <jaegeuk@kernel.org>
+Contact:	"Jaegeuk Kim" <jaegeuk@cqx96.org>
 Description:	Give a way to attach REQ_META|FUA to node writes
 		given temperature-based bits. Now the bits indicate:
 
@@ -436,7 +436,7 @@ Description:	Give a way to change iostat_period time. 3secs by default.
 		The new iostat trace gives stats gap given the period.
 What:		/sys/fs/f2fs/<disk>/max_io_bytes
 Date:		December 2020
-Contact:	"Jaegeuk Kim" <jaegeuk@kernel.org>
+Contact:	"Jaegeuk Kim" <jaegeuk@cqx96.org>
 Description:	This gives a control to limit the bio size in f2fs.
 		Default is zero, which will follow underlying block layer limit,
 		whereas, if it has a certain bytes value, f2fs won't submit a
@@ -477,7 +477,7 @@ Description:	Give a way to change checkpoint merge daemon's io priority.
 
 What:		/sys/fs/f2fs/<disk>/ovp_segments
 Date:		March 2021
-Contact:	"Jaegeuk Kim" <jaegeuk@kernel.org>
+Contact:	"Jaegeuk Kim" <jaegeuk@cqx96.org>
 Description:	Shows the number of overprovision segments.
 
 What:		/sys/fs/f2fs/<disk>/compr_written_block
@@ -577,6 +577,6 @@ Description:	You can set the trial count limit for GC urgent high mode with this
 
 What:		/sys/fs/f2fs/<disk>/max_roll_forward_node_blocks
 Date:		January 2022
-Contact:	"Jaegeuk Kim" <jaegeuk@kernel.org>
+Contact:	"Jaegeuk Kim" <jaegeuk@cqx96.org>
 Description:	Controls max # of node block writes to be used for roll forward
 		recovery. This can limit the roll forward recovery time.

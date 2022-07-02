@@ -8,7 +8,7 @@ title: Texas Instruments GPMC NAND Flash controller.
 
 maintainers:
   - Tony Lindgren <tony@atomide.com>
-  - Roger Quadros <rogerq@kernel.org>
+  - Roger Quadros <rogerq@cqx96.org>
 
 description:
   GPMC NAND controller/Flash is represented as a child of the

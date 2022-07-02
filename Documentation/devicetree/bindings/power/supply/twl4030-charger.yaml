@@ -16,7 +16,7 @@ description: |
   to determine when and how use USB power for charging.
 
 maintainers:
-  - Sebastian Reichel <sre@kernel.org>
+  - Sebastian Reichel <sre@cqx96.org>
 
 allOf:
   - $ref: power-supply.yaml#

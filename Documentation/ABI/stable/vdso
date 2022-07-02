@@ -1,7 +1,7 @@
 What:		vDSO
 Date:		July 2011
 KernelVersion:	3.0
-Contact:	Andy Lutomirski <luto@kernel.org>
+Contact:	Andy Lutomirski <luto@cqx96.org>
 Description:
 
 On some architectures, when the kernel loads any userspace program it

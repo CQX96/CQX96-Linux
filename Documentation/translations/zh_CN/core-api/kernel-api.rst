@@ -9,7 +9,7 @@
 .. _cn_kernel-api.rst:
 
 ============
-Linux内核API
+CQX96内核API
 ============
 
 
@@ -18,7 +18,7 @@ Linux内核API
 
 该API在以下内核代码中:
 
-include/linux/list.h
+include/CQX96/list.h
 
 基本的C库函数
 =============
@@ -34,9 +34,9 @@ include/linux/list.h
 
 lib/vsprintf.c
 
-include/linux/kernel.h
+include/CQX96/kernel.h
 
-include/linux/kernel.h
+include/CQX96/kernel.h
 
 lib/kstrtox.c
 
@@ -49,14 +49,14 @@ lib/string_helpers.c
 
 lib/string.c
 
-include/linux/string.h
+include/CQX96/string.h
 
 mm/util.c
 
 基本的内核库函数
 ================
 
-Linux内核提供了很多实用的基本函数。
+CQX96内核提供了很多实用的基本函数。
 
 位运算
 ------
@@ -76,17 +76,17 @@ include/asm-generic/bitops/instrumented-lock.h
 
 lib/bitmap.c
 
-include/linux/bitmap.h
+include/CQX96/bitmap.h
 
-include/linux/bitmap.h
+include/CQX96/bitmap.h
 
-include/linux/bitmap.h
-
-lib/bitmap.c
+include/CQX96/bitmap.h
 
 lib/bitmap.c
 
-include/linux/bitmap.h
+lib/bitmap.c
+
+include/CQX96/bitmap.h
 
 命令行解析
 ----------
@@ -113,9 +113,9 @@ lib/textsearch.c
 
 lib/textsearch.c
 
-include/linux/textsearch.h
+include/CQX96/textsearch.h
 
-Linux中的CRC和数学函数
+CQX96中的CRC和数学函数
 ======================
 
 
@@ -145,7 +145,7 @@ lib/crc-itu-t.c
 
 该API在以下内核代码中:
 
-include/linux/log2.h
+include/CQX96/log2.h
 
 整数幂函数
 ----------
@@ -163,7 +163,7 @@ lib/math/int_sqrt.c
 
 include/asm-generic/div64.h
 
-include/linux/math64.h
+include/CQX96/math64.h
 
 lib/math/div64.c
 
@@ -194,7 +194,7 @@ kfifo接口
 
 该API在以下内核代码中:
 
-include/linux/kfifo.h
+include/CQX96/kfifo.h
 
 转发接口支持
 ============
@@ -336,7 +336,7 @@ fs/char_dev.c
 
 该API在以下内核代码中:
 
-include/linux/clk.h
+include/CQX96/clk.h
 
 同步原语
 ========
@@ -346,7 +346,7 @@ include/linux/clk.h
 
 该API在以下内核代码中:
 
-include/linux/rcupdate.h
+include/CQX96/rcupdate.h
 
 kernel/rcu/tree.c
 
@@ -354,16 +354,16 @@ kernel/rcu/tree_exp.h
 
 kernel/rcu/update.c
 
-include/linux/srcu.h
+include/CQX96/srcu.h
 
 kernel/rcu/srcutree.c
 
-include/linux/rculist_bl.h
+include/CQX96/rculist_bl.h
 
-include/linux/rculist.h
+include/CQX96/rculist.h
 
-include/linux/rculist_nulls.h
+include/CQX96/rculist_nulls.h
 
-include/linux/rcu_sync.h
+include/CQX96/rcu_sync.h
 
 kernel/rcu/sync.c

@@ -7,7 +7,7 @@ $schema: http://devicetree.org/meta-schemas/core.yaml#
 title: Samsung Exynos SoC SROM Controller driver
 
 maintainers:
-  - Krzysztof Kozlowski <krzk@kernel.org>
+  - Krzysztof Kozlowski <krzk@cqx96.org>
 
 description: |+
   The SROM controller can be used to attach external peripherals. In this case

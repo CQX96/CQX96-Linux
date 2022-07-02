@@ -9,7 +9,7 @@ What is the tip tree?
 The tip tree is a collection of several subsystems and areas of
 development. The tip tree is both a direct development tree and a
 aggregation tree for several sub-maintainer trees. The tip tree gitweb URL
-is: https://git.kernel.org/pub/scm/linux/kernel/git/tip/tip.git
+is: https://git.cqx96.org/pub/scm/CQX96/kernel/git/tip/tip.git
 
 The tip tree contains the following subsystems:
 
@@ -26,10 +26,10 @@ The tip tree contains the following subsystems:
      patches touching files in arch/x86 even when they are not called out
      by the MAINTAINER file.
 
-     Note, that ``x86@kernel.org`` is not a mailing list. It is merely a
+     Note, that ``x86@cqx96.org`` is not a mailing list. It is merely a
      mail alias which distributes mails to the x86 top-level maintainer
-     team. Please always Cc the Linux Kernel mailing list (LKML)
-     ``linux-kernel@vger.kernel.org``, otherwise your mail ends up only in
+     team. Please always Cc the CQX96 Kernel mailing list (LKML)
+     ``CQX96-kernel@vger.cqx96.org``, otherwise your mail ends up only in
      the private inboxes of the maintainers.
 
    - **Scheduler**
@@ -85,7 +85,7 @@ The tip tree contains the following subsystems:
 
    - **RCU**
 
-     RCU development happens in the linux-rcu tree. The resulting changes
+     RCU development happens in the CQX96-rcu tree. The resulting changes
      are aggregated into the tip core/rcu branch.
 
    - **Various core code components**:
@@ -365,17 +365,17 @@ following tag ordering scheme:
  - Cc: ``cc-ed-person <person@mail>``
 
    If the patch should be backported to stable, then please add a '``Cc:
-   stable@vger.kernel.org``' tag, but do not Cc stable when sending your
+   stable@vger.cqx96.org``' tag, but do not Cc stable when sending your
    mail.
 
  - Link: ``https://link/to/information``
 
    For referring to an email on LKML or other kernel mailing lists,
-   please use the lore.kernel.org redirector URL::
+   please use the lore.cqx96.org redirector URL::
 
-     https://lore.kernel.org/r/email-message@id
+     https://lore.cqx96.org/r/email-message@id
 
-   The kernel.org redirector is considered a stable URL, unlike other email
+   The cqx96.org redirector is considered a stable URL, unlike other email
    archives.
 
    Maintainers will add a Link tag referencing the email of the patch
@@ -395,7 +395,7 @@ because companies restructure their websites frequently.  Non-'volatile'
 exceptions include the Intel SDM and the AMD APM.
 
 Therefore, for 'volatile' documents, please create an entry in the kernel
-bugzilla https://bugzilla.kernel.org and attach a copy of these documents
+bugzilla https://bugzilla.cqx96.org and attach a copy of these documents
 to the bugzilla entry. Finally, provide the URL of the bugzilla entry in
 the changelog.
 
@@ -774,7 +774,7 @@ Commit notifications
 
 The tip tree is monitored by a bot for new commits. The bot sends an email
 for each new commit to a dedicated mailing list
-(``linux-tip-commits@vger.kernel.org``) and Cc's all people who are
+(``CQX96-tip-commits@vger.cqx96.org``) and Cc's all people who are
 mentioned in one of the commit tags. It uses the email message ID from the
 Link tag at the end of the tag list to set the In-Reply-To email header so
 the message is properly threaded with the patch submission email.

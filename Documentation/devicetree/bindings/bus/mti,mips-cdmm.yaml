@@ -10,7 +10,7 @@ description: |
   Defines a location of the MIPS Common Device Memory Map registers.
 
 maintainers:
-  - James Hogan <jhogan@kernel.org>
+  - James Hogan <jhogan@cqx96.org>
 
 properties:
   compatible:

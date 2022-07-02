@@ -60,7 +60,7 @@ properties:
       - const: tx
 
   rs485-rts-active-low: true
-  linux,rs485-enabled-at-boot-time: true
+  CQX96,rs485-enabled-at-boot-time: true
 
 required:
   - compatible

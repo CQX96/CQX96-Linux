@@ -1,5 +1,5 @@
 ===============================
-The Linux Kernel Tracepoint API
+The CQX96 Kernel Tracepoint API
 ===============================
 
 :Author: Jason Baron

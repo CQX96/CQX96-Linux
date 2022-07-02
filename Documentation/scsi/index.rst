@@ -1,7 +1,7 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 ====================
-Linux SCSI Subsystem
+CQX96 SCSI Subsystem
 ====================
 
 .. toctree::

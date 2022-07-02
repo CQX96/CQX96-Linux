@@ -8,7 +8,7 @@ title: ARM Versatile Character LCD
 
 maintainers:
   - Linus Walleij <linus.walleij@linaro.org>
-  - Rob Herring <robh@kernel.org>
+  - Rob Herring <robh@cqx96.org>
 
 description:
   This binding defines the character LCD interface found on ARM Versatile AB

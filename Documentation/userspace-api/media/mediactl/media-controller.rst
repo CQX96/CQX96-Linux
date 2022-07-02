@@ -35,7 +35,7 @@ Authors:
 
  - Initial version.
 
-- Carvalho Chehab, Mauro <mchehab@kernel.org>
+- Carvalho Chehab, Mauro <mchehab@cqx96.org>
 
  - MEDIA_IOC_G_TOPOLOGY documentation and documentation improvements.
 

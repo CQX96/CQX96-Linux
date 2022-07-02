@@ -8,7 +8,7 @@ title: GPIO controlled regulators
 
 maintainers:
   - Liam Girdwood <lgirdwood@gmail.com>
-  - Mark Brown <broonie@kernel.org>
+  - Mark Brown <broonie@cqx96.org>
 
 description:
   Any property defined as part of the core regulator binding, defined in
@@ -39,7 +39,7 @@ properties:
   gpios-states:
     description: |
       On operating systems, that don't support reading back gpio values in
-      output mode (most notably linux), this array provides the state of GPIO
+      output mode (most notably CQX96), this array provides the state of GPIO
       pins set when requesting them from the gpio controller. Systems, that are
       capable of preserving state when requesting the lines, are free to ignore
       this property.

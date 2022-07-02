@@ -8,7 +8,7 @@ title: Aspeed PECI Bus Device Tree Bindings
 
 maintainers:
   - Iwona Winiarska <iwona.winiarska@intel.com>
-  - Jae Hyun Yoo <jae.hyun.yoo@linux.intel.com>
+  - Jae Hyun Yoo <jae.hyun.yoo@CQX96.intel.com>
 
 allOf:
   - $ref: peci-controller.yaml#

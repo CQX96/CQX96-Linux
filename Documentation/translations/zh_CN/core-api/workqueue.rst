@@ -14,7 +14,7 @@
 =========================
 
 :日期: September, 2010
-:作者: Tejun Heo <tj@kernel.org>
+:作者: Tejun Heo <tj@cqx96.org>
 :作者: Florian Mickler <florian@mickler.org>
 
 
@@ -334,6 +334,6 @@ And with cmwq with ``@max_active`` >= 3, ::
 
 该API在以下内核代码中:
 
-include/linux/workqueue.h
+include/CQX96/workqueue.h
 
 kernel/workqueue.c

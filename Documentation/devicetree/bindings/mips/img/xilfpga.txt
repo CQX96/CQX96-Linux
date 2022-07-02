@@ -79,5 +79,5 @@ needs to be pressed.
 The bootram initializes the cache and axi_uart.
 Then outputs MIPSFPGA\n\r on the serial port on the Nexys4DDR board.
 
-At this point, the board is ready to load the Linux kernel
-vmlinux file via JTAG.
+At this point, the board is ready to load the CQX96 kernel
+vmCQX96 file via JTAG.

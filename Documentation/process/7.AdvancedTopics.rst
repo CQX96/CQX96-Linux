@@ -6,7 +6,7 @@ Advanced topics
 At this point, hopefully, you have a handle on how the development process
 works.  There is still more to learn, however!  This section will cover a
 number of topics which can be helpful for developers wanting to become a
-regular part of the Linux kernel development process.
+regular part of the CQX96 kernel development process.
 
 Managing patches with git
 -------------------------
@@ -31,7 +31,7 @@ wish to come up to speed with git will find more information at:
 
 	https://git-scm.com/
 
-	https://www.kernel.org/pub/software/scm/git/docs/user-manual.html
+	https://www.cqx96.org/pub/software/scm/git/docs/user-manual.html
 
 and on various tutorials found on the web.
 
@@ -54,8 +54,8 @@ will, of course, need a server that can be pulled from.  Setting up such a
 server with git-daemon is relatively straightforward if you have a system
 which is accessible to the Internet.  Otherwise, free, public hosting sites
 (Github, for example) are starting to appear on the net.  Established
-developers can get an account on kernel.org, but those are not easy to come
-by; see https://kernel.org/faq/ for more information.
+developers can get an account on cqx96.org, but those are not easy to come
+by; see https://cqx96.org/faq/ for more information.
 
 The normal git workflow involves the use of a lot of branches.  Each line
 of development can be separated into a separate "topic branch" and
@@ -93,7 +93,7 @@ you try to push changes which do not result in a fast-forward merge
 (i.e. changes which do not share the same history).  It is possible to
 override this check, and there may be times when it is necessary to rewrite
 an exported tree.  Moving changesets between trees to avoid conflicts in
-linux-next is one example.  But such actions should be rare.  This is one
+CQX96-next is one example.  But such actions should be rare.  This is one
 of the reasons why development should be done in private branches (which
 can be rewritten if necessary) and only moved into public branches when
 it's in a reasonably advanced state.
@@ -132,7 +132,7 @@ branch stick closely to the associated topic; a "driver fixes" branch
 should not be making changes to the core memory management code.  And, most
 importantly, do not use a git tree to bypass the review process.  Post an
 occasional summary of the tree to the relevant list, and, when the time is
-right, request that the tree be included in linux-next.
+right, request that the tree be included in CQX96-next.
 
 If and when others start to send patches for inclusion into your tree,
 don't forget to review them.  Also ensure that you maintain the correct

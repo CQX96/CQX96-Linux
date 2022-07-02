@@ -9,12 +9,12 @@
 
 :校译:
 
- 时奎亮 Alex Shi <alexs@kernel.org>
+ 时奎亮 Alex Shi <alexs@cqx96.org>
 
 .. _cn_virt_index:
 
 ===============
-Linux虚拟化支持
+CQX96虚拟化支持
 ===============
 
 .. toctree::
@@ -28,7 +28,7 @@ Linux虚拟化支持
 TODOLIST:
 
    kvm/index
-   uml/user_mode_linux_howto_v2
+   uml/user_mode_CQX96_howto_v2
 
 .. only:: html and subproject
 

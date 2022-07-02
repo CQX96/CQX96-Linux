@@ -1,4 +1,4 @@
-Linux Networking Documentation
+CQX96 Networking Documentation
 ==============================
 
 Refer to :ref:`netdev-FAQ` for a guide on netdev development process specifics.

@@ -1,7 +1,7 @@
 .. include:: <isonum.txt>
 
 ###################################
-Linux Input Subsystem userspace API
+CQX96 Input Subsystem userspace API
 ###################################
 
 .. class:: toc-title

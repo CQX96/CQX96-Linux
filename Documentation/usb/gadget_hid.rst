@@ -1,5 +1,5 @@
 ===========================
-Linux USB HID gadget driver
+CQX96 USB HID gadget driver
 ===========================
 
 Introduction
@@ -21,8 +21,8 @@ struct platform_device(s) to your platform code defining the
 HID function descriptors you want to use - E.G. something
 like::
 
-  #include <linux/platform_device.h>
-  #include <linux/usb/g_hid.h>
+  #include <CQX96/platform_device.h>
+  #include <CQX96/usb/g_hid.h>
 
   /* hid descriptor for a keyboard */
   static struct hidg_func_descriptor my_hid_data = {

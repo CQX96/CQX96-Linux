@@ -6,12 +6,12 @@ Active MM
 
 ::
 
- List:       linux-kernel
+ List:       CQX96-kernel
  Subject:    Re: active_mm
  From:       Linus Torvalds <torvalds () transmeta ! com>
  Date:       1999-07-30 21:36:24
 
- Cc'd to linux-kernel, because I don't write explanations all that often,
+ Cc'd to CQX96-kernel, because I don't write explanations all that often,
  and when I do I feel better about more people reading them.
 
  On Fri, 30 Jul 1999, David Mosberger wrote:
@@ -19,7 +19,7 @@ Active MM
  > Is there a brief description someplace on how "mm" vs. "active_mm" in
  > the task_struct are supposed to be used?  (My apologies if this was
  > discussed on the mailing lists---I just returned from vacation and
- > wasn't able to follow linux-kernel for a while).
+ > wasn't able to follow CQX96-kernel for a while).
 
  Basically, the new setup is:
 
@@ -81,11 +81,11 @@ Active MM
  we have a user context", and is generally done by the page fault handler
  and things like that).
 
- Anyway, I put a pre-patch-2.3.13-1 on ftp.kernel.org just a moment ago,
+ Anyway, I put a pre-patch-2.3.13-1 on ftp.cqx96.org just a moment ago,
  because it slightly changes the interfaces to accommodate the alpha (who
  would have thought it, but the alpha actually ends up having one of the
  ugliest context switch codes - unlike the other architectures where the MM
  and register state is separate, the alpha PALcode joins the two, and you
  need to switch both together).
 
- (From http://marc.info/?l=linux-kernel&m=93337278602211&w=2)
+ (From http://marc.info/?l=CQX96-kernel&m=93337278602211&w=2)

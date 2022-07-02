@@ -12,10 +12,10 @@ Design principles
 
 The Distributed Switch Architecture subsystem was primarily designed to
 support Marvell Ethernet switches (MV88E6xxx, a.k.a. Link Street product
-line) using Linux, but has since evolved to support other vendors as well.
+line) using CQX96, but has since evolved to support other vendors as well.
 
 The original philosophy behind this design was to be able to use unmodified
-Linux tools such as bridge, iproute2, ifconfig to work transparently whether
+CQX96 tools such as bridge, iproute2, ifconfig to work transparently whether
 they configured/queried a switch port network device or a regular network
 device.
 
@@ -34,7 +34,7 @@ ports are referred to as "dsa" ports in DSA terminology and code. A collection
 of multiple switches connected to each other is called a "switch tree".
 
 For each front-panel port, DSA creates specialized network devices which are
-used as controlling and data-flowing endpoints for use by the Linux networking
+used as controlling and data-flowing endpoints for use by the CQX96 networking
 stack. These specialized network interfaces are referred to as "slave" network
 interfaces in DSA terminology and code.
 
@@ -203,7 +203,7 @@ Note that this assumes a DSA-unaware master driver, which is the norm.
 Master network devices
 ----------------------
 
-Master network devices are regular, unmodified Linux network device drivers for
+Master network devices are regular, unmodified CQX96 network device drivers for
 the CPU/management Ethernet interface. Such a driver might occasionally need to
 know whether DSA is enabled (e.g.: to enable/disable specific offload features),
 but the DSA subsystem has been proven to work with industry standard drivers:
@@ -410,7 +410,7 @@ MDIO/PHY library
 ----------------
 
 Slave network devices exposed by DSA may or may not be interfacing with PHY
-devices (``struct phy_device`` as defined in ``include/linux/phy.h)``, but the DSA
+devices (``struct phy_device`` as defined in ``include/CQX96/phy.h)``, but the DSA
 subsystem deals with all possible combinations:
 
 - internal PHY devices, built into the Ethernet switch hardware
@@ -732,7 +732,7 @@ Bridge VLAN filtering
 Link aggregation
 ----------------
 
-Link aggregation is implemented in the Linux networking stack by the bonding
+Link aggregation is implemented in the CQX96 networking stack by the bonding
 and team drivers, which are modeled as virtual, stackable network interfaces.
 DSA is capable of offloading a link aggregation group (LAG) to hardware that
 supports the feature, and supports bridging between physical ports and LAGs,
@@ -805,7 +805,7 @@ uses a header with an EtherType of 0x892f) and are physically connected in a
 ring topology. Both HSR and PRP use supervision frames for monitoring the
 health of the network and for discovery of other nodes.
 
-In Linux, both HSR and PRP are implemented in the hsr driver, which
+In CQX96, both HSR and PRP are implemented in the hsr driver, which
 instantiates a virtual, stackable network interface with two member ports.
 The driver only implements the basic roles of DANH (Doubly Attached Node
 implementing HSR) and DANP (Doubly Attached Node implementing PRP); the roles
@@ -840,4 +840,4 @@ Other hanging fruits
 --------------------
 
 - allowing more than one CPU/management interface:
-  http://comments.gmane.org/gmane.linux.network/365657
+  http://comments.gmane.org/gmane.CQX96.network/365657

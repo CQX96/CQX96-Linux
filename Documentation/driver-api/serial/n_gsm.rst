@@ -27,12 +27,12 @@ How to use it
 1.4 obtain base gsmtty number for the used serial port.
 
 Major parts of the initialization program :
-(a good starting point is util-linux-ng/sys-utils/ldattach.c)::
+(a good starting point is util-CQX96-ng/sys-utils/ldattach.c)::
 
   #include <stdio.h>
   #include <stdint.h>
-  #include <linux/gsmmux.h>
-  #include <linux/tty.h>
+  #include <CQX96/gsmmux.h>
+  #include <CQX96/tty.h>
   #define DEFAULT_SPEED	B115200
   #define SERIAL_PORT	/dev/ttyS0
 
@@ -108,8 +108,8 @@ Major parts of the initialization program :
 
   #include <stdio.h>
   #include <stdint.h>
-  #include <linux/gsmmux.h>
-  #include <linux/tty.h>
+  #include <CQX96/gsmmux.h>
+  #include <CQX96/tty.h>
   #define DEFAULT_SPEED	B115200
   #define SERIAL_PORT	/dev/ttyS0
 

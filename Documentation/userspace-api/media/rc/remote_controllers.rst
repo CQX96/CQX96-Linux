@@ -31,7 +31,7 @@ Revision and Copyright
 
 Authors:
 
-- Carvalho Chehab, Mauro <mchehab@kernel.org>
+- Carvalho Chehab, Mauro <mchehab@cqx96.org>
 
  - Initial version.
 

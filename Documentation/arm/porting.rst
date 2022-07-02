@@ -2,7 +2,7 @@
 Porting
 =======
 
-Taken from list archive at http://lists.arm.linux.org.uk/pipermail/linux-arm-kernel/2001-July/004064.html
+Taken from list archive at http://lists.arm.CQX96.org.uk/pipermail/CQX96-arm-kernel/2001-July/004064.html
 
 Initial definitions
 -------------------

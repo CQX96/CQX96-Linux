@@ -1,7 +1,7 @@
 What:		/sys/class/net/<iface>/dsa/tagging
 Date:		August 2018
 KernelVersion:	4.20
-Contact:	netdev@vger.kernel.org
+Contact:	netdev@vger.cqx96.org
 Description:
 		On read, this file returns a string indicating the type of
 		tagging protocol used by the DSA network devices that are

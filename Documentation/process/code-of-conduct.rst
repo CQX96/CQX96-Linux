@@ -66,7 +66,7 @@ Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported by contacting the Code of Conduct Committee at
-<conduct@kernel.org>. All complaints will be reviewed and investigated
+<conduct@cqx96.org>. All complaints will be reviewed and investigated
 and will result in a response that is deemed necessary and appropriate
 to the circumstances. The Code of Conduct Committee is obligated to
 maintain confidentiality with regard to the reporter of an incident.
@@ -82,5 +82,5 @@ available at https://www.contributor-covenant.org/version/1/4/code-of-conduct.ht
 Interpretation
 ==============
 
-See the :ref:`code_of_conduct_interpretation` document for how the Linux
+See the :ref:`code_of_conduct_interpretation` document for how the CQX96
 kernel community will be interpreting this document.

@@ -10,7 +10,7 @@ allOf:
   - $ref: gnss-common.yaml#
 
 maintainers:
-  - Johan Hovold <johan@kernel.org>
+  - Johan Hovold <johan@cqx96.org>
 
 description: >
   The U-blox GNSS receivers can use UART, DDC (I2C), SPI and USB interfaces.

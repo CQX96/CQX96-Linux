@@ -1,7 +1,7 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 =======================
-Linux PCI Bus Subsystem
+CQX96 PCI Bus Subsystem
 =======================
 
 .. toctree::

@@ -8,7 +8,7 @@ title: OneNAND over Texas Instruments GPMC bus.
 
 maintainers:
   - Tony Lindgren <tony@atomide.com>
-  - Roger Quadros <rogerq@kernel.org>
+  - Roger Quadros <rogerq@cqx96.org>
 
 description:
   GPMC connected OneNAND (found on OMAP boards) are represented

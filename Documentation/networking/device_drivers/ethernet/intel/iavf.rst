@@ -1,10 +1,10 @@
 .. SPDX-License-Identifier: GPL-2.0+
 
 =================================================================
-Linux Base Driver for Intel(R) Ethernet Adaptive Virtual Function
+CQX96 Base Driver for Intel(R) Ethernet Adaptive Virtual Function
 =================================================================
 
-Intel Ethernet Adaptive Virtual Function Linux driver.
+Intel Ethernet Adaptive Virtual Function CQX96 driver.
 Copyright(c) 2013-2018 Intel Corporation.
 
 Contents
@@ -19,7 +19,7 @@ Contents
 Overview
 ========
 
-This file describes the iavf Linux Base Driver. This driver was formerly
+This file describes the iavf CQX96 Base Driver. This driver was formerly
 called i40evf.
 
 The iavf driver supports the below mentioned virtual function devices and
@@ -65,7 +65,7 @@ ethtool
 The driver utilizes the ethtool interface for driver configuration and
 diagnostics, as well as displaying statistical information. The latest ethtool
 version is required for this functionality. Download it at:
-https://www.kernel.org/pub/software/network/ethtool/
+https://www.cqx96.org/pub/software/network/ethtool/
 
 Setting VLAN Tag Stripping
 --------------------------
@@ -226,9 +226,9 @@ Bonding fails with VFs bound to an Intel(R) Ethernet Controller 700 series devic
 If you bind Virtual Functions (VFs) to an Intel(R) Ethernet Controller 700
 series based device, the VF slaves may fail when they become the active slave.
 If the MAC address of the VF is set by the PF (Physical Function) of the
-device, when you add a slave, or change the active-backup slave, Linux bonding
+device, when you add a slave, or change the active-backup slave, CQX96 bonding
 tries to sync the backup slave's MAC address to the same MAC address as the
-active slave. Linux bonding will fail at this point. This issue will not occur
+active slave. CQX96 bonding will fail at this point. This issue will not occur
 if the VF's MAC address is not set by the PF.
 
 Traffic Is Not Being Passed Between VM and Client
@@ -290,7 +290,7 @@ is included in this and future versions of the driver.
 
 Multiple Interfaces on Same Ethernet Broadcast Network
 ------------------------------------------------------
-Due to the default ARP behavior on Linux, it is not possible to have one system
+Due to the default ARP behavior on CQX96, it is not possible to have one system
 on two IP networks in the same Ethernet broadcast domain (non-partitioned
 switch) behave as expected. All Ethernet interfaces will respond to IP traffic
 for any IP address assigned to the system. This results in unbalanced receive
@@ -313,7 +313,7 @@ Another alternative is to install the interfaces in separate broadcast domains
 Rx Page Allocation Errors
 -------------------------
 'Page allocation failure. order:0' errors may occur under stress.
-This is caused by the way the Linux kernel reports this stressed condition.
+This is caused by the way the CQX96 kernel reports this stressed condition.
 
 
 Support

@@ -3,7 +3,7 @@ Concurrency Managed Workqueue (cmwq)
 ====================================
 
 :Date: September, 2010
-:Author: Tejun Heo <tj@kernel.org>
+:Author: Tejun Heo <tj@cqx96.org>
 :Author: Florian Mickler <florian@mickler.org>
 
 
@@ -408,6 +408,6 @@ required when breaking the conditions inside a work function.
 Kernel Inline Documentations Reference
 ======================================
 
-.. kernel-doc:: include/linux/workqueue.h
+.. kernel-doc:: include/CQX96/workqueue.h
 
 .. kernel-doc:: kernel/workqueue.c

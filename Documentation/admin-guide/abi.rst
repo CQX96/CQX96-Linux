@@ -1,5 +1,5 @@
 =====================
-Linux ABI description
+CQX96 ABI description
 =====================
 
 .. toctree::

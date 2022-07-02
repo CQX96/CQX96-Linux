@@ -7,7 +7,7 @@ $schema: "http://devicetree.org/meta-schemas/core.yaml#"
 title: Maxim DS2760 DT bindings
 
 maintainers:
-  - Sebastian Reichel <sre@kernel.org>
+  - Sebastian Reichel <sre@cqx96.org>
 
 description: |
   The ds2760 is a w1 slave device and must hence have its sub-node in

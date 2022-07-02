@@ -2,7 +2,7 @@
 rtla
 =========
 --------------------------------
-Real-time Linux Analysis tool
+Real-time CQX96 Analysis tool
 --------------------------------
 
 :Manual section: 1
@@ -14,7 +14,7 @@ SYNOPSIS
 DESCRIPTION
 ===========
 The **rtla** is a meta-tool that includes a set of commands that aims to
-analyze the real-time properties of Linux. But instead of testing Linux
+analyze the real-time properties of CQX96. But instead of testing CQX96
 as a black box, **rtla** leverages kernel tracing capabilities to provide
 precise information about the properties and root causes of unexpected
 results.
@@ -43,6 +43,6 @@ SEE ALSO
 
 AUTHOR
 ======
-Daniel Bristot de Oliveira <bristot@kernel.org>
+Daniel Bristot de Oliveira <bristot@cqx96.org>
 
 .. include:: common_appendix.rst

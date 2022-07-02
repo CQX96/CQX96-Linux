@@ -1103,7 +1103,7 @@ solve.
 
 To access the key manager, the following header must be #included::
 
-	<linux/key.h>
+	<CQX96/key.h>
 
 Specific key types should have a header file under include/keys/ that should be
 used to access that type.  For keys of type "user", for example, that would be::
@@ -1401,7 +1401,7 @@ author fills in a key_type struct and registers it with the system.
 
 Source files that implement key types should include the following header file::
 
-	<linux/key-type.h>
+	<CQX96/key-type.h>
 
 The structure has a number of fields, some of which are mandatory:
 

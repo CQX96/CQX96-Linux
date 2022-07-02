@@ -7,7 +7,7 @@ $schema: http://devicetree.org/meta-schemas/core.yaml#
 title: Generic PCI host controller
 
 maintainers:
-  - Will Deacon <will@kernel.org>
+  - Will Deacon <will@cqx96.org>
 
 description: |
   Firmware-initialised PCI host controllers and PCI emulations, such as the

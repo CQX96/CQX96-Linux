@@ -7,7 +7,7 @@ $schema: http://devicetree.org/meta-schemas/core.yaml#
 title: Samsung S3FWRN5 NCI NFC Controller
 
 maintainers:
-  - Krzysztof Kozlowski <krzk@kernel.org>
+  - Krzysztof Kozlowski <krzk@cqx96.org>
   - Krzysztof Opasiak <k.opasiak@samsung.com>
 
 properties:

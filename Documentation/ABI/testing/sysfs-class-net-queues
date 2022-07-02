@@ -1,7 +1,7 @@
 What:		/sys/class/<iface>/queues/rx-<queue>/rps_cpus
 Date:		March 2010
 KernelVersion:	2.6.35
-Contact:	netdev@vger.kernel.org
+Contact:	netdev@vger.cqx96.org
 Description:
 		Mask of the CPU(s) currently enabled to participate into the
 		Receive Packet Steering packet processing flow for this
@@ -11,7 +11,7 @@ Description:
 What:		/sys/class/<iface>/queues/rx-<queue>/rps_flow_cnt
 Date:		April 2010
 KernelVersion:	2.6.35
-Contact:	netdev@vger.kernel.org
+Contact:	netdev@vger.cqx96.org
 Description:
 		Number of Receive Packet Steering flows being currently
 		processed by this particular network device receive queue.
@@ -19,7 +19,7 @@ Description:
 What:		/sys/class/<iface>/queues/tx-<queue>/tx_timeout
 Date:		November 2011
 KernelVersion:	3.3
-Contact:	netdev@vger.kernel.org
+Contact:	netdev@vger.cqx96.org
 Description:
 		Indicates the number of transmit timeout events seen by this
 		network interface transmit queue.
@@ -27,7 +27,7 @@ Description:
 What:		/sys/class/<iface>/queues/tx-<queue>/tx_maxrate
 Date:		March 2015
 KernelVersion:	4.1
-Contact:	netdev@vger.kernel.org
+Contact:	netdev@vger.cqx96.org
 Description:
 		A Mbps max-rate set for the queue, a value of zero means disabled,
 		default is disabled.
@@ -35,7 +35,7 @@ Description:
 What:		/sys/class/<iface>/queues/tx-<queue>/xps_cpus
 Date:		November 2010
 KernelVersion:	2.6.38
-Contact:	netdev@vger.kernel.org
+Contact:	netdev@vger.cqx96.org
 Description:
 		Mask of the CPU(s) currently enabled to participate into the
 		Transmit Packet Steering packet processing flow for this
@@ -45,7 +45,7 @@ Description:
 What:		/sys/class/<iface>/queues/tx-<queue>/xps_rxqs
 Date:		June 2018
 KernelVersion:	4.18.0
-Contact:	netdev@vger.kernel.org
+Contact:	netdev@vger.cqx96.org
 Description:
 		Mask of the receive queue(s) currently enabled to participate
 		into the Transmit Packet Steering packet processing flow for this
@@ -56,7 +56,7 @@ Description:
 What:		/sys/class/<iface>/queues/tx-<queue>/byte_queue_limits/hold_time
 Date:		November 2011
 KernelVersion:	3.3
-Contact:	netdev@vger.kernel.org
+Contact:	netdev@vger.cqx96.org
 Description:
 		Indicates the hold time in milliseconds to measure the slack
 		of this particular network device transmit queue.
@@ -65,7 +65,7 @@ Description:
 What:		/sys/class/<iface>/queues/tx-<queue>/byte_queue_limits/inflight
 Date:		November 2011
 KernelVersion:	3.3
-Contact:	netdev@vger.kernel.org
+Contact:	netdev@vger.cqx96.org
 Description:
 		Indicates the number of bytes (objects) in flight on this
 		network device transmit queue.
@@ -73,7 +73,7 @@ Description:
 What:		/sys/class/<iface>/queues/tx-<queue>/byte_queue_limits/limit
 Date:		November 2011
 KernelVersion:	3.3
-Contact:	netdev@vger.kernel.org
+Contact:	netdev@vger.cqx96.org
 Description:
 		Indicates the current limit of bytes allowed to be queued
 		on this network device transmit queue. This value is clamped
@@ -82,16 +82,16 @@ Description:
 What:		/sys/class/<iface>/queues/tx-<queue>/byte_queue_limits/limit_max
 Date:		November 2011
 KernelVersion:	3.3
-Contact:	netdev@vger.kernel.org
+Contact:	netdev@vger.cqx96.org
 Description:
 		Indicates the absolute maximum limit of bytes allowed to be
 		queued on this network device transmit queue. See
-		include/linux/dynamic_queue_limits.h for the default value.
+		include/CQX96/dynamic_queue_limits.h for the default value.
 
 What:		/sys/class/<iface>/queues/tx-<queue>/byte_queue_limits/limit_min
 Date:		November 2011
 KernelVersion:	3.3
-Contact:	netdev@vger.kernel.org
+Contact:	netdev@vger.cqx96.org
 Description:
 		Indicates the absolute minimum limit of bytes allowed to be
 		queued on this network device transmit queue. Default value is

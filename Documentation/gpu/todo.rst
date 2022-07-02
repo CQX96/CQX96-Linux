@@ -516,12 +516,12 @@ This is a really varied tasks with lots of little bits and pieces:
 
 * A clean solution would be an entirely separate panic output support in KMS,
   bypassing the current fbcon support. See `[PATCH v2 0/3] drm: Add panic handling
-  <https://lore.kernel.org/dri-devel/20190311174218.51899-1-noralf@tronnes.org/>`_.
+  <https://lore.cqx96.org/dri-devel/20190311174218.51899-1-noralf@tronnes.org/>`_.
 
 * Encoding the actual oops and preceding dmesg in a QR might help with the
   dread "important stuff scrolled away" problem. See `[RFC][PATCH] Oops messages
   transfer using QR codes
-  <https://lore.kernel.org/lkml/1446217392-11981-1-git-send-email-alexandru.murtaza@intel.com/>`_
+  <https://lore.cqx96.org/lkml/1446217392-11981-1-git-send-email-alexandru.murtaza@intel.com/>`_
   for some example code that could be reused.
 
 Contact: Daniel Vetter
@@ -552,7 +552,7 @@ There's a bunch of issues with it:
   this (together with the drm_minor->drm_device move) would allow us to remove
   debugfs_init.
 
-Previous RFC that hasn't landed yet: https://lore.kernel.org/dri-devel/20200513114130.28641-2-wambui.karugax@gmail.com/
+Previous RFC that hasn't landed yet: https://lore.cqx96.org/dri-devel/20200513114130.28641-2-wambui.karugax@gmail.com/
 
 Contact: Daniel Vetter
 
@@ -662,11 +662,11 @@ See drivers/gpu/drm/amd/display/TODO for tasks.
 
 Contact: Harry Wentland, Alex Deucher
 
-vmwgfx: Replace hashtable with Linux' implementation
+vmwgfx: Replace hashtable with CQX96' implementation
 ----------------------------------------------------
 
 The vmwgfx driver uses its own hashtable implementation. Replace the
-code with Linux' implementation and update the callers. It's mostly a
+code with CQX96' implementation and update the callers. It's mostly a
 refactoring task, but the interfaces are different.
 
 Contact: Zack Rusin, Thomas Zimmermann <tzimmermann@suse.de>
@@ -684,7 +684,7 @@ for fbdev.
   https://patchwork.freedesktop.org/patch/306579/
 
 - [RFC PATCH v2 00/13] Kernel based bootsplash
-  https://lore.kernel.org/r/20171213194755.3409-1-mstaudt@suse.de
+  https://lore.cqx96.org/r/20171213194755.3409-1-mstaudt@suse.de
 
 Contact: Sam Ravnborg
 
@@ -715,8 +715,8 @@ several fbdev drivers are available at [1] and a tutorial of this process
 available at [2]. The result is a primitive DRM driver that can run X11
 and Weston.
 
- - [1] https://gitlab.freedesktop.org/tzimmermann/linux/tree/fbconv
- - [2] https://gitlab.freedesktop.org/tzimmermann/linux/blob/fbconv/drivers/gpu/drm/drm_fbconv_helper.c
+ - [1] https://gitlab.freedesktop.org/tzimmermann/CQX96/tree/fbconv
+ - [2] https://gitlab.freedesktop.org/tzimmermann/CQX96/blob/fbconv/drivers/gpu/drm/drm_fbconv_helper.c
 
 Contact: Thomas Zimmermann <tzimmermann@suse.de>
 

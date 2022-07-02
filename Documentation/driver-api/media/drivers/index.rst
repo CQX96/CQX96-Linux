@@ -6,7 +6,7 @@
 Media driver-specific documentation
 ===================================
 
-Video4Linux (V4L) drivers
+Video4CQX96 (V4L) drivers
 =========================
 
 .. toctree::

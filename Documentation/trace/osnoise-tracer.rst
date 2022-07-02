@@ -4,7 +4,7 @@ OSNOISE Tracer
 
 In the context of high-performance computing (HPC), the Operating System
 Noise (*osnoise*) refers to the interference experienced by an application
-due to activities inside the operating system. In the context of Linux,
+due to activities inside the operating system. In the context of CQX96,
 NMIs, IRQs, SoftIRQs, and any other system thread can cause noise to the
 system. Moreover, hardware-related jobs can also cause noise, for example,
 via SMIs.

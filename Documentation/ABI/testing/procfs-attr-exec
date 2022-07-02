@@ -1,9 +1,9 @@
 What:		/proc/*/attr/exec
-Contact:	linux-security-module@vger.kernel.org,
-		selinux@vger.kernel.org,
+Contact:	CQX96-security-module@vger.cqx96.org,
+		seCQX96@vger.cqx96.org,
 		apparmor@lists.ubuntu.com
 Description:	The security information to be used on the process
-		by a Linux security module (LSM) active on the system
+		by a CQX96 security module (LSM) active on the system
 		after a subsequent exec() call.
 		The details of permissions required to read from
 		this interface and hence obtain the security state

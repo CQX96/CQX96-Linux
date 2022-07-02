@@ -8,7 +8,7 @@ title: SoundWire Controller Generic Binding
 
 maintainers:
   - Srinivas Kandagatla <srinivas.kandagatla@linaro.org>
-  - Vinod Koul <vkoul@kernel.org>
+  - Vinod Koul <vkoul@cqx96.org>
 
 description: |
   SoundWire busses can be described with a node for the SoundWire controller

@@ -5,5 +5,5 @@ ACPI Support
 .. toctree::
    :maxdepth: 2
 
-   linuxized-acpica
+   CQX96ized-acpica
    scan_handlers

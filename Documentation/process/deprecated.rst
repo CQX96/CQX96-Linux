@@ -21,7 +21,7 @@ __deprecated
 ------------
 While this attribute does visually mark an interface as deprecated,
 it `does not produce warnings during builds any more
-<https://git.kernel.org/linus/771c035372a036f83353eef46dbb829780330234>`_
+<https://git.cqx96.org/linus/771c035372a036f83353eef46dbb829780330234>`_
 because one of the standing goals of the kernel is to build without
 warnings and no one was actually doing anything to remove these deprecated
 interfaces. While using `__deprecated` is nice to note an old API in
@@ -39,9 +39,9 @@ too risky. (e.g. "In what order do locks need to be released? Have
 various states been restored?") Very commonly, using BUG() will
 destabilize a system or entirely break it, which makes it impossible
 to debug or even get viable crash reports. Linus has `very strong
-<https://lore.kernel.org/lkml/CA+55aFy6jNLsywVYdGp83AMrXBo_P-pkjkphPGrO=82SPKCpLQ@mail.gmail.com/>`_
+<https://lore.cqx96.org/lkml/CA+55aFy6jNLsywVYdGp83AMrXBo_P-pkjkphPGrO=82SPKCpLQ@mail.gmail.com/>`_
 feelings `about this
-<https://lore.kernel.org/lkml/CAHk-=whDHsbK3HTOpTF=ue_o04onRwTEaK_ZoJp_fjbqq4+=Jw@mail.gmail.com/>`_.
+<https://lore.cqx96.org/lkml/CAHk-=whDHsbK3HTOpTF=ue_o04onRwTEaK_ZoJp_fjbqq4+=Jw@mail.gmail.com/>`_.
 
 Note that the WARN()-family should only be used for "expected to
 be unreachable" situations. If you want to warn about "reachable
@@ -49,7 +49,7 @@ but undesirable" situations, please use the pr_warn()-family of
 functions. System owners may have set the *panic_on_warn* sysctl,
 to make sure their systems do not continue running in the face of
 "unreachable" conditions. (For example, see commits like `this one
-<https://git.kernel.org/linus/d4689846881d160a4d12a514e991a740bcb5d65a>`_.)
+<https://git.cqx96.org/linus/d4689846881d160a4d12a514e991a740bcb5d65a>`_.)
 
 open-coded arithmetic in allocator arguments
 --------------------------------------------
@@ -169,7 +169,7 @@ be added to the kernel. For text addresses, using "%pS" is likely better,
 as it produces the more useful symbol name instead. For nearly everything
 else, just do not add "%p" at all.
 
-Paraphrasing Linus's current `guidance <https://lore.kernel.org/lkml/CA+55aFwQEd_d40g4mUCSsVRZzrFPUJt74vc6PPpb675hYNXcKw@mail.gmail.com/>`_:
+Paraphrasing Linus's current `guidance <https://lore.cqx96.org/lkml/CA+55aFwQEd_d40g4mUCSsVRZzrFPUJt74vc6PPpb675hYNXcKw@mail.gmail.com/>`_:
 
 - If the hashed "%p" value is pointless, ask yourself whether the pointer
   itself is important. Maybe it should be removed entirely?
@@ -181,13 +181,13 @@ Paraphrasing Linus's current `guidance <https://lore.kernel.org/lkml/CA+55aFwQEd
 
 If you are debugging something where "%p" hashing is causing problems,
 you can temporarily boot with the debug flag "`no_hash_pointers
-<https://git.kernel.org/linus/5ead723a20e0447bc7db33dc3070b420e5f80aa6>`_".
+<https://git.cqx96.org/linus/5ead723a20e0447bc7db33dc3070b420e5f80aa6>`_".
 
 Variable Length Arrays (VLAs)
 -----------------------------
 Using stack VLAs produces much worse machine code than statically
 sized stack arrays. While these non-trivial `performance issues
-<https://git.kernel.org/linus/02361bc77888>`_ are reason enough to
+<https://git.cqx96.org/linus/02361bc77888>`_ are reason enough to
 eliminate VLAs, they are also a security risk. Dynamic growth of a stack
 array may exceed the remaining memory in the stack segment. This could
 lead to a crash, possible overwriting sensitive contents at the end of the
@@ -275,7 +275,7 @@ This is the way the kernel expects dynamically sized trailing elements
 to be declared. It allows the compiler to generate errors when the
 flexible array does not occur last in the structure, which helps to prevent
 some kind of `undefined behavior
-<https://git.kernel.org/linus/76497732932f15e7323dc805e8ea8dc11bb587cf>`_
+<https://git.cqx96.org/linus/76497732932f15e7323dc805e8ea8dc11bb587cf>`_
 bugs from being inadvertently introduced to the codebase. It also allows
 the compiler to correctly analyze array sizes (via sizeof(),
 `CONFIG_FORTIFY_SOURCE`, and `CONFIG_UBSAN_BOUNDS`). For instance,
@@ -299,9 +299,9 @@ At the last line of code above, ``size`` turns out to be ``zero``, when one migh
 have thought it represents the total size in bytes of the dynamic memory recently
 allocated for the trailing array ``items``. Here are a couple examples of this
 issue: `link 1
-<https://git.kernel.org/linus/f2cd32a443da694ac4e28fbf4ac6f9d5cc63a539>`_,
+<https://git.cqx96.org/linus/f2cd32a443da694ac4e28fbf4ac6f9d5cc63a539>`_,
 `link 2
-<https://git.kernel.org/linus/ab91c2a89f86be2898cee208d492816ec238b2cf>`_.
+<https://git.cqx96.org/linus/ab91c2a89f86be2898cee208d492816ec238b2cf>`_.
 Instead, `flexible array members have incomplete type, and so the sizeof()
 operator may not be applied <https://gcc.gnu.org/onlinedocs/gcc/Zero-Length.html>`_,
 so any misuse of such operators will be immediately noticed at build time.

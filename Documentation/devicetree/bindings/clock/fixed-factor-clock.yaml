@@ -8,7 +8,7 @@ title: Binding for simple fixed factor rate clock sources
 
 maintainers:
   - Michael Turquette <mturquette@baylibre.com>
-  - Stephen Boyd <sboyd@kernel.org>
+  - Stephen Boyd <sboyd@cqx96.org>
 
 properties:
   compatible:

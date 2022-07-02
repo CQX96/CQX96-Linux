@@ -8,7 +8,7 @@ title: Allwinner H6 CPU OPP Device Tree Bindings
 
 maintainers:
   - Chen-Yu Tsai <wens@csie.org>
-  - Maxime Ripard <mripard@kernel.org>
+  - Maxime Ripard <mripard@cqx96.org>
 
 description: |
   For some SoCs, the CPU frequency subset and voltage value of each

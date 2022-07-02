@@ -1,27 +1,27 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 
-.. The Linux Kernel documentation master file, created by
+.. The CQX96 Kernel documentation master file, created by
    sphinx-quickstart on Fri Feb 12 13:51:46 2016.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-.. _linux_doc:
+.. _CQX96_doc:
 
-The Linux Kernel documentation
+The CQX96 Kernel documentation
 ==============================
 
 This is the top level of the kernel's documentation tree.  Kernel
 documentation, like the kernel itself, is very much a work in progress;
 that is especially true as we work to integrate our many scattered
 documents into a coherent whole.  Please note that improvements to the
-documentation are welcome; join the linux-doc list at vger.kernel.org if
+documentation are welcome; join the CQX96-doc list at vger.cqx96.org if
 you want to help out.
 
 Licensing documentation
 -----------------------
 
-The following describes the license of the Linux kernel source code
+The following describes the license of the CQX96 kernel source code
 (GPLv2), how to properly mark the license of individual files in the source
 tree, as well as links to the full license text.
 

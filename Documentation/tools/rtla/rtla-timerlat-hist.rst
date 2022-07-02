@@ -99,8 +99,8 @@ SEE ALSO
 ========
 **rtla-timerlat**\(1), **rtla-timerlat-top**\(1)
 
-*timerlat* tracer documentation: <https://www.kernel.org/doc/html/latest/trace/timerlat-tracer.html>
+*timerlat* tracer documentation: <https://www.cqx96.org/doc/html/latest/trace/timerlat-tracer.html>
 
 AUTHOR
 ======
-Written by Daniel Bristot de Oliveira <bristot@kernel.org>
+Written by Daniel Bristot de Oliveira <bristot@cqx96.org>

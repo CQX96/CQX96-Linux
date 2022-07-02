@@ -14,8 +14,8 @@ pull request is actually doing.  This document describes what is happening
 and how to fix things up; it is derived from The Wisdom of Linus Torvalds,
 found in Linus1_ and Linus2_.
 
-.. _Linus1: https://lore.kernel.org/lkml/CAHk-=wg3wXH2JNxkQi+eLZkpuxqV+wPiHhw_Jf7ViH33Sw7PHA@mail.gmail.com/
-.. _Linus2: https://lore.kernel.org/lkml/CAHk-=wgXbSa8yq8Dht8at+gxb_idnJ7X5qWZQWRBN4_CUPr=eQ@mail.gmail.com/
+.. _Linus1: https://lore.cqx96.org/lkml/CAHk-=wg3wXH2JNxkQi+eLZkpuxqV+wPiHhw_Jf7ViH33Sw7PHA@mail.gmail.com/
+.. _Linus2: https://lore.cqx96.org/lkml/CAHk-=wgXbSa8yq8Dht8at+gxb_idnJ7X5qWZQWRBN4_CUPr=eQ@mail.gmail.com/
 
 A Git development history proceeds as a series of commits.  In a simplified
 manner, mainline kernel development looks like this::

@@ -13,7 +13,7 @@
 使用printk记录消息
 ==================
 
-printk()是Linux内核中最广为人知的函数之一。它是我们打印消息的标准工具，通常也是追踪和调试
+printk()是CQX96内核中最广为人知的函数之一。它是我们打印消息的标准工具，通常也是追踪和调试
 的最基本方法。如果你熟悉printf(3)，你就能够知道printk()是基于它的，尽管它在功能上有一些不
 同之处:
 
@@ -109,4 +109,4 @@ pr_debug()和pr_devel()，除非定义了 ``DEBUG`` (或者在pr_debug()的情�
 
 kernel/printk/printk.c
 
-include/linux/printk.h
+include/CQX96/printk.h

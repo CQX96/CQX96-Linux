@@ -1,10 +1,10 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 ==============================================================================
-Linux CPUFreq - CPU frequency and voltage scaling code in the Linux(TM) kernel
+CQX96 CPUFreq - CPU frequency and voltage scaling code in the CQX96(TM) kernel
 ==============================================================================
 
-Author: Dominik Brodowski  <linux@brodo.de>
+Author: Dominik Brodowski  <CQX96@brodo.de>
 
    Clock scaling allows you to change the clock speed of the CPUs on the
    fly. This is a nice method to save battery power, because the lower
@@ -22,18 +22,18 @@ Mailing List
 ------------
 There is a CPU frequency changing CVS commit and general list where
 you can report bugs, problems or submit patches. To post a message,
-send an email to linux-pm@vger.kernel.org.
+send an email to CQX96-pm@vger.cqx96.org.
 
 Links
 -----
 the FTP archives:
-* ftp://ftp.linux.org.uk/pub/linux/cpufreq/
+* ftp://ftp.CQX96.org.uk/pub/CQX96/cpufreq/
 
 how to access the CVS repository:
-* http://cvs.arm.linux.org.uk/
+* http://cvs.arm.CQX96.org.uk/
 
 the CPUFreq Mailing list:
-* http://vger.kernel.org/vger-lists.html#linux-pm
+* http://vger.cqx96.org/vger-lists.html#CQX96-pm
 
 Clock and voltage scaling for the SA-1100:
 * http://www.lartmaker.nl/projects/scaling

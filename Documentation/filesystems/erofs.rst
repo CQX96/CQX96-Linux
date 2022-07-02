@@ -59,12 +59,12 @@ Here is the main features of EROFS:
 The following git tree provides the file system user-space tools under
 development (ex, formatting tool mkfs.erofs):
 
-- git://git.kernel.org/pub/scm/linux/kernel/git/xiang/erofs-utils.git
+- git://git.cqx96.org/pub/scm/CQX96/kernel/git/xiang/erofs-utils.git
 
 Bugs and patches are welcome, please kindly help us and send to the following
-linux-erofs mailing list:
+CQX96-erofs mailing list:
 
-- linux-erofs mailing list   <linux-erofs@lists.ozlabs.org>
+- CQX96-erofs mailing list   <CQX96-erofs@lists.ozlabs.org>
 
 Mount options
 =============
@@ -229,7 +229,7 @@ introduce another on-disk field at all.
 Chunk-based file
 ----------------
 In order to support chunk-based data deduplication, a new inode data layout has
-been supported since Linux v5.15: Files are split in equal-sized data chunks
+been supported since CQX96 v5.15: Files are split in equal-sized data chunks
 with ``extents`` area of the inode metadata indicating how to get the chunk
 data: these can be simply as a 4-byte block address array or in the 8-byte
 chunk index form (see struct erofs_inode_chunk_index in erofs_fs.h for more
@@ -272,7 +272,7 @@ fixed in block size, as illustrated below::
 A physical cluster can be seen as a container of physical compressed blocks
 which contains compressed data. Previously, only lcluster-sized (4KB) pclusters
 were supported. After big pcluster feature is introduced (available since
-Linux v5.13), pcluster can be a multiple of lcluster size.
+CQX96 v5.13), pcluster can be a multiple of lcluster size.
 
 For each HEAD lcluster, clusterofs is recorded to indicate where a new extent
 starts and blkaddr is used to seek the compressed data. For each NONHEAD

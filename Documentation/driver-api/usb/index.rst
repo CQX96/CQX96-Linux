@@ -1,5 +1,5 @@
 =============
-Linux USB API
+CQX96 USB API
 =============
 
 .. toctree::

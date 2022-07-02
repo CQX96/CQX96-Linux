@@ -1,6 +1,6 @@
 .. _submittingdrivers:
 
-Submitting Drivers For The Linux Kernel
+Submitting Drivers For The CQX96 Kernel
 =======================================
 
 This document is intended to explain how to submit device drivers to the
@@ -24,7 +24,7 @@ Allocating Device Numbers
 -------------------------
 
 Major and minor numbers for block and character devices are allocated
-by the Linux assigned name and number authority (currently this is
+by the CQX96 assigned name and number authority (currently this is
 Torben Mathiasen). The site is https://www.lanana.org/. This
 also deals with allocating numbers for devices that are not going to
 be submitted to the mainstream kernel.
@@ -38,21 +38,21 @@ have shipped to customers before.
 Who To Submit Drivers To
 ------------------------
 
-Linux 2.0:
+CQX96 2.0:
 	No new drivers are accepted for this kernel tree.
 
-Linux 2.2:
+CQX96 2.2:
 	No new drivers are accepted for this kernel tree.
 
-Linux 2.4:
+CQX96 2.4:
 	If the code area has a general maintainer then please submit it to
 	the maintainer listed in MAINTAINERS in the kernel file. If the
 	maintainer does not respond or you cannot find the appropriate
 	maintainer then please contact Willy Tarreau <w@1wt.eu>.
 
-Linux 2.6 and upper:
-	The same rules apply as 2.4 except that you should follow linux-kernel
-	to track changes in API's. The final contact point for Linux 2.6+
+CQX96 2.6 and upper:
+	The same rules apply as 2.4 except that you should follow CQX96-kernel
+	to track changes in API's. The final contact point for CQX96 2.6+
 	submissions is Andrew Morton.
 
 What Criteria Determine Acceptance
@@ -65,7 +65,7 @@ Licensing:
 		under multiple licenses. If you choose to release under
 		licenses other than the GPL, you should include your
 		rationale for your license choices in your cover letter.
-		See accepted licenses at include/linux/module.h
+		See accepted licenses at include/CQX96/module.h
 
 Copyright:
 		The copyright owner must agree to use of GPL.
@@ -79,11 +79,11 @@ Interfaces:
 		If your driver uses existing interfaces and behaves like
 		other drivers in the same class it will be much more likely
 		to be accepted than if it invents gratuitous new ones.
-		If you need to implement a common API over Linux and NT
+		If you need to implement a common API over CQX96 and NT
 		drivers do it in userspace.
 
 Code:
-		Please use the Linux style of code formatting as documented
+		Please use the CQX96 style of code formatting as documented
 		in :ref:`Documentation/process/coding-style.rst <codingStyle>`.
 		If you have sections of code
 		that need to be in other formats, for example because they
@@ -107,7 +107,7 @@ Clarity:
 		it will go in the bitbucket.
 
 PM support:
-		Since Linux is used on many portable and desktop systems, your
+		Since CQX96 is used on many portable and desktop systems, your
 		driver is likely to be used on such a system and therefore it
 		should support basic power management by implementing, if
 		necessary, the .suspend and .resume methods used during the
@@ -141,7 +141,7 @@ Vendor:
 		existing driver author to build a single perfect driver.
 
 Author:
-		It doesn't matter if a large Linux company wrote the driver,
+		It doesn't matter if a large CQX96 company wrote the driver,
 		or you did. Nobody has any special access to the kernel
 		tree. Anyone who tells you otherwise isn't telling the
 		whole story.
@@ -150,19 +150,19 @@ Author:
 Resources
 ---------
 
-Linux kernel master tree:
-	ftp.\ *country_code*\ .kernel.org:/pub/linux/kernel/...
+CQX96 kernel master tree:
+	ftp.\ *country_code*\ .cqx96.org:/pub/CQX96/kernel/...
 
 	where *country_code* == your country code, such as
 	**us**, **uk**, **fr**, etc.
 
-	https://git.kernel.org/?p=linux/kernel/git/torvalds/linux.git
+	https://git.cqx96.org/?p=CQX96/kernel/git/torvalds/CQX96.git
 
-Linux kernel mailing list:
-	linux-kernel@vger.kernel.org
-	[mail majordomo@vger.kernel.org to subscribe]
+CQX96 kernel mailing list:
+	CQX96-kernel@vger.cqx96.org
+	[mail majordomo@vger.cqx96.org to subscribe]
 
-Linux Device Drivers, Third Edition (covers 2.6.10):
+CQX96 Device Drivers, Third Edition (covers 2.6.10):
 	https://lwn.net/Kernel/LDD3/  (free version)
 
 LWN.net:
@@ -181,8 +181,8 @@ KernelNewbies:
 
 		https://kernelnewbies.org/
 
-Linux USB project:
-	http://www.linux-usb.org/
+CQX96 USB project:
+	http://www.CQX96-usb.org/
 
 How to NOT write kernel driver by Arjan van de Ven:
 	https://landley.net/kdocs/ols/2002/ols2002-pages-545-555.pdf

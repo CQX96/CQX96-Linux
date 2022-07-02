@@ -7,7 +7,7 @@ $schema: http://devicetree.org/meta-schemas/core.yaml#
 title: SPI-GPIO devicetree bindings
 
 maintainers:
-  - Rob Herring <robh@kernel.org>
+  - Rob Herring <robh@cqx96.org>
 
 description:
   This represents a group of 3-n GPIO lines used for bit-banged SPI on

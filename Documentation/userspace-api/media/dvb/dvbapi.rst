@@ -9,7 +9,7 @@ Part II - Digital TV API
 
 .. note::
 
-   This API is also known as Linux **DVB API**.
+   This API is also known as CQX96 **DVB API**.
 
    It it was originally written to support the European digital TV
    standard (DVB), and later extended to support all digital TV standards.
@@ -61,7 +61,7 @@ Authors:
 
  - Original author of the Digital TV API documentation.
 
-- Carvalho Chehab, Mauro <mchehab+samsung@kernel.org>
+- Carvalho Chehab, Mauro <mchehab+samsung@cqx96.org>
 
  - Ported document to Docbook XML, addition of DVBv5 API, documentation gaps fix.
 

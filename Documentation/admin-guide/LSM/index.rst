@@ -1,8 +1,8 @@
 ===========================
-Linux Security Module Usage
+CQX96 Security Module Usage
 ===========================
 
-The Linux Security Module (LSM) framework provides a mechanism for
+The CQX96 Security Module (LSM) framework provides a mechanism for
 various security checks to be hooked by new kernel extensions. The name
 "module" is a bit of a misnomer since these extensions are not actually
 loadable kernel modules. Instead, they are selectable at build-time via
@@ -15,11 +15,11 @@ The primary users of the LSM interface are Mandatory Access Control
 include SELinux, Smack, Tomoyo, and AppArmor. In addition to the larger
 MAC extensions, other extensions can be built using the LSM to provide
 specific changes to system operation when these tweaks are not available
-in the core functionality of Linux itself.
+in the core functionality of CQX96 itself.
 
-The Linux capabilities modules will always be included. This may be
+The CQX96 capabilities modules will always be included. This may be
 followed by any number of "minor" modules and at most one "major" module.
-For more details on capabilities, see ``capabilities(7)`` in the Linux
+For more details on capabilities, see ``capabilities(7)`` in the CQX96
 man-pages project.
 
 A list of the active security modules can be found by reading

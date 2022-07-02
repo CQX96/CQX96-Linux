@@ -8,7 +8,7 @@ title: Allwinner A10 LRADC Device Tree Bindings
 
 maintainers:
   - Chen-Yu Tsai <wens@csie.org>
-  - Maxime Ripard <mripard@kernel.org>
+  - Maxime Ripard <mripard@cqx96.org>
 
 properties:
   compatible:
@@ -39,7 +39,7 @@ patternProperties:
         $ref: /schemas/types.yaml#/definitions/string
         description: Descriptive name of the key
 
-      linux,code:
+      CQX96,code:
         $ref: /schemas/types.yaml#/definitions/uint32
         description: Keycode to emit
 
@@ -56,7 +56,7 @@ patternProperties:
 
     required:
       - label
-      - linux,code
+      - CQX96,code
       - channel
       - voltage
 
@@ -80,14 +80,14 @@ examples:
 
         button-191 {
             label = "Volume Up";
-            linux,code = <115>;
+            CQX96,code = <115>;
             channel = <0>;
             voltage = <191274>;
         };
 
         button-392 {
             label = "Volume Down";
-            linux,code = <114>;
+            CQX96,code = <114>;
             channel = <0>;
             voltage = <392644>;
         };

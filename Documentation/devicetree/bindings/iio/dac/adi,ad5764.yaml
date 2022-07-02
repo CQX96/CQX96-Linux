@@ -8,7 +8,7 @@ title: Analog Devices AD5744 and AD5764 DAC families
 
 maintainers:
   - Lars-Peter Clausen <lars@metafoo.de>
-  - Jonathan Cameron <jic23@kernel.org>
+  - Jonathan Cameron <jic23@cqx96.org>
 
 properties:
 

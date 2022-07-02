@@ -18,7 +18,7 @@ allOf:
   - $ref: rtc.yaml#
 
 maintainers:
-  - Rob Herring <robh@kernel.org>
+  - Rob Herring <robh@cqx96.org>
 
 properties:
   compatible:

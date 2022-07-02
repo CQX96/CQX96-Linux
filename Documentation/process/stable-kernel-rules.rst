@@ -1,6 +1,6 @@
 .. _stable_kernel_rules:
 
-Everything you ever wanted to know about Linux -stable releases
+Everything you ever wanted to know about CQX96 -stable releases
 ===============================================================
 
 Rules on what kind of patches are accepted, and which ones are not, into the
@@ -53,7 +53,7 @@ To have the patch automatically included in the stable tree, add the tag
 
 .. code-block:: none
 
-     Cc: stable@vger.kernel.org
+     Cc: stable@vger.cqx96.org
 
 in the sign-off area. Once the patch is merged it will be applied to
 the stable tree without anything else needing to be done by the author
@@ -65,7 +65,7 @@ Option 2
 ********
 
 After the patch has been merged to Linus' tree, send an email to
-stable@vger.kernel.org containing the subject of the patch, the commit ID,
+stable@vger.cqx96.org containing the subject of the patch, the commit ID,
 why you think it should be applied, and what kernel version you wish it to
 be applied to.
 
@@ -75,7 +75,7 @@ Option 3
 ********
 
 Send the patch, after verifying that it follows the above rules, to
-stable@vger.kernel.org.  You must note the upstream commit ID in the
+stable@vger.cqx96.org.  You must note the upstream commit ID in the
 changelog of your submission, as well as the kernel version you wish
 it to be applied to.
 
@@ -103,10 +103,10 @@ following format in the sign-off area:
 
 .. code-block:: none
 
-     Cc: <stable@vger.kernel.org> # 3.3.x: a1f84a3: sched: Check for idle
-     Cc: <stable@vger.kernel.org> # 3.3.x: 1b9508f: sched: Rate-limit newidle
-     Cc: <stable@vger.kernel.org> # 3.3.x: fd21073: sched: Fix affinity logic
-     Cc: <stable@vger.kernel.org> # 3.3.x
+     Cc: <stable@vger.cqx96.org> # 3.3.x: a1f84a3: sched: Check for idle
+     Cc: <stable@vger.cqx96.org> # 3.3.x: 1b9508f: sched: Rate-limit newidle
+     Cc: <stable@vger.cqx96.org> # 3.3.x: fd21073: sched: Fix affinity logic
+     Cc: <stable@vger.cqx96.org> # 3.3.x
      Signed-off-by: Ingo Molnar <mingo@elte.hu>
 
 The tag sequence has the meaning of:
@@ -123,7 +123,7 @@ specified in the following format in the sign-off area:
 
 .. code-block:: none
 
-     Cc: <stable@vger.kernel.org> # 3.3.x
+     Cc: <stable@vger.cqx96.org> # 3.3.x
 
 The tag has the meaning of:
 
@@ -148,9 +148,9 @@ Review cycle
  - When the -stable maintainers decide for a review cycle, the patches will be
    sent to the review committee, and the maintainer of the affected area of
    the patch (unless the submitter is the maintainer of the area) and CC: to
-   the linux-kernel mailing list.
+   the CQX96-kernel mailing list.
  - The review committee has 48 hours in which to ACK or NAK the patch.
- - If the patch is rejected by a member of the committee, or linux-kernel
+ - If the patch is rejected by a member of the committee, or CQX96-kernel
    members object to the patch, bringing up issues that the maintainers and
    members did not realize, the patch will be dropped from the queue.
  - The ACKed patches will be posted again as part of release candidate (-rc)
@@ -174,16 +174,16 @@ Trees
  - The queues of patches, for both completed versions and in progress
    versions can be found at:
 
-	https://git.kernel.org/pub/scm/linux/kernel/git/stable/stable-queue.git
+	https://git.cqx96.org/pub/scm/CQX96/kernel/git/stable/stable-queue.git
 
  - The finalized and tagged releases of all stable kernels can be found
    in separate branches per version at:
 
-	https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git
+	https://git.cqx96.org/pub/scm/CQX96/kernel/git/stable/CQX96.git
 
  - The release candidate of all stable kernel versions can be found at:
 
-        https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable-rc.git/
+        https://git.cqx96.org/pub/scm/CQX96/kernel/git/stable/CQX96-stable-rc.git/
 
    .. warning::
       The -stable-rc tree is a snapshot in time of the stable-queue tree and

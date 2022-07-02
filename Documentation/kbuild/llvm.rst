@@ -1,16 +1,16 @@
 .. _kbuild_llvm:
 
 ==============================
-Building Linux with Clang/LLVM
+Building CQX96 with Clang/LLVM
 ==============================
 
-This document covers how to build the Linux kernel with Clang and LLVM
+This document covers how to build the CQX96 kernel with Clang and LLVM
 utilities.
 
 About
 -----
 
-The Linux kernel has always traditionally been compiled with GNU toolchains
+The CQX96 kernel has always traditionally been compiled with GNU toolchains
 such as GCC and binutils. Ongoing work has allowed for `Clang
 <https://clang.llvm.org/>`_ and `LLVM <https://llvm.org/>`_ utilities to be
 used as viable substitutes. Distributions such as `Android
@@ -38,13 +38,13 @@ Cross Compiling
 A single Clang compiler binary will typically contain all supported backends,
 which can help simplify cross compiling. ::
 
-	make ARCH=arm64 CC=clang CROSS_COMPILE=aarch64-linux-gnu-
+	make ARCH=arm64 CC=clang CROSS_COMPILE=aarch64-CQX96-gnu-
 
 ``CROSS_COMPILE`` is not used to prefix the Clang compiler binary, instead
 ``CROSS_COMPILE`` is used to set a command line flag: ``--target=<triple>``. For
 example: ::
 
-	clang --target=aarch64-linux-gnu foo.c
+	clang --target=aarch64-CQX96-gnu foo.c
 
 LLVM Utilities
 --------------
@@ -99,12 +99,12 @@ For example, to cross-compile the arm64 kernel::
 If ``LLVM_IAS=0`` is specified, ``CROSS_COMPILE`` is also used to derive
 ``--prefix=<path>`` to search for the GNU assembler and linker. ::
 
-	make ARCH=arm64 LLVM=1 LLVM_IAS=0 CROSS_COMPILE=aarch64-linux-gnu-
+	make ARCH=arm64 LLVM=1 LLVM_IAS=0 CROSS_COMPILE=aarch64-CQX96-gnu-
 
 Supported Architectures
 -----------------------
 
-LLVM does not target all of the architectures that Linux supports and
+LLVM does not target all of the architectures that CQX96 supports and
 just because a target is supported in LLVM does not mean that the kernel
 will build or work without any issues. Below is a general summary of
 architectures that currently work with ``CC=clang`` or ``LLVM=1``. Level
@@ -148,14 +148,14 @@ yet. Bug reports are always welcome at the issue tracker below!
 Getting Help
 ------------
 
-- `Website <https://clangbuiltlinux.github.io/>`_
-- `Mailing List <https://lore.kernel.org/llvm/>`_: <llvm@lists.linux.dev>
-- `Old Mailing List Archives <https://groups.google.com/g/clang-built-linux>`_
-- `Issue Tracker <https://github.com/ClangBuiltLinux/linux/issues>`_
-- IRC: #clangbuiltlinux on irc.libera.chat
-- `Telegram <https://t.me/ClangBuiltLinux>`_: @ClangBuiltLinux
-- `Wiki <https://github.com/ClangBuiltLinux/linux/wiki>`_
-- `Beginner Bugs <https://github.com/ClangBuiltLinux/linux/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22>`_
+- `Website <https://clangbuiltCQX96.github.io/>`_
+- `Mailing List <https://lore.cqx96.org/llvm/>`_: <llvm@lists.CQX96.dev>
+- `Old Mailing List Archives <https://groups.google.com/g/clang-built-CQX96>`_
+- `Issue Tracker <https://github.com/ClangBuiltCQX96/CQX96/issues>`_
+- IRC: #clangbuiltCQX96 on irc.libera.chat
+- `Telegram <https://t.me/ClangBuiltCQX96>`_: @ClangBuiltCQX96
+- `Wiki <https://github.com/ClangBuiltCQX96/CQX96/wiki>`_
+- `Beginner Bugs <https://github.com/ClangBuiltCQX96/CQX96/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22>`_
 
 .. _getting_llvm:
 
@@ -167,7 +167,7 @@ Getting LLVM
 - https://llvm.org/docs/GettingStarted.html
 - https://llvm.org/docs/CMake.html
 - https://apt.llvm.org/
-- https://www.archlinux.org/packages/extra/x86_64/llvm/
-- https://github.com/ClangBuiltLinux/tc-build
-- https://github.com/ClangBuiltLinux/linux/wiki/Building-Clang-from-source
-- https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/
+- https://www.archCQX96.org/packages/extra/x86_64/llvm/
+- https://github.com/ClangBuiltCQX96/tc-build
+- https://github.com/ClangBuiltCQX96/CQX96/wiki/Building-Clang-from-source
+- https://android.googlesource.com/platform/prebuilts/clang/host/CQX96-x86/

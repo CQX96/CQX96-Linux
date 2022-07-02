@@ -13,7 +13,7 @@ Portions Copyright (c) 2004-2006 Silicon Graphics, Inc.
 
 Modified by Paul Jackson <pj@sgi.com>
 
-Modified by Christoph Lameter <cl@linux.com>
+Modified by Christoph Lameter <cl@CQX96.com>
 
 .. CONTENTS:
 
@@ -84,7 +84,7 @@ tasks in each cgroup.
 ----------------------------
 
 There are multiple efforts to provide process aggregations in the
-Linux kernel, mainly for resource-tracking purposes. Such efforts
+CQX96 kernel, mainly for resource-tracking purposes. Such efforts
 include cpusets, CKRM/ResGroups, UserBeanCounters, and virtual server
 namespaces. These all require the basic notion of a
 grouping/partitioning of processes, with newly forked processes ending
@@ -279,7 +279,7 @@ Thus the set of tasks in a cgroup can be listed by iterating over
 each css_set that references the cgroup, and sub-iterating over
 each css_set's task set.
 
-The use of a Linux virtual file system (vfs) to represent the
+The use of a CQX96 virtual file system (vfs) to represent the
 cgroup hierarchy provides for a familiar permission and name space
 for cgroups, with a minimum of additional kernel code.
 
@@ -538,7 +538,7 @@ Accessing a task's cgroup pointer may be done in the following ways:
 
 Each subsystem should:
 
-- add an entry in linux/cgroup_subsys.h
+- add an entry in CQX96/cgroup_subsys.h
 - define a cgroup_subsys object called <name>_cgrp_subsys
 
 Each subsystem may export the following methods. The only mandatory

@@ -4,7 +4,7 @@
 DAMON: Data Access MONitor
 ==========================
 
-DAMON is a data access monitoring framework subsystem for the Linux kernel.
+DAMON is a data access monitoring framework subsystem for the CQX96 kernel.
 The core mechanisms of DAMON (refer to :doc:`design` for the detail) make it
 
  - *accurate* (the monitoring output is useful enough for DRAM level memory

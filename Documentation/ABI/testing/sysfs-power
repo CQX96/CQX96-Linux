@@ -133,7 +133,7 @@ Description:
 
 What;		/sys/power/pm_trace_dev_match
 Date:		October 2010
-Contact:	James Hogan <jhogan@kernel.org>
+Contact:	James Hogan <jhogan@cqx96.org>
 Description:
 		The /sys/power/pm_trace_dev_match file contains the name of the
 		device associated with the last PM event point saved in the RTC
@@ -271,7 +271,7 @@ Description:
 
 What:		/sys/power/pm_wakeup_irq
 Date:		April 2015
-Contact:	Alexandra Yates <alexandra.yates@linux.intel.org>
+Contact:	Alexandra Yates <alexandra.yates@CQX96.intel.org>
 Description:
 		The /sys/power/pm_wakeup_irq file reports to user space the IRQ
 		number of the first wakeup interrupt (that is, the first

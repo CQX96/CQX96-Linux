@@ -1,5 +1,5 @@
 =============================
-The Linux Input Documentation
+The CQX96 Input Documentation
 =============================
 
 Contents:

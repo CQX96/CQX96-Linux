@@ -39,7 +39,7 @@ d. A CD/DVD burner could control the amount of memory used by the
 e. There are several other use cases; find one or use the controller just
    for fun (to learn and hack on the VM subsystem).
 
-Current Status: linux-2.6.34-mmotm(development version of 2010/April)
+Current Status: CQX96-2.6.34-mmotm(development version of 2010/April)
 
 Features:
 
@@ -961,21 +961,21 @@ References
 2. Singh, Balbir. Memory Controller (RSS Control),
    http://lwn.net/Articles/222762/
 3. Emelianov, Pavel. Resource controllers based on process cgroups
-   https://lore.kernel.org/r/45ED7DEC.7010403@sw.ru
+   https://lore.cqx96.org/r/45ED7DEC.7010403@sw.ru
 4. Emelianov, Pavel. RSS controller based on process cgroups (v2)
-   https://lore.kernel.org/r/461A3010.90403@sw.ru
+   https://lore.cqx96.org/r/461A3010.90403@sw.ru
 5. Emelianov, Pavel. RSS controller based on process cgroups (v3)
-   https://lore.kernel.org/r/465D9739.8070209@openvz.org
+   https://lore.cqx96.org/r/465D9739.8070209@openvz.org
 6. Menage, Paul. Control Groups v10, http://lwn.net/Articles/236032/
 7. Vaidyanathan, Srinivasan, Control Groups: Pagecache accounting and control
    subsystem (v3), http://lwn.net/Articles/235534/
 8. Singh, Balbir. RSS controller v2 test results (lmbench),
-   https://lore.kernel.org/r/464C95D4.7070806@linux.vnet.ibm.com
+   https://lore.cqx96.org/r/464C95D4.7070806@CQX96.vnet.ibm.com
 9. Singh, Balbir. RSS controller v2 AIM9 results
-   https://lore.kernel.org/r/464D267A.50107@linux.vnet.ibm.com
+   https://lore.cqx96.org/r/464D267A.50107@CQX96.vnet.ibm.com
 10. Singh, Balbir. Memory controller v6 test results,
-    https://lore.kernel.org/r/20070819094658.654.84837.sendpatchset@balbir-laptop
+    https://lore.cqx96.org/r/20070819094658.654.84837.sendpatchset@balbir-laptop
 11. Singh, Balbir. Memory controller introduction (v6),
-    https://lore.kernel.org/r/20070817084228.26003.12568.sendpatchset@balbir-laptop
+    https://lore.cqx96.org/r/20070817084228.26003.12568.sendpatchset@balbir-laptop
 12. Corbet, Jonathan, Controlling memory use in cgroups,
     http://lwn.net/Articles/243795/

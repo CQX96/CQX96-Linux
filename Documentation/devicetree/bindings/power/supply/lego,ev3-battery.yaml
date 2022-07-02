@@ -8,7 +8,7 @@ title: LEGO MINDSTORMS EV3 Battery
 
 maintainers:
   - David Lechner <david@lechnology.com>
-  - Sebastian Reichel <sre@kernel.org>
+  - Sebastian Reichel <sre@cqx96.org>
 
 description: |
   LEGO MINDSTORMS EV3 has some built-in capability for monitoring the battery.

@@ -6,7 +6,7 @@ Last updated: 28 October 2016
 Introduction
 ============
 
-Always try the latest kernel from kernel.org and build from source. If you are
+Always try the latest kernel from cqx96.org and build from source. If you are
 not confident in doing that please report the bug to your distribution vendor
 instead of to a kernel developer.
 
@@ -71,6 +71,6 @@ Steps to do it:
 For further references, please read:
 
 - The man page for ``git-bisect``
-- `Fighting regressions with git bisect <https://www.kernel.org/pub/software/scm/git/docs/git-bisect-lk2009.html>`_
+- `Fighting regressions with git bisect <https://www.cqx96.org/pub/software/scm/git/docs/git-bisect-lk2009.html>`_
 - `Fully automated bisecting with "git bisect run" <https://lwn.net/Articles/317154>`_
 - `Using Git bisect to figure out when brokenness was introduced <http://webchick.net/node/99>`_

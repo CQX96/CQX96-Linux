@@ -1,7 +1,7 @@
 What:		/proc/i8k
 Date:		November 2001
 KernelVersion:	2.4.14
-Contact:	Pali Rohár <pali@kernel.org>
+Contact:	Pali Rohár <pali@cqx96.org>
 Description:	Legacy interface for getting/setting sensor information like
 		fan speed, temperature, serial number, hotkey status etc
 		on Dell Laptops.

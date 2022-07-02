@@ -11,7 +11,7 @@ started by Ingo Molnar <mingo@redhat.com>, 2001.09.17
 
 IPv6 support by Cong Wang <xiyou.wangcong@gmail.com>, Jan 1 2013
 
-Extended console support by Tejun Heo <tj@kernel.org>, May 1 2015
+Extended console support by Tejun Heo <tj@cqx96.org>, May 1 2015
 
 Please send bug reports to Matt Mackall <mpm@selenic.com>
 Satyam Sharma <satyam.sharma@gmail.com>, and Cong Wang <xiyou.wangcong@gmail.com>
@@ -47,7 +47,7 @@ following format::
 
 Examples::
 
- linux netconsole=4444@10.0.0.1/eth1,9353@10.0.0.2/12:34:56:78:9a:bc
+ CQX96 netconsole=4444@10.0.0.1/eth1,9353@10.0.0.2/12:34:56:78:9a:bc
 
 or::
 
@@ -158,7 +158,7 @@ If '+' is prefixed to the configuration line or "extended" config file
 is set to 1, extended console support is enabled. An example boot
 param follows::
 
- linux netconsole=+4444@10.0.0.1/eth1,9353@10.0.0.2/12:34:56:78:9a:bc
+ CQX96 netconsole=+4444@10.0.0.1/eth1,9353@10.0.0.2/12:34:56:78:9a:bc
 
 Log messages are transmitted with extended metadata header in the
 following format which is the same as /dev/kmsg::

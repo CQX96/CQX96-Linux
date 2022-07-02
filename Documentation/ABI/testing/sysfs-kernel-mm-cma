@@ -1,6 +1,6 @@
 What:		/sys/kernel/mm/cma/
 Date:		Feb 2021
-Contact:	Minchan Kim <minchan@kernel.org>
+Contact:	Minchan Kim <minchan@cqx96.org>
 Description:
 		/sys/kernel/mm/cma/ contains a subdirectory for each CMA
 		heap name (also sometimes called CMA areas).
@@ -14,12 +14,12 @@ Description:
 
 What:		/sys/kernel/mm/cma/<cma-heap-name>/alloc_pages_success
 Date:		Feb 2021
-Contact:	Minchan Kim <minchan@kernel.org>
+Contact:	Minchan Kim <minchan@cqx96.org>
 Description:
 		the number of pages CMA API succeeded to allocate
 
 What:		/sys/kernel/mm/cma/<cma-heap-name>/alloc_pages_fail
 Date:		Feb 2021
-Contact:	Minchan Kim <minchan@kernel.org>
+Contact:	Minchan Kim <minchan@cqx96.org>
 Description:
 		the number of pages CMA API failed to allocate

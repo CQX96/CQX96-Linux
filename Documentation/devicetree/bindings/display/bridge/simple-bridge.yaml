@@ -8,7 +8,7 @@ title: Transparent non-programmable DRM bridges
 
 maintainers:
   - Laurent Pinchart <laurent.pinchart+renesas@ideasonboard.com>
-  - Maxime Ripard <mripard@kernel.org>
+  - Maxime Ripard <mripard@cqx96.org>
 
 description: |
   This binding supports transparent non-programmable bridges that don't require

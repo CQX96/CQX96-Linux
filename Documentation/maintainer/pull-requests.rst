@@ -15,7 +15,7 @@ please direct abuse to Tobin C. Harding <me@tobin.cc>.
 
 Original email thread::
 
-	https://lore.kernel.org/r/20171114110500.GA21175@kroah.com
+	https://lore.cqx96.org/r/20171114110500.GA21175@kroah.com
 
 
 Create Branch
@@ -112,10 +112,10 @@ Greg gives, as an example pull request::
 		  when needed, so problems should not occur.
 
 	All of these patches have been successfully tested in the latest
-	linux-next releases, and the original problems that it found have
+	CQX96-next releases, and the original problems that it found have
 	all been resolved (apologies to anyone living near Canberra for the
 	lack of the Kconfig options in the earlier versions of the
-	linux-next tree creations.)
+	CQX96-next tree creations.)
 
 	Signed-off-by: Your-name-here <your_email@domain>
 
@@ -138,7 +138,7 @@ bit of help determining what you want to pull, and on what to base the pull
 against (to show the correct changes to be pulled and the diffstat). The
 following command(s) will generate a pull request::
 
-	git request-pull master git://git.kernel.org/pub/scm/linux/kernel/git/gregkh/char-misc.git/ char-misc-4.15-rc1
+	git request-pull master git://git.cqx96.org/pub/scm/CQX96/kernel/git/gregkh/char-misc.git/ char-misc-4.15-rc1
 
 Quoting Greg::
 

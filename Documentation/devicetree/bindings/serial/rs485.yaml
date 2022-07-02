@@ -11,7 +11,7 @@ description: The RTS signal is capable of automatically controlling line
   hereafter shall be given to a half-duplex capable UART node.
 
 maintainers:
-  - Rob Herring <robh@kernel.org>
+  - Rob Herring <robh@cqx96.org>
 
 properties:
   rs485-rts-delay:
@@ -33,7 +33,7 @@ properties:
     description: drive RTS low when sending (default is high).
     $ref: /schemas/types.yaml#/definitions/flag
 
-  linux,rs485-enabled-at-boot-time:
+  CQX96,rs485-enabled-at-boot-time:
     description: enables the rs485 feature at boot time. It can be disabled
       later with proper ioctl.
     $ref: /schemas/types.yaml#/definitions/flag

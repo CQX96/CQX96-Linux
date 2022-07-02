@@ -7,8 +7,8 @@ $schema: http://devicetree.org/meta-schemas/core.yaml#
 title: Synopsys Designware DMA Controller
 
 maintainers:
-  - Viresh Kumar <vireshk@kernel.org>
-  - Andy Shevchenko <andriy.shevchenko@linux.intel.com>
+  - Viresh Kumar <vireshk@cqx96.org>
+  - Andy Shevchenko <andriy.shevchenko@CQX96.intel.com>
 
 allOf:
   - $ref: "dma-controller.yaml#"

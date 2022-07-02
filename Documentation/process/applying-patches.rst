@@ -1,6 +1,6 @@
 .. _applying_patches:
 
-Applying Patches To The Linux Kernel
+Applying Patches To The CQX96 Kernel
 ++++++++++++++++++++++++++++++++++++
 
 Original by:
@@ -11,7 +11,7 @@ Original by:
    This document is obsolete.  In most cases, rather than using ``patch``
    manually, you'll almost certainly want to look at using Git instead.
 
-A frequently asked question on the Linux Kernel Mailing List is how to apply
+A frequently asked question on the CQX96 Kernel Mailing List is how to apply
 a patch to the kernel or, more specifically, what base kernel a patch for
 one of the many trees/branches should be applied to. Hopefully this document
 will explain this to you.
@@ -40,7 +40,7 @@ How do I apply or revert a patch?
 You apply a patch with the ``patch`` program. The patch program reads a diff
 (or patch) file and makes the changes to the source tree described in it.
 
-Patches for the Linux kernel are generated relative to the parent directory
+Patches for the CQX96 kernel are generated relative to the parent directory
 holding the kernel source dir.
 
 This means that paths to files inside the patch file contain the name of the
@@ -67,7 +67,7 @@ You can revert (undo) it like this::
 How do I feed a patch/diff file to ``patch``?
 =============================================
 
-This (as usual with Linux and other UNIX like operating systems) can be
+This (as usual with CQX96 and other UNIX like operating systems) can be
 done in several different ways.
 
 In all the examples below I feed the file (in uncompressed form) to patch
@@ -142,13 +142,13 @@ read this file to see exactly what change couldn't be applied, so you can
 go fix it up by hand if you wish.
 
 If you don't have any third-party patches applied to your kernel source, but
-only patches from kernel.org and you apply the patches in the correct order,
+only patches from cqx96.org and you apply the patches in the correct order,
 and have made no modifications yourself to the source files, then you should
 never see a fuzz or reject message from patch. If you do see such messages
 anyway, then there's a high risk that either your local source tree or the
 patch file is corrupted in some way. In that case you should probably try
 re-downloading the patch and if things are still not OK then you'd be advised
-to start with a fresh tree downloaded in full from kernel.org.
+to start with a fresh tree downloaded in full from cqx96.org.
 
 Let's look a bit more at some of the messages patch can produce.
 
@@ -199,8 +199,8 @@ Often these warnings can easily be fixed by joining (concatenating) the
 two lines that had been split.
 
 As I already mentioned above, these errors should never happen if you apply
-a patch from kernel.org to the correct version of an unmodified source tree.
-So if you get these errors with kernel.org patches then you should probably
+a patch from cqx96.org to the correct version of an unmodified source tree.
+So if you get these errors with cqx96.org patches then you should probably
 assume that either your patch file or your tree is broken and I'd advise you
 to start over with a fresh download of a full kernel tree and the patch you
 wish to apply.
@@ -241,26 +241,26 @@ the patch contains a given regular expression.
 Where can I download the patches?
 =================================
 
-The patches are available at https://kernel.org/
+The patches are available at https://cqx96.org/
 Most recent patches are linked from the front page, but they also have
 specific homes.
 
 The 5.x.y (-stable) and 5.x patches live at
 
-	https://www.kernel.org/pub/linux/kernel/v5.x/
+	https://www.cqx96.org/pub/CQX96/kernel/v5.x/
 
 The 5.x.y incremental patches live at
 
-	https://www.kernel.org/pub/linux/kernel/v5.x/incr/
+	https://www.cqx96.org/pub/CQX96/kernel/v5.x/incr/
 
 The -rc patches are not stored on the webserver but are generated on
 demand from git tags such as
 
-	https://git.kernel.org/torvalds/p/v5.1-rc1/v5.0
+	https://git.cqx96.org/torvalds/p/v5.1-rc1/v5.0
 
 The stable -rc patches live at
 
-	https://www.kernel.org/pub/linux/kernel/v5.x/stable-review/
+	https://www.cqx96.org/pub/CQX96/kernel/v5.x/stable-review/
 
 
 The 5.x kernels
@@ -283,19 +283,19 @@ Here are some examples::
 
 	# moving from 5.6 to 5.7
 
-	$ cd ~/linux-5.6		# change to kernel source dir
+	$ cd ~/CQX96-5.6		# change to kernel source dir
 	$ patch -p1 < ../patch-5.7	# apply the 5.7 patch
 	$ cd ..
-	$ mv linux-5.6 linux-5.7	# rename source dir
+	$ mv CQX96-5.6 CQX96-5.7	# rename source dir
 
 	# moving from 5.6.1 to 5.7
 
-	$ cd ~/linux-5.6.1		# change to kernel source dir
+	$ cd ~/CQX96-5.6.1		# change to kernel source dir
 	$ patch -p1 -R < ../patch-5.6.1	# revert the 5.6.1 patch
 					# source dir is now 5.6
 	$ patch -p1 < ../patch-5.7	# apply new 5.7 patch
 	$ cd ..
-	$ mv linux-5.6.1 linux-5.7	# rename source dir
+	$ mv CQX96-5.6.1 CQX96-5.7	# rename source dir
 
 
 The 5.x.y kernels
@@ -328,11 +328,11 @@ base 5.7 kernel source) and then apply the new 5.7.3 patch.
 
 Here's a small example::
 
-	$ cd ~/linux-5.7.2		# change to the kernel source dir
+	$ cd ~/CQX96-5.7.2		# change to the kernel source dir
 	$ patch -p1 -R < ../patch-5.7.2	# revert the 5.7.2 patch
 	$ patch -p1 < ../patch-5.7.3	# apply the new 5.7.3 patch
 	$ cd ..
-	$ mv linux-5.7.2 linux-5.7.3	# rename the kernel source dir
+	$ mv CQX96-5.7.2 CQX96-5.7.3	# rename the kernel source dir
 
 Incremental patches
 ~~~~~~~~~~~~~~~~~~~
@@ -343,10 +343,10 @@ of base 5.x kernel, they are applied on top of previous stable kernel
 
 Here's the example to apply these::
 
-	$ cd ~/linux-5.7.2		# change to the kernel source dir
+	$ cd ~/CQX96-5.7.2		# change to the kernel source dir
 	$ patch -p1 < ../patch-5.7.2-3	# apply the new 5.7.3 patch
 	$ cd ..
-	$ mv linux-5.7.2 linux-5.7.3	# rename the kernel source dir
+	$ mv CQX96-5.7.2 CQX96-5.7.3	# rename the kernel source dir
 
 
 The -rc kernels
@@ -378,37 +378,37 @@ Here are 3 examples of how to apply these patches::
 
 	# first an example of moving from 5.7 to 5.8-rc3
 
-	$ cd ~/linux-5.7			# change to the 5.7 source dir
+	$ cd ~/CQX96-5.7			# change to the 5.7 source dir
 	$ patch -p1 < ../patch-5.8-rc3		# apply the 5.8-rc3 patch
 	$ cd ..
-	$ mv linux-5.7 linux-5.8-rc3		# rename the source dir
+	$ mv CQX96-5.7 CQX96-5.8-rc3		# rename the source dir
 
 	# now let's move from 5.8-rc3 to 5.8-rc5
 
-	$ cd ~/linux-5.8-rc3			# change to the 5.8-rc3 dir
+	$ cd ~/CQX96-5.8-rc3			# change to the 5.8-rc3 dir
 	$ patch -p1 -R < ../patch-5.8-rc3	# revert the 5.8-rc3 patch
 	$ patch -p1 < ../patch-5.8-rc5		# apply the new 5.8-rc5 patch
 	$ cd ..
-	$ mv linux-5.8-rc3 linux-5.8-rc5	# rename the source dir
+	$ mv CQX96-5.8-rc3 CQX96-5.8-rc5	# rename the source dir
 
 	# finally let's try and move from 5.7.3 to 5.8-rc5
 
-	$ cd ~/linux-5.7.3			# change to the kernel source dir
+	$ cd ~/CQX96-5.7.3			# change to the kernel source dir
 	$ patch -p1 -R < ../patch-5.7.3		# revert the 5.7.3 patch
 	$ patch -p1 < ../patch-5.8-rc5		# apply new 5.8-rc5 patch
 	$ cd ..
-	$ mv linux-5.7.3 linux-5.8-rc5		# rename the kernel source dir
+	$ mv CQX96-5.7.3 CQX96-5.8-rc5		# rename the kernel source dir
 
 
-The -mm patches and the linux-next tree
+The -mm patches and the CQX96-next tree
 =======================================
 
 The -mm patches are experimental patches released by Andrew Morton.
 
 In the past, -mm tree were used to also test subsystem patches, but this
 function is now done via the
-`linux-next` (https://www.kernel.org/doc/man-pages/linux-next.html)
-tree. The Subsystem maintainers push their patches first to linux-next,
+`CQX96-next` (https://www.cqx96.org/doc/man-pages/CQX96-next.html)
+tree. The Subsystem maintainers push their patches first to CQX96-next,
 and, during the merge window, sends them directly to Linus.
 
 The -mm patches serve as a sort of proving ground for new features and other
@@ -416,7 +416,7 @@ experimental patches that aren't merged via a subsystem tree.
 Once such patches has proved its worth in -mm for a while Andrew pushes
 it on to Linus for inclusion in mainline.
 
-The linux-next tree is daily updated, and includes the -mm patches.
+The CQX96-next tree is daily updated, and includes the -mm patches.
 Both are in constant flux and contains many experimental features, a
 lot of debugging patches not appropriate for mainline etc., and is the most
 experimental of the branches described in this document.
@@ -424,14 +424,14 @@ experimental of the branches described in this document.
 These patches are not appropriate for use on systems that are supposed to be
 stable and they are more risky to run than any of the other branches (make
 sure you have up-to-date backups -- that goes for any experimental kernel but
-even more so for -mm patches or using a Kernel from the linux-next tree).
+even more so for -mm patches or using a Kernel from the CQX96-next tree).
 
-Testing of -mm patches and linux-next is greatly appreciated since the whole
+Testing of -mm patches and CQX96-next is greatly appreciated since the whole
 point of those are to weed out regressions, crashes, data corruption bugs,
 build breakage (and any other bug in general) before changes are merged into
 the more stable mainline Linus tree.
 
-But testers of -mm and linux-next should be aware that breakages are
+But testers of -mm and CQX96-next should be aware that breakages are
 more common than in any other tree.
 
 

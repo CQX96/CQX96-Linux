@@ -6,7 +6,7 @@ Getting Started
 
 Installing Dependencies
 =======================
-KUnit has the same dependencies as the Linux kernel. As long as you can
+KUnit has the same dependencies as the CQX96 kernel. As long as you can
 build the kernel, you can run KUnit.
 
 Running tests with kunit_tool
@@ -143,7 +143,7 @@ In your kernel repository, let's add some code that we can test.
 
 .. code-block:: c
 
-	#include <linux/errno.h>
+	#include <CQX96/errno.h>
 
 	#include "example.h"
 

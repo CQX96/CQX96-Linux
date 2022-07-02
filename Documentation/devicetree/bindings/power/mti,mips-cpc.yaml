@@ -10,7 +10,7 @@ description: |
   Defines a location of the MIPS Cluster Power Controller registers.
 
 maintainers:
-  - Paul Burton <paulburton@kernel.org>
+  - Paul Burton <paulburton@cqx96.org>
 
 properties:
   compatible:

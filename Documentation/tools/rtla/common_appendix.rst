@@ -1,6 +1,6 @@
 REPORTING BUGS
 ==============
-Report bugs to <lkml@vger.kernel.org>
+Report bugs to <lkml@vger.cqx96.org>
 
 LICENSE
 =======

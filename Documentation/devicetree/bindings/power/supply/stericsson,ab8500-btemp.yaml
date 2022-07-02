@@ -8,7 +8,7 @@ $schema: "http://devicetree.org/meta-schemas/core.yaml#"
 title: AB8500 Battery Temperature Monitor
 
 maintainers:
-  - Sebastian Reichel <sre@kernel.org>
+  - Sebastian Reichel <sre@cqx96.org>
 
 allOf:
   - $ref: power-supply.yaml#

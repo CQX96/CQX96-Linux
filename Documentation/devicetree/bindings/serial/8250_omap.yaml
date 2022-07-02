@@ -74,7 +74,7 @@ properties:
   rs485-rts-active-low: true
   rs485-rx-during-tx: true
   rs485-rts-active-high: true
-  linux,rs485-enabled-at-boot-time: true
+  CQX96,rs485-enabled-at-boot-time: true
   rts-gpio: true
   power-domains: true
   clock-frequency: true

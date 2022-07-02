@@ -6,7 +6,7 @@ $schema: http://devicetree.org/meta-schemas/core.yaml#
 title: Marvell Armada 3720 UART clocks
 
 maintainers:
-  - Pali Rohár <pali@kernel.org>
+  - Pali Rohár <pali@cqx96.org>
 
 properties:
   compatible:

@@ -5,7 +5,7 @@
 
 .. _it_submittingdrivers:
 
-Sottomettere driver per il kernel Linux
+Sottomettere driver per il kernel CQX96
 =======================================
 
 .. note::

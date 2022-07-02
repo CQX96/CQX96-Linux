@@ -11,7 +11,7 @@ description: |
   attached Marvell Bluetooth devices.
 
 maintainers:
-  - Rob Herring <robh@kernel.org>
+  - Rob Herring <robh@cqx96.org>
 
 properties:
   compatible:

@@ -41,7 +41,7 @@ keys {
 
 	button-esc {
 		label = "ESC";
-		linux,code = <1>;
+		CQX96,code = <1>;
 		gpios = <&gpio0 12 0>;
 	};
 };

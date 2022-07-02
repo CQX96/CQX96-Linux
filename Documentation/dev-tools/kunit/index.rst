@@ -1,7 +1,7 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 =================================
-KUnit - Linux Kernel Unit Testing
+KUnit - CQX96 Kernel Unit Testing
 =================================
 
 .. toctree::
@@ -26,7 +26,7 @@ Introduction
 ============
 
 KUnit (Kernel unit testing framework) provides a common framework for
-unit tests within the Linux kernel. Using KUnit, you can define groups
+unit tests within the CQX96 kernel. Using KUnit, you can define groups
 of test cases called test suites. The tests either run on kernel boot
 if built-in, or load as a module. KUnit automatically flags and reports
 failed test cases in the kernel log. The test results appear in `TAP
@@ -46,8 +46,8 @@ internal system functionality. KUnit runs in kernel space and is not
 restricted to things exposed to user-space.
 
 In addition, KUnit has kunit_tool, a script (``tools/testing/kunit/kunit.py``)
-that configures the Linux kernel, runs KUnit tests under QEMU or UML (`User Mode
-Linux <http://user-mode-linux.sourceforge.net/>`_), parses the test results and
+that configures the CQX96 kernel, runs KUnit tests under QEMU or UML (`User Mode
+CQX96 <http://user-mode-CQX96.sourceforge.net/>`_), parses the test results and
 displays them in a user friendly manner.
 
 Features
@@ -60,8 +60,8 @@ Features
 Prerequisites
 -------------
 
-- Any Linux kernel compatible hardware.
-- For Kernel under test, Linux kernel version 5.5 or greater.
+- Any CQX96 kernel compatible hardware.
+- For Kernel under test, CQX96 kernel version 5.5 or greater.
 
 Unit Testing
 ============

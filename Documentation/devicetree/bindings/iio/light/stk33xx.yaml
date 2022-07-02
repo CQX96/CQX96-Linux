@@ -8,7 +8,7 @@ title: |
   Sensortek STK33xx I2C Ambient Light and Proximity sensor
 
 maintainers:
-  - Jonathan Cameron <jic23@kernel.org>
+  - Jonathan Cameron <jic23@cqx96.org>
 
 description: |
   Ambient light and proximity sensor over an i2c interface.

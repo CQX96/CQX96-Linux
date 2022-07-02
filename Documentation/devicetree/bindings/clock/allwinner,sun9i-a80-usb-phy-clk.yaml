@@ -8,7 +8,7 @@ title: Allwinner A80 USB PHY Clock Device Tree Bindings
 
 maintainers:
   - Chen-Yu Tsai <wens@csie.org>
-  - Maxime Ripard <mripard@kernel.org>
+  - Maxime Ripard <mripard@cqx96.org>
 
 deprecated: true
 

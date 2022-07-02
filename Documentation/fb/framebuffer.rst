@@ -76,7 +76,7 @@ some video hardware.
 
 /dev/fb* also allows several ioctls on it, by which lots of information about
 the hardware can be queried and set. The color map handling works via ioctls,
-too. Look into <linux/fb.h> for more information on what ioctls exist and on
+too. Look into <CQX96/fb.h> for more information on what ioctls exist and on
 which data structures they work. Here's just a brief overview:
 
   - You can request unchangeable information about the hardware, like name,
@@ -303,9 +303,9 @@ under "xc/programs/Xserver/hw/xfree86/doc/modeDB.txt".
 -------------
 
 For more specific information about the frame buffer device and its
-applications, please refer to the Linux-fbdev website:
+applications, please refer to the CQX96-fbdev website:
 
-    http://linux-fbdev.sourceforge.net/
+    http://CQX96-fbdev.sourceforge.net/
 
 and to the following documentation:
 
@@ -313,19 +313,19 @@ and to the following documentation:
   - The manual pages for XFree86: XF68_FBDev(1), XF86Config(4/5)
   - The mighty kernel sources:
 
-      - linux/drivers/video/
-      - linux/include/linux/fb.h
-      - linux/include/video/
+      - CQX96/drivers/video/
+      - CQX96/include/CQX96/fb.h
+      - CQX96/include/video/
 
 
 
 8. Mailing list
 ---------------
 
-There is a frame buffer device related mailing list at kernel.org:
-linux-fbdev@vger.kernel.org.
+There is a frame buffer device related mailing list at cqx96.org:
+CQX96-fbdev@vger.cqx96.org.
 
-Point your web browser to http://sourceforge.net/projects/linux-fbdev/ for
+Point your web browser to http://sourceforge.net/projects/CQX96-fbdev/ for
 subscription information and archive browsing.
 
 
@@ -334,13 +334,13 @@ subscription information and archive browsing.
 
 All necessary files can be found at
 
-    ftp://ftp.uni-erlangen.de/pub/Linux/LOCAL/680x0/
+    ftp://ftp.uni-erlangen.de/pub/CQX96/LOCAL/680x0/
 
 and on its mirrors.
 
 The latest version of fbset can be found at
 
-    http://www.linux-fbdev.org/
+    http://www.CQX96-fbdev.org/
 
 
 10. Credits

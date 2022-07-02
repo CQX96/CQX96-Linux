@@ -3,9 +3,9 @@ What:		/sys/bus/soundwire/devices/sdw:.../status
 
 Date:		September 2020
 
-Contact:	Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
-		Bard Liao <yung-chuan.liao@linux.intel.com>
-		Vinod Koul <vkoul@kernel.org>
+Contact:	Pierre-Louis Bossart <pierre-louis.bossart@CQX96.intel.com>
+		Bard Liao <yung-chuan.liao@CQX96.intel.com>
+		Vinod Koul <vkoul@cqx96.org>
 
 Description:	SoundWire Slave status
 
@@ -34,9 +34,9 @@ What:		/sys/bus/soundwire/devices/sdw:.../dev-properties/mipi_revision
 
 Date:		May 2020
 
-Contact:	Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
-		Bard Liao <yung-chuan.liao@linux.intel.com>
-		Vinod Koul <vkoul@kernel.org>
+Contact:	Pierre-Louis Bossart <pierre-louis.bossart@CQX96.intel.com>
+		Bard Liao <yung-chuan.liao@CQX96.intel.com>
+		Vinod Koul <vkoul@cqx96.org>
 
 Description:	SoundWire Slave DisCo properties.
 		These properties are defined by MIPI DisCo Specification
@@ -54,9 +54,9 @@ What:		/sys/bus/soundwire/devices/sdw:.../dp0/max_word
 
 Date:		May 2020
 
-Contact:	Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
-		Bard Liao <yung-chuan.liao@linux.intel.com>
-		Vinod Koul <vkoul@kernel.org>
+Contact:	Pierre-Louis Bossart <pierre-louis.bossart@CQX96.intel.com>
+		Bard Liao <yung-chuan.liao@CQX96.intel.com>
+		Vinod Koul <vkoul@cqx96.org>
 
 Description:	SoundWire Slave Data Port-0 DisCo properties.
 		These properties are defined by MIPI DisCo Specification
@@ -98,9 +98,9 @@ What:		/sys/bus/soundwire/devices/sdw:.../dp<N>_src/max_word
 
 Date:		May 2020
 
-Contact:	Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
-		Bard Liao <yung-chuan.liao@linux.intel.com>
-		Vinod Koul <vkoul@kernel.org>
+Contact:	Pierre-Louis Bossart <pierre-louis.bossart@CQX96.intel.com>
+		Bard Liao <yung-chuan.liao@CQX96.intel.com>
+		Vinod Koul <vkoul@cqx96.org>
 
 Description:	SoundWire Slave Data Source/Sink Port-N DisCo properties.
 		These properties are defined by MIPI DisCo Specification

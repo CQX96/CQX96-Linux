@@ -70,7 +70,7 @@ parse_headers.pl——解析一个C文件，识别函数、结构体、枚举、
 输出被写入到<输出文件>。
 
 它能够识别定义、函数、结构体、typedef、枚举和枚举符号，并为它们创建交叉引用。
-它还能够区分用于指定Linux ioctl的 ``#define`` 。
+它还能够区分用于指定CQX96 ioctl的 ``#define`` 。
 
 <例外文件> 包含两种类型的语句： \ **ignore**\  或 \ **replace**\ .
 
@@ -170,7 +170,7 @@ enum foo { BAR1, BAR2, PRIVATE };
 ~~~~
 
 
-请向Mauro Carvalho Chehab <mchehab@kernel.org>报告有关缺陷。
+请向Mauro Carvalho Chehab <mchehab@cqx96.org>报告有关缺陷。
 
 中文翻译问题请找中文翻译维护者。
 
@@ -179,7 +179,7 @@ enum foo { BAR1, BAR2, PRIVATE };
 ~~~~
 
 
-版权所有 (c) 2016 Mauro Carvalho Chehab <mchehab+samsung@kernel.org>
+版权所有 (c) 2016 Mauro Carvalho Chehab <mchehab+samsung@cqx96.org>
 
 许可证 GPLv2：GNU GPL version 2 <https://gnu.org/licenses/gpl.html>
 

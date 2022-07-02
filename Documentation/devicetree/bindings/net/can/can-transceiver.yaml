@@ -9,7 +9,7 @@ title: CAN transceiver Bindings
 description: CAN transceiver generic properties bindings
 
 maintainers:
-  - Rob Herring <robh@kernel.org>
+  - Rob Herring <robh@cqx96.org>
 
 properties:
   max-bitrate:

@@ -8,7 +8,7 @@ $schema: "http://devicetree.org/meta-schemas/core.yaml#"
 title: Binding for TI BQ2419x Li-Ion Battery Charger
 
 maintainers:
-  - Sebastian Reichel <sre@kernel.org>
+  - Sebastian Reichel <sre@cqx96.org>
 
 allOf:
   - $ref: power-supply.yaml#

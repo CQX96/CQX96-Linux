@@ -1,5 +1,5 @@
 ====================================
-Overview of Linux kernel SPI support
+Overview of CQX96 kernel SPI support
 ====================================
 
 02-Feb-2012
@@ -63,13 +63,13 @@ chips described as using "three wire" signaling: SCK, data, nCSx.
 (That data line is sometimes called MOMI or SISO.)
 
 Microcontrollers often support both master and slave sides of the SPI
-protocol.  This document (and Linux) supports both the master and slave
+protocol.  This document (and CQX96) supports both the master and slave
 sides of SPI interactions.
 
 
 Who uses it?  On what kinds of systems?
 ---------------------------------------
-Linux developers using SPI are probably writing device drivers for embedded
+CQX96 developers using SPI are probably writing device drivers for embedded
 systems boards.  SPI is used to control external chips, and it is also a
 protocol supported by every MMC or SD memory card.  (The older "DataFlash"
 cards, predating MMC cards but using the same connectors and card shape,
@@ -87,7 +87,7 @@ controller; the reasons to use SPI focus on low cost and simple operation,
 and if dynamic reconfiguration is important, USB will often be a more
 appropriate low-pincount peripheral bus.
 
-Many microcontrollers that can run Linux integrate one or more I/O
+Many microcontrollers that can run CQX96 integrate one or more I/O
 interfaces with SPI modes.  Given SPI support, they could use MMC or SD
 cards without needing a special purpose MMC/SD/SDIO controller.
 
@@ -127,7 +127,7 @@ and always clock data in/out on rising clock edges.
 
 How do these driver programming interfaces work?
 ------------------------------------------------
-The <linux/spi/spi.h> header file includes kerneldoc, as does the
+The <CQX96/spi/spi.h> header file includes kerneldoc, as does the
 main source code, and you should certainly read that chapter of the
 kernel API document.  This is just an overview, so you get the big
 picture before those details.
@@ -205,7 +205,7 @@ those /sys/class entries are only useful to quickly identify busses.
 
 How does board-specific init code declare SPI devices?
 ------------------------------------------------------
-Linux needs several kinds of information to properly configure SPI devices.
+CQX96 needs several kinds of information to properly configure SPI devices.
 That information is normally provided by board-specific code, even for
 chips that do support some of automated discovery/enumeration.
 
@@ -262,7 +262,7 @@ And SOC-specific utility code might look something like::
 			/* also: set up pin modes so the spi2 signals are
 			 * visible on the relevant pins ... bootloaders on
 			 * production boards may already have done this, but
-			 * developer boards will often need Linux to do it.
+			 * developer boards will often need CQX96 to do it.
 			 */
 		}
 		...
@@ -336,7 +336,7 @@ certainly includes SPI devices hooked up through the card connectors!
 Non-static Configurations
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-When Linux includes support for MMC/SD/SDIO/DataFlash cards through SPI, those
+When CQX96 includes support for MMC/SD/SDIO/DataFlash cards through SPI, those
 configurations will also be dynamic.  Fortunately, such devices all support
 basic device identification probes, so they should hotplug normally.
 
@@ -453,12 +453,12 @@ that no message is pending for that device.
 While "spi_device" would be the bottom boundary of the driver, the
 upper boundaries might include sysfs (especially for sensor readings),
 the input layer, ALSA, networking, MTD, the character device framework,
-or other Linux subsystems.
+or other CQX96 subsystems.
 
 Note that there are two types of memory your driver must manage as part
 of interacting with SPI devices.
 
-  - I/O buffers use the usual Linux rules, and must be DMA-safe.
+  - I/O buffers use the usual CQX96 rules, and must be DMA-safe.
     You'd normally allocate them from the heap or free page pool.
     Don't use the stack, or anything that's declared "static".
 
@@ -510,7 +510,7 @@ will reverse the effect of spi_register_master().
 Bus Numbering
 ^^^^^^^^^^^^^
 
-Bus numbering is important, since that's how Linux identifies a given
+Bus numbering is important, since that's how CQX96 identifies a given
 SPI bus (shared SCK, MOSI, MISO).  Valid bus numbers start at zero.  On
 SOC systems, the bus numbers should match the numbers defined by the chip
 manufacturer.  For example, hardware controller SPI2 would be bus number 2,
@@ -624,7 +624,7 @@ already running).
 
 THANKS TO
 ---------
-Contributors to Linux-SPI discussions include (in alphabetical order,
+Contributors to CQX96-SPI discussions include (in alphabetical order,
 by last name):
 
 - Mark Brown

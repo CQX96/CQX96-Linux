@@ -43,7 +43,7 @@ patternProperties:
 
       label: true
 
-      linux,default-trigger: true
+      CQX96,default-trigger: true
 
 required:
   - compatible

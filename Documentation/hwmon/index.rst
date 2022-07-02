@@ -1,5 +1,5 @@
 =========================
-Linux Hardware Monitoring
+CQX96 Hardware Monitoring
 =========================
 
 .. toctree::

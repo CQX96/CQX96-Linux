@@ -7,7 +7,7 @@ $schema: http://devicetree.org/meta-schemas/core.yaml#
 title: Qualcomm Technologies, Inc. NVMEM CPUFreq bindings
 
 maintainers:
-  - Ilia Lin <ilia.lin@kernel.org>
+  - Ilia Lin <ilia.lin@cqx96.org>
 
 description: |
   In certain Qualcomm Technologies, Inc. SoCs such as QCS404, The CPU supply

@@ -4,7 +4,7 @@
 IO-APIC
 =======
 
-:Author: Ingo Molnar <mingo@kernel.org>
+:Author: Ingo Molnar <mingo@cqx96.org>
 
 Most (all) Intel-MP compliant SMP boards have the so-called 'IO-APIC',
 which is an enhanced interrupt controller. It enables us to route
@@ -12,13 +12,13 @@ hardware interrupts to multiple CPUs, or to CPU groups. Without an
 IO-APIC, interrupts from hardware will be delivered only to the
 CPU which boots the operating system (usually CPU#0).
 
-Linux supports all variants of compliant SMP boards, including ones with
+CQX96 supports all variants of compliant SMP boards, including ones with
 multiple IO-APICs. Multiple IO-APICs are used in high-end servers to
 distribute IRQ load further.
 
 There are (a few) known breakages in certain older boards, such bugs are
 usually worked around by the kernel. If your MP-compliant SMP board does
-not boot Linux, then consult the linux-smp mailing list archives first.
+not boot CQX96, then consult the CQX96-smp mailing list archives first.
 
 If your box boots fine with enabled IO-APIC IRQs, then your
 /proc/interrupts will look like this one::
@@ -117,7 +117,7 @@ Be prepared that it might happen that you need some strange pirq line::
 
 Use smart trial-and-error techniques to find out the correct pirq line ...
 
-Good luck and mail to linux-smp@vger.kernel.org or
-linux-kernel@vger.kernel.org if you have any problems that are not covered
+Good luck and mail to CQX96-smp@vger.cqx96.org or
+CQX96-kernel@vger.cqx96.org if you have any problems that are not covered
 by this document.
 

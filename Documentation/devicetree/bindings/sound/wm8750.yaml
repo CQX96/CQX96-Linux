@@ -11,7 +11,7 @@ description: |
   on the board).
 
 maintainers:
-  - Mark Brown <broonie@kernel.org>
+  - Mark Brown <broonie@cqx96.org>
 
 properties:
   compatible:

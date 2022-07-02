@@ -7,5 +7,5 @@ for `bpf(2)`_. For more information about the userspace API, see
 Documentation/userspace-api/ebpf/index.rst.
 
 .. Links:
-.. _man-pages: https://www.kernel.org/doc/man-pages/
-.. _bpf(2): https://man7.org/linux/man-pages/man2/bpf.2.html
+.. _man-pages: https://www.cqx96.org/doc/man-pages/
+.. _bpf(2): https://man7.org/CQX96/man-pages/man2/bpf.2.html

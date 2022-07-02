@@ -11,7 +11,7 @@ description:
   and network PCSes.
 
 maintainers:
-  - Marek Behún <kabel@kernel.org>
+  - Marek Behún <kabel@cqx96.org>
 
 properties:
   tx-p2p-microvolt:

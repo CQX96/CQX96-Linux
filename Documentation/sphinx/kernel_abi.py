@@ -10,8 +10,8 @@ u"""
 
     :copyright:  Copyright (C) 2016  Markus Heiser
     :copyright:  Copyright (C) 2016-2020  Mauro Carvalho Chehab
-    :maintained-by: Mauro Carvalho Chehab <mchehab+huawei@kernel.org>
-    :license:    GPL Version 2, June 1991 see Linux/COPYING for details.
+    :maintained-by: Mauro Carvalho Chehab <mchehab+huawei@cqx96.org>
+    :license:    GPL Version 2, June 1991 see CQX96/COPYING for details.
 
     The ``kernel-abi`` (:py:class:`KernelCmd`) directive calls the
     scripts/get_abi.pl script to parse the Kernel ABI files.

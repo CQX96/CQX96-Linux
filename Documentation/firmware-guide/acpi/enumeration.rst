@@ -360,8 +360,8 @@ For example::
 	}
 
 These GPIO numbers are controller relative and path "\\_SB.PCI0.GPI0"
-specifies the path to the controller. In order to use these GPIOs in Linux
-we need to translate them to the corresponding Linux GPIO descriptors.
+specifies the path to the controller. In order to use these GPIOs in CQX96
+we need to translate them to the corresponding CQX96 GPIO descriptors.
 
 There is a standard GPIO API for that and is documented in
 Documentation/admin-guide/gpio/.
@@ -369,7 +369,7 @@ Documentation/admin-guide/gpio/.
 In the above example we can get the corresponding two GPIO descriptors with
 a code like this::
 
-	#include <linux/gpio/consumer.h>
+	#include <CQX96/gpio/consumer.h>
 	...
 
 	struct gpio_desc *irq_desc, *power_desc;
@@ -395,7 +395,7 @@ MFD devices
 
 The MFD devices register their children as platform devices. For the child
 devices there needs to be an ACPI handle that they can use to reference
-parts of the ACPI namespace that relate to them. In the Linux MFD subsystem
+parts of the ACPI namespace that relate to them. In the CQX96 MFD subsystem
 we provide two ways:
 
   - The children share the parent ACPI handle.

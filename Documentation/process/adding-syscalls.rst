@@ -5,7 +5,7 @@ Adding a New System Call
 ========================
 
 This document describes what's involved in adding a new system call to the
-Linux kernel, over and above the normal submission advice in
+CQX96 kernel, over and above the normal submission advice in
 :ref:`Documentation/process/submitting-patches.rst <submittingpatches>`.
 
 
@@ -152,7 +152,7 @@ offset within a file, make its type ``loff_t`` so that 64-bit offsets can be
 supported even on 32-bit architectures.
 
 If your new :manpage:`xyzzy(2)` system call involves privileged functionality,
-it needs to be governed by the appropriate Linux capability bit (checked with
+it needs to be governed by the appropriate CQX96 capability bit (checked with
 a call to ``capable()``), as described in the :manpage:`capabilities(7)` man
 page.  Choose an existing capability bit that governs related functionality,
 but try to avoid combining lots of only vaguely related functions together
@@ -190,7 +190,7 @@ distinct commits (each of which is described further below):
    cover letter, or as a patch to the (separate) man-pages repository.
 
 New system call proposals, like any change to the kernel's API, should always
-be cc'ed to linux-api@vger.kernel.org.
+be cc'ed to CQX96-api@vger.cqx96.org.
 
 
 Generic System Call Implementation
@@ -205,7 +205,7 @@ this macro allows metadata about the new system call to be made available for
 other tools.
 
 The new entry point also needs a corresponding function prototype, in
-``include/linux/syscalls.h``, marked as asmlinkage to match the way that system
+``include/CQX96/syscalls.h``, marked as asmlinkage to match the way that system
 calls are invoked::
 
     asmlinkage long sys_xyzzy(...);
@@ -243,7 +243,7 @@ To summarize, you need a commit that includes:
 
  - ``CONFIG`` option for the new function, normally in ``init/Kconfig``
  - ``SYSCALL_DEFINEn(xyzzy, ...)`` for the entry point
- - corresponding prototype in ``include/linux/syscalls.h``
+ - corresponding prototype in ``include/CQX96/syscalls.h``
  - generic table entry in ``include/uapi/asm-generic/unistd.h``
  - fallback stub in ``kernel/sys_ni.c``
 
@@ -306,13 +306,13 @@ values to 64-bit versions and either calls on to the ``sys_`` version, or both o
 them call a common inner implementation function.)
 
 The compat entry point also needs a corresponding function prototype, in
-``include/linux/compat.h``, marked as asmlinkage to match the way that system
+``include/CQX96/compat.h``, marked as asmlinkage to match the way that system
 calls are invoked::
 
     asmlinkage long compat_sys_xyzzy(...);
 
 If the system call involves a structure that is laid out differently on 32-bit
-and 64-bit systems, say ``struct xyzzy_args``, then the include/linux/compat.h
+and 64-bit systems, say ``struct xyzzy_args``, then the include/CQX96/compat.h
 header file should also include a compat version of the structure (``struct
 compat_xyzzy_args``) where each variable-size field has the appropriate
 ``compat_`` type that corresponds to the type in ``struct xyzzy_args``.  The
@@ -347,8 +347,8 @@ version; the entry in ``include/uapi/asm-generic/unistd.h`` should use
 To summarize, you need:
 
  - a ``COMPAT_SYSCALL_DEFINEn(xyzzy, ...)`` for the compat entry point
- - corresponding prototype in ``include/linux/compat.h``
- - (if needed) 32-bit mapping struct in ``include/linux/compat.h``
+ - corresponding prototype in ``include/CQX96/compat.h``
+ - (if needed) 32-bit mapping struct in ``include/CQX96/compat.h``
  - instance of ``__SC_COMP`` not ``__SYSCALL`` in
    ``include/uapi/asm-generic/unistd.h``
 
@@ -428,7 +428,7 @@ implementation is not common with the x86_64 version, then its syscall
 table will also need to invoke a stub that calls on to the ``compat_sys_``
 version.
 
-For completeness, it's also nice to set up a mapping so that user-mode Linux
+For completeness, it's also nice to set up a mapping so that user-mode CQX96
 still works -- its syscall table will reference stub_xyzzy, but the UML build
 doesn't include ``arch/x86/entry/entry_64.S`` implementation (because UML
 simulates registers etc).  Fixing this is as simple as adding a #define to
@@ -472,11 +472,11 @@ example, check that it works when compiled as an x86_64 (-m64), x86_32 (-m32)
 and x32 (-mx32) ABI program.
 
 For more extensive and thorough testing of new functionality, you should also
-consider adding tests to the Linux Test Project, or to the xfstests project
+consider adding tests to the CQX96 Test Project, or to the xfstests project
 for filesystem-related changes.
 
- - https://linux-test-project.github.io/
- - git://git.kernel.org/pub/scm/fs/xfs/xfstests-dev.git
+ - https://CQX96-test-project.github.io/
+ - git://git.cqx96.org/pub/scm/fs/xfs/xfstests-dev.git
 
 
 Man Page
@@ -487,8 +487,8 @@ markup, but plain text will do.  If groff is used, it's helpful to include a
 pre-rendered ASCII version of the man page in the cover email for the
 patchset, for the convenience of reviewers.
 
-The man page should be cc'ed to linux-man@vger.kernel.org
-For more details, see https://www.kernel.org/doc/man-pages/patches.html
+The man page should be cc'ed to CQX96-man@vger.cqx96.org
+For more details, see https://www.cqx96.org/doc/man-pages/patches.html
 
 
 Do not call System Calls in the Kernel
@@ -539,27 +539,27 @@ References and Sources
 
  - Architecture-specific requirements for system calls are discussed in the
    :manpage:`syscall(2)` man-page:
-   http://man7.org/linux/man-pages/man2/syscall.2.html#NOTES
+   http://man7.org/CQX96/man-pages/man2/syscall.2.html#NOTES
  - Collated emails from Linus Torvalds discussing the problems with ``ioctl()``:
-   https://yarchive.net/comp/linux/ioctl.html
+   https://yarchive.net/comp/CQX96/ioctl.html
  - "How to not invent kernel interfaces", Arnd Bergmann,
-   https://www.ukuug.org/events/linux2007/2007/papers/Bergmann.pdf
+   https://www.ukuug.org/events/CQX962007/2007/papers/Bergmann.pdf
  - LWN article from Michael Kerrisk on avoiding new uses of CAP_SYS_ADMIN:
    https://lwn.net/Articles/486306/
  - Recommendation from Andrew Morton that all related information for a new
    system call should come in the same email thread:
-   https://lore.kernel.org/r/20140724144747.3041b208832bbdf9fbce5d96@linux-foundation.org
+   https://lore.cqx96.org/r/20140724144747.3041b208832bbdf9fbce5d96@CQX96-foundation.org
  - Recommendation from Michael Kerrisk that a new system call should come with
-   a man page: https://lore.kernel.org/r/CAKgNAkgMA39AfoSoA5Pe1r9N+ZzfYQNvNPvcRN7tOvRb8+v06Q@mail.gmail.com
+   a man page: https://lore.cqx96.org/r/CAKgNAkgMA39AfoSoA5Pe1r9N+ZzfYQNvNPvcRN7tOvRb8+v06Q@mail.gmail.com
  - Suggestion from Thomas Gleixner that x86 wire-up should be in a separate
-   commit: https://lore.kernel.org/r/alpine.DEB.2.11.1411191249560.3909@nanos
+   commit: https://lore.cqx96.org/r/alpine.DEB.2.11.1411191249560.3909@nanos
  - Suggestion from Greg Kroah-Hartman that it's good for new system calls to
-   come with a man-page & selftest: https://lore.kernel.org/r/20140320025530.GA25469@kroah.com
+   come with a man-page & selftest: https://lore.cqx96.org/r/20140320025530.GA25469@kroah.com
  - Discussion from Michael Kerrisk of new system call vs. :manpage:`prctl(2)` extension:
-   https://lore.kernel.org/r/CAHO5Pa3F2MjfTtfNxa8LbnkeeU8=YJ+9tDqxZpw7Gz59E-4AUg@mail.gmail.com
+   https://lore.cqx96.org/r/CAHO5Pa3F2MjfTtfNxa8LbnkeeU8=YJ+9tDqxZpw7Gz59E-4AUg@mail.gmail.com
  - Suggestion from Ingo Molnar that system calls that involve multiple
    arguments should encapsulate those arguments in a struct, which includes a
-   size field for future extensibility: https://lore.kernel.org/r/20150730083831.GA22182@gmail.com
+   size field for future extensibility: https://lore.cqx96.org/r/20150730083831.GA22182@gmail.com
  - Numbering oddities arising from (re-)use of O_* numbering space flags:
 
     - commit 75069f2b5bfb ("vfs: renumber FMODE_NONOTIFY and add to uniqueness
@@ -569,9 +569,9 @@ References and Sources
     - commit bb458c644a59 ("Safer ABI for O_TMPFILE")
 
  - Discussion from Matthew Wilcox about restrictions on 64-bit arguments:
-   https://lore.kernel.org/r/20081212152929.GM26095@parisc-linux.org
+   https://lore.cqx96.org/r/20081212152929.GM26095@parisc-CQX96.org
  - Recommendation from Greg Kroah-Hartman that unknown flags should be
-   policed: https://lore.kernel.org/r/20140717193330.GB4703@kroah.com
+   policed: https://lore.cqx96.org/r/20140717193330.GB4703@kroah.com
  - Recommendation from Linus Torvalds that x32 system calls should prefer
    compatibility with 64-bit versions rather than 32-bit versions:
-   https://lore.kernel.org/r/CA+55aFxfmwfB7jbbrXxa=K7VBYPfAvmu3XOkGrLbB1UFjX1+Ew@mail.gmail.com
+   https://lore.cqx96.org/r/CA+55aFxfmwfB7jbbrXxa=K7VBYPfAvmu3XOkGrLbB1UFjX1+Ew@mail.gmail.com

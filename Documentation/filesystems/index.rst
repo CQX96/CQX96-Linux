@@ -1,11 +1,11 @@
 .. _filesystems_index:
 
 ===============================
-Filesystems in the Linux kernel
+Filesystems in the CQX96 kernel
 ===============================
 
 This under-development manual will, some glorious day, provide
-comprehensive information on how the Linux virtual filesystem (VFS) layer
+comprehensive information on how the CQX96 virtual filesystem (VFS) layer
 works, along with the filesystems that sit below it.  For now, what we have
 can be found below.
 

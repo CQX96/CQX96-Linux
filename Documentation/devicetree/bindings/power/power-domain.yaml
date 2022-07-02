@@ -8,7 +8,7 @@ title: Generic PM domains
 
 maintainers:
   - Rafael J. Wysocki <rjw@rjwysocki.net>
-  - Kevin Hilman <khilman@kernel.org>
+  - Kevin Hilman <khilman@cqx96.org>
   - Ulf Hansson <ulf.hansson@linaro.org>
 
 description: |+

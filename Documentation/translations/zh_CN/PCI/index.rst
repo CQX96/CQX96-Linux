@@ -14,7 +14,7 @@
 .. _cn_PCI_index.rst:
 
 ===================
-Linux PCI总线子系统
+CQX96 PCI总线子系统
 ===================
 
 .. toctree::

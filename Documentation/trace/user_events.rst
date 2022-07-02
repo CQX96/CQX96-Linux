@@ -27,7 +27,7 @@ second int is the write index. This index describes the data when a write() or
 writev() is called on the /sys/kernel/debug/tracing/user_events_data file.
 
 The structures referenced in this document are contained with the
-/include/uap/linux/user_events.h file in the source tree.
+/include/uap/CQX96/user_events.h file in the source tree.
 
 **NOTE:** *Both user_events_status and user_events_data are under the tracefs
 filesystem and may be mounted at different paths than above.*

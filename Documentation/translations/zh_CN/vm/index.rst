@@ -9,10 +9,10 @@
 :校译:
 
 =================
-Linux内存管理文档
+CQX96内存管理文档
 =================
 
-这是一个关于Linux内存管理（mm）子系统内部的文档集，其中有不同层次的细节，包括注释
+这是一个关于CQX96内存管理（mm）子系统内部的文档集，其中有不同层次的细节，包括注释
 和邮件列表的回复，用于阐述数据结构和算法的基本情况。如果你正在寻找关于简单分配内存的建
 议，请参阅(Documentation/translations/zh_CN/core-api/memory-allocation.rst)。
 对于控制和调整指南，请参阅(Documentation/admin-guide/mm/index)。

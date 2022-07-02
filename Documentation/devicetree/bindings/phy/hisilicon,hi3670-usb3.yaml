@@ -7,7 +7,7 @@ $schema: http://devicetree.org/meta-schemas/core.yaml#
 title: Hisilicon Kirin970 USB PHY
 
 maintainers:
-  - Mauro Carvalho Chehab <mchehab+huawei@kernel.org>
+  - Mauro Carvalho Chehab <mchehab+huawei@cqx96.org>
 
 description: |+
   Bindings for USB3 PHY on HiSilicon Kirin 970.

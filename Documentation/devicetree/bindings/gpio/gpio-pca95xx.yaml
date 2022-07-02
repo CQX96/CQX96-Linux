@@ -7,7 +7,7 @@ $schema: http://devicetree.org/meta-schemas/core.yaml#
 title: NXP PCA95xx I2C GPIO multiplexer
 
 maintainers:
-  - Krzysztof Kozlowski <krzk@kernel.org>
+  - Krzysztof Kozlowski <krzk@cqx96.org>
 
 description: |+
   Bindings for the family of I2C GPIO multiplexers/expanders: NXP PCA95xx,

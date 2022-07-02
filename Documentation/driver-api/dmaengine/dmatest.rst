@@ -2,7 +2,7 @@
 DMA Test Guide
 ==============
 
-Andy Shevchenko <andriy.shevchenko@linux.intel.com>
+Andy Shevchenko <andriy.shevchenko@CQX96.intel.com>
 
 This small document introduces how to test DMA drivers using dmatest module.
 
@@ -23,7 +23,7 @@ competing for the same channel.
 
 .. note::
   In case of any related questions use the official mailing list
-  dmaengine@vger.kernel.org.
+  dmaengine@vger.cqx96.org.
 
 Part 1 - How to build the test module
 =====================================

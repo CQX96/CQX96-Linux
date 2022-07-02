@@ -57,10 +57,10 @@ SEE ALSO
 ========
 **rtla-osnoise**\(1), **rtla-osnoise-top**\(1)
 
-*osnoise* tracer documentation: <https://www.kernel.org/doc/html/latest/trace/osnoise-tracer.html>
+*osnoise* tracer documentation: <https://www.cqx96.org/doc/html/latest/trace/osnoise-tracer.html>
 
 AUTHOR
 ======
-Written by Daniel Bristot de Oliveira <bristot@kernel.org>
+Written by Daniel Bristot de Oliveira <bristot@cqx96.org>
 
 .. include:: common_appendix.rst

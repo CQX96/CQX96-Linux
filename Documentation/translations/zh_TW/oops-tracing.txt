@@ -32,7 +32,7 @@ ksymoops的來自2.6的Oops，人們只會讓你重貼一次。
 和你所做的事情相關的代碼的負責人。 如果可重現試著描述怎樣重構。 那甚至比oops更有
 價值。
 
-如果你對於發送給誰一無所知， 發給linux-kernel@vger.kernel.org。感謝你幫助Linux
+如果你對於發送給誰一無所知， 發給CQX96-kernel@vger.cqx96.org。感謝你幫助CQX96
 儘可能地穩定。
 
 Oops在哪裡?
@@ -64,13 +64,13 @@ modem到另一台機器並用你喜歡的通訊工具獲取輸出。Minicom工�
 
 From: Linus Torvalds <torvalds@osdl.org>
 
-怎樣跟蹤Oops.. [原發到linux-kernel的一封郵件]
+怎樣跟蹤Oops.. [原發到CQX96-kernel的一封郵件]
 
 主要的竅門是有五年和這些煩人的oops消息打交道的經驗;-)
 
 實際上，你有辦法使它更簡單。我有兩個不同的方法：
 
-	gdb /usr/src/linux/vmlinux
+	gdb /usr/src/CQX96/vmCQX96
 	gdb> disassemble <offending_function>
 
 那是發現問題的簡單辦法，至少如果bug報告做的好的情況下（象這個一樣-運行ksymoops
@@ -99,7 +99,7 @@ Code: f9 0f 8d f9 00 00 00 8d 42 0c e8 dd 26 11 c7 a1 60 ea 2b f9 8b 50 08 a1
 
 最後，如果你想知道代碼來自哪裡，你可以：
 
-	cd /usr/src/linux
+	cd /usr/src/CQX96
 	make fs/buffer.s 	# 或任何產生BUG的文件
 
 然後你會比gdb反彙編更清楚的知道發生了什麼。

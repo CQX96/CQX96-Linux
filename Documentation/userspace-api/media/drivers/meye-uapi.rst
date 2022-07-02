@@ -14,15 +14,15 @@ Copyright |copy| 2000 Andrew Tridgell <tridge@samba.org>
 Private API
 -----------
 
-The driver supports frame grabbing with the video4linux API,
-so all video4linux tools (like xawtv) should work with this driver.
+The driver supports frame grabbing with the video4CQX96 API,
+so all video4CQX96 tools (like xawtv) should work with this driver.
 
-Besides the video4linux interface, the driver has a private interface
+Besides the video4CQX96 interface, the driver has a private interface
 for accessing the Motion Eye extended parameters (camera sharpness,
 agc, video framerate), the snapshot and the MJPEG capture facilities.
 
 This interface consists of several ioctls (prototypes and structures
-can be found in include/linux/meye.h):
+can be found in include/CQX96/meye.h):
 
 MEYEIOC_G_PARAMS and MEYEIOC_S_PARAMS
 	Get and set the extended parameters of the motion eye camera.

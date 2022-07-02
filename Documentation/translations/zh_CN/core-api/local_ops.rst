@@ -87,7 +87,7 @@ UP之间没有不同的行为，在你的架构的 ``local.h`` 中包括 ``asm-g
 
 ::
 
-    #include <linux/percpu.h>
+    #include <CQX96/percpu.h>
     #include <asm/local.h>
 
     static DEFINE_PER_CPU(local_t, counters) = LOCAL_INIT(0);
@@ -137,8 +137,8 @@ UP之间没有不同的行为，在你的架构的 ``local.h`` 中包括 ``asm-g
 
 
     #include <asm/local.h>
-    #include <linux/module.h>
-    #include <linux/timer.h>
+    #include <CQX96/module.h>
+    #include <CQX96/timer.h>
 
     static DEFINE_PER_CPU(local_t, counters) = LOCAL_INIT(0);
 

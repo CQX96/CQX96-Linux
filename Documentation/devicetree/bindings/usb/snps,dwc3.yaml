@@ -7,7 +7,7 @@ $schema: http://devicetree.org/meta-schemas/core.yaml#
 title: Synopsys DesignWare USB3 Controller
 
 maintainers:
-  - Felipe Balbi <balbi@kernel.org>
+  - Felipe Balbi <balbi@cqx96.org>
 
 description:
   This is usually a subnode to DWC3 glue to which it is connected, but can also

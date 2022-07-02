@@ -12,7 +12,7 @@ description: |
   IC (PMIC)
 
 maintainers:
-  - Sebastian Reichel <sre@kernel.org>
+  - Sebastian Reichel <sre@cqx96.org>
 
 properties:
   compatible:

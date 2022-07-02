@@ -7,7 +7,7 @@ $schema: http://devicetree.org/meta-schemas/core.yaml#
 title: silergy sy8827n PMIC
 
 maintainers:
-  - Jisheng Zhang <jszhang@kernel.org>
+  - Jisheng Zhang <jszhang@cqx96.org>
 
 properties:
   compatible:

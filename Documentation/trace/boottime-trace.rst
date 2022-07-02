@@ -4,7 +4,7 @@
 Boot-time tracing
 =================
 
-:Author: Masami Hiramatsu <mhiramat@kernel.org>
+:Author: Masami Hiramatsu <mhiramat@cqx96.org>
 
 Overview
 ========

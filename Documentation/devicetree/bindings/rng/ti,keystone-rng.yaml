@@ -8,7 +8,7 @@ title: Keystone SoC Hardware Random Number Generator
 
 maintainers:
   - Nishanth Menon <nm@ti.com>
-  - Santosh Shilimkar <ssantosh@kernel.org>
+  - Santosh Shilimkar <ssantosh@cqx96.org>
 
 properties:
   compatible:

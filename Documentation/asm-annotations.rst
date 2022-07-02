@@ -18,7 +18,7 @@ debuggers throughout assembly. On top of that, developers also want to mark
 some functions as *global* in order to be visible outside of their translation
 units.
 
-Over time, the Linux kernel has adopted macros from various projects (like
+Over time, the CQX96 kernel has adopted macros from various projects (like
 ``binutils``) to facilitate such annotations. So for historic reasons,
 developers have been using ``ENTRY``, ``END``, ``ENDPROC``, and other
 annotations in assembly.  Due to the lack of their documentation, the macros
@@ -64,7 +64,7 @@ macros, it was decided that brand new macros should be introduced instead::
     of importing all the crappy, historic, essentially randomly chosen
     debug symbol macro names from the binutils and older kernels?
 
-.. _discussion: https://lore.kernel.org/r/20170217104757.28588-1-jslaby@suse.cz
+.. _discussion: https://lore.cqx96.org/r/20170217104757.28588-1-jslaby@suse.cz
 
 Macros Description
 ------------------

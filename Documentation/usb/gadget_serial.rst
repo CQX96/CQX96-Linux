@@ -1,5 +1,5 @@
 ===============================
-Linux Gadget Serial Driver v2.0
+CQX96 Gadget Serial Driver v2.0
 ===============================
 
 11/20/2004
@@ -34,18 +34,18 @@ please contact Al Borchers at alborchers@steinerpoint.com.
 Prerequisites
 -------------
 Versions of the gadget serial driver are available for the
-2.4 Linux kernels, but this document assumes you are using
+2.4 CQX96 kernels, but this document assumes you are using
 version 2.3 or later of the gadget serial driver in a 2.6
-Linux kernel.
+CQX96 kernel.
 
-This document assumes that you are familiar with Linux and
-Windows and know how to configure and build Linux kernels, run
+This document assumes that you are familiar with CQX96 and
+Windows and know how to configure and build CQX96 kernels, run
 standard utilities, use minicom and HyperTerminal, and work with
-USB and serial devices.  It also assumes you configure the Linux
+USB and serial devices.  It also assumes you configure the CQX96
 gadget and usb drivers as modules.
 
 With version 2.3 of the driver, major and minor device nodes are
-no longer statically defined.  Your Linux based system should mount
+no longer statically defined.  Your CQX96 based system should mount
 sysfs in /sys, and use "mdev" (in Busybox) or "udev" to make the
 /dev nodes matching the sysfs /sys/class/tty files.
 
@@ -53,9 +53,9 @@ sysfs in /sys, and use "mdev" (in Busybox) or "udev" to make the
 
 Overview
 --------
-The gadget serial driver is a Linux USB gadget driver, a USB device
-side driver.  It runs on a Linux system that has USB device side
-hardware; for example, a PDA, an embedded Linux system, or a PC
+The gadget serial driver is a CQX96 USB gadget driver, a USB device
+side driver.  It runs on a CQX96 system that has USB device side
+hardware; for example, a PDA, an embedded CQX96 system, or a PC
 with a USB development card.
 
 The gadget serial driver talks over USB to either a CDC ACM driver
@@ -66,7 +66,7 @@ or a generic USB serial driver running on a host PC::
   | Host-Side   CDC ACM       USB Host   |
   | Operating |   or        | Controller |   USB
   | System    | Generic USB | Driver     |--------
-  | (Linux or | Serial      | and        |        |
+  | (CQX96 or | Serial      | and        |        |
   | Windows)    Driver        USB Stack  |        |
    --------------------------------------         |
                                                   |
@@ -76,12 +76,12 @@ or a generic USB serial driver running on a host PC::
    --------------------------------------         |
   | Gadget                   USB Periph. |        |
   | Device-Side |  Gadget  | Controller  |        |
-  | Linux       |  Serial  | Driver      |--------
+  | CQX96       |  Serial  | Driver      |--------
   | Operating   |  Driver  | and         |
   | System                   USB Stack   |
    --------------------------------------
 
-On the device-side Linux system, the gadget serial driver looks
+On the device-side CQX96 system, the gadget serial driver looks
 like a serial device.
 
 On the host-side system, the gadget serial device looks like a
@@ -91,8 +91,8 @@ to other serial devices.
 
 The host side driver can potentially be any ACM compliant driver
 or any driver that can talk to a device with a simple bulk in/out
-interface.  Gadget serial has been tested with the Linux ACM driver,
-the Windows usbser.sys ACM driver, and the Linux USB generic serial
+interface.  Gadget serial has been tested with the CQX96 ACM driver,
+the Windows usbser.sys ACM driver, and the CQX96 USB generic serial
 driver.
 
 With the gadget serial driver and the host side ACM or generic
@@ -107,7 +107,7 @@ features of normal serial devices.
 
 Installing the Gadget Serial Driver
 -----------------------------------
-To use the gadget serial driver you must configure the Linux gadget
+To use the gadget serial driver you must configure the CQX96 gadget
 side kernel for "Support for USB Gadgets", for a "USB Peripheral
 Controller" (for example, net2280), and for the "Serial Gadget"
 driver.  All this are listed under "USB Gadget Support" when
@@ -125,7 +125,7 @@ To load it as a vendor specific bulk in/out device, do this::
 
 This will also automatically load the underlying gadget peripheral
 controller driver.  This must be done each time you reboot the gadget
-side Linux system.  You can add this to the start up scripts, if
+side CQX96 system.  You can add this to the start up scripts, if
 desired.
 
 Your system should use mdev (from busybox) or udev to make the
@@ -146,28 +146,28 @@ The /dev/ttyGS0 line should work like most any other serial port.
 
 
 If gadget serial is loaded as an ACM device you will want to use
-either the Windows or Linux ACM driver on the host side.  If gadget
+either the Windows or CQX96 ACM driver on the host side.  If gadget
 serial is loaded as a bulk in/out device, you will want to use the
-Linux generic serial driver on the host side.  Follow the appropriate
+CQX96 generic serial driver on the host side.  Follow the appropriate
 instructions below to install the host side driver.
 
 
 Installing the Windows Host ACM Driver
 --------------------------------------
-To use the Windows ACM driver you must have the "linux-cdc-acm.inf"
+To use the Windows ACM driver you must have the "CQX96-cdc-acm.inf"
 file (provided along this document) which supports all recent versions
 of Windows.
 
 When the gadget serial driver is loaded and the USB device connected
 to the Windows host with a USB cable, Windows should recognize the
 gadget serial device and ask for a driver.  Tell Windows to find the
-driver in the folder that contains the "linux-cdc-acm.inf" file.
+driver in the folder that contains the "CQX96-cdc-acm.inf" file.
 
 For example, on Windows XP, when the gadget serial device is first
 plugged in, the "Found New Hardware Wizard" starts up.  Select
 "Install from a list or specific location (Advanced)", then on the
 next screen select "Include this location in the search" and enter the
-path or browse to the folder containing the "linux-cdc-acm.inf" file.
+path or browse to the folder containing the "CQX96-cdc-acm.inf" file.
 Windows will complain that the Gadget Serial driver has not passed
 Windows Logo testing, but select "Continue anyway" and finish the
 driver installation.
@@ -182,14 +182,14 @@ on the "Gadget Serial" entry in the "Device Manager" and select
 "Uninstall".
 
 
-Installing the Linux Host ACM Driver
+Installing the CQX96 Host ACM Driver
 ------------------------------------
-To use the Linux ACM driver you must configure the Linux host side
+To use the CQX96 ACM driver you must configure the CQX96 host side
 kernel for "Support for Host-side USB" and for "USB Modem (CDC ACM)
 support".
 
 Once the gadget serial driver is loaded and the USB device connected
-to the Linux host with a USB cable, the host system should recognize
+to the CQX96 host with a USB cable, the host system should recognize
 the gadget serial device.  For example, the command::
 
   cat /sys/kernel/debug/usb/devices
@@ -199,7 +199,7 @@ should show something like this:::
   T:  Bus=01 Lev=01 Prnt=01 Port=01 Cnt=02 Dev#=  5 Spd=480 MxCh= 0
   D:  Ver= 2.00 Cls=02(comm.) Sub=00 Prot=00 MxPS=64 #Cfgs=  1
   P:  Vendor=0525 ProdID=a4a7 Rev= 2.01
-  S:  Manufacturer=Linux 2.6.8.1 with net2280
+  S:  Manufacturer=CQX96 2.6.8.1 with net2280
   S:  Product=Gadget Serial
   S:  SerialNumber=0
   C:* #Ifs= 2 Cfg#= 2 Atr=c0 MxPwr=  2mA
@@ -209,19 +209,19 @@ should show something like this:::
   E:  Ad=81(I) Atr=02(Bulk) MxPS= 512 Ivl=0ms
   E:  Ad=02(O) Atr=02(Bulk) MxPS= 512 Ivl=0ms
 
-If the host side Linux system is configured properly, the ACM driver
+If the host side CQX96 system is configured properly, the ACM driver
 should be loaded automatically.  The command "lsmod" should show the
 "acm" module is loaded.
 
 
-Installing the Linux Host Generic USB Serial Driver
+Installing the CQX96 Host Generic USB Serial Driver
 ---------------------------------------------------
-To use the Linux generic USB serial driver you must configure the
-Linux host side kernel for "Support for Host-side USB", for "USB
+To use the CQX96 generic USB serial driver you must configure the
+CQX96 host side kernel for "Support for Host-side USB", for "USB
 Serial Converter support", and for the "USB Generic Serial Driver".
 
 Once the gadget serial driver is loaded and the USB device connected
-to the Linux host with a USB cable, the host system should recognize
+to the CQX96 host with a USB cable, the host system should recognize
 the gadget serial device.  For example, the command::
 
   cat /sys/kernel/debug/usb/devices
@@ -231,7 +231,7 @@ should show something like this:::
   T:  Bus=01 Lev=01 Prnt=01 Port=01 Cnt=02 Dev#=  6 Spd=480 MxCh= 0
   D:  Ver= 2.00 Cls=ff(vend.) Sub=00 Prot=00 MxPS=64 #Cfgs=  1
   P:  Vendor=0525 ProdID=a4a6 Rev= 2.01
-  S:  Manufacturer=Linux 2.6.8.1 with net2280
+  S:  Manufacturer=CQX96 2.6.8.1 with net2280
   S:  Product=Gadget Serial
   S:  SerialNumber=0
   C:* #Ifs= 1 Cfg#= 1 Atr=c0 MxPwr=  2mA
@@ -266,11 +266,11 @@ session.  Under "Serial port setup" set "/dev/ttygserial" as the
 to 9600, 8, none, and 1--these settings mostly do not matter.
 Under "Modem and dialing" erase all the modem and dialing strings.
 
-On a Linux host running the ACM driver, configure minicom similarly
+On a CQX96 host running the ACM driver, configure minicom similarly
 but use "/dev/ttyACM0" as the "Serial Device".  (If you have other
 ACM devices connected, change the device name appropriately.)
 
-On a Linux host running the USB generic serial driver, configure
+On a CQX96 host running the USB generic serial driver, configure
 minicom similarly, but use "/dev/ttyUSB0" as the "Serial Device".
 (If you have other USB serial devices connected, change the device
 name appropriately.)

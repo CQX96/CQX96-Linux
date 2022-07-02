@@ -7,7 +7,7 @@ $schema: http://devicetree.org/meta-schemas/core.yaml#
 title: Intel SoCFPGA Agilex platform clock controller binding
 
 maintainers:
-  - Dinh Nguyen <dinguyen@kernel.org>
+  - Dinh Nguyen <dinguyen@cqx96.org>
 
 description:
   The Intel Agilex Clock controller is an integrated clock controller, which

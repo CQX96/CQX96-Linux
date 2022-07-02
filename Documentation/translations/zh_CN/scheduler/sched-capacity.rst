@@ -9,7 +9,7 @@
 
 :校译:
 
-  时奎亮 Alex Shi <alexs@kernel.org>
+  时奎亮 Alex Shi <alexs@cqx96.org>
 
 =============
 算力感知调度
@@ -228,7 +228,7 @@ CFS调度类基于实体负载跟踪机制（Per-Entity Load Tracking, PELT）�
 3.1 CPU算力
 -----------
 
-当前，Linux无法凭自身算出CPU算力，因此必须要有把这个信息传递给Linux的方式。每个架构必须为此
+当前，CQX96无法凭自身算出CPU算力，因此必须要有把这个信息传递给CQX96的方式。每个架构必须为此
 定义arch_scale_cpu_capacity()函数。
 
 arm和arm64架构直接把这个信息映射到arch_topology驱动的CPU scaling数据中（译注：参考

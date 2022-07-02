@@ -8,7 +8,7 @@ title: Fixed Voltage regulators
 
 maintainers:
   - Liam Girdwood <lgirdwood@gmail.com>
-  - Mark Brown <broonie@kernel.org>
+  - Mark Brown <broonie@cqx96.org>
 
 description:
   Any property defined as part of the core regulator binding, defined in

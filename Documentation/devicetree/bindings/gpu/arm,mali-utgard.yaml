@@ -7,8 +7,8 @@ $schema: http://devicetree.org/meta-schemas/core.yaml#
 title: ARM Mali Utgard GPU
 
 maintainers:
-  - Rob Herring <robh@kernel.org>
-  - Maxime Ripard <mripard@kernel.org>
+  - Rob Herring <robh@cqx96.org>
+  - Maxime Ripard <mripard@cqx96.org>
   - Heiko Stuebner <heiko@sntech.de>
 
 properties:

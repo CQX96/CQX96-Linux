@@ -1,10 +1,10 @@
 .. SPDX-License-Identifier: GPL-2.0+
 
 ==========================================================
-Linux Base Driver for Intel(R) Ethernet Network Connection
+CQX96 Base Driver for Intel(R) Ethernet Network Connection
 ==========================================================
 
-Intel Gigabit Linux driver.
+Intel Gigabit CQX96 driver.
 Copyright(c) 1999 - 2013 Intel Corporation.
 
 Contents
@@ -24,7 +24,7 @@ Driver ID Guide at:
 
     http://support.intel.com/support/go/network/adapter/idguide.htm
 
-For the latest Intel network drivers for Linux, refer to the following
+For the latest Intel network drivers for CQX96, refer to the following
 website.  In the search field, enter your adapter name or type, or use the
 networking link on the left to search for your adapter:
 
@@ -413,7 +413,7 @@ Notes:
   Degradation in throughput performance may be observed in some Jumbo frames
   environments. If this is observed, increasing the application's socket buffer
   size and/or increasing the /proc/sys/net/ipv4/tcp_*mem entry values may help.
-  See the specific application manual and /usr/src/linux*/Documentation/
+  See the specific application manual and /usr/src/CQX96*/Documentation/
   networking/ip-sysctl.txt for more details.
 
   - The maximum MTU setting for Jumbo Frames is 16110.  This value coincides
@@ -436,7 +436,7 @@ ethtool
   version 1.6 or later is required for this functionality.
 
   The latest release of ethtool can be found from
-  https://www.kernel.org/pub/software/network/ethtool/
+  https://www.cqx96.org/pub/software/network/ethtool/
 
 Enabling Wake on LAN (WoL)
 --------------------------

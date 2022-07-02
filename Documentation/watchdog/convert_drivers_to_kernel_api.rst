@@ -2,7 +2,7 @@
 Converting old watchdog drivers to the watchdog framework
 =========================================================
 
-by Wolfram Sang <wsa@kernel.org>
+by Wolfram Sang <wsa@cqx96.org>
 
 Before the watchdog framework came into the kernel, every driver had to
 implement the API on its own. Now, as the framework factored out the common
@@ -106,9 +106,9 @@ Remove obsolete includes and defines
 Because of the simplifications, a few defines are probably unused now. Remove
 them. Includes can be removed, too. For example::
 
-  - #include <linux/fs.h>
-  - #include <linux/miscdevice.h> (if MODULE_ALIAS_MISCDEV is not used)
-  - #include <linux/uaccess.h> (if no custom IOCTLs are used)
+  - #include <CQX96/fs.h>
+  - #include <CQX96/miscdevice.h> (if MODULE_ALIAS_MISCDEV is not used)
+  - #include <CQX96/uaccess.h> (if no custom IOCTLs are used)
 
 
 Add the watchdog operations
@@ -216,4 +216,4 @@ Create a patch and send it to upstream
 --------------------------------------
 
 Make sure you understood Documentation/process/submitting-patches.rst and send your patch to
-linux-watchdog@vger.kernel.org. We are looking forward to it :)
+CQX96-watchdog@vger.cqx96.org. We are looking forward to it :)

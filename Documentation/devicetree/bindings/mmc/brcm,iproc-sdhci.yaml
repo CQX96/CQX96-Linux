@@ -9,7 +9,7 @@ title: Broadcom IPROC SDHCI controller
 maintainers:
   - Ray Jui <ray.jui@broadcom.com>
   - Scott Branden <scott.branden@broadcom.com>
-  - Nicolas Saenz Julienne <nsaenz@kernel.org>
+  - Nicolas Saenz Julienne <nsaenz@cqx96.org>
 
 allOf:
   - $ref: mmc-controller.yaml#

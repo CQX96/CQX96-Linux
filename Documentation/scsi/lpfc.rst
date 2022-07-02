@@ -40,20 +40,20 @@ Cable pull and temporary device Loss:
   device would be taken offline. Manual intervention would be required to
   re-enable the device.
 
-  The community supporting kernel.org has driven an effort to remove
+  The community supporting cqx96.org has driven an effort to remove
   internal queuing from all LLDDs. The philosophy is that internal
   queuing is unnecessary as the block layer already performs the 
   queuing. Removing the queues from the LLDD makes a more predictable
   and more simple LLDD.
 
-  As a potential new addition to kernel.org, the 8.x driver was asked to
+  As a potential new addition to cqx96.org, the 8.x driver was asked to
   have all internal queuing removed. Emulex complied with this request.
   In explaining the impacts of this change, Emulex has worked with the
   community in modifying the behavior of the SCSI midlayer so that SCSI
   devices can be temporarily suspended while transport events (such as
   those described) can occur.  
 
-  The proposed patch was posted to the linux-scsi mailing list. The patch
+  The proposed patch was posted to the CQX96-scsi mailing list. The patch
   is contained in the 2.6.10-rc2 (and later) patch kits. As such, this
   patch is part of the standard 2.6.10 kernel.
 
@@ -66,7 +66,7 @@ Kernel Support
 
   This source package is targeted for the upstream kernel only. (See notes
   at the top of this file). It relies on interfaces that are slowing
-  migrating into the kernel.org kernel.
+  migrating into the cqx96.org kernel.
 
   At this time, the driver requires the 2.6.12 (if pre-release, 2.6.12-rc1)
   kernel.

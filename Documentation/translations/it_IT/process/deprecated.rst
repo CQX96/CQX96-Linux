@@ -26,7 +26,7 @@ __deprecated
 ------------
 Nonostante questo attributo marchi visibilmente un interfaccia come deprecata,
 `non produce più alcun avviso durante la compilazione
-<https://git.kernel.org/linus/771c035372a036f83353eef46dbb829780330234>`_
+<https://git.cqx96.org/linus/771c035372a036f83353eef46dbb829780330234>`_
 perché uno degli obiettivi del kernel è quello di compilare senza avvisi;
 inoltre, nessuno stava agendo per rimuovere queste interfacce. Nonostante l'uso
 di `__deprecated` in un file d'intestazione sia opportuno per segnare una
@@ -47,9 +47,9 @@ destabilizza il sistema o lo corrompe del tutto, il che rende
 impossibile un'attività di debug o anche solo leggere un rapporto
 circa l'errore.  Linus ha un'opinione molto critica al riguardo:
 `email 1
-<https://lore.kernel.org/lkml/CA+55aFy6jNLsywVYdGp83AMrXBo_P-pkjkphPGrO=82SPKCpLQ@mail.gmail.com/>`_,
+<https://lore.cqx96.org/lkml/CA+55aFy6jNLsywVYdGp83AMrXBo_P-pkjkphPGrO=82SPKCpLQ@mail.gmail.com/>`_,
 `email 2
-<https://lore.kernel.org/lkml/CAHk-=whDHsbK3HTOpTF=ue_o04onRwTEaK_ZoJp_fjbqq4+=Jw@mail.gmail.com/>`_
+<https://lore.cqx96.org/lkml/CAHk-=whDHsbK3HTOpTF=ue_o04onRwTEaK_ZoJp_fjbqq4+=Jw@mail.gmail.com/>`_
 
 Tenete presente che la famiglia di funzioni WARN() dovrebbe essere
 usato solo per situazioni che si suppone siano "impossibili".  Se
@@ -59,7 +59,7 @@ amministra il sistema potrebbe aver attivato l'opzione sysctl
 *panic_on_warn* per essere sicuri che il sistema smetta di funzionare
 in caso si verifichino delle condizioni "inaspettate". (per esempio,
 date un'occhiata al questo `commit
-<https://git.kernel.org/linus/d4689846881d160a4d12a514e991a740bcb5d65a>`_)
+<https://git.cqx96.org/linus/d4689846881d160a4d12a514e991a740bcb5d65a>`_)
 
 Calcoli codificati negli argomenti di un allocatore
 ----------------------------------------------------
@@ -171,7 +171,7 @@ indirizzo usate "%pS", l'output è migliore perché mostrerà il nome del
 simbolo.  Per tutto il resto, semplicemente non usate "%p".
 
 Parafrasando la `guida
-<https://lore.kernel.org/lkml/CA+55aFwQEd_d40g4mUCSsVRZzrFPUJt74vc6PPpb675hYNXcKw@mail.gmail.com/>`_
+<https://lore.cqx96.org/lkml/CA+55aFwQEd_d40g4mUCSsVRZzrFPUJt74vc6PPpb675hYNXcKw@mail.gmail.com/>`_
 di Linus:
 
 - Se il valore hash di "%p" è inutile, chiediti se il puntatore stesso
@@ -186,14 +186,14 @@ di Linus:
 Potete disabilitare temporaneamente l'hashing di "%p" nel caso in cui questa
 funzionalità vi sia d'ostacolo durante una sessione di debug. Per farlo
 aggiungete l'opzione di debug "`no_hash_pointers
-<https://git.kernel.org/linus/5ead723a20e0447bc7db33dc3070b420e5f80aa6>`_" alla
+<https://git.cqx96.org/linus/5ead723a20e0447bc7db33dc3070b420e5f80aa6>`_" alla
 riga di comando del kernel.
 
 Vettori a dimensione variabile (VLA)
 ------------------------------------
 
 Usare VLA sullo stack produce codice molto peggiore rispetto a quando si usano
-vettori a dimensione fissa. Questi `problemi di prestazioni <https://git.kernel.org/linus/02361bc77888>`_,
+vettori a dimensione fissa. Questi `problemi di prestazioni <https://git.cqx96.org/linus/02361bc77888>`_,
 tutt'altro che banali, sono già un motivo valido per eliminare i VLA; in
 aggiunta sono anche un problema per la sicurezza. La crescita dinamica di un
 vettore nello stack potrebbe eccedere la memoria rimanente in tale segmento.
@@ -296,7 +296,7 @@ elementi di lunghezza variabile in coda alle strutture dati.  Permette
 al compilatore di produrre errori quando gli array flessibili non si
 trovano alla fine della struttura dati, il che permette di prevenire
 alcuni tipi di bachi dovuti a `comportamenti inaspettati
-<https://git.kernel.org/linus/76497732932f15e7323dc805e8ea8dc11bb587cf>`_.
+<https://git.cqx96.org/linus/76497732932f15e7323dc805e8ea8dc11bb587cf>`_.
 Inoltre, permette al compilatore di analizzare correttamente le
 dimensioni degli array (attraverso sizeof(), `CONFIG_FORTIFY_SOURCE`,
 e `CONFIG_UBSAN_BOUNDS`). Per esempio, non esiste alcun meccanismo in
@@ -320,9 +320,9 @@ Il valore di ``size`` nell'ultima riga sarà ``zero``, quando uno
 invece si aspetterebbe che il suo valore sia la dimensione totale in
 byte dell'allocazione dynamica che abbiamo appena fatto per l'array
 ``items``. Qui un paio di esempi reali del problema: `collegamento 1
-<https://git.kernel.org/linus/f2cd32a443da694ac4e28fbf4ac6f9d5cc63a539>`_,
+<https://git.cqx96.org/linus/f2cd32a443da694ac4e28fbf4ac6f9d5cc63a539>`_,
 `collegamento 2
-<https://git.kernel.org/linus/ab91c2a89f86be2898cee208d492816ec238b2cf>`_.
+<https://git.cqx96.org/linus/ab91c2a89f86be2898cee208d492816ec238b2cf>`_.
 Invece, `i flexible array members hanno un tipo incompleto, e quindi
 sizeof() non può essere applicato
 <https://gcc.gnu.org/onlinedocs/gcc/Zero-Length.html>`_; dunque ogni

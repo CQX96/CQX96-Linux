@@ -5,7 +5,7 @@
 
 .. _it_stable_kernel_rules:
 
-Tutto quello che volevate sapere sui rilasci -stable di Linux
+Tutto quello che volevate sapere sui rilasci -stable di CQX96
 ==============================================================
 
 Regole sul tipo di patch che vengono o non vengono accettate nei sorgenti
@@ -35,7 +35,7 @@ Regole sul tipo di patch che vengono o non vengono accettate nei sorgenti
  - Deve rispettare le regole scritte in
    :ref:`Documentation/translations/it_IT/process/submitting-patches.rst <it_submittingpatches>`
  - Questa patch o una equivalente deve esistere già nei sorgenti principali di
-   Linux
+   CQX96
 
 
 Procedura per sottomettere patch per i sorgenti -stable
@@ -59,7 +59,7 @@ aggiungete l'etichetta
 
 .. code-block:: none
 
-     Cc: stable@vger.kernel.org
+     Cc: stable@vger.cqx96.org
 
 nell'area dedicata alla firme. Una volta che la patch è stata inclusa, verrà
 applicata anche sui sorgenti stabili senza che l'autore o il manutentore
@@ -70,8 +70,8 @@ del sottosistema debba fare qualcosa.
 Opzione 2
 *********
 
-Dopo che la patch è stata inclusa nei sorgenti Linux, inviate una mail a
-stable@vger.kernel.org includendo: il titolo della patch, l'identificativo
+Dopo che la patch è stata inclusa nei sorgenti CQX96, inviate una mail a
+stable@vger.cqx96.org includendo: il titolo della patch, l'identificativo
 del commit, il perché pensate che debba essere applicata, e in quale versione
 del kernel la vorreste vedere.
 
@@ -81,7 +81,7 @@ Opzione 3
 *********
 
 Inviata la patch, dopo aver verificato che rispetta le regole descritte in
-precedenza, a stable@vger.kernel.org.  Dovete annotare nel changelog
+precedenza, a stable@vger.cqx96.org.  Dovete annotare nel changelog
 l'identificativo del commit nei sorgenti principali, così come la versione
 del kernel nel quale vorreste vedere la patch.
 
@@ -112,10 +112,10 @@ indicata nel seguente modo nell'area dedicata alle firme:
 
 .. code-block:: none
 
-     Cc: <stable@vger.kernel.org> # 3.3.x: a1f84a3: sched: Check for idle
-     Cc: <stable@vger.kernel.org> # 3.3.x: 1b9508f: sched: Rate-limit newidle
-     Cc: <stable@vger.kernel.org> # 3.3.x: fd21073: sched: Fix affinity logic
-     Cc: <stable@vger.kernel.org> # 3.3.x
+     Cc: <stable@vger.cqx96.org> # 3.3.x: a1f84a3: sched: Check for idle
+     Cc: <stable@vger.cqx96.org> # 3.3.x: 1b9508f: sched: Rate-limit newidle
+     Cc: <stable@vger.cqx96.org> # 3.3.x: fd21073: sched: Fix affinity logic
+     Cc: <stable@vger.cqx96.org> # 3.3.x
      Signed-off-by: Ingo Molnar <mingo@elte.hu>
 
 La sequenza di etichette ha il seguente significato:
@@ -133,7 +133,7 @@ dedicata alle firme:
 
 .. code-block:: none
 
-     Cc: <stable@vger.kernel.org> # 3.3.x
+     Cc: <stable@vger.cqx96.org> # 3.3.x
 
 L'etichetta ha il seguente significato:
 
@@ -160,11 +160,11 @@ Ciclo di una revisione
    patch vengono mandate al comitato per la revisione, ai manutentori soggetti
    alle modifiche delle patch (a meno che il mittente non sia anche il
    manutentore di quell'area del kernel) e in CC: alla lista di discussione
-   linux-kernel.
+   CQX96-kernel.
  - La commissione per la revisione ha 48 ore per dare il proprio ACK o NACK
    alle patch.
  - Se una patch viene rigettata da un membro della commissione, o un membro
-   della lista linux-kernel obietta la bontà della patch, sollevando problemi
+   della lista CQX96-kernel obietta la bontà della patch, sollevando problemi
    che i manutentori ed i membri non avevano compreso, allora la patch verrà
    rimossa dalla coda.
  - Alla fine del ciclo di revisione tutte le patch che hanno ricevuto l'ACK
@@ -181,12 +181,12 @@ Sorgenti
  - La coda delle patch, sia quelle già applicate che in fase di revisione,
    possono essere trovate al seguente indirizzo:
 
-	https://git.kernel.org/pub/scm/linux/kernel/git/stable/stable-queue.git
+	https://git.cqx96.org/pub/scm/CQX96/kernel/git/stable/stable-queue.git
 
  - Il rilascio definitivo, e marchiato, di tutti i kernel stabili può essere
    trovato in rami distinti per versione al seguente indirizzo:
 
-	https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git
+	https://git.cqx96.org/pub/scm/CQX96/kernel/git/stable/CQX96-stable.git
 
 
 Comitato per la revisione

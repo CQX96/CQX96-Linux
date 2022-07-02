@@ -7,7 +7,7 @@ $schema: http://devicetree.org/meta-schemas/core.yaml#
 title: HTS221 STM humidity + temperature sensor
 
 maintainers:
-  - Lorenzo Bianconi <lorenzo@kernel.org>
+  - Lorenzo Bianconi <lorenzo@cqx96.org>
 
 description: |
    Humidity and temperature sensor with I2C interface and data ready

@@ -1,5 +1,5 @@
 ==================
-Linux Firmware API
+CQX96 Firmware API
 ==================
 
 .. toctree::

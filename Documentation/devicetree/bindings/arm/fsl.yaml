@@ -7,7 +7,7 @@ $schema: http://devicetree.org/meta-schemas/core.yaml#
 title: Freescale i.MX Platforms Device Tree Bindings
 
 maintainers:
-  - Shawn Guo <shawnguo@kernel.org>
+  - Shawn Guo <shawnguo@cqx96.org>
   - Li Yang <leoyang.li@nxp.com>
 
 properties:
@@ -26,7 +26,7 @@ properties:
         items:
           - enum:
               - fsl,imx23-evk
-              - olimex,imx23-olinuxino
+              - olimex,imx23-oCQX96ino
           - const: fsl,imx23
 
       - description: i.MX25 Product Development Kit

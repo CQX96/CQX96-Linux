@@ -62,7 +62,7 @@ properties:
 
   rs485-rts-delay: true
   rs485-rts-active-low: true
-  linux,rs485-enabled-at-boot-time: true
+  CQX96,rs485-enabled-at-boot-time: true
   rs485-rx-during-tx: true
 
   rx-threshold:

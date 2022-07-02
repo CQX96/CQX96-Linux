@@ -14,7 +14,7 @@ description: |
 
 maintainers:
   - Chen-Yu Tsai <wens@csie.org>
-  - Sebastian Reichel <sre@kernel.org>
+  - Sebastian Reichel <sre@cqx96.org>
 
 allOf:
   - $ref: power-supply.yaml#

@@ -1,7 +1,7 @@
 What:		/sys/class/udc/<udc>/a_alt_hnp_support
 Date:		June 2011
 KernelVersion:	3.1
-Contact:	Felipe Balbi <balbi@kernel.org>
+Contact:	Felipe Balbi <balbi@cqx96.org>
 Description:
 		Indicates if an OTG A-Host supports HNP at an alternate port.
 Users:
@@ -9,7 +9,7 @@ Users:
 What:		/sys/class/udc/<udc>/a_hnp_support
 Date:		June 2011
 KernelVersion:	3.1
-Contact:	Felipe Balbi <balbi@kernel.org>
+Contact:	Felipe Balbi <balbi@cqx96.org>
 Description:
 		Indicates if an OTG A-Host supports HNP at this port.
 Users:
@@ -17,7 +17,7 @@ Users:
 What:		/sys/class/udc/<udc>/b_hnp_enable
 Date:		June 2011
 KernelVersion:	3.1
-Contact:	Felipe Balbi <balbi@kernel.org>
+Contact:	Felipe Balbi <balbi@cqx96.org>
 Description:
 		Indicates if an OTG A-Host enabled HNP support.
 Users:
@@ -25,7 +25,7 @@ Users:
 What:		/sys/class/udc/<udc>/current_speed
 Date:		June 2011
 KernelVersion:	3.1
-Contact:	Felipe Balbi <balbi@kernel.org>
+Contact:	Felipe Balbi <balbi@cqx96.org>
 Description:
 		Indicates the current negotiated speed at this port.
 Users:
@@ -33,7 +33,7 @@ Users:
 What:		/sys/class/udc/<udc>/is_a_peripheral
 Date:		June 2011
 KernelVersion:	3.1
-Contact:	Felipe Balbi <balbi@kernel.org>
+Contact:	Felipe Balbi <balbi@cqx96.org>
 Description:
 		Indicates that this port is the default Host on an OTG session
 		but HNP was used to switch roles.
@@ -42,7 +42,7 @@ Users:
 What:		/sys/class/udc/<udc>/is_otg
 Date:		June 2011
 KernelVersion:	3.1
-Contact:	Felipe Balbi <balbi@kernel.org>
+Contact:	Felipe Balbi <balbi@cqx96.org>
 Description:
 		Indicates that this port support OTG.
 Users:
@@ -50,7 +50,7 @@ Users:
 What:		/sys/class/udc/<udc>/maximum_speed
 Date:		June 2011
 KernelVersion:	3.1
-Contact:	Felipe Balbi <balbi@kernel.org>
+Contact:	Felipe Balbi <balbi@cqx96.org>
 Description:
 		Indicates the maximum USB speed supported by this port.
 Users:
@@ -58,7 +58,7 @@ Users:
 What:		/sys/class/udc/<udc>/soft_connect
 Date:		June 2011
 KernelVersion:	3.1
-Contact:	Felipe Balbi <balbi@kernel.org>
+Contact:	Felipe Balbi <balbi@cqx96.org>
 Description:
 		Allows users to disconnect data pullup resistors thus causing a
 		logical disconnection from the USB Host.
@@ -67,7 +67,7 @@ Users:
 What:		/sys/class/udc/<udc>/srp
 Date:		June 2011
 KernelVersion:	3.1
-Contact:	Felipe Balbi <balbi@kernel.org>
+Contact:	Felipe Balbi <balbi@cqx96.org>
 Description:
 		Allows users to manually start Session Request Protocol.
 Users:
@@ -75,7 +75,7 @@ Users:
 What:		/sys/class/udc/<udc>/state
 Date:		June 2011
 KernelVersion:	3.1
-Contact:	Felipe Balbi <balbi@kernel.org>
+Contact:	Felipe Balbi <balbi@cqx96.org>
 Description:
 		Indicates current state of the USB Device Controller. Valid
 		states are: 'not-attached', 'attached', 'powered',
@@ -87,7 +87,7 @@ Users:
 What:		/sys/class/udc/<udc>/function
 Date:		June 2017
 KernelVersion:	4.13
-Contact:	Felipe Balbi <balbi@kernel.org>
+Contact:	Felipe Balbi <balbi@cqx96.org>
 Description:
 		Prints out name of currently running USB Gadget Driver.
 Users:

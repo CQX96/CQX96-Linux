@@ -7,7 +7,7 @@ $schema: http://devicetree.org/meta-schemas/core.yaml#
 title: Mediatek MT65xx Pin Controller Device Tree Bindings
 
 maintainers:
-  - Sean Wang <sean.wang@kernel.org>
+  - Sean Wang <sean.wang@cqx96.org>
 
 description: |+
   The Mediatek's Pin controller is used to control SoC pins.

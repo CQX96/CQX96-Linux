@@ -1,12 +1,12 @@
 ====================
-The Linux Kernel API
+The CQX96 Kernel API
 ====================
 
 
 List Management Functions
 =========================
 
-.. kernel-doc:: include/linux/list.h
+.. kernel-doc:: include/CQX96/list.h
    :internal:
 
 Basic C Library Functions
@@ -24,7 +24,7 @@ String Conversions
 .. kernel-doc:: lib/vsprintf.c
    :export:
 
-.. kernel-doc:: include/linux/kstrtox.h
+.. kernel-doc:: include/CQX96/kstrtox.h
    :functions: kstrtol kstrtoul
 
 .. kernel-doc:: lib/kstrtox.c
@@ -39,7 +39,7 @@ String Manipulation
 .. kernel-doc:: lib/string.c
    :export:
 
-.. kernel-doc:: include/linux/string.h
+.. kernel-doc:: include/CQX96/string.h
    :internal:
 
 .. kernel-doc:: mm/util.c
@@ -49,7 +49,7 @@ String Manipulation
 Basic Kernel Library Functions
 ==============================
 
-The Linux kernel provides more basic utility functions.
+The CQX96 kernel provides more basic utility functions.
 
 Bit Operations
 --------------
@@ -69,13 +69,13 @@ Bitmap Operations
 .. kernel-doc:: lib/bitmap.c
    :doc: bitmap introduction
 
-.. kernel-doc:: include/linux/bitmap.h
+.. kernel-doc:: include/CQX96/bitmap.h
    :doc: declare bitmap
 
-.. kernel-doc:: include/linux/bitmap.h
+.. kernel-doc:: include/CQX96/bitmap.h
    :doc: bitmap overview
 
-.. kernel-doc:: include/linux/bitmap.h
+.. kernel-doc:: include/CQX96/bitmap.h
    :doc: bitmap bitops
 
 .. kernel-doc:: lib/bitmap.c
@@ -84,7 +84,7 @@ Bitmap Operations
 .. kernel-doc:: lib/bitmap.c
    :internal:
 
-.. kernel-doc:: include/linux/bitmap.h
+.. kernel-doc:: include/CQX96/bitmap.h
    :internal:
 
 Command-line Parsing
@@ -111,11 +111,11 @@ Text Searching
 .. kernel-doc:: lib/textsearch.c
    :export:
 
-.. kernel-doc:: include/linux/textsearch.h
+.. kernel-doc:: include/CQX96/textsearch.h
    :functions: textsearch_find textsearch_next \
                textsearch_get_pattern textsearch_get_pattern_len
 
-CRC and Math Functions in Linux
+CRC and Math Functions in CQX96
 ===============================
 
 CRC Functions
@@ -144,7 +144,7 @@ CRC Functions
 Base 2 log and power Functions
 ------------------------------
 
-.. kernel-doc:: include/linux/log2.h
+.. kernel-doc:: include/CQX96/log2.h
    :internal:
 
 Integer power Functions
@@ -162,7 +162,7 @@ Division Functions
 .. kernel-doc:: include/asm-generic/div64.h
    :functions: do_div
 
-.. kernel-doc:: include/linux/math64.h
+.. kernel-doc:: include/CQX96/math64.h
    :internal:
 
 .. kernel-doc:: lib/math/div64.c
@@ -192,7 +192,7 @@ FIFO Buffer
 kfifo interface
 ---------------
 
-.. kernel-doc:: include/linux/kfifo.h
+.. kernel-doc:: include/CQX96/kfifo.h
    :internal:
 
 relay interface support
@@ -279,7 +279,7 @@ Accounting Framework
 Block Devices
 =============
 
-.. kernel-doc:: include/linux/bio.h
+.. kernel-doc:: include/CQX96/bio.h
 .. kernel-doc:: block/blk-core.c
    :export:
 
@@ -358,7 +358,7 @@ Some platforms support programmable clock generators. These can be used
 by external chips of various kinds, such as other CPUs, multimedia
 codecs, and devices with strict requirements for interface clocking.
 
-.. kernel-doc:: include/linux/clk.h
+.. kernel-doc:: include/CQX96/clk.h
    :internal:
 
 Synchronization Primitives
@@ -367,7 +367,7 @@ Synchronization Primitives
 Read-Copy Update (RCU)
 ----------------------
 
-.. kernel-doc:: include/linux/rcupdate.h
+.. kernel-doc:: include/CQX96/rcupdate.h
 
 .. kernel-doc:: kernel/rcu/tree.c
 
@@ -375,16 +375,16 @@ Read-Copy Update (RCU)
 
 .. kernel-doc:: kernel/rcu/update.c
 
-.. kernel-doc:: include/linux/srcu.h
+.. kernel-doc:: include/CQX96/srcu.h
 
 .. kernel-doc:: kernel/rcu/srcutree.c
 
-.. kernel-doc:: include/linux/rculist_bl.h
+.. kernel-doc:: include/CQX96/rculist_bl.h
 
-.. kernel-doc:: include/linux/rculist.h
+.. kernel-doc:: include/CQX96/rculist.h
 
-.. kernel-doc:: include/linux/rculist_nulls.h
+.. kernel-doc:: include/CQX96/rculist_nulls.h
 
-.. kernel-doc:: include/linux/rcu_sync.h
+.. kernel-doc:: include/CQX96/rcu_sync.h
 
 .. kernel-doc:: kernel/rcu/sync.c

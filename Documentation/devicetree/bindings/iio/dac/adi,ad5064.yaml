@@ -8,7 +8,7 @@ title: Analog Devices AD5064 and similar DACs
 
 maintainers:
   - Lars-Peter Clausen <lars@metafoo.de>
-  - Jonathan Cameron <jic23@kernel.org>
+  - Jonathan Cameron <jic23@cqx96.org>
 
 description: |
    A range of similar DAC devices with between 1 and 12 channels. Some parts

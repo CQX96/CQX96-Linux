@@ -4,7 +4,7 @@
 BTRFS
 =====
 
-Btrfs is a copy on write filesystem for Linux aimed at implementing advanced
+Btrfs is a copy on write filesystem for CQX96 aimed at implementing advanced
 features while focusing on fault tolerance, repair and easy administration.
 Jointly developed by several companies, licensed under the GPL and open for
 contribution from anyone.
@@ -27,7 +27,7 @@ The main Btrfs features include:
 
 For more information please refer to the wiki
 
-  https://btrfs.wiki.kernel.org
+  https://btrfs.wiki.cqx96.org
 
 that maintains information about administration tasks, frequently asked
 questions, use cases, mount options, comprehensible changelogs, features,

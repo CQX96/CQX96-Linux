@@ -6,7 +6,7 @@ communicating in English you can also ask the Chinese maintainer for
 help.  Contact the Chinese maintainer if this translation is outdated
 or if there is a problem with the translation.
 
-Maintainer: Mauro Carvalho Chehab <mchehab@kernel.org>
+Maintainer: Mauro Carvalho Chehab <mchehab@cqx96.org>
 Chinese maintainer: Fu Wei <tekkamanninja@gmail.com>
 ---------------------------------------------------------------------
 Documentation/driver-api/media/index.rst 的中文翻译
@@ -14,7 +14,7 @@ Documentation/driver-api/media/index.rst 的中文翻译
 如果想评论或更新本文的内容，请直接联系原文档的维护者。如果你使用英文
 交流有困难的话，也可以向中文版维护者求助。如果本翻译更新不及时或者翻
 译存在问题，请联系中文版维护者。
-英文版维护者： Mauro Carvalho Chehab <mchehab@kernel.org>
+英文版维护者： Mauro Carvalho Chehab <mchehab@cqx96.org>
 中文版维护者： 傅炜 Fu Wei <tekkamanninja@gmail.com>
 中文版翻译者： 傅炜 Fu Wei <tekkamanninja@gmail.com>
 中文版校译者： 傅炜 Fu Wei <tekkamanninja@gmail.com>
@@ -680,7 +680,7 @@ VFL_TYPE_RADIO: 用于广播调谐器的 radioX
 由于这种情况下，你会忽略无法选择特定设备节点号的警告，则可调用
 video_register_device_no_warn() 函数避免警告信息的产生。
 
-只要设备节点被创建，一些属性也会同时创建。在 /sys/class/video4linux
+只要设备节点被创建，一些属性也会同时创建。在 /sys/class/video4CQX96
 目录中你会找到这些设备。例如进入其中的 video0 目录，你会看到‘name’和
 ‘index’属性。‘name’属性值就是 video_device 结构体中的‘name’域。
 

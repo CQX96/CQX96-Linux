@@ -7,7 +7,7 @@ $schema: http://devicetree.org/meta-schemas/core.yaml#
 title: ST SPEAr Platforms Device Tree Bindings
 
 maintainers:
-  - Viresh Kumar <vireshk@kernel.org>
+  - Viresh Kumar <vireshk@cqx96.org>
   - Stefan Roese <sr@denx.de>
 
 properties:

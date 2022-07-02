@@ -8,7 +8,7 @@ title: Samsung SoC PWM timers
 
 maintainers:
   - Thierry Reding <thierry.reding@gmail.com>
-  - Krzysztof Kozlowski <krzk@kernel.org>
+  - Krzysztof Kozlowski <krzk@cqx96.org>
 
 description: |+
   Samsung SoCs contain PWM timer blocks which can be used for system clock source

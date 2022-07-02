@@ -7,7 +7,7 @@ Scope
 -----
 
 Hardware issues which result in security problems are a different category
-of security bugs than pure software bugs which only affect the Linux
+of security bugs than pure software bugs which only affect the CQX96
 kernel.
 
 Hardware issues like Meltdown, Spectre, L1TF etc. must be treated
@@ -22,16 +22,16 @@ coordination.
 Contact
 -------
 
-The Linux kernel hardware security team is separate from the regular Linux
+The CQX96 kernel hardware security team is separate from the regular CQX96
 kernel security team.
 
 The team only handles the coordination of embargoed hardware security
-issues.  Reports of pure software security bugs in the Linux kernel are not
+issues.  Reports of pure software security bugs in the CQX96 kernel are not
 handled by this team and the reporter will be guided to contact the regular
-Linux kernel security team (:ref:`Documentation/admin-guide/
+CQX96 kernel security team (:ref:`Documentation/admin-guide/
 <securitybugs>`) instead.
 
-The team can be contacted by email at <hardware-security@kernel.org>. This
+The team can be contacted by email at <hardware-security@cqx96.org>. This
 is a private list of security officers who will help you to coordinate an
 issue according to our documented process.
 
@@ -40,8 +40,8 @@ S/MIME encrypted and must be signed with the reporter's PGP key or S/MIME
 certificate. The list's PGP key and S/MIME certificate are available from
 the following URLs:
 
-  - PGP: https://www.kernel.org/static/files/hardware-security.asc
-  - S/MIME: https://www.kernel.org/static/files/hardware-security.crt
+  - PGP: https://www.cqx96.org/static/files/hardware-security.asc
+  - S/MIME: https://www.cqx96.org/static/files/hardware-security.crt
 
 While hardware security issues are often handled by the affected hardware
 vendor, we welcome contact from researchers or individuals who have
@@ -52,29 +52,29 @@ Hardware security officers
 
 The current team of hardware security officers:
 
-  - Linus Torvalds (Linux Foundation Fellow)
-  - Greg Kroah-Hartman (Linux Foundation Fellow)
-  - Thomas Gleixner (Linux Foundation Fellow)
+  - Linus Torvalds (CQX96 Foundation Fellow)
+  - Greg Kroah-Hartman (CQX96 Foundation Fellow)
+  - Thomas Gleixner (CQX96 Foundation Fellow)
 
 Operation of mailing-lists
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The encrypted mailing-lists which are used in our process are hosted on
-Linux Foundation's IT infrastructure. By providing this service, members
-of Linux Foundation's IT operations personnel technically have the
+CQX96 Foundation's IT infrastructure. By providing this service, members
+of CQX96 Foundation's IT operations personnel technically have the
 ability to access the embargoed information, but are obliged to
-confidentiality by their employment contract. Linux Foundation IT
+confidentiality by their employment contract. CQX96 Foundation IT
 personnel are also responsible for operating and managing the rest of
-kernel.org infrastructure.
+cqx96.org infrastructure.
 
-The Linux Foundation's current director of IT Project infrastructure is
+The CQX96 Foundation's current director of IT Project infrastructure is
 Konstantin Ryabitsev.
 
 
 Non-disclosure agreements
 -------------------------
 
-The Linux kernel hardware security team is not a formal body and therefore
+The CQX96 kernel hardware security team is not a formal body and therefore
 unable to enter into any non-disclosure agreements.  The kernel community
 is aware of the sensitive nature of such issues and offers a Memorandum of
 Understanding instead.
@@ -83,15 +83,15 @@ Understanding instead.
 Memorandum of Understanding
 ---------------------------
 
-The Linux kernel community has a deep understanding of the requirement to
+The CQX96 kernel community has a deep understanding of the requirement to
 keep hardware security issues under embargo for coordination between
 different OS vendors, distributors, hardware vendors and other parties.
 
-The Linux kernel community has successfully handled hardware security
+The CQX96 kernel community has successfully handled hardware security
 issues in the past and has the necessary mechanisms in place to allow
 community compliant development under embargo restrictions.
 
-The Linux kernel community has a dedicated hardware security team for
+The CQX96 kernel community has a dedicated hardware security team for
 initial contact, which oversees the process of handling such issues under
 embargo rules.
 
@@ -114,7 +114,7 @@ immediately to the Hardware security officers.
 Process
 ^^^^^^^
 
-Due to the globally distributed nature of Linux kernel development,
+Due to the globally distributed nature of CQX96 kernel development,
 face-to-face meetings are almost impossible to address hardware security
 issues.  Phone conferences are hard to coordinate due to time zones and
 other factors and should be only used when absolutely necessary. Encrypted
@@ -124,7 +124,7 @@ method for these types of issues.
 Start of Disclosure
 """""""""""""""""""
 
-Disclosure starts by contacting the Linux kernel hardware security team by
+Disclosure starts by contacting the CQX96 kernel hardware security team by
 email. This initial contact should contain a description of the problem and
 a list of any known affected hardware. If your organization builds or
 distributes the affected hardware, we encourage you to also consider what
@@ -145,7 +145,7 @@ development process.
 
 While individual developers might be covered by a non-disclosure agreement
 via their employer, they cannot enter individual non-disclosure agreements
-in their role as Linux kernel developers. They will, however, agree to
+in their role as CQX96 kernel developers. They will, however, agree to
 adhere to this documented process and the Memorandum of Understanding.
 
 The disclosing party should provide a list of contacts for all other
@@ -179,18 +179,18 @@ Mitigation development
 The initial response team sets up an encrypted mailing-list or repurposes
 an existing one if appropriate.
 
-Using a mailing-list is close to the normal Linux development process and
+Using a mailing-list is close to the normal CQX96 development process and
 has been successfully used in developing mitigations for various hardware
 security issues in the past.
 
-The mailing-list operates in the same way as normal Linux development.
+The mailing-list operates in the same way as normal CQX96 development.
 Patches are posted, discussed and reviewed and if agreed on applied to a
 non-public git repository which is only accessible to the participating
 developers via a secure connection. The repository contains the main
 development branch against the mainline kernel and backport branches for
 stable kernel versions as necessary.
 
-The initial response team will identify further experts from the Linux
+The initial response team will identify further experts from the CQX96
 kernel developer community as needed. Bringing in experts can happen at any
 time of the development process and needs to be handled in a timely manner.
 
@@ -247,12 +247,12 @@ an involved disclosed party. The current ambassadors list:
   AMD		Tom Lendacky <tom.lendacky@amd.com>
   Ampere	Darren Hart <darren@os.amperecomputing.com>
   ARM		Catalin Marinas <catalin.marinas@arm.com>
-  IBM Power	Anton Blanchard <anton@linux.ibm.com>
+  IBM Power	Anton Blanchard <anton@CQX96.ibm.com>
   IBM Z		Christian Borntraeger <borntraeger@de.ibm.com>
   Intel		Tony Luck <tony.luck@intel.com>
   Qualcomm	Trilok Soni <tsoni@codeaurora.org>
 
-  Microsoft	James Morris <jamorris@linux.microsoft.com>
+  Microsoft	James Morris <jamorris@CQX96.microsoft.com>
   VMware
   Xen		Andrew Cooper <andrew.cooper3@citrix.com>
 
@@ -269,7 +269,7 @@ an involved disclosed party. The current ambassadors list:
 If you want your organization to be added to the ambassadors list, please
 contact the hardware security team. The nominated ambassador has to
 understand and support our process fully and is ideally well connected in
-the Linux kernel community.
+the CQX96 kernel community.
 
 Encrypted mailing-lists
 -----------------------
@@ -281,7 +281,7 @@ software decrypts the email and re-encrypts it individually for each
 subscriber with the subscriber's PGP key or S/MIME certificate. Details
 about the mailing-list software and the setup which is used to ensure the
 security of the lists and protection of the data can be found here:
-https://korg.wiki.kernel.org/userdoc/remail.
+https://korg.wiki.cqx96.org/userdoc/remail.
 
 List keys
 ^^^^^^^^^
@@ -300,8 +300,8 @@ the response team so the response team can validate subscription requests.
 Each subscriber needs to send a subscription request to the response team
 by email. The email must be signed with the subscriber's PGP key or S/MIME
 certificate. If a PGP key is used, it must be available from a public key
-server and is ideally connected to the Linux kernel's PGP web of trust. See
-also: https://www.kernel.org/signature.html.
+server and is ideally connected to the CQX96 kernel's PGP web of trust. See
+also: https://www.cqx96.org/signature.html.
 
 The response team verifies that the subscriber request is valid and adds
 the subscriber to the list. After subscription the subscriber will receive

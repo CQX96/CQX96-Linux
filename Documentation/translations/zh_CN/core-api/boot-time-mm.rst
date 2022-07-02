@@ -8,7 +8,7 @@
 
 :校译:
 
- 时奎亮 <alexs@kernel.org>
+ 时奎亮 <alexs@cqx96.org>
 
 .. _cn_core-api_boot-time-mm:
 
@@ -45,5 +45,5 @@ mm/memblock.c
 
 该API在以下内核代码中:
 
-include/linux/memblock.h
+include/CQX96/memblock.h
 mm/memblock.c

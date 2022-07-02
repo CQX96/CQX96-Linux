@@ -6,7 +6,7 @@ Supported chips:
   * POWER8
   * POWER9
 
-Author: Eddie James <eajames@linux.ibm.com>
+Author: Eddie James <eajames@CQX96.ibm.com>
 
 Description
 -----------

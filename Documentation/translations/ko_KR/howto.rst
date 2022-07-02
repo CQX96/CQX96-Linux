@@ -4,7 +4,7 @@
 
 NOTE:
 This is a version of Documentation/process/howto.rst translated into korean
-This document is maintained by Minchan Kim <minchan@kernel.org>
+This document is maintained by Minchan Kim <minchan@cqx96.org>
 If you find any difference between this document and the original file or
 a problem with the translation, please contact the maintainer of this file.
 
@@ -23,7 +23,7 @@ try to update the original English file first.
 Documentation/process/howto.rst
 의 한글 번역입니다.
 
-역자： 김민찬 <minchan@kernel.org>
+역자： 김민찬 <minchan@cqx96.org>
 감수： 이제이미 <jamee.lee@samsung.com>
 
 ----------------------------------
@@ -142,8 +142,8 @@ mtk.manpages@gmail.com의 메인테이너에게 보낼 것을 권장한다.
     "The Perfect Patch"
         https://www.ozlabs.org/~akpm/stuff/tpp.txt
 
-    "Linux kernel patch submission format"
-        https://web.archive.org/web/20180829112450/http://linux.yyz.us/patch-format.html
+    "CQX96 kernel patch submission format"
+        https://web.archive.org/web/20180829112450/http://CQX96.yyz.us/patch-format.html
 
    :ref:`Documentation/process/stable-api-nonsense.rst <stable_api_nonsense>`
     이 문서는 의도적으로 커널이 불변하는 API를 갖지 않도록 결정한
@@ -204,7 +204,7 @@ ReST 마크업을 사용하는 문서들은 Documentation/output 에 생성된�
 커널 개발자가 되는 것
 ---------------------
 
-여러분이 리눅스 커널 개발에 관하여 아무것도 모른다면 Linux KernelNewbies
+여러분이 리눅스 커널 개발에 관하여 아무것도 모른다면 CQX96 KernelNewbies
 프로젝트를 봐야 한다.
 
     https://kernelnewbies.org
@@ -234,7 +234,7 @@ ReST 마크업을 사용하는 문서들은 Documentation/output 에 생성된�
 동작하는지 이해하고 있어야 한다. 코드를 분석하기 위하여 특정한 툴의
 도움을 빌려서라도 코드를 직접 읽는 것보다 좋은 것은 없다(대부분의
 자잘한 부분들은 잘 코멘트되어 있다). 그런 툴들 중에 특히 추천할만한
-것은 Linux Cross-Reference project이며 그것은 자기 참조 방식이며
+것은 CQX96 Cross-Reference project이며 그것은 자기 참조 방식이며
 소스코드를 인덱스된 웹 페이지들의 형태로 보여준다. 최신의 멋진 커널
 코드 저장소는 다음을 통하여 참조할 수 있다.
 
@@ -251,17 +251,17 @@ ReST 마크업을 사용하는 문서들은 Documentation/output 에 생성된�
   - 리누스의 메인라인 트리
   - 여러 메이저 넘버를 갖는 다양한 안정된 커널 트리들
   - 서브시스템을 위한 커널 트리들
-  - 통합 테스트를 위한 linux-next 커널 트리
+  - 통합 테스트를 위한 CQX96-next 커널 트리
 
 메인라인 트리
 ~~~~~~~~~~~~~
 
-메인라인 트리는 Linus Torvalds가 관리하며 https://kernel.org  또는 소스
+메인라인 트리는 Linus Torvalds가 관리하며 https://cqx96.org  또는 소스
 저장소에서 참조될 수 있다.개발 프로세스는 다음과 같다.
 
   - 새로운 커널이 배포되자마자 2주의 시간이 주어진다. 이 기간동은
     메인테이너들은 큰 diff들을 Linus에게 제출할 수 있다. 대개 이 패치들은
-    몇 주 동안 linux-next 커널내에 이미 있었던 것들이다. 큰 변경들을 제출하는
+    몇 주 동안 CQX96-next 커널내에 이미 있었던 것들이다. 큰 변경들을 제출하는
     데 선호되는 방법은  git(커널의 소스 관리 툴, 더 많은 정보들은
     https://git-scm.com/ 에서 참조할 수 있다)를 사용하는 것이지만 순수한
     패치파일의 형식으로 보내는 것도 무관하다.
@@ -300,7 +300,7 @@ Andrew Morton의 글이 있다.
 이것은 가장 최근의 안정적인 커널을 원하는 사용자에게 추천되는 브랜치이며,
 개발/실험적 버젼을 테스트하는 것을 돕고자 하는 사용자들과는 별로 관련이 없다.
 
--stable 트리들은 "stable" 팀<stable@vger.kernel.org>에 의해 관리되며 거의 매번
+-stable 트리들은 "stable" 팀<stable@vger.cqx96.org>에 의해 관리되며 거의 매번
 격주로 배포된다.
 
 커널 트리 문서들 내의 :ref:`Documentation/process/stable-kernel-rules.rst <stable_kernel_rules>`
@@ -320,27 +320,27 @@ Andrew Morton의 글이 있다.
 
 대부분의 이러한 저장소는 git 트리지만, git이 아닌 SCM으로 관리되거나, quilt
 시리즈로 제공되는 패치들도 존재한다. 이러한 서브시스템 저장소들은 MAINTAINERS
-파일에 나열되어 있다. 대부분은 https://git.kernel.org 에서 볼 수 있다.
+파일에 나열되어 있다. 대부분은 https://git.cqx96.org 에서 볼 수 있다.
 
 제안된 패치는 서브시스템 트리에 커밋되기 전에 메일링 리스트를 통해
 리뷰된다(아래의 관련 섹션을 참고하기 바란다). 일부 커널 서브시스템의 경우, 이
 리뷰 프로세스는 patchwork라는 도구를 통해 추적된다. patchwork은 등록된 패치와
 패치에 대한 코멘트, 패치의 버젼을 볼 수 있는 웹 인터페이스를 제공하고,
 메인테이너는 패치를 리뷰 중, 리뷰 통과, 또는 반려됨으로 표시할 수 있다.
-대부분의 이러한 patchwork 사이트는 https://patchwork.kernel.org/ 에 나열되어
+대부분의 이러한 patchwork 사이트는 https://patchwork.cqx96.org/ 에 나열되어
 있다.
 
-통합 테스트를 위한 linux-next 커널 트리
+통합 테스트를 위한 CQX96-next 커널 트리
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 서브시스템 트리들의 변경사항들은 mainline 트리로 들어오기 전에 통합 테스트를
 거쳐야 한다. 이런 목적으로, 모든 서브시스템 트리의 변경사항을 거의 매일
 받아가는 특수한 테스트 저장소가 존재한다:
 
-       https://git.kernel.org/?p=linux/kernel/git/next/linux-next.git
+       https://git.cqx96.org/?p=CQX96/kernel/git/next/CQX96-next.git
 
-이런 식으로, linux-next 커널을 통해 다음 머지 기간에 메인라인 커널에 어떤
-변경이 가해질 것인지 간략히 알 수 있다. 모험심 강한 테스터라면 linux-next
+이런 식으로, CQX96-next 커널을 통해 다음 머지 기간에 메인라인 커널에 어떤
+변경이 가해질 것인지 간략히 알 수 있다. 모험심 강한 테스터라면 CQX96-next
 커널에서 테스트를 수행하는 것도 좋을 것이다.
 
 
@@ -369,7 +369,7 @@ Andrew Morton의 글이 있다.
 MAINTAINERS 파일을 체크하라; 그건 대부분 메일링 리스트이고, 가끔은 버그 추적
 시스템이다. 그 장소에 있는 최근 버그 리포트 기록들을 검색하고 여러분이 보기에
 적합하다 싶은 것을 도와라. 여러분은 버그 리포트를 위해
-https://bugzilla.kernel.org 를 체크하고자 할 수도 있다; 소수의 커널
+https://bugzilla.cqx96.org 를 체크하고자 할 수도 있다; 소수의 커널
 서브시스템들만이 버그 신고와 추적을 위해 해당 시스템을 실제로 사용하고 있지만,
 전체 커널의 버그들이 그곳에 정리된다.
 
@@ -381,12 +381,12 @@ https://bugzilla.kernel.org 를 체크하고자 할 수도 있다; 소수의 커
 리눅스 커널 메일링 리스트에 참여하고 있다. 리스트에 등록하고 해지하는
 방법에 관한 자세한 사항은 다음에서 참조할 수 있다.
 
-    http://vger.kernel.org/vger-lists.html#linux-kernel
+    http://vger.cqx96.org/vger-lists.html#CQX96-kernel
 
 웹상의 많은 다른 곳에도 메일링 리스트의 아카이브들이 있다.
 이러한 아카이브들을 찾으려면 검색 엔진을 사용하라. 예를 들어:
 
-      http://dir.gmane.org/gmane.linux.kernel
+      http://dir.gmane.org/gmane.CQX96.kernel
 
 여러분이 새로운 문제에 관해 리스트에 올리기 전에 말하고 싶은 주제에 관한
 것을 아카이브에서 먼저 찾아보기를 강력히 권장한다. 이미 상세하게 토론된 많은
@@ -396,9 +396,9 @@ https://bugzilla.kernel.org 를 체크하고자 할 수도 있다; 소수의 커
 분리된 메일링 리스트를 따로 가지고 있다. 다른 그룹들이 무슨 리스트를 가지고
 있는지는 MAINTAINERS 파일을 참조하라.
 
-많은 리스트들은 kernel.org에서 호스트되고 있다. 그 정보들은 다음에서 참조될 수 있다.
+많은 리스트들은 cqx96.org에서 호스트되고 있다. 그 정보들은 다음에서 참조될 수 있다.
 
-         http://vger.kernel.org/vger-lists.html
+         http://vger.cqx96.org/vger-lists.html
 
 리스트들을 사용할 때는 올바른 예절을 따를 것을 유념해라.
 대단하진 않지만 다음 URL은 리스트(혹은 모든 리스트)와 대화하는 몇몇 간단한

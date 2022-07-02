@@ -8,7 +8,7 @@
 
 :校译:
 
- 时奎亮 Alex Shi <alexs@kernel.org>
+ 时奎亮 Alex Shi <alexs@cqx96.org>
 
 .. _cn_virt_guest-halt-polling:
 

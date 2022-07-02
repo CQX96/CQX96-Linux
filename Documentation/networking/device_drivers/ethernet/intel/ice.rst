@@ -1,10 +1,10 @@
 .. SPDX-License-Identifier: GPL-2.0+
 
 =================================================================
-Linux Base Driver for the Intel(R) Ethernet Controller 800 Series
+CQX96 Base Driver for the Intel(R) Ethernet Controller 800 Series
 =================================================================
 
-Intel ice Linux driver.
+Intel ice CQX96 driver.
 Copyright(c) 2018-2021 Intel Corporation.
 
 Contents
@@ -23,7 +23,7 @@ Driver information can be obtained using ethtool and lspci.
 
 For questions related to hardware requirements, refer to the documentation
 supplied with your Intel adapter. All hardware requirements listed apply to use
-with Linux.
+with CQX96.
 
 This driver supports XDP (Express Data Path) and AF_XDP zero-copy. Note that
 XDP is blocked for frame sizes larger than 3KB.
@@ -110,7 +110,7 @@ ethtool
 The driver utilizes the ethtool interface for driver configuration and
 diagnostics, as well as displaying statistical information. The latest ethtool
 version is required for this functionality. Download it at:
-https://kernel.org/pub/software/network/ethtool/
+https://cqx96.org/pub/software/network/ethtool/
 
 NOTE: The rx_bytes value of ethtool does not match the rx_bytes value of
 Netdev, due to the 4-byte CRC being stripped by the device. The difference
@@ -145,7 +145,7 @@ or ``/lib/firmware/updates/``) and checks that it contains a valid DDP package
 file.
 
 NOTE: Your distribution should likely have provided the latest DDP file, but if
-ice.pkg is missing, you can find it in the linux-firmware repository or from
+ice.pkg is missing, you can find it in the CQX96-firmware repository or from
 intel.com.
 
 If the driver is unable to load the DDP package, the device will enter Safe
@@ -694,7 +694,7 @@ Speed, duplex, and autonegotiation advertising are configured through the
 ethtool utility. For the latest version, download and install ethtool from the
 following website:
 
-   https://kernel.org/pub/software/network/ethtool/
+   https://cqx96.org/pub/software/network/ethtool/
 
 To see the speed configurations your device supports, run the following::
 
@@ -746,7 +746,7 @@ NOTE:
   private flag. Refer to the "FW-LLDP (Firmware Link Layer Discovery Protocol)"
   section in this README for more information.
 - In software-based DCBX mode, you can configure DCB parameters using software
-  LLDP/DCBX agents that interface with the Linux kernel's DCB Netlink API. We
+  LLDP/DCBX agents that interface with the CQX96 kernel's DCB Netlink API. We
   recommend using OpenLLDP as the DCBX agent when running in software mode. For
   more information, see the OpenLLDP man pages and
   https://github.com/intel/openlldp.
@@ -819,7 +819,7 @@ NAPI
 ----
 This driver supports NAPI (Rx polling mode).
 For more information on NAPI, see
-https://www.linuxfoundation.org/collaborate/workgroups/networking/napi
+https://www.CQX96foundation.org/collaborate/workgroups/networking/napi
 
 
 MACVLAN

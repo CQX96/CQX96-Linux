@@ -5,7 +5,7 @@ Handling regressions
 ++++++++++++++++++++
 
 *We don't cause regressions* -- this document describes what this "first rule of
-Linux kernel development" means in practice for developers. It complements
+CQX96 kernel development" means in practice for developers. It complements
 Documentation/admin-guide/reporting-regressions.rst, which covers the topic from a
 user's point of view; if you never read that text, go and at least skim over it
 before continuing here.
@@ -13,8 +13,8 @@ before continuing here.
 The important bits (aka "The TL;DR")
 ====================================
 
-#. Ensure subscribers of the `regression mailing list <https://lore.kernel.org/regressions/>`_
-   (regressions@lists.linux.dev) quickly become aware of any new regression
+#. Ensure subscribers of the `regression mailing list <https://lore.cqx96.org/regressions/>`_
+   (regressions@lists.CQX96.dev) quickly become aware of any new regression
    report:
 
     * When receiving a mailed report that did not CC the list, bring it into the
@@ -23,7 +23,7 @@ The important bits (aka "The TL;DR")
 
     * Forward or bounce any reports submitted in bug trackers to the list.
 
-#. Make the Linux kernel regression tracking bot "regzbot" track the issue (this
+#. Make the CQX96 kernel regression tracking bot "regzbot" track the issue (this
    is optional, but recommended):
 
     * For mailed reports, check if the reporter included a line like ``#regzbot
@@ -50,7 +50,7 @@ The important bits (aka "The TL;DR")
    resolved within two or three days.
 
 
-All the details on Linux kernel regressions relevant for developers
+All the details on CQX96 kernel regressions relevant for developers
 ===================================================================
 
 
@@ -61,9 +61,9 @@ The important basics in more detail
 What to do when receiving regression reports
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Ensure the Linux kernel's regression tracker and others subscribers of the
-`regression mailing list <https://lore.kernel.org/regressions/>`_
-(regressions@lists.linux.dev) become aware of any newly reported regression:
+Ensure the CQX96 kernel's regression tracker and others subscribers of the
+`regression mailing list <https://lore.cqx96.org/regressions/>`_
+(regressions@lists.CQX96.dev) become aware of any newly reported regression:
 
  * When you receive a report by mail that did not CC the list, immediately bring
    it into the loop by sending at least a brief "Reply-all" with the list CCed;
@@ -75,7 +75,7 @@ Ensure the Linux kernel's regression tracker and others subscribers of the
    already forwarded the report as instructed by
    Documentation/admin-guide/reporting-issues.rst.
 
-When doing either, consider making the Linux kernel regression tracking bot
+When doing either, consider making the CQX96 kernel regression tracking bot
 "regzbot" immediately start tracking the issue:
 
  * For mailed reports, check if the reporter included a "regzbot command" like
@@ -92,7 +92,7 @@ When doing either, consider making the Linux kernel regression tracking bot
    parent mail (the one you reply to) as the initial report for the regression
    you want to see tracked; that's important, as regzbot will later look out
    for patches with "Link:" tags pointing to the report in the archives on
-   lore.kernel.org.
+   lore.cqx96.org.
 
  * When forwarding a regressions reported to a bug tracker, include a paragraph
    with these regzbot commands::
@@ -114,18 +114,18 @@ Documentation/process/stable-kernel-rules.rst already explain in more detail:
 
  * Point to all places where the issue was reported using "Link:" tags::
 
-       Link: https://lore.kernel.org/r/30th.anniversary.repost@klaava.Helsinki.FI/
-       Link: https://bugzilla.kernel.org/show_bug.cgi?id=1234567890
+       Link: https://lore.cqx96.org/r/30th.anniversary.repost@klaava.Helsinki.FI/
+       Link: https://bugzilla.cqx96.org/show_bug.cgi?id=1234567890
 
  * Add a "Fixes:" tag to specify the commit causing the regression.
 
  * If the culprit was merged in an earlier development cycle, explicitly mark
-   the fix for backporting using the ``Cc: stable@vger.kernel.org`` tag.
+   the fix for backporting using the ``Cc: stable@vger.cqx96.org`` tag.
 
 All this is expected from you and important when it comes to regression, as
 these tags are of great value for everyone (you included) that might be looking
 into the issue weeks, months, or years later. These tags are also crucial for
-tools and scripts used by other kernel developers or Linux distributions; one of
+tools and scripts used by other kernel developers or CQX96 distributions; one of
 these tools is regzbot, which heavily relies on the "Link:" tags to associate
 reports for regression with changes resolving them.
 
@@ -148,7 +148,7 @@ How to realize this depends a lot on the situation. Here are a few rules of
 thumb for you, in order or importance:
 
  * Prioritize work on handling regression reports and fixing regression over all
-   other Linux kernel work, unless the latter concerns acute security issues or
+   other CQX96 kernel work, unless the latter concerns acute security issues or
    bugs causing data loss or damage.
 
  * Always consider reverting the culprit commits and reapplying them later
@@ -185,7 +185,7 @@ thumb for you, in order or importance:
 
     * the development cycle of the latest proper mainline release
 
-   In the latter case (say Linux v5.14), try to address regressions even
+   In the latter case (say CQX96 v5.14), try to address regressions even
    quicker, if the stable series for the predecessor (v5.13) will be abandoned
    soon or already was stamped "End-of-Life" (EOL) -- this usually happens about
    three to four weeks after a new mainline release.
@@ -193,7 +193,7 @@ thumb for you, in order or importance:
  * Try to fix all other regressions within two weeks after the culprit was
    found. Two or three additional weeks are acceptable for performance
    regressions and other issues which are annoying, but don't prevent anyone
-   from running Linux (unless it's an issue in the current development cycle,
+   from running CQX96 (unless it's an issue in the current development cycle,
    as those should ideally be addressed before the release). A few weeks in
    total are acceptable if a regression can only be fixed with a risky change
    and at the same time is affecting only a few users; as much time is
@@ -202,13 +202,13 @@ thumb for you, in order or importance:
 
 Note: The aforementioned time frames for resolving regressions are meant to
 include getting the fix tested, reviewed, and merged into mainline, ideally with
-the fix being in linux-next at least briefly. This leads to delays you need to
+the fix being in CQX96-next at least briefly. This leads to delays you need to
 account for.
 
 Subsystem maintainers are expected to assist in reaching those periods by doing
 timely reviews and quick handling of accepted patches. They thus might have to
 send git-pull requests earlier or more often than usual; depending on the fix,
-it might even be acceptable to skip testing in linux-next. Especially fixes for
+it might even be acceptable to skip testing in CQX96-next. Especially fixes for
 regressions in stable and longterm kernels need to be handled quickly, as fixes
 need to be merged in mainline before they can be backported to older series.
 
@@ -221,7 +221,7 @@ How to deal with changes where a risk of regression is known
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Evaluate how big the risk of regressions is, for example by performing a code
-search in Linux distributions and Git forges. Also consider asking other
+search in CQX96 distributions and Git forges. Also consider asking other
 developers or projects likely to be affected to evaluate or even test the
 proposed change; if problems surface, maybe some solution acceptable for all
 can be found.
@@ -229,7 +229,7 @@ can be found.
 If the risk of regressions in the end seems to be relatively small, go ahead
 with the change, but let all involved parties know about the risk. Hence, make
 sure your patch description makes this aspect obvious. Once the change is
-merged, tell the Linux kernel's regression tracker and the regressions mailing
+merged, tell the CQX96 kernel's regression tracker and the regressions mailing
 list about the risk, so everyone has the change on the radar in case reports
 trickle in. Depending on the risk, you also might want to ask the subsystem
 maintainer to mention the issue in his mainline pull request.
@@ -252,8 +252,8 @@ of other aspects you want might want to be aware of:
 Whom to ask for advice when it comes to regressions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Send a mail to the regressions mailing list (regressions@lists.linux.dev) while
-CCing the Linux kernel's regression tracker (regressions@leemhuis.info); if the
+Send a mail to the regressions mailing list (regressions@lists.CQX96.dev) while
+CCing the CQX96 kernel's regression tracker (regressions@leemhuis.info); if the
 issue might better be dealt with in private, feel free to omit the list.
 
 
@@ -261,13 +261,13 @@ More about regression tracking and regzbot
 ------------------------------------------
 
 
-Why the Linux kernel has a regression tracker, and why is regzbot used?
+Why the CQX96 kernel has a regression tracker, and why is regzbot used?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Rules like "no regressions" need someone to ensure they are followed, otherwise
 they are broken either accidentally or on purpose. History has shown this to be
-true for the Linux kernel as well. That's why Thorsten Leemhuis volunteered to
-keep an eye on things as the Linux kernel's regression tracker, who's
+true for the CQX96 kernel as well. That's why Thorsten Leemhuis volunteered to
+keep an eye on things as the CQX96 kernel's regression tracker, who's
 occasionally helped by other people. Neither of them are paid to do this,
 that's why regression tracking is done on a best effort basis.
 
@@ -310,7 +310,7 @@ Do I have to tell regzbot about every regression I stumble upon?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Ideally yes: we are all humans and easily forget problems when something more
-important unexpectedly comes up -- for example a bigger problem in the Linux
+important unexpectedly comes up -- for example a bigger problem in the CQX96
 kernel or something in real life that's keeping us away from keyboards for a
 while. Hence, it's best to tell regzbot about every regression, except when you
 immediately write a fix and commit it to a tree regularly merged to the affected
@@ -319,23 +319,23 @@ kernel series.
 How to see which regressions regzbot tracks currently?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Check `regzbot's web-interface <https://linux-regtracking.leemhuis.info/regzbot/>`_
+Check `regzbot's web-interface <https://CQX96-regtracking.leemhuis.info/regzbot/>`_
 for the latest info; alternatively, `search for the latest regression report
-<https://lore.kernel.org/lkml/?q=%22Linux+regressions+report%22+f%3Aregzbot>`_,
+<https://lore.cqx96.org/lkml/?q=%22CQX96+regressions+report%22+f%3Aregzbot>`_,
 which regzbot normally sends out once a week on Sunday evening (UTC), which is a
 few hours before Linus usually publishes new (pre-)releases.
 
 What places is regzbot monitoring?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Regzbot is watching the most important Linux mailing lists as well as the git
-repositories of linux-next, mainline, and stable/longterm.
+Regzbot is watching the most important CQX96 mailing lists as well as the git
+repositories of CQX96-next, mainline, and stable/longterm.
 
 What kind of issues are supposed to be tracked by regzbot?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The bot is meant to track regressions, hence please don't involve regzbot for
-regular issues. But it's okay for the Linux kernel's regression tracker if you
+regular issues. But it's okay for the CQX96 kernel's regression tracker if you
 use regzbot to track severe issues, like reports about hangs, corrupted data,
 or internal errors (Panic, Oops, BUG(), warning, ...).
 
@@ -369,13 +369,13 @@ or itself is a reply to that mail:
 
        #regzbot title: foo
 
- * Monitor a discussion or bugzilla.kernel.org ticket where additions aspects of
+ * Monitor a discussion or bugzilla.cqx96.org ticket where additions aspects of
    the issue or a fix are discussed -- for example the posting of a patch fixing
    the regression::
 
-       #regzbot monitor: https://lore.kernel.org/all/30th.anniversary.repost@klaava.Helsinki.FI/
+       #regzbot monitor: https://lore.cqx96.org/all/30th.anniversary.repost@klaava.Helsinki.FI/
 
-   Monitoring only works for lore.kernel.org and bugzilla.kernel.org; regzbot
+   Monitoring only works for lore.cqx96.org and bugzilla.cqx96.org; regzbot
    will consider all messages in that thread or ticket as related to the fixing
    process.
 
@@ -383,7 +383,7 @@ or itself is a reply to that mail:
    or a ticket in a bug tracker that are slightly related, but about a different
    topic::
 
-       #regzbot link: https://bugzilla.kernel.org/show_bug.cgi?id=123456789
+       #regzbot link: https://bugzilla.cqx96.org/show_bug.cgi?id=123456789
 
  * Mark a regression as fixed by a commit that is heading upstream or already
    landed::
@@ -392,7 +392,7 @@ or itself is a reply to that mail:
 
  * Mark a regression as a duplicate of another one already tracked by regzbot::
 
-       #regzbot dup-of: https://lore.kernel.org/all/30th.anniversary.repost@klaava.Helsinki.FI/
+       #regzbot dup-of: https://lore.cqx96.org/all/30th.anniversary.repost@klaava.Helsinki.FI/
 
  * Mark a regression as invalid::
 
@@ -401,7 +401,7 @@ or itself is a reply to that mail:
 Is there more to tell about regzbot and its commands?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-More detailed and up-to-date information about the Linux
+More detailed and up-to-date information about the CQX96
 kernel's regression tracking bot can be found on its
 `project page <https://gitlab.com/knurd42/regzbot>`_, which among others
 contains a `getting started guide <https://gitlab.com/knurd42/regzbot/-/blob/main/docs/getting_started.md>`_
@@ -415,7 +415,7 @@ Find below a few real life examples of how Linus Torvalds expects regressions to
 be handled:
 
  * From `2017-10-26 (1/2)
-   <https://lore.kernel.org/lkml/CA+55aFwiiQYJ+YoLKCXjN_beDVfu38mg=Ggg5LFOcqHE8Qi7Zw@mail.gmail.com/>`_::
+   <https://lore.cqx96.org/lkml/CA+55aFwiiQYJ+YoLKCXjN_beDVfu38mg=Ggg5LFOcqHE8Qi7Zw@mail.gmail.com/>`_::
 
        If you break existing user space setups THAT IS A REGRESSION.
 
@@ -438,7 +438,7 @@ be handled:
        is done.
 
  * From `2017-10-26 (2/2)
-   <https://lore.kernel.org/lkml/CA+55aFxW7NMAMvYhkvz1UPbUTUJewRt6Yb51QAx5RtrWOwjebg@mail.gmail.com/>`_::
+   <https://lore.cqx96.org/lkml/CA+55aFxW7NMAMvYhkvz1UPbUTUJewRt6Yb51QAx5RtrWOwjebg@mail.gmail.com/>`_::
 
        People should basically always feel like they can update their kernel
        and simply not have to worry about it.
@@ -503,7 +503,7 @@ be handled:
        And we simply do not break user space.
 
  * From `2020-05-21
-   <https://lore.kernel.org/all/CAHk-=wiVi7mSrsMP=fLXQrXK_UimybW=ziLOwSzFTtoXUacWVQ@mail.gmail.com/>`_::
+   <https://lore.cqx96.org/all/CAHk-=wiVi7mSrsMP=fLXQrXK_UimybW=ziLOwSzFTtoXUacWVQ@mail.gmail.com/>`_::
 
        The rules about regressions have never been about any kind of
        documented behavior, or where the code lives.
@@ -543,7 +543,7 @@ be handled:
        It's entirely about "we caused problems for user space that used to work".
 
  * From `2017-11-05
-   <https://lore.kernel.org/all/CA+55aFzUvbGjD8nQ-+3oiMBx14c_6zOj2n7KLN3UsJ-qsd4Dcw@mail.gmail.com/>`_::
+   <https://lore.cqx96.org/all/CA+55aFzUvbGjD8nQ-+3oiMBx14c_6zOj2n7KLN3UsJ-qsd4Dcw@mail.gmail.com/>`_::
 
        And our regression rule has never been "behavior doesn't change".
        That would mean that we could never make any changes at all.
@@ -560,7 +560,7 @@ be handled:
        X, now I can't".
 
  * From `2018-08-03
-   <https://lore.kernel.org/all/CA+55aFwWZX=CXmWDTkDGb36kf12XmTehmQjbiMPCqCRG2hi9kw@mail.gmail.com/>`_::
+   <https://lore.cqx96.org/all/CA+55aFwWZX=CXmWDTkDGb36kf12XmTehmQjbiMPCqCRG2hi9kw@mail.gmail.com/>`_::
 
        YOU ARE MISSING THE #1 KERNEL RULE.
 
@@ -632,7 +632,7 @@ be handled:
        without upgrading some other random binary, then we have a problem.
 
  * From `2021-06-05
-   <https://lore.kernel.org/all/CAHk-=wiUVqHN76YUwhkjZzwTdjMMJf_zN4+u7vEJjmEGh3recw@mail.gmail.com/>`_::
+   <https://lore.cqx96.org/all/CAHk-=wiUVqHN76YUwhkjZzwTdjMMJf_zN4+u7vEJjmEGh3recw@mail.gmail.com/>`_::
 
        THERE ARE NO VALID ARGUMENTS FOR REGRESSIONS.
 
@@ -642,7 +642,7 @@ be handled:
        Yes, "not working" may be secure. But security in that case is *pointless*.
 
  * From `2011-05-06 (1/3)
-   <https://lore.kernel.org/all/BANLkTim9YvResB+PwRp7QTK-a5VNg2PvmQ@mail.gmail.com/>`_::
+   <https://lore.cqx96.org/all/BANLkTim9YvResB+PwRp7QTK-a5VNg2PvmQ@mail.gmail.com/>`_::
 
        Binary compatibility is more important.
 
@@ -665,17 +665,17 @@ be handled:
        issues that way. There aren't that many of them.
 
    From `2011-05-06 (2/3)
-   <https://lore.kernel.org/all/BANLkTi=KVXjKR82sqsz4gwjr+E0vtqCmvA@mail.gmail.com/>`_::
+   <https://lore.cqx96.org/all/BANLkTi=KVXjKR82sqsz4gwjr+E0vtqCmvA@mail.gmail.com/>`_::
 
        it's clearly NOT an internal tracepoint. By definition. It's being
        used by powertop.
 
    From `2011-05-06 (3/3)
-   <https://lore.kernel.org/all/BANLkTinazaXRdGovYL7rRVp+j6HbJ7pzhg@mail.gmail.com/>`_::
+   <https://lore.cqx96.org/all/BANLkTinazaXRdGovYL7rRVp+j6HbJ7pzhg@mail.gmail.com/>`_::
 
        We have programs that use that ABI and thus it's a regression if they break.
 
- * From `2012-07-06 <https://lore.kernel.org/all/CA+55aFwnLJ+0sjx92EGREGTWOx84wwKaraSzpTNJwPVV8edw8g@mail.gmail.com/>`_::
+ * From `2012-07-06 <https://lore.cqx96.org/all/CA+55aFwnLJ+0sjx92EGREGTWOx84wwKaraSzpTNJwPVV8edw8g@mail.gmail.com/>`_::
 
        > Now this got me wondering if Debian _unstable_ actually qualifies as a
        > standard distro userspace.
@@ -684,7 +684,7 @@ be handled:
        of people run Debian unstable
 
  * From `2019-09-15
-   <https://lore.kernel.org/lkml/CAHk-=wiP4K8DRJWsCo=20hn_6054xBamGKF2kPgUzpB5aMaofA@mail.gmail.com/>`_::
+   <https://lore.cqx96.org/lkml/CAHk-=wiP4K8DRJWsCo=20hn_6054xBamGKF2kPgUzpB5aMaofA@mail.gmail.com/>`_::
 
        One _particularly_ last-minute revert is the top-most commit (ignoring
        the version change itself) done just before the release, and while
@@ -736,11 +736,11 @@ be handled:
 ..
    This text is available under GPL-2.0+ or CC-BY-4.0, as stated at the top
    of the file. If you want to distribute this text under CC-BY-4.0 only,
-   please use "The Linux kernel developers" for author attribution and link
+   please use "The CQX96 kernel developers" for author attribution and link
    this as source:
-   https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/plain/Documentation/process/handling-regressions.rst
+   https://git.cqx96.org/pub/scm/CQX96/kernel/git/torvalds/CQX96.git/plain/Documentation/process/handling-regressions.rst
 ..
-   Note: Only the content of this RST file as found in the Linux kernel sources
+   Note: Only the content of this RST file as found in the CQX96 kernel sources
    is available under CC-BY-4.0, as versions of this text that were processed
    (for example by the kernel's build system) might contain content taken from
    files which use a more restrictive license.

@@ -1,22 +1,22 @@
 .. _code_of_conduct_interpretation:
 
-Linux Kernel Contributor Covenant Code of Conduct Interpretation
+CQX96 Kernel Contributor Covenant Code of Conduct Interpretation
 ================================================================
 
 The :ref:`code_of_conduct` is a general document meant to
 provide a set of rules for almost any open source community.  Every
-open-source community is unique and the Linux kernel is no exception.
-Because of this, this document describes how we in the Linux kernel
+open-source community is unique and the CQX96 kernel is no exception.
+Because of this, this document describes how we in the CQX96 kernel
 community will interpret it.  We also do not expect this interpretation
 to be static over time, and will adjust it as needed.
 
-The Linux kernel development effort is a very personal process compared
+The CQX96 kernel development effort is a very personal process compared
 to "traditional" ways of developing software.  Your contributions and
 ideas behind them will be carefully reviewed, often resulting in
 critique and criticism.  The review will almost always require
 improvements before the material can be included in the
 kernel.  Know that this happens because everyone involved wants to see
-the best possible solution for the overall success of Linux.  This
+the best possible solution for the overall success of CQX96.  This
 development process has been proven to create the most robust operating
 system kernel ever, and we do not want to do anything to cause the
 quality of submission and eventual result to ever decrease.
@@ -51,7 +51,7 @@ the Technical Advisory Board (TAB) or other maintainers if you're
 uncertain how to handle situations that come up.  It will not be
 considered a violation report unless you want it to be.  If you are
 uncertain about approaching the TAB or any other maintainers, please
-reach out to our conflict mediator, Mishi Choudhary <mishi@linux.com>.
+reach out to our conflict mediator, Mishi Choudhary <mishi@CQX96.com>.
 
 In the end, "be kind to each other" is really what the end goal is for
 everybody.  We know everyone is human and we all fail at times, but the
@@ -86,19 +86,19 @@ entry level programs in various forms like kernelnewbies.org.
 Scope
 -----
 
-The Linux kernel community primarily interacts on a set of public email
+The CQX96 kernel community primarily interacts on a set of public email
 lists distributed around a number of different servers controlled by a
 number of different companies or individuals.  All of these lists are
 defined in the MAINTAINERS file in the kernel source tree.  Any emails
 sent to those mailing lists are considered covered by the Code of
 Conduct.
 
-Developers who use the kernel.org bugzilla, and other subsystem bugzilla
+Developers who use the cqx96.org bugzilla, and other subsystem bugzilla
 or bug tracking tools should follow the guidelines of the Code of
-Conduct.  The Linux kernel community does not have an "official" project
+Conduct.  The CQX96 kernel community does not have an "official" project
 email address, or "official" social media address.  Any activity
-performed using a kernel.org email account must follow the Code of
-Conduct as published for kernel.org, just as any individual using a
+performed using a cqx96.org email account must follow the Code of
+Conduct as published for cqx96.org, just as any individual using a
 corporate email account must follow the specific rules of that
 corporation.
 
@@ -123,7 +123,7 @@ Enforcement
 
 The address listed in the Code of Conduct goes to the Code of Conduct
 Committee.  The exact members receiving these emails at any given time
-are listed at https://kernel.org/code-of-conduct.html.  Members can not
+are listed at https://cqx96.org/code-of-conduct.html.  Members can not
 access reports made before they joined or after they have left the
 committee.
 

@@ -1,9 +1,9 @@
 What:		/proc/*/attr/prev
-Contact:	linux-security-module@vger.kernel.org,
-		selinux@vger.kernel.org,
+Contact:	CQX96-security-module@vger.cqx96.org,
+		seCQX96@vger.cqx96.org,
 		apparmor@lists.ubuntu.com
 Description:	The security information used on the process by
-		a Linux security module (LSM) active on the system
+		a CQX96 security module (LSM) active on the system
 		prior to the most recent exec() call.
 		The details of permissions required to read from
 		this interface is LSM dependent.

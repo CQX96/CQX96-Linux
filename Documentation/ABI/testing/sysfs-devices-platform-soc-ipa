@@ -1,7 +1,7 @@
 What:		/sys/devices/platform/soc@X/XXXXXXX.ipa/
 Date:		June 2021
 KernelVersion:	v5.14
-Contact:	Alex Elder <elder@kernel.org>
+Contact:	Alex Elder <elder@cqx96.org>
 Description:
 		The /sys/devices/platform/soc@X/XXXXXXX.ipa/ directory
 		contains read-only attributes exposing information about
@@ -11,7 +11,7 @@ Description:
 What:		.../XXXXXXX.ipa/version
 Date:		June 2021
 KernelVersion:	v5.14
-Contact:	Alex Elder <elder@kernel.org>
+Contact:	Alex Elder <elder@cqx96.org>
 Description:
 		The .../XXXXXXX.ipa/version file contains the IPA hardware
 		version, as a period-separated set of two or three integers
@@ -20,7 +20,7 @@ Description:
 What:		.../XXXXXXX.ipa/feature/
 Date:		June 2021
 KernelVersion:	v5.14
-Contact:	Alex Elder <elder@kernel.org>
+Contact:	Alex Elder <elder@cqx96.org>
 Description:
 		The .../XXXXXXX.ipa/feature/ directory contains a set of
 		attributes describing features implemented by the IPA
@@ -29,7 +29,7 @@ Description:
 What:		.../XXXXXXX.ipa/feature/rx_offload
 Date:		June 2021
 KernelVersion:	v5.14
-Contact:	Alex Elder <elder@kernel.org>
+Contact:	Alex Elder <elder@cqx96.org>
 Description:
 		The .../XXXXXXX.ipa/feature/rx_offload file contains a
 		string indicating the type of receive checksum offload
@@ -39,7 +39,7 @@ Description:
 What:		.../XXXXXXX.ipa/feature/tx_offload
 Date:		June 2021
 KernelVersion:	v5.14
-Contact:	Alex Elder <elder@kernel.org>
+Contact:	Alex Elder <elder@cqx96.org>
 Description:
 		The .../XXXXXXX.ipa/feature/tx_offload file contains a
 		string indicating the type of transmit checksum offload
@@ -49,7 +49,7 @@ Description:
 What:		.../XXXXXXX.ipa/modem/
 Date:		June 2021
 KernelVersion:	v5.14
-Contact:	Alex Elder <elder@kernel.org>
+Contact:	Alex Elder <elder@cqx96.org>
 Description:
 		The .../XXXXXXX.ipa/modem/ directory contains a set of
 		attributes describing properties of the modem execution
@@ -58,7 +58,7 @@ Description:
 What:		.../XXXXXXX.ipa/modem/rx_endpoint_id
 Date:		June 2021
 KernelVersion:	v5.14
-Contact:	Alex Elder <elder@kernel.org>
+Contact:	Alex Elder <elder@cqx96.org>
 Description:
 		The .../XXXXXXX.ipa/feature/rx_endpoint_id file contains
 		the AP endpoint ID that receives packets originating from
@@ -69,7 +69,7 @@ Description:
 What:		.../XXXXXXX.ipa/modem/tx_endpoint_id
 Date:		June 2021
 KernelVersion:	v5.14
-Contact:	Alex Elder <elder@kernel.org>
+Contact:	Alex Elder <elder@cqx96.org>
 Description:
 		The .../XXXXXXX.ipa/feature/tx_endpoint_id file contains
 		the AP endpoint ID used to transmit packets destined for
