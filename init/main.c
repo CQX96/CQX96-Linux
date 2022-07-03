@@ -1520,6 +1520,10 @@ static int __ref kernel_init(void *unused)
 	rcu_end_inkernel_boot();
 
 	do_sysctl_args();
+	
+#ifdef CONFIG_BOOT_PANIC
+	panic("Test panic initiated.");
+#endif
 
 	if (ramdisk_execute_command) {
 		ret = run_init_process(ramdisk_execute_command);
@@ -1559,7 +1563,7 @@ static int __ref kernel_init(void *unused)
 		return 0;
 
 	panic("No working init found.  Try passing init= option to kernel. "
-	      "See Linux Documentation/admin-guide/init.rst for guidance.");
+	      "See cqx96.org/docs/admin-guide/init.html for guidance.");
 }
 
 /* Open /dev/console, for stdin/stdout/stderr, this should never fail */
