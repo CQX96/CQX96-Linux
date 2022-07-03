@@ -2,6 +2,7 @@ Explaining the "No working init found." boot hang message
 =========================================================
 :Authors: Andreas Mohr <andi at lisas period de>
           Cristian Souza <cristianmsbr at gmail period com>
+          Milan Raymakers <milan dot raymakers at gmail period com>
 
 This document provides some high-level reasons for failure
 (listed roughly in order of execution) to load the init binary.
@@ -34,6 +35,10 @@ This document provides some high-level reasons for failure
    simple non-script binary such as ``/bin/sh`` and confirm its successful
    execution. To find out more, add code ``to init/main.c`` to display
    kernel_execve()s return values.
+
+5) **init exists, but run_init_process failed**: This happens if the
+   init file exists, but is corrupt or not for the current architecture.
+   Try replacing the init file with a working one.
 
 Please extend this explanation whenever you find new failure causes
 (after all loading the init binary is a CRITICAL and hard transition step

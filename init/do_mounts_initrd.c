@@ -70,7 +70,7 @@ static void __init handle_initrd(void)
 	extern char *envp_init[];
 	int error;
 
-	pr_warn("using deprecated initrd support, will be removed in 2021.\n");
+	pr_warn("using deprecated initrd support.\n");
 
 	real_root_dev = new_encode_dev(ROOT_DEV);
 	create_dev("/dev/root.old", Root_RAM0);
@@ -110,7 +110,7 @@ static void __init handle_initrd(void)
 	printk(KERN_NOTICE "Trying to move old root to /initrd ... ");
 	error = init_mount("/old", "/root/initrd", NULL, MS_MOVE, NULL);
 	if (!error)
-		printk("okay\n");
+		printk("OK\n");
 	else {
 		if (error == -ENOENT)
 			printk("/initrd does not exist. Ignored.\n");
