@@ -1,8 +1,10 @@
-#include <linux/printk.h>
+#include <linux/kernel.h>
+#include <linux/syscalls.h>
 
-// Cool hello-saying syscall (it is for testing)
-void sys_hello(void)
+SYSCALL_DEFINE0(hello)
+
 {
-	printk("Hello!");
+    printk("SUCCESS: syscalls work.\n");
+    return 0;
 }
 
