@@ -155,7 +155,7 @@ config BOOT_PANIC
 
 config WERROR
 	bool "Compile the kernel with warnings as errors"
-	default COMPILE_TEST
+	default n
 	help
 	  A kernel build should not cause any compiler warnings, and this
 	  enables the '-Werror' flag to enforce that rule by default.
@@ -164,8 +164,9 @@ config WERROR
 	  unusual warnings, or you have some architecture with problems,
 	  you may need to disable this config option in order to
 	  successfully build the kernel.
-
-	  If in doubt, say Y.
+	  
+	  If you don't want to fix warnings, say N.
+	  Otherwise, say Y.
 
 config UAPI_HEADER_TEST
 	bool "Compile test UAPI headers"
